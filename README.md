@@ -2,7 +2,7 @@
 Building a Self-Evolving Agent via Experience-Driven Lifelong Learning: A Framework and Benchmark
 
 
-![ELL](https://raw.githubusercontent.com/matteobettini/benchmarl_sphinx_theme/master/benchmarl_sphinx_theme/static/img/benchmarl.png?raw=true)
+![ELL](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true)
 
 ### What is ELL 🧐?
 
