@@ -13,6 +13,8 @@ The framework is built on three core principles:
 - (3) **Skill Learning**: Agents abstract recurring patterns from experience into reusable skills, such as decision rules or functional modules. These skills are actively managed, refined, and validated through application in new tasks, enabling effective transfer, adaptation, and autonomous improvement.
 Together, these enable agents to accumulate knowledge, adapt over time, and evolve autonomously.
 
+![StuLife](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig1.png?raw=true)
+
 ### What is StuLife 🧐?
 
 We also introduce `StuLife`, a benchmark dataset for ELL that simulates a student’s holistic college journey—from enrollment to academic and personal development—across three core phases and ten detailed sub-scenarios.
@@ -22,13 +24,7 @@ We also introduce `StuLife`, a benchmark dataset for ELL that simulates a studen
 - **From Context to Memory**  
 - **From Imitation to Learning**
 
-It features a dynamic, interactive environment in which tasks are highly interconnected, and critical state variables—such as GPA, course availability, advisor relationships, and time—evolve based on the agent’s decisions. Agents must:
-
-- Autonomously acquire practical skills (e.g., course registration, scheduling, navigation, and communication),  
-- Distill experiences into reusable knowledge,  
-- Maintain persistent memory to support future decision-making.
-
-Crucially, they are expected to exhibit intrinsic motivation by setting goals, anticipating future needs, and initiating actions without external prompting.
+It features a dynamic, interactive environment in which tasks are highly interconnected, and critical state variables—such as GPA, course availability, advisor relationships, and time—evolve based on the agent’s decisions. Agents must: 1) Autonomously acquire practical skills (e.g., course registration, scheduling, navigation, and communication), 2) Distill experiences into reusable knowledge, and 3) Maintain persistent memory to support future decision-making. Crucially, they are expected to exhibit intrinsic motivation by setting goals, anticipating future needs, and initiating actions without external prompting.
 
 `StuLife` provides a comprehensive platform for evaluating lifelong learning capabilities, including memory retention, skill transfer, and autonomous, goal-directed behavior.
 
