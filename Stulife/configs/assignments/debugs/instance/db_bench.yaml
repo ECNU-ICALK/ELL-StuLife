@@ -1,0 +1,25 @@
+import:
+  - ../../../definition.yaml
+  - ../language_models.yaml
+  - ../environment_config.yaml
+assignment_config:
+  task: db_bench
+  language_model_list:
+    - name: DeepSeek-R1-Distill-Llama-8B
+  agent:
+    name: language_model_agent
+    custom_parameters:
+      language_model: DeepSeek-R1-Distill-Llama-8B
+      inference_config_dict:
+        do_sample: false
+        num_beams: 1
+        max_new_tokens: 512
+        temperature: ~
+        top_p: ~
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+  output_dir: "outputs/{TIMESTAMP}"
+  sample_order: default
+environment_config:
+  use_task_client_flag: false

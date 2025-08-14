@@ -1,0 +1,220 @@
+{
+  "courses": [
+    {
+      "course_code": "CS101",
+      "course_name": "Introduction to Computer Science",
+      "credits": 3,
+      "total_class_hours": 48,
+      "instructor": {
+        "name": "Dr. John Smith",
+        "id": "T001"
+      },
+      "schedule": {
+        "weeks": {"start": 1, "end": 16},
+        "days": ["Monday", "Wednesday"],
+        "time": "10:00-11:30",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B001",
+          "building_name": "Grand Central Library",
+          "room_number": "Computer Lab (101-120)"
+        }
+      },
+      "description": "Introduction to fundamental concepts of computer science including programming, algorithms, and data structures.",
+      "prerequisites": [],
+      "enrollment_capacity": 50,
+      "popularity_index": 75,
+      "seats_left": 25,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "CS102",
+      "course_name": "Data Structures and Algorithms",
+      "credits": 4,
+      "total_class_hours": 64,
+      "instructor": {
+        "name": "Dr. Sarah Johnson",
+        "id": "T002"
+      },
+      "schedule": {
+        "weeks": {"start": 1, "end": 16},
+        "days": ["Tuesday", "Thursday"],
+        "time": "14:00-16:00",
+        "class_hours_per_week": 4,
+        "location": {
+          "building_id": "B002",
+          "building_name": "Chancellor's Hall",
+          "room_number": "Lecture Hall (B201, 150 seats)"
+        }
+      },
+      "description": "Advanced study of data structures and algorithms with emphasis on efficiency and implementation.",
+      "prerequisites": ["CS101"],
+      "enrollment_capacity": 40,
+      "popularity_index": 88,
+      "seats_left": 15,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "MATH201",
+      "course_name": "Calculus I",
+      "credits": 4,
+      "total_class_hours": 64,
+      "instructor": {
+        "name": "Dr. Emily Rodriguez",
+        "id": "T004"
+      },
+      "schedule": {
+        "weeks": {"start": 1, "end": 16},
+        "days": ["Monday", "Wednesday", "Friday"],
+        "time": "09:00-10:00",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B003",
+          "building_name": "Alumni Hall",
+          "room_number": "Lecture Room (101)"
+        }
+      },
+      "description": "Introduction to differential and integral calculus with applications.",
+      "prerequisites": [],
+      "enrollment_capacity": 60,
+      "popularity_index": 65,
+      "seats_left": 30,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "PHYS101",
+      "course_name": "General Physics I",
+      "credits": 4,
+      "total_class_hours": 64,
+      "instructor": {
+        "name": "Dr. David Wilson",
+        "id": "T005"
+      },
+      "schedule": {
+        "weeks": {"start": 1, "end": 16},
+        "days": ["Tuesday", "Thursday"],
+        "time": "10:00-12:00",
+        "class_hours_per_week": 4,
+        "location": {
+          "building_id": "B004",
+          "building_name": "Westwood Hall",
+          "room_number": "Research Lab (216)"
+        }
+      },
+      "description": "Introduction to mechanics, thermodynamics, and wave phenomena.",
+      "prerequisites": ["MATH201"],
+      "enrollment_capacity": 45,
+      "popularity_index": 72,
+      "seats_left": 20,
+      "type": "Elective"
+    },
+    {
+      "course_code": "ENG101",
+      "course_name": "English Composition",
+      "credits": 3,
+      "total_class_hours": 48,
+      "instructor": {
+        "name": "Dr. Michael Chen",
+        "id": "T003"
+      },
+      "schedule": {
+        "weeks": {"start": 1, "end": 16},
+        "days": ["Monday", "Wednesday"],
+        "time": "13:00-14:30",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B005",
+          "building_name": "Heritage Hall",
+          "room_number": "Reading Room (105)"
+        }
+      },
+      "description": "Development of writing skills with emphasis on clear expression and critical thinking.",
+      "prerequisites": [],
+      "enrollment_capacity": 35,
+      "popularity_index": 58,
+      "seats_left": 18,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "CS201",
+      "course_name": "Software Engineering",
+      "credits": 3,
+      "total_class_hours": 48,
+      "instructor": {
+        "name": "Dr. Michael Chen",
+        "id": "T003"
+      },
+      "schedule": {
+        "weeks": {"start": 1, "end": 16},
+        "days": ["Friday"],
+        "time": "14:00-17:00",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B001",
+          "building_name": "Grand Central Library",
+          "room_number": "Group Study Rooms (201-215)"
+        }
+      },
+      "description": "Principles and practices of software development including design patterns and project management.",
+      "prerequisites": ["CS102"],
+      "enrollment_capacity": 30,
+      "popularity_index": 92,
+      "seats_left": 8,
+      "type": "Elective"
+    },
+    {
+      "course_code": "PSYC101",
+      "course_name": "Introduction to Psychology",
+      "credits": 3,
+      "total_class_hours": 48,
+      "instructor": {
+        "name": "Dr. Emily Rodriguez",
+        "id": "T004"
+      },
+      "schedule": {
+        "weeks": {"start": 1, "end": 16},
+        "days": ["Tuesday", "Thursday"],
+        "time": "11:00-12:30",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B006",
+          "building_name": "Agora Hall",
+          "room_number": "Debate Hall (101)"
+        }
+      },
+      "description": "Survey of major areas in psychology including cognition, learning, and social behavior.",
+      "prerequisites": [],
+      "enrollment_capacity": 55,
+      "popularity_index": 78,
+      "seats_left": 22,
+      "type": "Elective"
+    },
+    {
+      "course_code": "MATH301",
+      "course_name": "Linear Algebra",
+      "credits": 3,
+      "total_class_hours": 48,
+      "instructor": {
+        "name": "Dr. Sarah Johnson",
+        "id": "T002"
+      },
+      "schedule": {
+        "weeks": {"start": 1, "end": 16},
+        "days": ["Monday", "Wednesday"],
+        "time": "15:00-16:30",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B003",
+          "building_name": "Alumni Hall",
+          "room_number": "Seminar Rooms (201-205)"
+        }
+      },
+      "description": "Vector spaces, linear transformations, matrices, and eigenvalues with applications.",
+      "prerequisites": ["MATH201"],
+      "enrollment_capacity": 40,
+      "popularity_index": 85,
+      "seats_left": 12,
+      "type": "Elective"
+    }
+  ]
+}

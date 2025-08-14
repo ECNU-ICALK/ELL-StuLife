@@ -1,0 +1,16 @@
+import:
+- ../../../../../../../definition.yaml
+- ../../../../agent.yaml
+- ../../task.yaml
+assignment_config:
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+  output_dir: outputs/{TIMESTAMP}
+  sample_order: default
+environment_config:
+  use_task_client_flag: false
+task_dict:
+  db_bench:
+    parameters:
+      data_file_path: ./data/v0303/db_bench/processed/v0317_first100/entry_dict.json

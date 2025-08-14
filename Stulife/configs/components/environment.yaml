@@ -1,0 +1,7 @@
+environment_config:
+  use_task_client_flag: true
+  import:
+    - ./clients/task_client.yaml
+    - ./clients/chat_history_item_factory_client.yaml
+  server_side_controller_address: "http://127.0.0.1:8003"
+  interpreter_path: "/mnt/pfs_l2/jieti_team/MMGroup/lzz/zjh/envs/py311-zjh/bin/python3"

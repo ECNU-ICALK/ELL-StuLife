@@ -1,0 +1,15 @@
+knowledge_graph:
+  module: "src.tasks.instance.knowledge_graph.KnowledgeGraph"
+  parameters:
+    task_name:
+      module: "src.typings.TaskName"
+      parameters:
+        value: "knowledge_graph"
+    chat_history_item_factory:
+      module: "src.factories.chat_history_item.ChatHistoryItemFactory"
+      parameters:
+        chat_history_item_dict_path: "./chat_history_items/standard/knowledge_graph.json"
+    sparql_url: "http://127.0.0.1:3001/sparql"
+    ontology_dir_path: "./data/v0121/knowledge_graph/ontology"
+    data_file_path: "./data/v0303/knowledge_graph/processed/grailqa/v0417_tl2sc50_tl3sc50_tl4sc50_tl5sc50_tl6sc50_tl7sc50_tl8sc50_tl9sc46/entry_dict.json"
+    max_round: 15

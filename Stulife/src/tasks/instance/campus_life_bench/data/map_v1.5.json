@@ -1,0 +1,3574 @@
+{
+    "nodes": [
+      {
+        "id": "B001",
+        "name": "Grand Central Library",
+        "aliases": ["Main Library", "The Book Citadel"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Main Lobby & Circulation Desk", "Periodicals Reading Room", "Computer Lab (101-120)", "The Scholar's Cafe"],
+          "floor_2": ["Quiet Study Zone (West Wing)", "Group Study Rooms (201-215)", "Social Sciences Collection (History, Sociology, Economics, Political Science, Anthropology, Geography)"],
+          "floor_3": ["Quiet Study Zone (East Wing)", "Humanities Collection (Philosophy, Literature, Languages, Classics, Arts, Education, Psychology)", "Faculty Reading Room (301)"],
+          "basement": ["Archives & Special Collections (B01)", "University Archives"]
+        }
+      },
+      {
+        "id": "B002",
+        "name": "Chancellor's Hall",
+        "aliases": ["Main Lecture Hall", "CLH"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Grand Auditorium (A100, 500 seats)", "Lobby Area", "Vending Machines"],
+          "floor_2": ["Lecture Hall (B201, 150 seats)", "Lecture Hall (B202, 150 seats)", "Projection & A/V Rooms (210-212)"]
+        }
+      },
+      {
+        "id": "B003",
+        "name": "Alumni Hall",
+        "aliases": ["Old Hall"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Lecture Room (101)", "Student Lounge"],
+          "floor_2": ["Seminar Rooms (201-205)", "Alumni Relations Office (210)"]
+        }
+      },
+      {
+        "id": "B004",
+        "name": "Westwood Hall",
+        "aliases": ["Department of Sociology"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Main Office (100)", "Student Common Area"],
+          "floor_2": ["Faculty Offices (201-215)", "Research Lab (216)"]
+        }
+      },
+      {
+        "id": "B005",
+        "name": "Heritage Hall",
+        "aliases": ["Department of History"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Department Office (101)", "Reading Room (105)"],
+          "floor_2": ["Faculty Offices (201-220)", "Departmental Archives (221)"]
+        }
+      },
+      {
+        "id": "B006",
+        "name": "Agora Hall",
+        "aliases": ["Philo Hall", "Department of Philosophy"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Debate Hall (101)", "Student Lounge"],
+          "floor_2": ["Faculty Offices (201-210)", "Department Library (211)"]
+        }
+      },
+      {
+        "id": "B007",
+        "name": "Blackstone School of Law",
+        "aliases": ["Law Center"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Moot Courtroom (100)", "Lobby", "Law Cafe"],
+          "floor_2": ["Law Library (2nd Floor)"],
+          "floor_3": ["Lecture Halls (301-305)", "Faculty Offices (310-325)"]
+        }
+      },
+      {
+        "id": "B008",
+        "name": "Justice Clinic",
+        "aliases": ["The Clinic", "Legal Practice Clinic"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Client Meeting Rooms (101-105)"],
+          "floor_2": ["Student Offices (201-220)", "Pro Bono Services Office (200)"]
+        }
+      },
+      {
+        "id": "B009",
+        "name": "Rosetta Hall",
+        "aliases": ["School of Modern Languages"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Language Labs (101-110)", "Global Culture Center (115)"],
+          "floor_2": ["Faculty Offices (201-225)", "Tutoring Center (200)"]
+        }
+      },
+      {
+        "id": "B010",
+        "name": "Mead Hall",
+        "aliases": ["Anthropology Hall"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Museum of Anthropology (100)"],
+          "floor_2": ["Research Labs (201-208)", "Faculty Offices (210-220)"]
+        }
+      },
+      {
+        "id": "B011",
+        "name": "Locke Center",
+        "aliases": ["PoliSci Center"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Polling Center (101)", "Reading Room (110)"],
+          "floor_2": ["Faculty Offices (201-215)", "Main Office (200)"]
+        }
+      },
+      {
+        "id": "B012",
+        "name": "Adam Smith School of Business",
+        "aliases": ["B-School", "Economics & Business Faculty"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Main Lobby", "Trading Floor Simulation (101)", "Cafe"],
+          "floor_2": ["Lecture Halls (201-205)", "Career Center (210)"],
+          "floor_3": ["Faculty Offices (301-330)"]
+        }
+      },
+      {
+        "id": "B013",
+        "name": "The Forge Business Incubator",
+        "aliases": ["Startup Hub", "Business Incubator Lab"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Collaboration Spaces", "Pitch Room (101)"],
+          "floor_2": ["Mentorship Offices (201-210)", "Conference Room (200)"]
+        }
+      },
+      {
+        "id": "B014",
+        "name": "Orwell Hall",
+        "aliases": ["Department of English Literature"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Department Library (101)", "Student Lounge"],
+          "floor_2": ["Faculty Offices (201-225)", "Writing Center Annex (200)"]
+        }
+      },
+      {
+        "id": "B015",
+        "name": "Dewey School of Education",
+        "aliases": ["School of Education"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Model Classroom (101)", "Resource Library (110)"],
+          "floor_2": ["Faculty Offices (201-220)", "Advising Center (200)"]
+        }
+      },
+      {
+        "id": "B016",
+        "name": "Founders Plaza",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "plaza_level": ["Statue", "Benches", "Event Space"]
+        }
+      },
+      {
+        "id": "B017",
+        "name": "Centennial Garden",
+        "aliases": ["The Gardens"],
+        "type": "Outdoor",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "garden_level": ["Botanical Displays", "Walking Paths", "Pond"]
+        }
+      },
+      {
+        "id": "B018",
+        "name": "The Scholar's Cafe",
+        "aliases": ["Quad Cafe"],
+        "type": "Service",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Coffee Bar", "Indoor Seating", "Outdoor Patio"]
+        }
+      },
+      {
+        "id": "B019",
+        "name": "Acropolis Pavilion",
+        "aliases": ["Classic Studies Pavilion"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Artifact Display Hall (100)", "Reading Room (105)"],
+          "floor_2": ["Faculty Offices (201-210)"]
+        }
+      },
+      {
+        "id": "B020",
+        "name": "Mercator Hall",
+        "aliases": ["Geography Department"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Map Room (101)", "GIS Lab (102-105)"],
+          "floor_2": ["Faculty Offices (201-212)"]
+        }
+      },
+      {
+        "id": "B021",
+        "name": "The University Archive",
+        "aliases": ["The Vault", "Archives & Special Collections"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Public Reading Room (101)", "Exhibition Space"],
+          "basement": ["Secure Storage Vaults (B01-B10)", "Digitization Lab (B11)"]
+        }
+      },
+      {
+        "id": "B022",
+        "name": "Academic Success Center",
+        "aliases": ["Tutoring Center"],
+        "type": "Service",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Group Tutoring Area (101)"],
+          "floor_2": ["Private Tutoring Rooms (201-210)", "Academic Advising Offices (211-215)"]
+        }
+      },
+      {
+        "id": "B023",
+        "name": "Interfaith Chapel & Studies Center",
+        "aliases": ["Religious Studies Center"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Interfaith Chapel (100)", "Reflection Garden"],
+          "floor_2": ["Department Library (201)", "Faculty Offices (202-210)"]
+        }
+      },
+      {
+        "id": "B024",
+        "name": "The Capitol Forum",
+        "aliases": ["Public Policy School"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "Seminar Rooms (101-105)"],
+          "floor_2": ["Research Center (201)", "Faculty Offices (202-215)"]
+        }
+      },
+      {
+        "id": "B025",
+        "name": "University Writing Center",
+        "aliases": [],
+        "type": "Service",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Writing Consultation Stations (101-110)", "Workshop Room (115)"]
+        }
+      },
+      {
+        "id": "B026",
+        "name": "The Honors College",
+        "aliases": [],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Student Lounge & Cafe", "Advising Offices (101-105)"],
+          "floor_2": ["Seminar Rooms (201-208)", "Dean's Office (200)"]
+        }
+      },
+      {
+        "id": "B027",
+        "name": "Quad Print & Copy",
+        "aliases": [],
+        "type": "Service",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Customer Service Desk", "Printing & Copying Stations (A1-A10)", "Binding Services"]
+        }
+      },
+      {
+        "id": "B028",
+        "name": "Global Commons",
+        "aliases": ["International Studies Dept"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Global Lounge & Cafe", "Resource Center (101)"],
+          "floor_2": ["Faculty Offices (201-215)", "Main Office (200)"]
+        }
+      },
+      {
+        "id": "B029",
+        "name": "Legacy Fountain",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "plaza_level": ["Fountain", "Seating Area"]
+        }
+      },
+      {
+        "id": "B030",
+        "name": "Symposium Conference Hall",
+        "aliases": ["Conference Center"],
+        "type": "Academic",
+        "zone": "Academic Quad",
+        "internal_amenities": {
+          "floor_1": ["Main Hall (100)", "Lobby & Registration Desk"],
+          "floor_2": ["Breakout Rooms (201-210)", "Catering Kitchen (211)"]
+        }
+      },
+      {
+        "id": "B031",
+        "name": "Horizon Hall",
+        "aliases": ["Newton Physics Building", "Physics & Astronomy Tower"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Lecture Halls (101, 102)", "Lobby & Cafe"],
+          "floor_2": ["Undergraduate Physics Labs (P201-P210)"],
+          "floor_3": ["Faculty Offices (301-320)", "Astronomy Department (321)"]
+        }
+      },
+      {
+        "id": "B032",
+        "name": "Quantum Research Institute",
+        "aliases": ["Q-Lab", "Quantum Research Lab"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "Researcher Offices (101-110)"],
+          "basement": ["High-Precision Labs (B01-B05)", "Clean Rooms (B06-B08)"]
+        }
+      },
+      {
+        "id": "B033",
+        "name": "Veridian Hall",
+        "aliases": ["Dalton Chemistry Hall", "Chem Hall"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["General Chemistry Labs (C101-C110)", "Lecture Hall (150)"],
+          "floor_2": ["Organic Chemistry Labs (C201-C210)", "Fume Hood Rooms"],
+          "floor_3": ["Faculty Offices (301-325)", "Chemical Stockroom (300)"]
+        }
+      },
+      {
+        "id": "B034",
+        "name": "Evolve Center",
+        "aliases": ["Darwin Biology Center", "Bio Center"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "Lecture Halls (101-103)", "Animal Care Facility (120)"],
+          "floor_2": ["Genetics Labs (G201-G205)", "Ecology Labs (E201-E205)"],
+          "floor_3": ["Faculty Offices (301-330)"]
+        }
+      },
+      {
+        "id": "B035",
+        "name": "Botanical Research Center",
+        "aliases": ["The Greenhouse"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Climate-Controlled Bays (A-F)", "Potting Rooms (101-102)"],
+          "floor_2": ["Growth Chambers (201-210)", "Research Offices (211-215)"]
+        }
+      },
+      {
+        "id": "B036",
+        "name": "Innovate Hall",
+        "aliases": ["CompSci Building", "Turing School of Computer Science"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Main Lobby", "Lecture Hall (101)", "Student Lounge", "VR Lab (120)"],
+          "floor_2": ["Computer Labs (A201-A210)", "Faculty Offices (211-225)", "Seminar Room (205)"],
+          "floor_3": ["Research Labs (B301-B305)", "AI Lab (310)", "Faculty Offices (311-325)"],
+          "basement": ["Server Rooms (BS01-BS05)", "IT Support"]
+        }
+      },
+      {
+        "id": "B037",
+        "name": "Nexus Center for AI & Robotics",
+        "aliases": ["ARC", "AI & Robotics Center"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Robotics Arena (100)", "Machine Learning Lab (110)"],
+          "floor_2": ["Drone Lab (201)", "Faculty & Grad Student Offices (202-220)"]
+        }
+      },
+      {
+        "id": "B038",
+        "name": "Momentum Hall",
+        "aliases": ["Mech-E Hall", "Mechanical Engineering Hall"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Machine Shop (101)", "Wind Tunnel (102)", "Lobby"],
+          "floor_2": ["Thermodynamics Lab (201)", "Faculty Offices (210-230)"]
+        }
+      },
+      {
+        "id": "B039",
+        "name": "Ampere Hall",
+        "aliases": ["ECE Building", "Electrical & Computer Engineering"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Circuit Labs (E101-E110)", "Lecture Hall (120)"],
+          "floor_2": ["Microelectronics Lab (E201)", "Faculty Offices (210-235)"],
+          "roof": ["Antenna Range"]
+        }
+      },
+      {
+        "id": "B040",
+        "name": "Keystone Hall",
+        "aliases": ["Civil & Environmental Engineering Hall"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Structures Lab (S101)", "Hydraulics Lab (H101)", "Lobby"],
+          "floor_2": ["Soil Mechanics Lab (S201)", "Faculty Offices (210-230)"]
+        }
+      },
+      {
+        "id": "B041",
+        "name": "Materials Science Institute",
+        "aliases": ["MatSci Building"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Polymer Lab (101)", "Metallurgy Lab (102)"],
+          "basement": ["Electron Microscope Suite (B01-B03)", "Faculty Offices (B10-B15)"]
+        }
+      },
+      {
+        "id": "B042",
+        "name": "STEM Library",
+        "aliases": ["Science Library"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Circulation Desk", "Journal Archives", "3D Printing Lab (101)", "Applied Sciences & Engineering Collection (All Engineering Disciplines, Computer Science, AI, Robotics)"],
+          "floor_2": ["Group Study Rooms (201-210)", "Quiet Study Area", "Pure & Life Sciences Collection (Mathematics, Physics, Chemistry, Biology, Geosciences, Pharmacy, Neuroscience)"]
+        }
+      },
+      {
+        "id": "B043",
+        "name": "Euler Mathematics Institute",
+        "aliases": ["Math Institute"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Lecture Halls (101-103)"],
+          "floor_2": ["Faculty Offices (201-215)", "Common Room (220)"],
+          "floor_3": ["Faculty Offices (301-315)"]
+        }
+      },
+      {
+        "id": "B044",
+        "name": "Aviation & Aerospace Center",
+        "aliases": ["Aero Building"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Flight Simulator Bay (101)", "Composites Lab (105)"],
+          "floor_2": ["Propulsion Lab (201)", "Faculty Offices (210-225)"]
+        }
+      },
+      {
+        "id": "B045",
+        "name": "Cognitive Neuroscience Institute",
+        "aliases": ["Neuroscience Institute"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Cognitive Labs (101-110)", "Lobby"],
+          "floor_2": ["Faculty Offices (201-215)"],
+          "basement": ["fMRI Suite (B01)"]
+        }
+      },
+      {
+        "id": "B046",
+        "name": "Celestial Observatory",
+        "aliases": ["The Observatory"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Lobby & Exhibition Area", "Planetarium (100)"],
+          "roof": ["Main Telescope Dome", "Public Viewing Deck"]
+        }
+      },
+      {
+        "id": "B047",
+        "name": "Asclepius School of Pharmacy",
+        "aliases": ["School of Pharmacy"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Lecture Halls (101-104)", "Lobby"],
+          "floor_2": ["Compounding Lab (201)", "Dispensing Lab (202)", "Faculty Offices (210-225)"]
+        }
+      },
+      {
+        "id": "B048",
+        "name": "The NanoTech Hub",
+        "aliases": ["NanoHub", "Nanotechnology Hub"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "Collaboration Space (101)"],
+          "basement": ["Cleanroom Fabrication Area (B10)", "Characterization Labs (B01-B05)"]
+        }
+      },
+      {
+        "id": "B049",
+        "name": "Terra Hall",
+        "aliases": ["Geosciences Building"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Rock & Mineral Collection (100)", "Lobby"],
+          "floor_2": ["Seismology Lab (201)", "Faculty Offices (210-220)"]
+        }
+      },
+      {
+        "id": "B050",
+        "name": "The Catalyst Cafe",
+        "aliases": ["STEM Cafe"],
+        "type": "Service",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Coffee & Sandwich Bar", "Indoor & Outdoor Study Tables"]
+        }
+      },
+      {
+        "id": "B051",
+        "name": "Engineering Fab Lab",
+        "aliases": ["Fabrication Lab", "Makerspace"],
+        "type": "Service",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["3D Printing Farm (A-Wing)", "Laser Cutting Bay (B-Wing)"],
+          "floor_2": ["CNC Machining Workshop (C-Wing)", "Project Assembly Area (D-Wing)"]
+        }
+      },
+      {
+        "id": "B052",
+        "name": "Innovation Plaza",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "plaza_level": ["Outdoor Seating", "Charging Stations", "Tech Sculptures"]
+        }
+      },
+      {
+        "id": "B053",
+        "name": "Vesalius Hall",
+        "aliases": ["BME Dept", "Biomedical Engineering Dept"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Tissue Culture Lab (101)", "Lecture Room (110)"],
+          "floor_2": ["Medical Device Prototyping Lab (201)", "Faculty Offices (210-225)"]
+        }
+      },
+      {
+        "id": "B054",
+        "name": "High-Performance Computing Center",
+        "aliases": ["HPCC", "Supercomputer Center"],
+        "type": "Service",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Control Room (101)", "Technician Offices"],
+          "basement": ["Server Racks (A-D)", "Cooling Systems"]
+        }
+      },
+      {
+        "id": "B055",
+        "name": "Carson Center for Environmental Science",
+        "aliases": ["Environmental Science Center"],
+        "type": "Academic",
+        "zone": "Science & Engineering Hill",
+        "internal_amenities": {
+          "floor_1": ["Water Quality Lab (101)", "Air Quality Lab (102)"],
+          "floor_2": ["Faculty Offices (201-210)"],
+          "roof": ["Atmospheric Monitoring Station"]
+        }
+      },
+      {
+        "id": "B056",
+        "name": "Harmony School of Music",
+        "aliases": ["The Con"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "Recording Studio (101)", "Music Library (105)"],
+          "floor_2": ["Practice Rooms (201-220)", "Faculty Offices (221-230)"],
+          "floor_3": ["Practice Rooms (301-320)"]
+        }
+      },
+      {
+        "id": "B057",
+        "name": "Opus Recital Hall",
+        "aliases": [],
+        "type": "Recreation",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Acoustically Tuned Hall (300 seats)", "Lobby & Box Office"],
+          "basement": ["Green Rooms (B01-B02)", "Instrument Storage"]
+        }
+      },
+      {
+        "id": "B058",
+        "name": "The Globe Playhouse",
+        "aliases": ["Main Theater"],
+        "type": "Recreation",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Main Stage & Auditorium (800 seats)", "Lobby"],
+          "basement": ["Dressing Rooms (B1-B10)", "Orchestra Pit", "Scene Shop (B11)"]
+        }
+      },
+      {
+        "id": "B059",
+        "name": "The Black Box Experimental Theater",
+        "aliases": ["The Black Box"],
+        "type": "Recreation",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Flexible Seating Theater (150 seats)", "Lighting & Sound Booth (Mezzanine)"]
+        }
+      },
+      {
+        "id": "B060",
+        "name": "Aperture School of Design & Media",
+        "aliases": ["Design School"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Mac Lab (101)", "Critique Room (110)"],
+          "floor_2": ["Graphic Design Studios (201-205)"],
+          "floor_3": ["Media Arts Studios (301-305)"]
+        }
+      },
+      {
+        "id": "B061",
+        "name": "University Art Gallery",
+        "aliases": ["The Gallery"],
+        "type": "Recreation",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Main Exhibition Space (Gallery A)", "Gift Shop"],
+          "floor_2": ["Permanent Collection (Gallery B)", "Curator's Office (201)"]
+        }
+      },
+      {
+        "id": "B062",
+        "name": "Lumiere Hall",
+        "aliases": ["Photography & Film Studies"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Equipment Checkout (101)", "Sound Stage (105)"],
+          "floor_2": ["Editing Suites (201-210)"],
+          "basement": ["Darkrooms (B01-B05)"]
+        }
+      },
+      {
+        "id": "B063",
+        "name": "The Kiln Sculpture & Ceramics Studio",
+        "aliases": ["Sculpture & Ceramics Studio"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Sculpture Studio & Foundry (100)", "Welding Shop (110)"],
+          "floor_2": ["Ceramics Studio (200)", "Kiln Room (210)"]
+        }
+      },
+      {
+        "id": "B064",
+        "name": "Ailey Dance Pavilion",
+        "aliases": ["The Pavilion"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Mirrored Studio A (Sprung Floor)", "Locker Rooms"],
+          "floor_2": ["Mirrored Studio B (Sprung Floor)", "Faculty Offices (201-205)"]
+        }
+      },
+      {
+        "id": "B065",
+        "name": "The Printmaking Workshop",
+        "aliases": [],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Etching Presses (101)", "Lithography Stones (102)", "Screen Printing Stations (103)"]
+        }
+      },
+      {
+        "id": "B066",
+        "name": "The Muse Cafe",
+        "aliases": ["Arts Cafe"],
+        "type": "Service",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Coffee & Pastry Bar", "Indoor Seating", "Outdoor Patio"]
+        }
+      },
+      {
+        "id": "B067",
+        "name": "The Sculpture Garden",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "garden_level": ["Rotating Exhibits", "Walking Paths", "Benches"]
+        }
+      },
+      {
+        "id": "B068",
+        "name": "The Outdoor Amphitheater",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "plaza_level": ["Tiered Seating", "Performance Stage", "Lawn Area"]
+        }
+      },
+      {
+        "id": "B069",
+        "name": "Canvas & Clay Art Supplies",
+        "aliases": ["The Art Store"],
+        "type": "Service",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Retail Space (Paints, Canvases, etc.)"],
+          "basement": ["Stockroom"]
+        }
+      },
+      {
+        "id": "B070",
+        "name": "Gombrich Hall",
+        "aliases": ["Art History Department"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Lecture Hall (101)", "Lobby"],
+          "floor_2": ["Faculty Offices (201-210)", "Slide Library & Archives (211)"]
+        }
+      },
+      {
+        "id": "B071",
+        "name": "The Fashion Institute",
+        "aliases": ["Fashion Design Center"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Sewing & Design Studio (100)"],
+          "floor_2": ["Textile Lab (201)", "Mannequin Storage", "Faculty Offices (205-210)"]
+        }
+      },
+      {
+        "id": "B072",
+        "name": "Vitruvius School of Architecture",
+        "aliases": ["Arch School"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Critique Spaces (101-103)", "Model Shop (105)"],
+          "floor_2": ["Drafting Studios (200)"],
+          "floor_3": ["Faculty Offices (301-315)"]
+        }
+      },
+      {
+        "id": "B073",
+        "name": "The Digital Arts Lab",
+        "aliases": ["DAL"],
+        "type": "Academic",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Animation Stations (101-115, Wacom Tablets)"],
+          "basement": ["Rendering Farm (B01)"]
+        }
+      },
+      {
+        "id": "B074",
+        "name": "The Wardrobe Costume Shop",
+        "aliases": ["Costume Design Shop"],
+        "type": "Service",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Cutting Tables & Sewing Area (100)"],
+          "floor_2": ["Fitting Rooms (201-203)", "Fabric & Material Storage (205)"]
+        }
+      },
+      {
+        "id": "B075",
+        "name": "Arts Faculty Offices",
+        "aliases": [],
+        "type": "Administrative",
+        "zone": "Arts Village",
+        "internal_amenities": {
+          "floor_1": ["Admin Support Desk (100)", "Meeting Rooms (101-103)"],
+          "floor_2": ["Faculty Lounge", "Mail Room"]
+        }
+      },
+      {
+        "id": "B076",
+        "name": "Pioneer Hall - Tower A",
+        "aliases": ["Pioneer A"],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office (101)"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B077",
+        "name": "Pioneer Hall - Tower B",
+        "aliases": ["Pioneer B"],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office (101)"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B078",
+        "name": "Pioneer Hall - Tower C",
+        "aliases": ["Pioneer C"],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office (101)"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B079",
+        "name": "Pioneer Commons",
+        "aliases": ["Pioneer Hub"],
+        "type": "Service",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Cafe", "Games Room", "Main Lounge"],
+          "floor_2": ["Study Lounges", "Small Gym"]
+        }
+      },
+      {
+        "id": "B080",
+        "name": "Northgate Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "Common Kitchen"],
+          "floors_2_4": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B081",
+        "name": "Summit House",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_6": ["Dorm Rooms", "Study Nooks"]
+        }
+      },
+      {
+        "id": "B082",
+        "name": "Ridgeview Dormitory",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Common Kitchens"]
+        }
+      },
+      {
+        "id": "B083",
+        "name": "Lakeside Dormitory",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Waterfront Lounge", "Lobby"],
+          "floors_2_4": ["Dorm Rooms"]
+        }
+      },
+      {
+        "id": "B084",
+        "name": "Forest Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B085",
+        "name": "Meadowbrook Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B086",
+        "name": "Crestview House",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_6": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B087",
+        "name": "North Laundry Facility",
+        "aliases": [],
+        "type": "Service",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Washers & Dryers (A1-A20)", "Vending Machines"]
+        }
+      },
+      {
+        "id": "B088",
+        "name": "North Mail Center",
+        "aliases": [],
+        "type": "Service",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Mailboxes (P.O. Boxes 1000-1999)", "Package Pickup Window"]
+        }
+      },
+      {
+        "id": "B089",
+        "name": "The North Community Market",
+        "aliases": ["The North Mart"],
+        "type": "Service",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Groceries", "Snacks", "School Supplies"]
+        }
+      },
+      {
+        "id": "B090",
+        "name": "North Quad Field",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "field_level": ["Open Field", "Frisbee Golf Baskets"]
+        }
+      },
+      {
+        "id": "B091",
+        "name": "Volleyball Courts (North)",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "court_level": ["Sand Courts", "Netting"]
+        }
+      },
+      {
+        "id": "B092",
+        "name": "Basketball Courts (North)",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "court_level": ["Paved Courts", "Hoops"]
+        }
+      },
+      {
+        "id": "B093",
+        "name": "Maple Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B094",
+        "name": "Sycamore Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B095",
+        "name": "Willow Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B096",
+        "name": "Aspen Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B097",
+        "name": "Birch Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B098",
+        "name": "Cedar Hall",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby", "RA Office"],
+          "floors_2_5": ["Dorm Rooms", "Floor Lounges"]
+        }
+      },
+      {
+        "id": "B099",
+        "name": "North Residential Maintenance",
+        "aliases": [],
+        "type": "Service",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Work Order Desk (101)", "Tool Storage (102)"]
+        }
+      },
+      {
+        "id": "B100",
+        "name": "North Housing Office",
+        "aliases": [],
+        "type": "Administrative",
+        "zone": "North Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Housing Services Desk (100)", "Admin Staff Offices (101-105)"],
+          "floor_2": ["RA Offices (201-205)", "Meeting Room (210)"]
+        }
+      },
+      {
+        "id": "B101",
+        "name": "Graduate Tower A",
+        "aliases": ["Grad Tower A"],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby"],
+          "floors_2_8": ["Apartments", "Quiet Floor Lounges"]
+        }
+      },
+      {
+        "id": "B102",
+        "name": "Graduate Tower B",
+        "aliases": ["Grad Tower B"],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Lobby"],
+          "floors_2_8": ["Apartments", "Quiet Floor Lounges"]
+        }
+      },
+      {
+        "id": "B103",
+        "name": "Graduate Commons",
+        "aliases": ["Grad Hub"],
+        "type": "Service",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Main Lounge", "Mailroom", "Admin Offices (101-103)"],
+          "floor_2": ["Academic Project Rooms (201-208)", "Bookable Conference Room (210)"]
+        }
+      },
+      {
+        "id": "B104",
+        "name": "Elmwood Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B105",
+        "name": "Oakwood Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B106",
+        "name": "Redwood Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B107",
+        "name": "Pine Ridge Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B108",
+        "name": "Riverbend House",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B109",
+        "name": "Stone Creek House",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B110",
+        "name": "Valley View Suites",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Suites", "Parking"]
+        }
+      },
+      {
+        "id": "B111",
+        "name": "Horizon Suites",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Suites", "Parking"]
+        }
+      },
+      {
+        "id": "B112",
+        "name": "South Laundry Facility",
+        "aliases": [],
+        "type": "Service",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Washers & Dryers (B1-B20)", "Vending Machines"]
+        }
+      },
+      {
+        "id": "B113",
+        "name": "South Mail Center",
+        "aliases": [],
+        "type": "Service",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Mailboxes (P.O. Boxes 2000-2999)", "Package Pickup Window"]
+        }
+      },
+      {
+        "id": "B114",
+        "name": "The South Community Market",
+        "aliases": ["The South Mart"],
+        "type": "Service",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Groceries", "Snacks", "Household Items"]
+        }
+      },
+      {
+        "id": "B115",
+        "name": "The University Childcare Center",
+        "aliases": ["Childcare"],
+        "type": "Service",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Playrooms (A-C)", "Nap Rooms (D-E)", "Outdoor Play Area"]
+        }
+      },
+      {
+        "id": "B116",
+        "name": "Community Park",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "park_level": ["Playground", "Picnic Tables", "Walking Trail"]
+        }
+      },
+      {
+        "id": "B117",
+        "name": "Community Garden Plots",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "garden_level": ["Garden Beds", "Tool Shed", "Compost Bins"]
+        }
+      },
+      {
+        "id": "B118",
+        "name": "Tennis Courts (South)",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "court_level": ["Plexicushion Courts", "Lighting"]
+        }
+      },
+      {
+        "id": "B119",
+        "name": "Westview Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B120",
+        "name": "Eastview Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B121",
+        "name": "South Slope Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B122",
+        "name": "Parkside Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B123",
+        "name": "Greenway Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B124",
+        "name": "Bridgeway Apartments",
+        "aliases": [],
+        "type": "Residential",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "all_floors": ["Apartments", "Parking"]
+        }
+      },
+      {
+        "id": "B125",
+        "name": "South Housing Office",
+        "aliases": [],
+        "type": "Administrative",
+        "zone": "South Residential Community",
+        "internal_amenities": {
+          "floor_1": ["Housing Services Desk (100)", "Admin Staff Offices (101-105)"]
+        }
+      },
+      {
+        "id": "B126",
+        "name": "Victory Stadium",
+        "aliases": ["The Stadium"],
+        "type": "Recreation",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "field_level": ["Football Field", "Bleachers"],
+          "concourse_level": ["Concession Stands (1-8)", "Restrooms"],
+          "upper_level": ["Press Box (U1)", "VIP Suites (U2-U5)"]
+        }
+      },
+      {
+        "id": "B127",
+        "name": "Champions Arena",
+        "aliases": ["The Arena"],
+        "type": "Recreation",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "arena_floor": ["Basketball Court", "Retractable Seating"],
+          "concourse_level": ["Locker Rooms (A-D)", "Scoreboard Control Room"]
+        }
+      },
+      {
+        "id": "B128",
+        "name": "Aquatic Center",
+        "aliases": ["The Pool"],
+        "type": "Recreation",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "pool_deck": ["Olympic Pool", "Diving Well", "Hot Tub"],
+          "mezzanine": ["Spectator Seating", "Sauna"]
+        }
+      },
+      {
+        "id": "B129",
+        "name": "Student Recreation Center",
+        "aliases": ["The Rec Center", "The Gym"],
+        "type": "Recreation",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "floor_1": ["Weight Room", "Cardio Deck", "Locker Rooms"],
+          "floor_2": ["Group Fitness Studios (201-203)", "Racquetball Courts (204-206)"]
+        }
+      },
+      {
+        "id": "B130",
+        "name": "Outdoor Track & Field",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "field_level": ["Running Track", "Long Jump Pit", "Throwing Fields"]
+        }
+      },
+      {
+        "id": "B131",
+        "name": "Baseball Diamond",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "field_level": ["Field", "Dugouts", "Batting Cages"]
+        }
+      },
+      {
+        "id": "B132",
+        "name": "Soccer & Lacrosse Field",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "field_level": ["Astroturf Field", "Scoreboard", "Bleachers"]
+        }
+      },
+      {
+        "id": "B133",
+        "name": "University Health Services",
+        "aliases": ["Health Center"],
+        "type": "Service",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Urgent Care Clinic", "Pharmacy (101)"],
+          "floor_2": ["Primary Care Offices (201-210)", "Lab Services (211)"]
+        }
+      },
+      {
+        "id": "B134",
+        "name": "Counseling & Psych Services",
+        "aliases": ["CAPS"],
+        "type": "Service",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Group Therapy Room (101)", "Workshop Space (102)"],
+          "floor_2": ["Individual Therapy Offices (201-215)"]
+        }
+      },
+      {
+        "id": "B135",
+        "name": "Athletics Hall of Fame",
+        "aliases": [],
+        "type": "Recreation",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "floor_1": ["Trophy Cases", "Exhibits", "Interactive Displays"]
+        }
+      },
+      {
+        "id": "B136",
+        "name": "Athletics Department Office",
+        "aliases": [],
+        "type": "Administrative",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Meeting Rooms (101-103)"],
+          "floor_2": ["Coaches' Offices (201-220)", "Administrative Staff Offices (221-230)"]
+        }
+      },
+      {
+        "id": "B137",
+        "name": "Varsity Training Facility",
+        "aliases": [],
+        "type": "Recreation",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "floor_1": ["Strength & Conditioning Room"],
+          "floor_2": ["Physical Therapy Suites (201-205)", "Hydrotherapy Pools (206)"]
+        }
+      },
+      {
+        "id": "B138",
+        "name": "The Finish Line Cafe",
+        "aliases": ["Rec Cafe"],
+        "type": "Service",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "floor_1": ["Smoothie & Juice Bar", "Health Food Counter"]
+        }
+      },
+      {
+        "id": "B139",
+        "name": "The Ascent Climbing Center",
+        "aliases": ["The Climbing Wall"],
+        "type": "Recreation",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "floor_1": ["Bouldering Area", "Gear Rental Desk"],
+          "floor_2": ["Top-Rope & Lead Climbing Walls"]
+        }
+      },
+      {
+        "id": "B140",
+        "name": "The Ice Rink",
+        "aliases": ["Hockey Rink"],
+        "type": "Recreation",
+        "zone": "Athletics & Wellness Complex",
+        "internal_amenities": {
+          "rink_level": ["NHL-sized Rink", "Locker Rooms"],
+          "concourse_level": ["Skate Rental", "Concessions"]
+        }
+      },
+      {
+        "id": "B141",
+        "name": "Foundation Hall",
+        "aliases": ["Admin Building", "Administration Building"],
+        "type": "Administrative",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Lobby"],
+          "floor_2": ["Provost's Office (201)", "Boardroom (202)"],
+          "floor_3": ["President's Office (301)"]
+        }
+      },
+      {
+        "id": "B142",
+        "name": "University Welcome Center",
+        "aliases": ["Visitor Center"],
+        "type": "Administrative",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Information Desk", "Tour Departure Lobby", "Small Auditorium (101)"],
+          "floor_2": ["Admissions Offices (201-210)"]
+        }
+      },
+      {
+        "id": "B143",
+        "name": "Student Services Tower",
+        "aliases": ["Money Office", "Financial Aid & Bursar"],
+        "type": "Administrative",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Bursar's Office (Tuition Payment Windows 1-5)"],
+          "floor_2": ["Financial Aid Advising Offices (201-215)"],
+          "floor_3": ["Student Accounts Offices (301-310)"]
+        }
+      },
+      {
+        "id": "B144",
+        "name": "Office of the Registrar",
+        "aliases": ["Registrar"],
+        "type": "Administrative",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Transcript Services (101)", "Course Registration Help Desk (102)"],
+          "floor_2": ["Graduation Services Offices (201-205)"]
+        }
+      },
+      {
+        "id": "B145",
+        "name": "The Student Union",
+        "aliases": ["The Union"],
+        "type": "Service",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Food Court", "Main Lounge"],
+          "floor_2": ["Student Organization Offices (201-220)", "Movie Theater (225)"],
+          "basement": ["Bowling Alley", "Arcade"]
+        }
+      },
+      {
+        "id": "B146",
+        "name": "Central Dining Commons",
+        "aliases": ["CDC", "Main Dining Hall"],
+        "type": "Service",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Main Seating Area", "Food Stations (Grill, Pizza, Salad Bar)"],
+          "floor_2": ["Overflow Seating", "Private Dining Room (201)"]
+        }
+      },
+      {
+        "id": "B147",
+        "name": "The University Bookstore",
+        "aliases": ["The Bookstore"],
+        "type": "Service",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Textbooks", "University Apparel", "Starbucks"],
+          "floor_2": ["Tech Store", "School Supplies", "Reading Area"]
+        }
+      },
+      {
+        "id": "B148",
+        "name": "Campus Transit Hub",
+        "aliases": ["Bus Station"],
+        "type": "Service",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "platform_level": ["Bus Stops (1-5)", "Shelters", "Real-time Displays", "Bike Racks"]
+        }
+      },
+      {
+        "id": "B149",
+        "name": "University Post Office",
+        "aliases": ["Post Office"],
+        "type": "Service",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Mail Service Windows (1-3)", "Shipping Services (4)", "P.O. Boxes"]
+        }
+      },
+      {
+        "id": "B150",
+        "name": "Career Services Center",
+        "aliases": ["Career Center"],
+        "type": "Administrative",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Reception", "Resume Workshop Room (101)", "Career Fair Hall (102)"],
+          "floor_2": ["Mock Interview Rooms (201-205)", "Advising Offices (206-215)"]
+        }
+      },
+      {
+        "id": "B151",
+        "name": "Alumni Relations Center",
+        "aliases": ["Alumni Center"],
+        "type": "Administrative",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Alumni Lounge", "Event Space"],
+          "floor_2": ["Donation & Development Offices (201-210)"]
+        }
+      },
+      {
+        "id": "B152",
+        "name": "University IT Help Desk",
+        "aliases": ["IT Help Desk", "Tech Support"],
+        "type": "Service",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Walk-in Support Desk (Genius Bar style)", "Software Assistance Stations (1-5)"],
+          "floor_2": ["Hardware Repair Workshop (201)"]
+        }
+      },
+      {
+        "id": "B153",
+        "name": "The Chancellery",
+        "aliases": ["Office of the President"],
+        "type": "Administrative",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "floor_1": ["Executive Offices (101-105)", "Meeting Rooms (106-108)"]
+        }
+      },
+      {
+        "id": "B154",
+        "name": "Central Parking Garage",
+        "aliases": ["Main Garage"],
+        "type": "Service",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "level_1": ["Visitor Parking", "EV Charging Stations"],
+          "levels_2_5": ["Student Parking"]
+        }
+      },
+      {
+        "id": "B155",
+        "name": "University Plaza",
+        "aliases": [],
+        "type": "Outdoor",
+        "zone": "University Hub & Administration",
+        "internal_amenities": {
+          "plaza_level": ["Event Space", "Fountains", "Seating"]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "B142",
+        "target": "B001",
+        "time_cost": 5,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B148",
+        "target": "B145",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B076",
+        "target": "B146",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Stairs_Only",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B101",
+        "target": "B129",
+        "time_cost": 6,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B001",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B036",
+        "target": "B050",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Steep_Grade",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B058",
+        "target": "B154",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B126",
+        "target": "B148",
+        "time_cost": 10,
+        "properties": {
+          "rain_exposure": "Exposed_Slippery",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B090",
+        "target": "B116",
+        "time_cost": 15,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Poor",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B133",
+        "target": "B047",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B017",
+        "target": "B016",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "No_Bicycle",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B046",
+        "target": "B052",
+        "time_cost": 4,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Poor",
+          "path_type": "Outdoor",
+          "accessibility": "Steep_Grade",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B001",
+        "target": "B018",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B002",
+        "target": "B004",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B004",
+        "target": "B005",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed_Slippery",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B012",
+        "target": "B013",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B031",
+        "target": "B032",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B034",
+        "target": "B035",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "No_Bicycle",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B036",
+        "target": "B037",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B058",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Uneven_Surface",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B080",
+        "target": "B081",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B089",
+        "target": "B087",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B104",
+        "target": "B105",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed_Puddles",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B114",
+        "target": "B112",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B129",
+        "target": "B128",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed_Slippery",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B133",
+        "target": "B134",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B141",
+        "target": "B142",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B143",
+        "target": "B144",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B145",
+        "target": "B154",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B148",
+        "target": "B141",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B001",
+        "target": "B145",
+        "time_cost": 5,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B036",
+        "target": "B001",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Stairs_Only",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B076",
+        "target": "B056",
+        "time_cost": 6,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Stairs_Only",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B101",
+        "target": "B146",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "No_Bicycle",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B129",
+        "target": "B103",
+        "time_cost": 4,
+        "properties": {
+          "rain_exposure": "Exposed_Slippery",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "No_Bicycle",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B060",
+        "target": "B147",
+        "time_cost": 5,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B029",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed_Puddles",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B013",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B056",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Uneven_Surface",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B011",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B094",
+        "target": "B142",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Steep_Grade",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B007",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B025",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B107",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B047",
+        "target": "B037",
+        "time_cost": 4,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B122",
+        "target": "B142",
+        "time_cost": 10,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B073",
+        "target": "B059",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B024",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B060",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B017",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed_Puddles",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "No_Bicycle",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B010",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B110",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B144",
+        "target": "B142",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B049",
+        "target": "B037",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Stairs_Only",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B083",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B140",
+        "target": "B126",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B139",
+        "target": "B126",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B009",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B155",
+        "target": "B142",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B138",
+        "target": "B126",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B046",
+        "target": "B037",
+        "time_cost": 4,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Poor",
+          "path_type": "Outdoor",
+          "accessibility": "Steep_Grade",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B097",
+        "target": "B142",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B062",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B026",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B006",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B077",
+        "target": "B142",
+        "time_cost": 6,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B092",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B079",
+        "target": "B142",
+        "time_cost": 6,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B123",
+        "target": "B142",
+        "time_cost": 10,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B100",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B086",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B132",
+        "target": "B126",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed_Puddles",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B120",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B090",
+        "target": "B142",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B125",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B070",
+        "target": "B059",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Uneven_Surface",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B121",
+        "target": "B142",
+        "time_cost": 10,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Steep_Grade",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B109",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B149",
+        "target": "B142",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B040",
+        "target": "B037",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B151",
+        "target": "B142",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B119",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B137",
+        "target": "B126",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B020",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B067",
+        "target": "B059",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "No_Bicycle",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B066",
+        "target": "B059",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B008",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B065",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B014",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B048",
+        "target": "B037",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B068",
+        "target": "B059",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B072",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B096",
+        "target": "B142",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B057",
+        "target": "B059",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B152",
+        "target": "B142",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B091",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B085",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Steep_Grade",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B028",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B113",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B074",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B035",
+        "target": "B037",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B041",
+        "target": "B037",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B087",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B106",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B053",
+        "target": "B037",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B031",
+        "target": "B037",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B153",
+        "target": "B142",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B054",
+        "target": "B037",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B021",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B071",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Uneven_Surface",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B023",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B042",
+        "target": "B037",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B114",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B135",
+        "target": "B126",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B075",
+        "target": "B059",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B063",
+        "target": "B059",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed_Puddles",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B019",
+        "target": "B002",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B033",
+        "target": "B037",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B127",
+        "target": "B126",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_After_Classes"
+        }
+      },
+      {
+        "source": "B095",
+        "target": "B142",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Uneven_Surface",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B030",
+        "target": "B002",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B098",
+        "target": "B142",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B088",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B102",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B055",
+        "target": "B037",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B118",
+        "target": "B142",
+        "time_cost": 10,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B045",
+        "target": "B037",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B131",
+        "target": "B126",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed_Puddles",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B136",
+        "target": "B126",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B093",
+        "target": "B142",
+        "time_cost": 8,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Uneven_Surface",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B104",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B078",
+        "target": "B142",
+        "time_cost": 6,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B038",
+        "target": "B037",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B061",
+        "target": "B059",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B099",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Poor",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B150",
+        "target": "B142",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B082",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B084",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Uneven_Surface",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B081",
+        "target": "B142",
+        "time_cost": 7,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Stairs_Only",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B124",
+        "target": "B142",
+        "time_cost": 10,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B015",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B003",
+        "target": "B002",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B108",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B022",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B117",
+        "target": "B142",
+        "time_cost": 10,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "No_Bicycle",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B130",
+        "target": "B126",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Exposed_Puddles",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B111",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B044",
+        "target": "B037",
+        "time_cost": 3,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B115",
+        "target": "B142",
+        "time_cost": 9,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Wheelchair",
+          "congestion": "Normal"
+        }
+      },
+      {
+        "source": "B043",
+        "target": "B037",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B051",
+        "target": "B037",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B027",
+        "target": "B002",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "Low"
+        }
+      },
+      {
+        "source": "B039",
+        "target": "B037",
+        "time_cost": 2,
+        "properties": {
+          "rain_exposure": "Exposed",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B069",
+        "target": "B059",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Outdoor",
+          "accessibility": "Standard",
+          "congestion": "High_During_Class_Change"
+        }
+      },
+      {
+        "source": "B064",
+        "target": "B059",
+        "time_cost": 1,
+        "properties": {
+          "rain_exposure": "Covered",
+          "illumination": "Good",
+          "path_type": "Indoor",
+          "accessibility": "Wheelchair",
+          "congestion": "High_After_Classes"
+        }
+      }
+    ],
+    "building_complexes": [
+      {
+        "group_id": "C01",
+        "group_name": "Pioneer Residential Complex",
+        "member_ids": ["B076", "B077", "B078", "B079"],
+        "connection_description": "Towers A, B, and C are connected on the first three floors through the Pioneer Commons, which contains study lounges, a small gym, and a cafe."
+      },
+      {
+        "group_id": "C02",
+        "group_name": "Applied Sciences Nexus",
+        "member_ids": ["B031", "B033", "B043"],
+        "connection_description": "The Physics, Chemistry, and Mathematics buildings are linked by a network of underground service tunnels and second-floor skybridges, facilitating interdisciplinary research."
+      },
+      {
+        "group_id": "C03",
+        "group_name": "Performing Arts Center",
+        "member_ids": ["B058", "B056", "B064"],
+        "connection_description": "The Globe Playhouse, Harmony School of Music, and the Dance Pavilion share a central, multi-story lobby, a unified box office, and interconnected backstage facilities."
+      },
+      {
+        "group_id": "C04",
+        "group_name": "Graduate Residential Community",
+        "member_ids": ["B101", "B102", "B103"],
+        "connection_description": "Graduate Towers A and B are joined by the Graduate Commons building, which houses administrative offices, a mailroom, and shared academic project rooms."
+      },
+      {
+        "group_id": "C05",
+        "group_name": "Law & Policy Center",
+        "member_ids": ["B007", "B008", "B024"],
+        "connection_description": "The School of Law, its associated Legal Practice Clinic, and the Public Policy School are connected via an enclosed glass atrium that serves as a common area and event space."
+      }
+    ]
+  }
+  

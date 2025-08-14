@@ -1,0 +1,4 @@
+task_dict:
+  knowledge_graph:
+    parameters:
+      data_file_path: ./data/v0303/knowledge_graph/processed/grailqa/v0417_tl4sc50/entry_dict.json

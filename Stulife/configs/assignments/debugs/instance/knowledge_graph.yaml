@@ -1,0 +1,34 @@
+import:
+  - ../../../definition.yaml
+  - ../environment_config.yaml
+assignment_config:
+  task: knowledge_graph
+  language_model_list: []
+  agent:
+    name: oracle_agent
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: consecutive_abnormal_agent_inference_process_handling_callback
+      custom_parameters:
+        tolerance_count: 5
+  output_dir: "outputs/{TIMESTAMP}"
+  sample_order: default
+environment_config:
+  use_task_client_flag: false
+
+agent_dict:
+  oracle_agent:
+    parameters:
+      task_name:
+        parameters:
+          value: "knowledge_graph"
+      data_file_path: "data/v0303/knowledge_graph/processed/grailqa/v0417_tl5sc100/entry_dict.json"
+  fixed_response_agent:
+    parameters:
+      session_history_file_path: "temp/2025-04-28-07-38-21"
+task_dict:
+  knowledge_graph:
+    parameters:
+      data_file_path: "data/v0303/knowledge_graph/processed/grailqa/v0417_tl5sc100/entry_dict.json"

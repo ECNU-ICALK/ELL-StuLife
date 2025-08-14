@@ -1,0 +1,37 @@
+assignment_config:
+  language_model_list:
+  - name: DeepSeek-Chat
+    _target_: src.language_models.openai_api.OpenAIAPILanguageModel
+    custom_parameters:
+      model_name_or_path: "deepseek-chat"
+      api_key: "sk-d4226415d55d492fb913479f1a8b6b9c"
+      api_base: "https://api.deepseek.com"
+      generation_config:
+        temperature: 0.1
+        max_tokens: 1000
+        top_p: 0.95
+        frequency_penalty: 0.0
+        presence_penalty: 0.0
+      request_config:
+        timeout: 30
+        max_retries: 3
+        retry_delay: 1.0
+      api_config:
+        model: "deepseek-chat"
+        stream: false
+      inference_config_dict:
+        do_sample: true
+        temperature: 0.1
+        max_new_tokens: 1000
+        top_p: 0.95
+
+  agent:
+    name: language_model_agent
+    _target_: src.agents.language_model_agent.LanguageModelAgent
+    custom_parameters:
+      language_model: DeepSeek-Chat
+      inference_config_dict:
+        do_sample: true
+        temperature: 0.1
+        max_new_tokens: 1000
+        top_p: 0.95

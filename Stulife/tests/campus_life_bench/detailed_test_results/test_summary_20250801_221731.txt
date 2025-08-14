@@ -1,0 +1,14 @@
+CampusLifeBench Detailed Test Results Summary
+============================================================
+
+Overall Results:
+  Total Tests: 3
+  Passed: 0
+  Failed: 3
+  Success Rate: 0.0%
+  Execution Time: 0.00 seconds
+
+Single System Tests:
+----------------------------------------
+Multi-System Tests:
+----------------------------------------

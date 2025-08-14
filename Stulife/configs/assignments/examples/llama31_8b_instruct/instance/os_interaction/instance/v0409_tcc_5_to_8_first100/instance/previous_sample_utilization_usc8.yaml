@@ -1,0 +1,23 @@
+import:
+- ../../../../../../../../definition.yaml
+- ../../../../../agent.yaml
+- ../../../task.yaml
+- ../data_file_path.yaml
+assignment_config:
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: previous_sample_utilization_callback
+      custom_parameters:
+        utilized_sample_count: 8
+  output_dir: outputs/{TIMESTAMP}
+  sample_order: default
+environment_config:
+  use_task_client_flag: false
+task_dict:
+  os_interaction:
+    parameters:
+      chat_history_item_factory:
+        parameters:
+          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/os_interaction.json

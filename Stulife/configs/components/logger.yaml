@@ -1,0 +1,4 @@
+logger_config:
+  log_file_path: default
+  level: INFO
+  logger_name: lifelong_agent_bench

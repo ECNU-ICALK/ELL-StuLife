@@ -1,0 +1,24 @@
+import:
+- ../task.yaml
+- ../../../agent.yaml
+- ../../../../../../definition.yaml
+assignment_config:
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: consecutive_abnormal_agent_inference_process_handling_callback
+    callback_2:
+      name: previous_sample_utilization_callback
+      custom_parameters:
+        utilized_sample_count: 64
+  output_dir: outputs/{TIMESTAMP}
+  sample_order: default
+environment_config:
+  use_task_client_flag: true
+task_dict:
+  knowledge_graph:
+    parameters:
+      chat_history_item_factory:
+        parameters:
+          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/knowledge_graph.json

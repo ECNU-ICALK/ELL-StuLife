@@ -1,0 +1,709 @@
+[
+  {
+    "club_id": "C000",
+    "club_name": "Artificial Intelligence Innovation Society",
+    "category": "Academic & Technological",
+    "description": "The Artificial Intelligence Innovation Society focuses on fostering interest and expertise in AI, machine learning, and technological advancements. Key activities include monthly workshops on AI tools and programming languages, bi-monthly seminars featuring guest speakers from the tech industry, annual hackathons to develop innovative solutions, and collaborative projects aimed at exploring real-world applications of AI. The society also facilitates study groups and discussions to stay updated on emerging trends.",
+    "recruitment_info": "Recruitment for the Artificial Intelligence Innovation Society takes place at the beginning of each academic semester. We welcome individuals with a keen interest in AI and technology. Prior experience in programming or AI is recommended but not mandatory. Applicants should demonstrate enthusiasm for innovation and collaboration. To apply, send your resume along with a brief statement of interest to artificial_intelligence_innovation_society@email.com. Successful applicants will be notified within two weeks."
+  },
+  {
+    "club_id": "C001",
+    "club_name": "Robotics Enthusiasts Alliance",
+    "category": "Academic & Technological",
+    "description": "Robotics Enthusiasts Alliance is a vibrant club dedicated to exploring the fascinating world of robotics and technological innovation. Our activities include hands-on workshops on robot design and programming, guest lectures by industry professionals, collaborative projects involving artificial intelligence and autonomous systems, and competitions where members showcase their creations. We meet twice a month for regular sessions, interspersed with additional events such as hackathons and field visits to technology companies.",
+    "recruitment_info": "Recruitment typically takes place at the start of each semester. We welcome students passionate about robotics and technology, regardless of skill level. Applicants may be required to demonstrate basic knowledge of STEM concepts or enthusiasm for learning. To apply, please send your application and any relevant portfolio to robotics_enthusiasts_alliance@email.com. Interviews may be conducted based on initial applications."
+  },
+  {
+    "club_id": "C002",
+    "club_name": "Drone Technology Research Club",
+    "category": "Academic & Technological",
+    "description": "The Drone Technology Research Club is dedicated to exploring the latest advancements in drone technology, fostering innovation, and conducting research in areas such as autonomous flight, aerial photography, and drone-based applications. The club organizes weekly workshops focused on practical skills, including drone assembly, programming, and flight simulations. Additionally, monthly seminars featuring guest speakers provide insights into current industry trends and developments. Members collaborate on research projects and participate in national drone competitions, showcasing their expertise and creativity.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome passionate individuals with a keen interest in drones, technology, and research. Prior experience is not required but is appreciated. Applicants are expected to demonstrate a willingness to learn and contribute to team projects. To apply, please send an email to drone_technology_research_club@email.com with a brief introduction and details about your background. The deadline for applications is two weeks after the semester starts. Successful candidates will be contacted for a short interview process."
+  },
+  {
+    "club_id": "C003",
+    "club_name": "Mathematical Modeling Association",
+    "category": "Academic & Technological",
+    "description": "The Mathematical Modeling Association focuses on fostering skills in mathematical problem-solving and algorithmic thinking. Our primary activities include weekly seminars on applied mathematics and advanced modeling techniques, monthly workshops featuring hands-on modeling challenges, and annual competitions to simulate real-world problem-solving scenarios. Additionally, we collaborate with industry experts for guest lectures and offer mentoring programs for members to enhance their academic and professional growth.",
+    "recruitment_info": "Recruitment occurs annually during the beginning of the academic semester. Applicants must have enthusiasm for mathematics and problem-solving; prior experience in mathematical modeling is preferred but not mandatory. To apply, please submit an application form and a short essay on your interest in mathematical modeling. For inquiries or submissions, contact us at mathematical_modeling_association@email.com."
+  },
+  {
+    "club_id": "C004",
+    "club_name": "Biotechnology Exploration Group",
+    "category": "Academic & Technological",
+    "description": "The Biotechnology Exploration Group is dedicated to promoting knowledge and innovation in academic and technological aspects of biotechnology. Members participate in workshops, guest lectures, and panel discussions with experts in the field, held monthly. Additionally, hands-on lab sessions and collaborative research projects are organized biannually to enhance practical experience. The group also hosts annual conferences for members to present findings and network with professionals.",
+    "recruitment_info": "Recruitment takes place annually in September. Applicants should have a keen interest in biotechnology and preferably some basic understanding of scientific research. Commitment to attend monthly meetings and active participation in activities is required. To apply, please email your resume and a motivation letter to biotechnology_exploration_group@email.com before the end of the recruitment period."
+  },
+  {
+    "club_id": "C005",
+    "club_name": "Quantum Computing Research Society",
+    "category": "Academic & Technological",
+    "description": "The Quantum Computing Research Society is dedicated to promoting the exploration and understanding of quantum computing and its applications. The society organizes weekly seminars featuring guest speakers from the academia and tech industry, monthly hands-on workshops where members can learn and develop quantum algorithms, and bi-annual hackathons to foster collaboration and innovation among participants. Additionally, the society hosts informal discussion sessions every two weeks, encouraging members to share knowledge, brainstorm ideas, and stay updated on the latest advancements in the field.",
+    "recruitment_info": "Recruitment for new members takes place annually during the first two weeks of September. Applicants are expected to have a keen interest in quantum computing, a strong foundation in mathematics or computer science, and a willingness to collaborate on research projects. Prior experience in programming or quantum mechanics is a plus but not mandatory. Interested individuals should fill out the application form provided during the recruitment period and email their resume and a brief statement of purpose to quantum_computing_research_society@email.com. Selected candidates will be notified via email for the next steps in the onboarding process."
+  },
+  {
+    "club_id": "C006",
+    "club_name": "Traditional Medicine Research Association",
+    "category": "Academic & Technological",
+    "description": "The Traditional Medicine Research Association focuses on the study, preservation, and innovation of traditional medicine practices from around the world. Our activities include monthly research seminars featuring guest speakers who are experts in traditional medicine, as well as biannual workshops where members can engage in hands-on experiences such as herbal preparation and ethnobotanical studies. Additionally, we organize quarterly community outreach programs to educate the public on the benefits and applications of traditional medicine. Members also collaborate on publishing academic papers and participating in national and international conferences in the field of traditional medicine and technology integration.",
+    "recruitment_info": "Recruitment takes place annually during the Fall semester, from September 1st to October 15th. We are looking for passionate and motivated individuals with a strong interest in traditional medicine, science, or technology. Prior experience in research or related fields is a plus but not mandatory. Applicants should be willing to actively participate in events and contribute to collaborative research projects. To apply, please send your resume and a brief statement of interest to traditional_medicine_research_association@email.com. Shortlisted candidates will be invited for interviews and group discussions."
+  },
+  {
+    "club_id": "C007",
+    "club_name": "Cybersecurity Defense Lab",
+    "category": "Academic & Technological",
+    "description": "Cybersecurity Defense Lab is dedicated to fostering knowledge and skills in cyber defense, ethical hacking, and information security. The club holds bi-weekly workshops covering topics such as penetration testing, malware analysis, encryption methods, and cybersecurity tools. Additionally, we organize guest lectures from industry professionals every semester and host an annual capture-the-flag competition to challenge members and hone their skills. Members also work on collaborative research projects aimed at solving real-world cybersecurity problems.",
+    "recruitment_info": "Recruitment takes place at the beginning of every semester. We are looking for passionate individuals with an interest in technology and cybersecurity. No prior experience is required, as we provide training and resources. Applicants should be able to commit to regular participation in workshops and activities. To apply, please send us a brief introduction, including your motivations and any relevant skills, to cybersecurity_defense_lab@email.com by the end of the first week of the semester."
+  },
+  {
+    "club_id": "C008",
+    "club_name": "Electronic Design Innovators",
+    "category": "Academic & Technological",
+    "description": "Electronic Design Innovators is an academic and technological club dedicated to fostering creativity and technical expertise in electronic design and engineering. Our activities include weekly workshops on topics such as circuit design, embedded systems, and PCB fabrication. Members also participate in monthly project showcases where they can present their innovative electronic creations. Additionally, we organize an annual hackathon focused on solving real-world electronic and technological challenges, complemented by guest lectures from industry professionals.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome students from all academic backgrounds with a passion for electronics and technology. No prior experience is required, but candidates should demonstrate enthusiasm for learning and collaboration. To apply, simply fill out the online registration form shared during our open house event. For inquiries, please reach out to us via email at electronic_design_innovators@email.com."
+  },
+  {
+    "club_id": "C009",
+    "club_name": "Astronomy Observation Society",
+    "category": "Academic & Technological",
+    "description": "The Astronomy Observation Society is dedicated to fostering a passion for astronomy and space exploration through educational and engaging activities. The club organizes stargazing sessions twice a month using advanced telescopes, providing members with the opportunity to observe celestial phenomena such as planets, constellations, and meteor showers. Additionally, the society hosts monthly lectures and workshops by renowned astronomers and scientists, covering topics such as astrophysics, cosmology, and space technology. Members also participate in collaborative projects, including astrophotography and data analysis of astronomical events.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome applicants with an interest in astronomy or a background in science, although prior experience is not required. Commitment to attend regular activities and enthusiasm for learning is highly valued. To apply, please send a short introduction and your availability to our official email: astronomy_observation_society@email.com. Applications will close two weeks after the semester starts."
+  },
+  {
+    "club_id": "C010",
+    "club_name": "Philosophy Discussion Group",
+    "category": "Academic & Technological",
+    "description": "The Philosophy Discussion Group focuses on exploring a wide range of philosophical topics, from ancient philosophical texts to contemporary ethical dilemmas. Members participate in weekly discussions, guest speaker seminars held monthly, and occasional workshops designed to enhance critical thinking and argumentation skills. The group encourages intellectual curiosity and respectful debate, fostering an environment where diverse perspectives converge.",
+    "recruitment_info": "Recruitment takes place twice a year, during the first week of the fall semester and the spring semester. Applicants should have a keen interest in philosophy and a willingness to engage in constructive dialogue. While there are no formal prerequisites, prior exposure to philosophical concepts is advantageous. To apply, email philosophy_discussion_group@email.com with a brief introduction and your motivation for joining the group."
+  },
+  {
+    "club_id": "C011",
+    "club_name": "Economics Research Society",
+    "category": "Academic & Technological",
+    "description": "The Economics Research Society is dedicated to exploring, analyzing, and discussing contemporary economic theories, policies, and trends. Our activities include weekly research seminars, monthly workshops on technological tools for economic analysis, and occasional guest lectures from renowned economists and industry professionals. We also organize annual conferences where members present their research to a broader audience.",
+    "recruitment_info": "We are recruiting new members from September 1 to September 30. Applicants should have a genuine interest in economics and technological innovation, as well as strong analytical and communication skills. Prior experience with research is not required but will be considered an asset. To apply, please send an email expressing your interest and a brief description of your background to economics_research_society@email.com."
+  },
+  {
+    "club_id": "C012",
+    "club_name": "Blockchain Technology Club",
+    "category": "Academic & Technological",
+    "description": "The Blockchain Technology Club focuses on exploring the applications, principles, and transformative potential of blockchain technology in various fields. Our activities include bi-weekly seminars featuring guest speakers from the industry, hands-on workshops on blockchain development (such as smart contract creation), and collaborative projects aimed at building innovative blockchain-based solutions. Additionally, the club hosts annual hackathons and networking events to foster connections with tech professionals and enthusiasts. Members are encouraged to collaborate and enhance both technical skills and theoretical understanding, making the club a hub for academic and technological growth.",
+    "recruitment_info": "We welcome all students with a passion for blockchain and technology to join our club. Recruitment is held annually during the first two weeks of the semester. Applicants should demonstrate enthusiasm for learning and collaboration. No prior experience with blockchain is required, though familiarity with programming concepts is a plus. To apply, please submit a brief self-introduction and your interests via email to blockchain_technology_club@email.com. Successful candidates will be notified within a week after the application deadline."
+  },
+  {
+    "club_id": "C013",
+    "club_name": "Chemical Experimentation Club",
+    "category": "Academic & Technological",
+    "description": "The Chemical Experimentation Club is dedicated to exploring the fascinating world of chemistry through hands-on experiments, workshops, and collaborative research projects. Members engage in bi-weekly laboratory sessions where they safely conduct experiments ranging from fundamental chemical reactions to innovative applications in technology and materials science. Additionally, the club organizes guest lectures by industry professionals and professors once a month to broaden members' understanding of current trends and advancements in the field. Annual events include a chemistry hackathon and an open exhibition showcasing members' projects to the broader campus community.",
+    "recruitment_info": "Recruitment for the Chemical Experimentation Club takes place during the first two weeks of the semester. We welcome students from all academic backgrounds with a passion for chemistry and inquiry-based learning. No prior laboratory experience is necessary, but applicants should possess a willingness to learn and adhere to safety protocols. To apply, please fill out the online application form sent through campus announcements and attend our introductory meeting. For inquiries, feel free to contact us at chemical_experimentation_club@email.com."
+  },
+  {
+    "club_id": "C014",
+    "club_name": "Data Science Explorers",
+    "category": "Academic & Technological",
+    "description": "Data Science Explorers is dedicated to cultivating interest and expertise in the fields of data science, artificial intelligence, and machine learning. Our activities include hands-on workshops on Python, R, and popular data visualization tools, guest lectures from industry experts, and collaborative hackathons to solve real-world problems using data-driven approaches. We also host weekly project discussion sessions where members share insights, learn from each other, and work on collaborative projects, as well as monthly seminars to explore cutting-edge topics in technology and data science.",
+    "recruitment_info": "Recruitment for Data Science Explorers takes place annually in September. We welcome students passionate about data science, programming, and technology from all academic backgrounds. No prior experience in data science is required, though a willingness to learn and collaborate is highly valued. Interested applicants are requested to fill out the online application form and submit a brief statement of interest. Selected candidates will be invited for an informal interview. For inquiries, please reach out to us via email: data_science_explorers@email.com."
+  },
+  {
+    "club_id": "C015",
+    "club_name": "Renewable Energy Research Group",
+    "category": "Academic & Technological",
+    "description": "The Renewable Energy Research Group is dedicated to exploring cutting-edge developments in renewable energy technologies and fostering a deeper understanding of their applications. Our activities include monthly seminars featuring guest experts, hands-on workshops with renewable energy systems, and collaborative research projects aimed at addressing current challenges in the field. Additionally, the group organizes an annual Renewable Energy Forum to showcase findings and innovative ideas.",
+    "recruitment_info": "Recruitment takes place at the beginning of each academic semester. We welcome students passionate about renewable energy and technology who are eager to contribute to research and innovation. Prior knowledge in energy systems or technologies is appreciated but not mandatory. To join, please send a brief statement of interest and your CV to renewable_energy_research_group@email.com. Selected candidates will be notified via email after an interview process."
+  },
+  {
+    "club_id": "C016",
+    "club_name": "Psychology Research Association",
+    "category": "Academic & Technological",
+    "description": "The Psychology Research Association is dedicated to exploring, analyzing, and disseminating knowledge within the field of psychology and its related interdisciplinary domains. Our activities focus on conducting research workshops, organizing guest lectures by prominent psychologists, hosting interactive seminars on emerging psychological trends, and arranging collaborative projects with other academic associations. Additionally, we hold bi-monthly discussions to review recent psychological studies and theories. All events are designed to foster academic growth and technological innovation in the field of psychology.",
+    "recruitment_info": "We open our recruitment twice a year: in January and September. Applicants should demonstrate a strong interest in psychology and research. Prior experience in academic writing or research is a plus but not mandatory. Freshmen and non-psychology majors are welcome to apply. To join, please submit a brief personal statement and indicate any relevant skills or experiences. For inquiries, contact us via email at psychology_research_association@email.com."
+  },
+  {
+    "club_id": "C017",
+    "club_name": "Architectural Design Society",
+    "category": "Academic & Technological",
+    "description": "Architectural Design Society focuses on exploring innovative approaches to architectural design and technological integration within the field. Members participate in weekly workshops and monthly panel discussions with industry professionals to explore concepts such as sustainable architecture, urban planning, and computational design. The society also organizes two major annual events: a design competition and an exhibition showcasing members' projects.",
+    "recruitment_info": "Recruitment for the Architectural Design Society takes place during the first two weeks of the semester. We welcome all students passionate about architecture and technology, regardless of experience level. Applicants are required to submit a brief statement of interest and attend an interview session. For inquiries or to apply, please contact us at architectural_design_society@email.com."
+  },
+  {
+    "club_id": "C018",
+    "club_name": "Foreign Literature Study Group",
+    "category": "Academic & Technological",
+    "description": "The Foreign Literature Study Group focuses on exploring and discussing literary works from around the world. We organize bi-weekly reading sessions where members dive into selected books, essays, and poetry from international authors, followed by engaging group discussions to share insights and interpretations. Additionally, we hold monthly workshops on topics such as literary analysis techniques and cultural influences in global literature. Occasionally, there are guest lectures by scholars and authors to provide deeper perspectives on foreign literature. All activities aim to facilitate a deeper appreciation and understanding of literature while fostering a collaborative learning environment.",
+    "recruitment_info": "Recruitment takes place annually during the beginning of the fall semester. We welcome students who have a passion for global literature and a willingness to actively participate in discussions and events. No prior expertise is required, but an interest in literary exploration is highly encouraged. To apply, please submit a brief personal statement outlining your motivations and any relevant experiences. For inquiries and submissions, contact us at foreign_literature_study_group@email.com. The deadline for applications is September 15th."
+  },
+  {
+    "club_id": "C019",
+    "club_name": "Industrial Robotics Club",
+    "category": "Academic & Technological",
+    "description": "The Industrial Robotics Club is dedicated to exploring the latest advancements in robotics and automation technologies. Our primary activities include hands-on workshops, guest lectures by industry professionals, competitive robotics projects, and participation in technological expos and competitions. Workshops are held bi-weekly to provide practical experience in programming, design, and engineering of robotic systems. Guest lectures and seminars occur monthly, ensuring members stay informed on emerging trends in the robotics field. Additionally, members collaborate on academic research projects and prototype development throughout the year.",
+    "recruitment_info": "The recruitment period is conducted annually during the fall semester. We welcome students from all academic backgrounds who are curious about robotics and eager to learn. Prior experience in robotics is not required; however, a basic knowledge of programming or engineering is considered a plus. To join, applicants must fill out an application form and attend an introductory session where details about club activities are discussed. Please contact us via email at industrial_robotics_club@email.com for inquiries or application submissions."
+  },
+  {
+    "club_id": "C020",
+    "club_name": "Virtual Reality Development Group",
+    "category": "Academic & Technological",
+    "description": "The Virtual Reality Development Group is dedicated to exploring the latest advancements in virtual reality technology and fostering innovation in both academic and technological fields. Our activities include weekly workshops, hands-on development sessions, and guest lectures by industry professionals. We also host bi-monthly hackathons to encourage creativity and collaboration among members, as well as an annual showcase event where members can present their projects to a wider audience.",
+    "recruitment_info": "Recruitment takes place during the beginning of each semester. We welcome students from all academic backgrounds who have a passion for virtual reality technology, programming, 3D modeling, or related fields. No prior experience is required—just curiosity and enthusiasm to learn and contribute. To apply, simply fill out the online application form provided during recruitment season and include a brief personal statement. For more information, contact us at virtual_reality_development_group@email.com."
+  },
+  {
+    "club_id": "C021",
+    "club_name": "Bioinformatics Society",
+    "category": "Academic & Technological",
+    "description": "The Bioinformatics Society is dedicated to promoting the understanding and application of bioinformatics in academic and technological fields. The society organizes monthly workshops on topics like data analysis, computational biology, and genomics. Additionally, we host bi-annual hackathons and guest lectures by industry experts to keep our members engaged with the latest advancements in bioinformatics. Regular study groups and collaborative projects provide opportunities for members to learn, share, and grow together.",
+    "recruitment_info": "Recruitment typically takes place at the start of each semester. We welcome individuals who are passionate about bioinformatics, regardless of their level of expertise. Applicants should be eager to learn and contribute to community activities. To apply, please send an email expressing your interest to bioinformatics_society@email.com along with a brief introduction. Selected candidates may be asked to attend an informal interview or provide a short statement about their interest in the field."
+  },
+  {
+    "club_id": "C022",
+    "club_name": "Entrepreneurship Incubation Club",
+    "category": "Academic & Technological",
+    "description": "The Entrepreneurship Incubation Club is dedicated to fostering innovation and entrepreneurship among students through regular workshops, mentorship programs, and networking events. Key activities include the organization of monthly ideation sessions to brainstorm business concepts, quarterly pitch competitions to refine entrepreneurial ideas, and guest lectures from industry leaders. In addition, the club provides resources for prototype development, market research, and business plan drafting, making it a hub for aspiring entrepreneurs to thrive.",
+    "recruitment_info": "Recruitment typically occurs at the beginning of each academic semester. Interested applicants are encouraged to have a strong interest in entrepreneurship or technology, along with a willingness to actively participate in club activities. Experience in start-ups or coding is a plus, but not mandatory. To apply, please complete the designated application form and submit it via email to entrepreneurship_incubation_club@email.com before the specified deadline. Selection involves an interview process to assess commitment and compatibility with the club's mission."
+  },
+  {
+    "club_id": "C023",
+    "club_name": "Political Economy Research Group",
+    "category": "Academic & Technological",
+    "description": "The Political Economy Research Group focuses on fostering academic discussion and research on topics concerning political economy, economic theory, and policy analysis. We organize bi-weekly seminar sessions where members present their research findings or lead discussions on selected readings. Additionally, guest lectures and panel discussions with experts from academia and industry are held quarterly. Workshops on analytical tools and methodologies are offered every semester to enhance members' research skills.",
+    "recruitment_info": "Recruitment occurs at the start of the academic year and mid-semester. We welcome students from diverse academic backgrounds with an interest in political economy and related fields. Applicants should demonstrate a willingness to actively participate in discussions and contribute to research initiatives. To apply, submit a short statement of interest along with any relevant academic or research experience to political_economy_research_group@email.com. Selected candidates will be invited for an informal interview. Please reach out via email for further inquiries or details."
+  },
+  {
+    "club_id": "C024",
+    "club_name": "Language Intelligence Research Society",
+    "category": "Academic & Technological",
+    "description": "The Language Intelligence Research Society is dedicated to exploring the intersections between linguistics, natural language processing (NLP), and artificial intelligence. Members participate in various academic and technological activities, including organizing monthly research seminars, conducting collaborative coding sprints, hosting annual symposiums, and competing in language-related AI hackathons. We also provide workshops on state-of-the-art NLP tools and technologies, encouraging members to share insights and foster innovation in the field. Additionally, special guest lectures from industry and academic leaders are held every semester to provide professional perspectives.",
+    "recruitment_info": "Recruitment takes place annually during the first two weeks of the fall semester. We welcome applications from students passionate about linguistics, computer science, or artificial intelligence. Applicants are encouraged to submit a short statement of interest and any relevant experience. Enthusiasm for learning and a collaborative spirit are essential. Successful candidates will receive hands-on training and mentorship opportunities. For inquiries or applications, please contact us via email at language_intelligence_research_society@email.com."
+  },
+  {
+    "club_id": "C025",
+    "club_name": "Cognitive Science Association",
+    "category": "Academic & Technological",
+    "description": "The Cognitive Science Association focuses on exploring the intersection of psychology, neuroscience, computer science, and philosophy through collaborative learning and research. We organize bi-weekly seminars featuring guest speakers from the academic and tech industries, hands-on workshops on cognitive modeling and AI applications, and annual conferences for members to showcase their projects and research findings. Additionally, the association fosters a collaborative environment through peer-led study groups and quarterly community networking events to connect members with professionals in relevant fields.",
+    "recruitment_info": "Recruitment takes place annually during the beginning of the academic semester. We welcome students from all academic backgrounds with an interest in cognitive science. Applicants are required to submit a brief statement detailing their interest and any relevant experience or coursework. No prior experience is mandatory, but a passion for interdisciplinary research and innovation is highly encouraged. For inquiries or to submit applications, contact us at cognitive_science_association@email.com."
+  },
+  {
+    "club_id": "C026",
+    "club_name": "Material Science Innovation Club",
+    "category": "Academic & Technological",
+    "description": "The Material Science Innovation Club organizes workshops, seminars, and hands-on projects focused on advancing knowledge in materials science and technological innovation. Activities include bi-weekly research discussion sessions, monthly guest lectures by professionals in the field, and quarterly team-based innovation challenges aimed at solving real-world material science problems. Additionally, the club holds collaborative events with other academic and technological organizations to foster interdisciplinary learning and networking opportunities.",
+    "recruitment_info": "The recruitment period occurs during the first two weeks of each academic semester. We welcome members who possess curiosity and enthusiasm for materials science and technology. No prior experience is required, but a commitment to active participation in club events is highly valued. Interested students can apply by filling out an online form or contacting us via email at material_science_innovation_club@email.com."
+  },
+  {
+    "club_id": "C027",
+    "club_name": "Nanotechnology Research Group",
+    "category": "Academic & Technological",
+    "description": "The Nanotechnology Research Group is dedicated to exploring advancements in nanotechnology and its applications in various fields such as medicine, electronics, and materials science. Activities include weekly research seminars, monthly workshops on nanomaterial synthesis techniques, and collaborative research projects. Members also participate in annual conferences to present findings and network with professionals in the field.",
+    "recruitment_info": "Recruitment takes place every September and March. Applicants should have a keen interest in nanotechnology and preferably a background in science or engineering. To apply, submit your CV and a short statement of interest to nanotechnology_research_group@email.com. Selected candidates will be invited for an interview to assess their motivation and fit for the group."
+  },
+  {
+    "club_id": "C028",
+    "club_name": "Environmental Science Society",
+    "category": "Academic & Technological",
+    "description": "The Environmental Science Society is dedicated to promoting awareness and action in the fields of environmental science and sustainability. Our activities include monthly seminars featuring industry experts, biannual workshops on eco-friendly practices, field trips to conservation areas, and collaborative research projects with fellow members. We also organize seasonal cleanup drives and environmental awareness campaigns open to the community.",
+    "recruitment_info": "Recruitment takes place twice a year: at the beginning of the fall and spring semesters. We welcome all students with a strong interest in environmental science and technology. No prior experience is required, but enthusiasm for teamwork and sustainable practices is highly encouraged. You can apply by filling out our online form and submitting a brief statement of interest. For inquiries, contact us at environmental_science_society@email.com."
+  },
+  {
+    "club_id": "C029",
+    "club_name": "Geographic Information System Club",
+    "category": "Academic & Technological",
+    "description": "The Geographic Information System (GIS) Club focuses on exploring and utilizing GIS technology in various academic and practical applications. Members engage in activities such as hands-on workshops, map creation projects, guest lectures by industry experts, and professional development sessions. The club hosts monthly meetings to discuss advancements in GIS technology and organizes an annual GIS Day event to showcase innovative mapping solutions and research. Additionally, members collaborate on real-world GIS projects to gain practical experience and strengthen their technical skills.",
+    "recruitment_info": "Recruitment takes place at the beginning of each academic semester. Interested candidates should have a passion for geographic information systems and a basic understanding of mapping concepts. No prior experience is required, but strong analytical and teamwork skills are a plus. To apply, fill out the online application form and attend an introductory session. For inquiries, contact us at geographic_information_system_club@email.com."
+  },
+  {
+    "club_id": "C030",
+    "club_name": "Digital Art Creation Society",
+    "category": "Academic & Technological",
+    "description": "The Digital Art Creation Society focuses on exploring and innovating within the field of digital art and technology. Members collaborate on projects such as digital painting, 3D modeling, animation, and virtual reality designs. The society organizes workshops twice a month featuring industry professionals, and hosts bi-monthly showcases where members can present their creations to the community. Additionally, members participate in collaborative hackathons every semester to integrate art with emerging technologies like AI and AR.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome students of all skill levels who have a passion for digital art and technology. No prior experience is required, but applicants should have a strong willingness to learn and work collaboratively. To apply, please fill out the online application form and submit a sample of your previous work (if available). Send any questions or submit your application to digital_art_creation_society@email.com. Deadlines for application will be announced on our social media channels and posters around campus."
+  },
+  {
+    "club_id": "C031",
+    "club_name": "Ancient Text Research Association",
+    "category": "Academic & Technological",
+    "description": "The Ancient Text Research Association focuses on studying, decoding, and analyzing ancient manuscripts, inscriptions, and historical texts. Activities include collaborative translation workshops, monthly guest lectures by scholars in historical linguistics and paleography, and quarterly field trips to museums and historical sites. Members also participate in technological projects such as using AI and digital tools to preserve and decipher ancient scripts. Each week, small study groups gather to discuss and research specific texts.",
+    "recruitment_info": "Recruitment takes place every September and February. We welcome passionate individuals with interest in history, languages, or technological applications in humanities. No prior experience is required, but candidates with basic knowledge in linguistics, programming, or cultural studies will be given preference. To apply, send your resume and a brief letter of interest to our email at ancient_text_research_association@email.com. Selected candidates will be invited for an interview to discuss their interests and potential contribution to the association."
+  },
+  {
+    "club_id": "C032",
+    "club_name": "Chinese Hanfu Culture Society",
+    "category": "Arts & Cultural",
+    "description": "The Chinese Hanfu Culture Society is a vibrant community dedicated to celebrating and promoting traditional Chinese Hanfu attire and the cultural significance it carries. Our main activities include monthly Hanfu-themed workshops, where members can learn about the historical background, styling techniques, and the rich symbolism behind each outfit. We also host seasonal festivals to reenact ancient Chinese traditions, including tea ceremonies, poetry recitals, and traditional music performances. In addition, we organize photography outings at least twice a semester, allowing members to showcase their Hanfu in picturesque settings.",
+    "recruitment_info": "Recruitment occurs at the beginning of each semester. We welcome anyone with an interest in traditional Chinese clothing and culture. No prior experience is required, but enthusiasm for cultural engagement and participation in club activities is highly encouraged. For inquiries or to register, please email us at chinese_hanfu_culture_society@email.com."
+  },
+  {
+    "club_id": "C033",
+    "club_name": "Multilingual Poetry Recitation Club",
+    "category": "Arts & Cultural",
+    "description": "The Multilingual Poetry Recitation Club is dedicated to celebrating the art of poetry across diverse languages and cultures. Members gather twice a month to share, recite, and discuss poetry in various languages, fostering both linguistic appreciation and artistic expression. The club also hosts quarterly themed poetry nights and an annual multilingual poetry competition, inviting participants to showcase their talents and creativity.",
+    "recruitment_info": "Recruitment takes place at the start of each semester. We welcome individuals passionate about poetry and languages. No prior experience is required, but applicants should have an interest in exploring poetry from different cultural perspectives. To join, please fill out the registration form during our recruitment week. Email us at multilingual_poetry_recitation_club@email.com for inquiries or further details."
+  },
+  {
+    "club_id": "C034",
+    "club_name": "Film Production Society",
+    "category": "Arts & Cultural",
+    "description": "Film Production Society is dedicated to bringing creativity to life through storytelling, directing, and editing. Our main activities include monthly filmmaking workshops, scriptwriting boot camps, and film screenings featuring members' projects. We also host an annual film festival to showcase student talent and provide networking opportunities with industry professionals. Members collaborate on short films throughout the semester, learning all aspects of the film production process from pre-production to post-production.",
+    "recruitment_info": "Recruitment takes place at the start of each semester during our open house event. We welcome students from all backgrounds, with or without prior filmmaking experience. Passion for storytelling and teamwork are the only requirements. Interested students can fill out our application form and participate in a brief interview session. For queries, please contact us at film_production_society@email.com."
+  },
+  {
+    "club_id": "C035",
+    "club_name": "Traditional Tea Ceremony Association",
+    "category": "Arts & Cultural",
+    "description": "The Traditional Tea Ceremony Association focuses on preserving the art and cultural heritage of traditional tea ceremonies. Our activities include monthly tea appreciation gatherings, themed workshops on brewing techniques, and cultural talks exploring the history of tea ceremonies worldwide. We also host seasonal events tied to cultural festivals, offering members an immersive experience in tea rituals.",
+    "recruitment_info": "Recruitment takes place during the first two weeks of the semester. We welcome all students with an interest in arts, culture, and tea ceremonies; prior experience is not required. To join, please attend our introductory session or email us at traditional_tea_ceremony_association@email.com. Spaces are limited, so early applications are encouraged!"
+  },
+  {
+    "club_id": "C036",
+    "club_name": "Ancient Guqin Music Society",
+    "category": "Arts & Cultural",
+    "description": "The Ancient Guqin Music Society is dedicated to preserving and promoting the rich heritage of the guqin, a traditional Chinese musical instrument with over 3,000 years of history. Our activities include weekly practice sessions, bi-monthly workshops with experienced guqin players, cultural appreciation lectures, and seasonal performances that showcase the beauty of guqin music. Members will also have opportunities to learn about the history and philosophy behind this art form, as well as participate in collaborative projects with other cultural organizations.",
+    "recruitment_info": "Recruitment occurs annually at the start of the academic year, during September. We welcome students and community members who are passionate about traditional arts and music, regardless of prior guqin experience. New members should demonstrate enthusiasm for learning and cultural appreciation. To apply, please email your full name and a brief introduction about your interest in guqin music to ancient_guqin_music_society@email.com. Successful applicants will be contacted for a short interview or informal meeting."
+  },
+  {
+    "club_id": "C037",
+    "club_name": "Calligraphy and Seal Engraving Club",
+    "category": "Arts & Cultural",
+    "description": "The Calligraphy and Seal Engraving Club is dedicated to preserving and promoting the timeless art of calligraphy and seal engraving. Members participate in bi-weekly workshops focusing on traditional techniques, modern styles, and creative practices. Key activities include hands-on training sessions, guest lectures from renowned artists, collaborative projects, and exhibitions where members showcase their work. Seasonal competitions and themed events also bring opportunities for creativity and skill refinement, fostering both artistic growth and cultural appreciation.",
+    "recruitment_info": "Recruitment is open during the first two weeks of the semester. We welcome anyone with a passion for arts and culture — no previous experience required. Applicants need to fill out a short application form and attend an introductory workshop. For further inquiries or submission of applications, contact us at calligraphy_and_seal_engraving_club@email.com."
+  },
+  {
+    "club_id": "C038",
+    "club_name": "Ethnic Dance Performance Group",
+    "category": "Arts & Cultural",
+    "description": "Ethnic Dance Performance Group celebrates cultural diversity through dynamic dance performances. The group specializes in showcasing traditional dances from various ethnic backgrounds, promoting cultural exchange and appreciation. Weekly rehearsals are held to perfect choreography, and performances are conducted monthly at community events, cultural festivals, and seasonal showcases. Additionally, workshops are organized quarterly to introduce members to different dance styles and their cultural significance.",
+    "recruitment_info": "Recruitment takes place at the start of each semester. No prior dance experience is required; however, a keen interest in cultural arts and performance is encouraged. Prospective members should attend the introductory session and audition to assess their enthusiasm and commitment. For more details or inquiries, contact us via email: ethnic_dance_performance_group@email.com."
+  },
+  {
+    "club_id": "C039",
+    "club_name": "Drama and Performance Club",
+    "category": "Arts & Cultural",
+    "description": "The Drama and Performance Club is dedicated to fostering creativity and self-expression through theatrical performances, workshops, and improvisation sessions. Members regularly participate in play productions, including one major annual performance and several smaller showcases throughout the year. Additionally, the club hosts weekly acting workshops, monthly scriptwriting sessions, and a quarterly improv night, providing opportunities to enhance acting, directing, and writing skills. The club also collaborates with other arts groups for cultural events and festivals, ensuring a vibrant and engaging community for all involved.",
+    "recruitment_info": "The Drama and Performance Club is excited to welcome new members! Recruitment takes place during the first two weeks of the semester. We are looking for enthusiastic individuals who have a passion for performing arts, whether as actors, directors, scriptwriters, or stage crew. No prior experience is necessary—just bring your eagerness to learn and collaborate. To join, attend one of our introductory meetings or email us at drama_and_performance_club@email.com for further details."
+  },
+  {
+    "club_id": "C040",
+    "club_name": "Photography Art Association",
+    "category": "Arts & Cultural",
+    "description": "The Photography Art Association is dedicated to fostering a creative community for photography enthusiasts and artists. Members engage in various activities, including photo walks, workshops on editing techniques, guest lectures by professional photographers, and themed photo exhibitions. Events are held biweekly, offering ample opportunities to enhance skills and explore different styles of photography. Additionally, the association promotes collaborations between members for special projects such as creating photo essays or organizing local visual art campaigns.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome individuals passionate about photography and art, regardless of skill level. No specific equipment is required; a drive to learn and collaborate is the key criterion. Interested candidates can apply by emailing their name, year of study, and a brief introduction about their interest in photography to photography_art_association@email.com. All applications are due by the end of the second week of the semester, and shortlisted candidates will be invited for an introductory meeting."
+  },
+  {
+    "club_id": "C041",
+    "club_name": "Ceramic Art Creation Society",
+    "category": "Arts & Cultural",
+    "description": "The Ceramic Art Creation Society is dedicated to fostering creativity and craftsmanship in the field of ceramic art. Our activities include weekly hands-on workshops focusing on wheel throwing, hand-building techniques, and glazing methods. We also host monthly guest lectures and demonstrations by renowned ceramic artists, as well as organize seasonal exhibitions to showcase members' creations. The society encourages collaboration and personal expression, creating a welcoming environment for both beginners and advanced ceramic enthusiasts.",
+    "recruitment_info": "Recruitment for new members is open every September and January. We welcome individuals of all skill levels who have a passion for ceramic art and a willingness to learn. No prior experience is required, but dedication to attending workshops and participating in events is expected. To apply, please fill out the online form on our website and provide a short statement about your interest in ceramic art. For inquiries, contact us via email at ceramic_art_creation_society@email.com."
+  },
+  {
+    "club_id": "C042",
+    "club_name": "Intangible Cultural Heritage Research Group",
+    "category": "Arts & Cultural",
+    "description": "The Intangible Cultural Heritage Research Group is dedicated to exploring, preserving, and promoting intangible cultural heritage from around the world. Our activities include monthly workshops featuring expert talks and interactive sessions, biannual field visits to sites of cultural significance, annual exhibitions showcasing research findings, and weekly study meetings to discuss relevant topics such as traditions, folklore, and oral histories. Additionally, members collaboratively research and publish articles to raise public awareness about the importance of cultural heritage.",
+    "recruitment_info": "Recruitment takes place annually during September. We welcome passionate individuals with an interest in arts, culture, or history and encourage applicants from diverse backgrounds. No prior experience is required, but strong communication and teamwork skills are preferred. To apply, please send your completed application form along with a brief statement of interest to intangible_cultural_heritage_research_group@email.com. Selected applicants will be invited for an informal interview."
+  },
+  {
+    "club_id": "C043",
+    "club_name": "Jazz Music Performance Club",
+    "category": "Arts & Cultural",
+    "description": "The Jazz Music Performance Club is a vibrant community of musicians and music enthusiasts who gather to celebrate and perform jazz music. Activities include weekly rehearsals, monthly performance nights at local venues, and biannual workshops led by professional jazz musicians. Members collaborate to hone their skills, explore jazz improvisation, and arrange musical pieces, fostering creativity and camaraderie within the club.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome passionate individuals with a keen interest in jazz music, whether they are skilled performers or curious learners. Auditions may be required for instrumental or vocal performers. For inquiries and registration, please contact us at jazz_music_performance_club@email.com."
+  },
+  {
+    "club_id": "C044",
+    "club_name": "Classic Literature Appreciation Society",
+    "category": "Arts & Cultural",
+    "description": "The Classic Literature Appreciation Society is dedicated to exploring and discussing timeless literary works from various genres and eras. Our activities include monthly book discussions, themed reading sessions, guest lectures featuring authors and literature professors, and group trips to libraries or literary landmarks. Members will also have opportunities to participate in creative projects such as writing reviews, organizing exhibitions, or even reenacting scenes from classic novels. Whether you're a seasoned bookworm or just starting to appreciate classic literature, our society aims to provide a welcoming and enriching environment.",
+    "recruitment_info": "We welcome new members at the beginning of each semester. No prior expertise in literature is required—just bring your passion for reading and discussion! Applicants are encouraged to submit a short paragraph about their favorite classic book and why it resonates with them. Recruitment interviews, if needed, will take place in our society room during the first two weeks of the semester. For more information or to express your interest, please contact us at classic_literature_appreciation_society@email.com."
+  },
+  {
+    "club_id": "C045",
+    "club_name": "Digital Animation Design Club",
+    "category": "Arts & Cultural",
+    "description": "The Digital Animation Design Club focuses on fostering creativity in digital animation and multimedia design. Members have the opportunity to participate in workshops on topics like 2D and 3D animation, character design, storyboarding, and motion graphics. The club also organizes collaborative projects, where members can work together to produce animated short films or multimedia presentations. Competitions and screenings are hosted quarterly to showcase members' work and provide constructive feedback.",
+    "recruitment_info": "Recruitment takes place during the first month of the semester. We welcome students of all skill levels, from beginners to experienced animators. Applicants should have a passion for art, storytelling, and digital creativity. No prior experience is required; enthusiasm and willingness to learn are key. To apply, please fill out the online form shared during the recruitment drive and email your portfolio (if available) to digital_animation_design_club@email.com for consideration."
+  },
+  {
+    "club_id": "C046",
+    "club_name": "Folk Music Ensemble",
+    "category": "Arts & Cultural",
+    "description": "Folk Music Ensemble is dedicated to celebrating and preserving the rich heritage of traditional folk music from around the world. Our members engage in regular rehearsals every week to master various folk music styles and instruments such as violins, flutes, guitars, and traditional percussion. We host seasonal performances, workshops, and cultural exchange events two to three times per semester, bringing together enthusiasts to connect with the beauty and stories behind folk music. Additionally, we collaborate with other arts and cultural groups to create unique cross-disciplinary projects.",
+    "recruitment_info": "We welcome passionate individuals to join us during our recruitment period in early September and mid-January. Previous experience with musical instruments or singing is appreciated, but beginners with a strong interest are highly encouraged to apply. Commitment to weekly practices and participation in events is required. For further questions or to express your interest, please contact us via email at folk_music_ensemble@email.com."
+  },
+  {
+    "club_id": "C047",
+    "club_name": "Modern Dance Theater",
+    "category": "Arts & Cultural",
+    "description": "Modern Dance Theater is dedicated to exploring the art of contemporary dance and theatrical expression. The group organizes bi-weekly dance workshops focused on techniques, choreography, and improvisation. Additionally, members collaborate on seasonal performances, including winter showcases and spring productions, to bring innovative storytelling to life through movement. Guest instructors and choreographers are occasionally invited to conduct masterclasses, enriching members' artistic skills and experiences.",
+    "recruitment_info": "We conduct recruitment at the beginning of each semester. No prior experience in dance is necessary, but a passion for the arts and a willingness to commit to rehearsals and events is required. Interested individuals should attend our introductory session and complete a short movement-based evaluation. For inquiries or to apply, please contact modern_dance_theater@email.com."
+  },
+  {
+    "club_id": "C048",
+    "club_name": "Oil Painting Creation Society",
+    "category": "Arts & Cultural",
+    "description": "The Oil Painting Creation Society is dedicated to nurturing artistic talent and promoting the appreciation of oil painting. Members engage in weekly workshops where they explore various techniques such as layering, texture creation, and color blending. The society also organizes monthly exhibitions to showcase members' work and quarterly guest speaker events featuring renowned local artists. Additionally, outdoor painting excursions are held every two months to inspire creativity from natural landscapes.",
+    "recruitment_info": "Recruitment takes place during the first two weeks of the semester. We welcome individuals of all skill levels who have a passion for oil painting and creativity. No prior experience is required. To join, please complete the online application form and attend an introductory workshop. For inquiries, contact us at oil_painting_creation_society@email.com."
+  },
+  {
+    "club_id": "C049",
+    "club_name": "Traditional Opera Performance Club",
+    "category": "Arts & Cultural",
+    "description": "The Traditional Opera Performance Club is dedicated to preserving and promoting the art of traditional opera through immersive performances, educational workshops, and cultural exhibitions. Our activities include bi-weekly rehearsals, monthly showcase performances, and special collaborative events with other arts and cultural organizations. Members also have the chance to engage in costume design, stage preparation, and script adaptation, embracing all aspects of traditional opera production.",
+    "recruitment_info": "Recruitment begins each fall and spring semester. We welcome anyone with a passion for traditional performing arts, regardless of prior experience. Auditions will be held for performance roles, while non-performance members can join without an audition. To apply, fill out the online form provided during the recruitment period and email us your questions or concerns at traditional_opera_performance_club@email.com."
+  },
+  {
+    "club_id": "C050",
+    "club_name": "Cultural Heritage Protection Society",
+    "category": "Arts & Cultural",
+    "description": "The Cultural Heritage Protection Society is dedicated to promoting awareness and preserving cultural heritage through engaging activities and community projects. Members collaborate on exhibitions, workshops, and seminars showcasing diverse traditions, historical artifacts, and artistic expressions. The society also organizes guided tours to cultural sites and hosts monthly discussions on heritage preservation initiatives, providing an insightful platform for cultural enrichment.",
+    "recruitment_info": "Recruitment is open every September and January. We welcome passionate individuals with an interest in arts, history, or cultural preservation. No prior experience is required, but a commitment to active participation is essential. To apply, please send a brief introduction and your motivations to cultural_heritage_protection_society@email.com. Applications are reviewed within two weeks after submission."
+  },
+  {
+    "club_id": "C051",
+    "club_name": "Acoustic Guitar Association",
+    "category": "Arts & Cultural",
+    "description": "The Acoustic Guitar Association is a vibrant community for guitar enthusiasts, offering workshops, jam sessions, performances, and educational talks. Members gather bi-weekly to share techniques, learn new styles like classical, jazz, and folk, and collaborate on musical compositions. The association also organizes seasonal concerts and outreach programs to promote acoustic music within the local community.",
+    "recruitment_info": "Recruitment opens every September and January. New members are expected to have a basic understanding of guitar playing and a passion for acoustic music. No auditions required—enthusiasm is key! Interested individuals can reach out via email at acoustic_guitar_association@email.com to apply or obtain more information."
+  },
+  {
+    "club_id": "C052",
+    "club_name": "Poetry Creation Workshop",
+    "category": "Arts & Cultural",
+    "description": "The Poetry Creation Workshop provides a vibrant platform for poets and poetry enthusiasts to express themselves, learn, and grow creatively. Members gather bi-weekly to participate in diverse activities, including writing exercises, poetry readings, collaborative writing sessions, and guest speaker events featuring accomplished poets. Workshops often focus on various forms and styles of poetry, enabling members to expand their literary skills while exploring their unique voices. Additionally, monthly open mic nights and annual poetry anthologies offer opportunities to share work with a wider audience.",
+    "recruitment_info": "Recruitment happens at the beginning of each semester during the first two weeks. No prior experience in poetry is required—just a passion for creative expression! Interested students should attend our introductory meeting to learn more about the club. For inquiries or to express interest, contact us via email at poetry_creation_workshop@email.com. We welcome all aspiring poets and lovers of the arts!"
+  },
+  {
+    "club_id": "C053",
+    "club_name": "Dragon and Lion Dance Association",
+    "category": "Sports & Fitness",
+    "description": "The Dragon and Lion Dance Association is dedicated to promoting the traditional art forms of dragon and lion dancing. Members practice intricate routines involving high-energy movements and acrobatics. Activities typically include weekly practice sessions, monthly performances at cultural festivals and events, and opportunities to compete in regional competitions. Additionally, workshops are conducted to teach members drumming techniques and costume handling, ensuring a well-rounded skill set.",
+    "recruitment_info": "Recruitment takes place annually during the beginning of the academic year and mid-semester. We welcome students of all skill levels, from complete beginners to experienced performers. Applicants should have a passion for teamwork and an interest in cultural arts. No prior experience is required, and training will be provided. To join, send an email expressing your interest and availability to dragon_and_lion_dance_association@email.com. Follow us on social media for updates on exact recruitment dates."
+  },
+  {
+    "club_id": "C054",
+    "club_name": "Archery Sports Club",
+    "category": "Sports & Fitness",
+    "description": "Archery Sports Club is dedicated to promoting the art and sport of archery among enthusiasts of all skill levels. Our club holds weekly practice sessions, typically every Saturday afternoon, where members can hone their skills using bows and arrows provided by the club. Additionally, we conduct monthly friendly tournaments to foster a spirit of competition and camaraderie. Annual workshops by professional archers are organized for skill enhancement and advanced techniques. Social events such as outdoor archery challenges and themed gatherings are also part of our calendar to keep members engaged and connected.",
+    "recruitment_info": "Recruitment for Archery Sports Club takes place during the first two weeks of the semester. We welcome both beginners and experienced archers, and no prior experience is required—just a passion for learning and participating. Members must be 18 years or older to join. Please attend our orientation event on the first recruitment weekend to learn more about the club and activities. For inquiries or to sign up, email us at archery_sports_club@email.com."
+  },
+  {
+    "club_id": "C055",
+    "club_name": "Water Sports Association",
+    "category": "Sports & Fitness",
+    "description": "The Water Sports Association is dedicated to promoting activities such as swimming, kayaking, paddleboarding, and water polo. Members gather for practice sessions twice a week, with additional workshops and competitions held monthly. We also organize annual trips to scenic lakes and coastal areas for immersive water sports experiences.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. No prior experience is required, but a basic comfort level with water activities is necessary. Interested individuals should attend our introductory workshop or information session. For inquiries, contact us at water_sports_association@email.com."
+  },
+  {
+    "club_id": "C056",
+    "club_name": "Martial Arts Performance Group",
+    "category": "Sports & Fitness",
+    "description": "Martial Arts Performance Group is dedicated to showcasing the art and discipline of various martial arts forms through dynamic performances and training sessions. Our activities include weekly practice sessions focusing on technique refinement, choreography creation, and physical conditioning. Additionally, we host monthly showcase events where members can demonstrate their skills for campus-wide audiences and quarterly workshops featuring guest martial artists to introduce new styles and techniques.",
+    "recruitment_info": "Recruitment takes place annually during the first month of the academic semester. We welcome individuals of all skill levels, from beginners to experienced martial artists, as long as they have a passion for performance and teamwork. A brief audition may be required to assess choreography learning ability and basic movement aptitude. For inquiries or to apply, please contact us at martial_arts_performance_group@email.com."
+  },
+  {
+    "club_id": "C057",
+    "club_name": "Fitness Qigong Association",
+    "category": "Sports & Fitness",
+    "description": "The Fitness Qigong Association is dedicated to promoting physical well-being and mindfulness through the practice of Qigong, an ancient Chinese exercise system that combines movement, breathing, and meditation. Our activities include weekly Qigong practice sessions every Saturday morning, monthly workshops with certified instructors, and bimonthly outdoor group activities to integrate Qigong with nature. Additionally, we host annual wellness retreats and special events focused on holistic health practices.",
+    "recruitment_info": "Recruitment is open every September for the Fall semester and February for the Spring semester. We welcome individuals of all fitness levels who are interested in learning and practicing Qigong. No prior experience is required, as we provide beginner-friendly sessions. To join, you must attend an orientation meeting and submit a short application form. For more information, please contact us at fitness_qigong_association@email.com."
+  },
+  {
+    "club_id": "C058",
+    "club_name": "Basketball Competition Club",
+    "category": "Sports & Fitness",
+    "description": "Basketball Competition Club is dedicated to promoting the love for basketball through regular practice sessions, competitive matches, and social events. Members gather twice a week for training to improve skills, teamwork, and fitness. Monthly internal tournaments are organized to encourage friendly competition among members, while occasional matches with external teams provide an opportunity to test skills and connect with the broader basketball community. Additionally, we host workshops with experienced players and coaches to refine techniques and strategies.",
+    "recruitment_info": "We recruit new members during the beginning of each semester. No prior experience is required, but a passion for basketball and a willingness to learn and collaborate are essential. Students from all backgrounds are welcome, as we strive to build a diverse and inclusive club environment. To join, attend our open tryouts and submit a membership application form. For inquiries, please contact us at basketball_competition_club@email.com."
+  },
+  {
+    "club_id": "C059",
+    "club_name": "Badminton Sports Association",
+    "category": "Sports & Fitness",
+    "description": "Badminton Sports Association is dedicated to promoting the sport of badminton and fostering a community of players of all skill levels. Our main activities include weekly practice sessions, friendly matches, skill-building workshops, and occasional inter-club tournaments. Practice sessions are held twice a week, while workshops and tournaments are organized monthly to encourage skill improvement and teamwork. Members also get access to professional coaching and equipment recommendations.",
+    "recruitment_info": "Recruitment for Badminton Sports Association takes place at the beginning of every semester. We encourage students of all majors and skill levels to join. No prior experience in badminton is necessary. Members should have a passion for sports and a willingness to participate in club activities. To apply, please fill out the online registration form or attend the recruitment booth during the club fair. For any inquiries, reach out to us at badminton_sports_association@email.com."
+  },
+  {
+    "club_id": "C060",
+    "club_name": "Table Tennis Training Club",
+    "category": "Sports & Fitness",
+    "description": "Table Tennis Training Club is dedicated to promoting the sport of table tennis and fostering a community of passionate players. We host weekly practice sessions every Wednesday and Friday evening, providing professional coaching and peer-led skill development opportunities. Additionally, we organize monthly tournaments to encourage competitive play and bi-annual workshops featuring guest coaches to further enhance skills and tactics. Social events, such as team-building gatherings and friendly matches, are also held to foster camaraderie among members.",
+    "recruitment_info": "Recruitment opens at the beginning of each semester, typically during the first two weeks of February and September. All levels of experience are welcome, from beginners to advanced players. The only requirement is a strong interest in table tennis and enthusiasm to participate in club activities. To sign up, please contact us via email at table_tennis_training_club@email.com. Further details about the first introductory practice session will be provided upon registration."
+  },
+  {
+    "club_id": "C061",
+    "club_name": "Ultimate Frisbee Association",
+    "category": "Sports & Fitness",
+    "description": "The Ultimate Frisbee Association is dedicated to promoting the exciting and fast-paced sport of Ultimate Frisbee. Our club hosts weekly practice sessions every Wednesday and Friday evening, where players of all skill levels can come together to improve their throwing, catching, and strategic gameplay. We also organize monthly friendly matches and participate in regional tournaments to challenge our team and showcase our skills. Whether you're a seasoned player or completely new to the sport, there's a place for you here.",
+    "recruitment_info": "Recruitment opens at the beginning of each semester, with tryouts held during the first two weeks of classes. No prior experience is necessary, but basic fitness and enthusiasm for team sports are highly encouraged. Interested students can sign up by emailing us at ultimate_frisbee_association@email.com or visiting our booth at the student activities fair. We look forward to welcoming new members to our team!"
+  },
+  {
+    "club_id": "C062",
+    "club_name": "Rock Climbing Adventure Club",
+    "category": "Sports & Fitness",
+    "description": "Rock Climbing Adventure Club is dedicated to promoting the thrill and challenge of rock climbing for enthusiasts of all levels. Our club organizes weekly indoor climbing sessions at local gyms and monthly outdoor excursions to renowned climbing sites. Activities include technique workshops, strength training sessions, and group hikes. We also host annual climbing competitions to foster camaraderie and skill development.",
+    "recruitment_info": "We are recruiting new members from September 1st to September 30th. No prior experience is required—just bring enthusiasm and a willingness to learn. Membership is open to anyone aged 18 and above. To join, please reach out to us at rock_climbing_adventure_club@email.com or visit our booth during the campus fair event. Gear and safety training will be provided."
+  },
+  {
+    "club_id": "C063",
+    "club_name": "Cycling Exploration Association",
+    "category": "Sports & Fitness",
+    "description": "Cycling Exploration Association is a community for cycling enthusiasts who love exploring new routes and challenging their fitness limits. Our primary activities include weekly group rides, skill-building workshops, and occasional long-distance cycling tours. The weekly rides take place every Saturday morning, covering scenic trails and urban routes, and catering to both beginners and advanced riders. Monthly workshops focus on bike maintenance, riding techniques, and safety tips. Every quarter, we organize exciting regional cycling tours that offer a chance to connect with nature and discover new places.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome members of all skill levels who are enthusiastic about cycling and physical fitness. Prospective members should have access to a reliable bicycle and basic safety gear. The registration process includes an orientation session and a short interview. For inquiries or further information, feel free to reach out to us via email at cycling_exploration_association@email.com."
+  },
+  {
+    "club_id": "C064",
+    "club_name": "Ski and Snowboard Club",
+    "category": "Sports & Fitness",
+    "description": "The Ski and Snowboard Club is dedicated to bringing together winter sports enthusiasts for thrilling adventures. Our activities include weekend trips to nearby ski resorts, monthly skill development workshops, and seasonal competitions. Whether you're a beginner looking to learn or an experienced athlete seeking camaraderie, we offer year-round events to suit all levels. Regular social meetups and gear exchange sessions are also held to foster a strong community.",
+    "recruitment_info": "Recruitment is open year-round, with a major drive at the beginning of the winter season. No prior experience is required; we welcome anyone with an interest in skiing or snowboarding. New members are invited to attend an introductory workshop hosted during the recruitment week. To join, simply email us at ski_and_snowboard_club@email.com with your name and a brief introduction."
+  },
+  {
+    "club_id": "C065",
+    "club_name": "Taijiquan Practice Group",
+    "category": "Sports & Fitness",
+    "description": "Taijiquan Practice Group is dedicated to promoting the art of Taijiquan, focusing on physical wellness, mindfulness, and mastery of this traditional martial art. Members gather twice a week for practice sessions, which include warm-up, basic forms, partner exercises, and discussions about the philosophy behind Taijiquan. The group also hosts workshops and seminars led by experienced practitioners once a month to deepen members' understanding and skills.",
+    "recruitment_info": "Recruitment is open at the beginning of each semester. No prior experience is necessary—whether you're a beginner or an experienced practitioner, all are welcome. Comfortable clothing and an interest in learning are the only requirements. To join or inquire further, please contact us at taijiquan_practice_group@email.com."
+  },
+  {
+    "club_id": "C066",
+    "club_name": "Yoga and Meditation Society",
+    "category": "Sports & Fitness",
+    "description": "The Yoga and Meditation Society is dedicated to promoting physical and mental wellness through regular yoga sessions and meditation practices. Our society hosts weekly yoga classes that cater to all skill levels, from beginners to advanced practitioners. In addition, we organize guided meditation workshops twice a month to help participants develop mindfulness and stress-management techniques. We occasionally host guest speakers from the wellness industry and arrange outdoor sessions in tranquil environments to connect with nature and enhance relaxation.",
+    "recruitment_info": "Recruitment starts at the beginning of each semester during the first two weeks. We welcome members of all fitness levels and backgrounds who are interested in yoga and mindfulness. No prior experience is required—just an open mind and enthusiasm. To join, please complete the online registration form provided during the recruitment period. For further inquiries, reach out to us at yoga_and_meditation_society@email.com."
+  },
+  {
+    "club_id": "C067",
+    "club_name": "Street Dance Performance Crew",
+    "category": "Sports & Fitness",
+    "description": "Street Dance Performance Crew is a dynamic group dedicated to the art of street dance and creative expression. Members regularly practice choreography, freestyle techniques, and performance skills. The club organizes weekly training sessions every Tuesday and Thursday evening, lasting two hours each. Additionally, the group participates in monthly workshops with professional instructors and performs at local events, competitions, and showcases. The crew fosters a supportive environment where dancers of all skill levels can improve their abilities and form meaningful connections.",
+    "recruitment_info": "Recruitment takes place during the beginning of the semester and mid-semester. We welcome dancers of all skill levels, from beginners to advanced performers. Applicants should have a passion for dance and a willingness to practice regularly. Auditions will evaluate basic rhythm, coordination, and energy. Please wear comfortable dance clothing for the audition. To apply, email us at street_dance_performance_crew@email.com with your name, experience level, and availability. You’ll receive further details after your submission."
+  },
+  {
+    "club_id": "C068",
+    "club_name": "Volleyball Sports Club",
+    "category": "Sports & Fitness",
+    "description": "Volleyball Sports Club is dedicated to providing its members with a space to develop their volleyball skills, foster teamwork, and enjoy the sport of volleyball. The club organizes weekly training sessions and friendly matches to enhance both beginners and advanced players' abilities. In addition, seasonal tournaments are held every semester to encourage competitiveness and camaraderie among the club members. The club also hosts occasional workshops and guest sessions featuring experienced coaches to refine techniques and strategies.",
+    "recruitment_info": "We are excited to welcome new members to our Volleyball Sports Club! Recruitment takes place during the first two weeks of the semester. There are no specific skill level requirements, as we cater to both beginners and experienced players. However, a keen interest in volleyball and commitment to practice sessions are highly encouraged. To apply, please send us an email at volleyball_sports_club@email.com with your name, student ID, and a brief introduction of your volleyball experience, if any. We look forward to seeing you on the court!"
+  },
+  {
+    "club_id": "C069",
+    "club_name": "Swimming and Diving Club",
+    "category": "Sports & Fitness",
+    "description": "The Swimming and Diving Club is dedicated to providing members with a fun, inclusive environment to enhance their swimming and diving skills while fostering a sense of community. We host swim practice sessions three times a week, diving workshops twice a month, and seasonal competitions to challenge and inspire our members. Additionally, the club organizes socials, team-building activities, and occasional water fitness classes to ensure there’s something for everyone.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome all skill levels, from beginners to advanced swimmers and divers. Interested individuals must be comfortable in water and enthusiastic about learning and participating in club activities. To join, email us at swimming_and_diving_club@email.com to receive further instructions and attend our introductory meeting. Spaces are limited, so early applications are encouraged!"
+  },
+  {
+    "club_id": "C070",
+    "club_name": "Track and Field Association",
+    "category": "Sports & Fitness",
+    "description": "Track and Field Association organizes weekly training sessions and practice meets for athletes of all skill levels to improve their performance in running, jumping, and throwing events. We also host bi-monthly workshops on fitness and nutrition and collaborate with other sports clubs for inter-club competitions. Additionally, our annual Track and Field Championship is a highlight event where members can showcase their skills in a competitive environment.",
+    "recruitment_info": "Recruitment is open at the beginning of each semester. Interested applicants must have a passion for athletics and a willingness to participate in regular training. Prior track and field experience is welcome but not required. To apply, complete our online registration form and email us at track_and_field_association@email.com for any questions or clarifications."
+  },
+  {
+    "club_id": "C071",
+    "club_name": "Skateboarding Extreme Sports Club",
+    "category": "Sports & Fitness",
+    "description": "The Skateboarding Extreme Sports Club is dedicated to promoting the thrilling world of skateboarding and other extreme sports. Our primary activities include weekly skateboarding meetups at local skate parks, where members can practice their skills, learn new tricks, and collaborate with others. We also organize monthly workshops led by experienced skateboarders, covering topics like safety, technique, and equipment maintenance. Additionally, the club hosts quarterly competitions and showcases to celebrate members’ progress and creativity. Whether you're a beginner or a seasoned skater, our club offers a supportive and energetic community to push your limits and share your passion for extreme sports.",
+    "recruitment_info": "Recruitment for the Skateboarding Extreme Sports Club opens twice a year, at the start of the spring and fall semesters. We welcome anyone who has a love for skateboarding or a desire to explore extreme sports—no prior experience is required. All new members must fill out a registration form and attend a brief safety orientation during our introductory session. To join, please contact us via email at skateboarding_extreme_sports_club@email.com. Don't miss the opportunity to become part of our vibrant community and take your extreme sports skills to the next level!"
+  },
+  {
+    "club_id": "C072",
+    "club_name": "Equestrian Sports Society",
+    "category": "Sports & Fitness",
+    "description": "The Equestrian Sports Society is dedicated to promoting the love of horseback riding and equestrian sports. We offer weekly riding sessions at a local stable, where members can practice different disciplines such as dressage, show jumping, and trail riding. Additionally, we organize monthly workshops and clinics led by experienced trainers to help improve techniques and deepen members' understanding of horse care. The society also hosts quarterly social events, such as barn visits and equestrian-themed gatherings, to foster a close-knit community among enthusiasts.",
+    "recruitment_info": "We welcome new members at the beginning of each semester. No prior riding experience is required, but a passion for horses and enthusiasm for learning are essential. Interested individuals should attend our introductory meeting, where we’ll provide all necessary details about memberships and training opportunities. To join, please fill out the application form and email it to equestrian_sports_society@email.com. Spots are limited, so early applications are encouraged!"
+  },
+  {
+    "club_id": "C073",
+    "club_name": "Combat Sports Association",
+    "category": "Sports & Fitness",
+    "description": "The Combat Sports Association focuses on promoting physical fitness, discipline, and self-defense techniques through various combat sports such as boxing, martial arts, kickboxing, and wrestling. Members participate in weekly training sessions conducted by experienced instructors to improve their skills and techniques. Additionally, the association organizes monthly workshops, sparring events, and inter-association competitions to enhance members' practical experience and teamwork.",
+    "recruitment_info": "Recruitment takes place during the first two weeks of each semester. We welcome all skill levels, from beginners to advanced practitioners. Interested individuals should have a genuine interest in combat sports and a commitment to participating in activities regularly. To apply, please email us at combat_sports_association@email.com with your name, contact details, and a brief introduction about yourself."
+  },
+  {
+    "club_id": "C074",
+    "club_name": "Rowing and Canoeing Club",
+    "category": "Sports & Fitness",
+    "description": "The Rowing and Canoeing Club is dedicated to providing members with both competitive and recreational opportunities to engage in water sports. Our main activities include organized rowing and canoeing sessions held twice weekly at the local lake, technique improvement workshops, team-building exercises, and seasonal fun races. For competitive members, we participate in regional and national rowing competitions. Additionally, we host annual social events such as beach clean-up initiatives and paddle festivals to foster community involvement and camaraderie.",
+    "recruitment_info": "Our recruitment begins at the start of the fall and spring semesters. No prior experience is necessary; we welcome beginners and experienced rowers alike. Applicants must be passionate about water sports and comfortable with outdoor activities. Prospective members are required to attend an introductory session and demonstrate a commitment to team-based activities. For inquiries and further details, please contact us via email: rowing_and_canoeing_club@email.com."
+  },
+  {
+    "club_id": "C075",
+    "club_name": "Tennis Sports Association",
+    "category": "Sports & Fitness",
+    "description": "Tennis Sports Association is dedicated to promoting the love and skill of tennis among its members. The club organizes weekly practice sessions every Saturday morning at a local sports facility, catering to players of all levels from beginners to advanced. Monthly friendly tournaments are held to give members a chance to compete and improve their skills in a fun, supportive environment. Additionally, the club hosts workshops with guest coaches and tennis professionals twice a semester to help members refine their techniques and learn new strategies.",
+    "recruitment_info": "The Tennis Sports Association is looking for passionate individuals to join! Recruitment starts at the beginning of each semester during our official signup week. No prior tennis experience is required, but an interest in sports and fitness is encouraged. Potential members are asked to attend a brief orientation meeting where we share more information about the club activities and expectations. For inquiries or to express interest, please contact us at tennis_sports_association@email.com."
+  },
+  {
+    "club_id": "C076",
+    "club_name": "Fencing Arts Club",
+    "category": "Sports & Fitness",
+    "description": "Fencing Arts Club focuses on promoting the unique sport of fencing, offering members a chance to develop their physical skills, strategic thinking, and sportsmanship. Our activities include weekly training sessions where members practice techniques and engage in friendly matches, monthly workshops led by experienced coaches to deepen understanding of fencing strategies, and seasonal tournaments to showcase skills and foster a competitive spirit. We also organize team-building events to strengthen camaraderie among members.",
+    "recruitment_info": "Recruitment is open at the beginning of each semester. Applicants of all skill levels are welcome, from beginners to experienced fencers. Requirements include a passion for sports and fitness and a willingness to actively participate in club activities. For inquiries or to submit your application, please contact us via email at fencing_arts_club@email.com."
+  },
+  {
+    "club_id": "C077",
+    "club_name": "Ice Hockey Club",
+    "category": "Sports & Fitness",
+    "description": "The Ice Hockey Club is dedicated to promoting the excitement and camaraderie of ice hockey. Our main activities include weekly practice sessions at a local ice rink, competitive matches against other clubs, and monthly skill-building workshops led by experienced players. Additionally, we organize social events such as team dinners and viewing parties for major hockey games to foster a tight-knit community. Activities are typically held during evenings and weekends to accommodate different schedules.",
+    "recruitment_info": "Recruitment for the Ice Hockey Club takes place annually at the beginning of the fall semester. We welcome members of all skill levels, whether you are a seasoned player or new to the sport. No prior experience is necessary, just bring a willingness to learn and a passion for the game! Participants are required to have basic skating gear, but club equipment is available for borrow or rent. For inquiries or to apply, please contact us at ice_hockey_club@email.com."
+  },
+  {
+    "club_id": "C078",
+    "club_name": "Rural Education Support Group",
+    "category": "Volunteering & Public Welfare",
+    "description": "The Rural Education Support Group is dedicated to improving educational resources and opportunities for children in underprivileged rural areas. Our primary activities include organizing weekly tutoring sessions, conducting bi-monthly workshops on essential life skills, and hosting annual donation drives to provide educational materials and supplies. Additionally, the group collaborates with local communities to establish long-term support programs and raise awareness about rural education challenges.",
+    "recruitment_info": "We welcome passionate individuals to join us every September during our official recruitment period. Applicants are expected to have a strong commitment to volunteerism and a genuine interest in education equity. Prior experience in teaching or volunteering is appreciated but not mandatory. For inquiries or to submit your application, please contact us at rural_education_support_group@email.com."
+  },
+  {
+    "club_id": "C079",
+    "club_name": "Red Ribbon AIDS Prevention Association",
+    "category": "Volunteering & Public Welfare",
+    "description": "The Red Ribbon AIDS Prevention Association is dedicated to raising awareness about HIV/AIDS, promoting sexual health education, and supporting affected individuals. Our key activities include organizing community outreach programs, educational workshops, health fairs, and annual campaigns such as World AIDS Day events. We collaborate with health professionals and local organizations to provide free HIV testing and counseling. Activities are conducted on a bi-monthly basis, with larger awareness events happening quarterly. Members also lead peer education initiatives to create a supportive and informed community.",
+    "recruitment_info": "Recruitment for new members occurs twice a year, in March and September. We welcome passionate individuals aged 18 and above who are committed to volunteering and public welfare. Prior experience in community engagement or health-related fields is appreciated but not required. New recruits are expected to participate in orientation sessions and training workshops. If interested, please reach out to us via email at red_ribbon_aids_prevention_association@email.com with your application, including a brief introduction and your motivation for joining the organization."
+  },
+  {
+    "club_id": "C080",
+    "club_name": "Community Care Volunteer Alliance",
+    "category": "Volunteering & Public Welfare",
+    "description": "Community Care Volunteer Alliance is dedicated to making a positive impact through various volunteering initiatives and public welfare activities. Our main activities include organizing monthly community clean-up events, visiting elderly care homes twice a month, hosting quarterly public welfare workshops, and coordinating holiday charity drives. Through these programs, we aim to inspire social responsibility and foster a culture of compassion among our members.",
+    "recruitment_info": "Recruitment for new members is open every September and March. We welcome individuals who are passionate about volunteering and committed to making a difference in their community. No prior experience is required, but teamwork and reliability are essential qualities. Interested applicants can reach out via email: community_care_volunteer_alliance@email.com."
+  },
+  {
+    "club_id": "C081",
+    "club_name": "Environmental Protection Action Group",
+    "category": "Volunteering & Public Welfare",
+    "description": "The Environmental Protection Action Group is dedicated to promoting sustainability and environmental awareness through a variety of hands-on initiatives. Our primary activities include monthly community clean-up events, bi-weekly recycling drives, tree planting campaigns every season, and educational workshops on eco-friendly practices conducted quarterly. Additionally, we organize awareness campaigns and collaborate with local organizations to address pressing environmental issues.",
+    "recruitment_info": "Recruitment takes place at the start of each semester. We are looking for enthusiastic individuals who are passionate about environmental protection and willing to dedicate their time to volunteer activities. No prior experience is required, but a commitment to teamwork and consistency is highly valued. Interested candidates can apply by filling out an online application form which will be shared during our promotional events. For inquiries, please contact us at environmental_protection_action_group@email.com."
+  },
+  {
+    "club_id": "C082",
+    "club_name": "Mental Health Support Club",
+    "category": "Volunteering & Public Welfare",
+    "description": "Mental Health Support Club is a volunteering organization dedicated to promoting mental health awareness and providing peer support to individuals facing emotional challenges. Our activities include weekly peer support group meetings, bi-monthly workshops on stress management and mindfulness techniques, and annual campaigns to destigmatize mental health issues. Additionally, we collaborate with local mental health professionals to conduct guest lectures and outreach programs. The club strives to create a safe and compassionate space for everyone, encouraging open conversations and empowerment.",
+    "recruitment_info": "Our recruitment period begins at the start of each semester. We are looking for passionate and empathetic individuals who genuinely care about mental health advocacy. No prior experience is required, but a willingness to learn and contribute is essential. Interested candidates must fill out an online application form and participate in a brief interview. For further inquiries, feel free to contact us at mental_health_support_club@email.com."
+  },
+  {
+    "club_id": "C083",
+    "club_name": "Disability Support Service Group",
+    "category": "Volunteering & Public Welfare",
+    "description": "The Disability Support Service Group is dedicated to providing assistance and creating a supportive community for individuals with disabilities. We organize weekly workshops, monthly awareness campaigns, and biannual fundraising events to spread understanding and advocate for inclusivity. Activities include accessibility training, community seminars, and collaborations with local organizations to improve resource availability. The group also actively educates members on accessibility technologies and fosters an empathetic approach to disability support work.",
+    "recruitment_info": "Recruitment takes place annually during the first two weeks of September. We welcome individuals passionate about volunteering and disability advocacy, with no prior experience required. Applicants should have strong communication skills, a collaborative spirit, and a commitment to helping those in need. For any inquiries or to submit your application, please email us at disability_support_service_group@email.com."
+  },
+  {
+    "club_id": "C084",
+    "club_name": "Blood Donation Promotion Society",
+    "category": "Volunteering & Public Welfare",
+    "description": "The Blood Donation Promotion Society is dedicated to raising awareness about the importance of blood donation and organizing blood drive events in collaboration with local health organizations. Our activities include monthly educational workshops, regular community outreach campaigns, and quarterly blood donation drives. Additionally, we host guest talks featuring healthcare professionals to discuss the impact of blood donation and address common misconceptions. Members actively contribute by planning events, designing promotional materials, and engaging with the community.",
+    "recruitment_info": "Recruitment takes place during the first two weeks of the semester. We welcome individuals who are passionate about volunteering and promoting public welfare. Prior experience in community service is a plus but not mandatory. Applicants should be committed, willing to collaborate, and possess good communication skills. To apply, please send your application to blood_donation_society@email.com. Feel free to include a brief introduction and explain your interest in joining the society."
+  },
+  {
+    "club_id": "C085",
+    "club_name": "Animal Protection Volunteers",
+    "category": "Volunteering & Public Welfare",
+    "description": "Animal Protection Volunteers is dedicated to promoting animal welfare through various activities such as pet adoption campaigns, awareness workshops, and community outreach programs. Our primary focus is on supporting local shelters and advocating for responsible pet ownership. Activities are typically organized on a monthly basis, with special events such as fundraising drives and educational seminars held quarterly. Members are encouraged to actively participate in event planning and volunteer efforts to make a meaningful impact.",
+    "recruitment_info": "Recruitment for new members takes place at the beginning of each semester. We welcome individuals who are passionate about animal protection and willing to commit time to volunteering activities. No prior experience is required, but candidates should be responsible, proactive, and ready to work collaboratively. Interested applicants can reach out to us via email at animal_protection_volunteers@email.com for more details. Applications are accepted through the recruitment week, and selected candidates will be invited for an introductory meeting and orientation session."
+  },
+  {
+    "club_id": "C086",
+    "club_name": "First Aid Training Association",
+    "category": "Volunteering & Public Welfare",
+    "description": "The First Aid Training Association is dedicated to providing essential first aid knowledge and skills to the community. Our primary activities include organizing workshops, hands-on training sessions, and public awareness campaigns focused on health and safety. These activities are conducted bi-weekly, and special events such as disaster response simulations or advanced first aid courses are held quarterly. Members also participate in volunteering opportunities during local events to offer first aid services and promote public welfare initiatives.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester, with applications opening in September for the fall semester and February for the spring semester. We welcome students who are passionate about volunteering and promoting public health. No prior experience in first aid is required, but a willingness to learn and attend training sessions is essential. To apply, please email us at first_aid_training_association@email.com with a brief introduction and your motivation for joining."
+  },
+  {
+    "club_id": "C087",
+    "club_name": "Elderly Care Service Society",
+    "category": "Volunteering & Public Welfare",
+    "description": "The Elderly Care Service Society is a dedicated volunteering group committed to supporting senior citizens in the community. Our activities include organizing weekly visits to elderly care centers, hosting seasonal events such as holiday celebrations and health awareness workshops, and providing companionship through storytelling, games, and cultural exchanges. Additionally, we offer monthly training sessions for volunteers to enhance their understanding of senior care and effective communication strategies. Through these consistent efforts, we aim to foster meaningful connections and improve the quality of life for the elderly.",
+    "recruitment_info": "Recruitment for the Elderly Care Service Society is held annually in September. We welcome individuals who are compassionate, patient, and committed to making a positive impact. No prior volunteering experience is required, but applicants should be able to dedicate time to weekly activities. Interested individuals can submit their application forms and a short introduction via email to elderly_care_service_society@email.com. Join us to make a difference in the lives of the elderly!"
+  },
+  {
+    "club_id": "C088",
+    "club_name": "Refugee Aid Volunteer Group",
+    "category": "Volunteering & Public Welfare",
+    "description": "The Refugee Aid Volunteer Group is dedicated to supporting refugees and displaced individuals through a variety of activities focused on community integration, education, and basic necessities. Our key initiatives include organizing monthly donation drives for essential items like clothing and hygiene products, conducting weekly language and skill-building workshops to help refugees adapt to new environments, and hosting quarterly cultural exchange events to foster understanding and inclusivity within local communities. We also collaborate with other relief organizations to coordinate food distribution and healthcare access on a biannual basis. Every activity is carried out with compassion and a commitment to making a positive difference.",
+    "recruitment_info": "Recruitment takes place annually in September and March. We welcome individuals with a passion for humanitarian work, an ability to work collaboratively, and a willingness to commit time to meaningful causes. No prior experience is required, but dedication and a proactive attitude are essential. Interested candidates should submit an application detailing their motivation and availability. For inquiries and submission, please contact us via email at refugee_aid_volunteer_group@email.com."
+  },
+  {
+    "club_id": "C089",
+    "club_name": "Model United Nations Association",
+    "category": "Social Practice",
+    "description": "The Model United Nations Association organizes simulations of UN meetings, allowing members to participate as delegates representing various countries. Activities include weekly debate sessions, monthly training workshops to enhance public speaking and diplomacy skills, and semi-annual conferences that attract participants from different institutions. Members also engage in research, drafting resolutions, and negotiation exercises to mimic real-world international relations.",
+    "recruitment_info": "Recruitment is open annually from September to October. Applicants are expected to have a keen interest in international affairs and strong communication skills. Prior experience in MUN is a plus but not mandatory. To apply, submit your application through the provided form and attend the mandatory introduction session. For inquiries, contact us at model_united_nations_association@email.com."
+  },
+  {
+    "club_id": "C090",
+    "club_name": "Corporate Internship Alliance",
+    "category": "Social Practice",
+    "description": "Corporate Internship Alliance is committed to creating opportunities for students to explore and engage in real-world corporate environments. The organization hosts bi-weekly seminars where industry professionals share insights on career development and internships. Additionally, monthly corporate field trips are organized to give members firsthand exposure to workplace cultures and operations. The club also runs skill-building workshops, such as resume crafting and interview coaching, aimed at preparing students for professional success.",
+    "recruitment_info": "Recruitment takes place at the beginning of both the fall and spring semesters. Applicants must be enrolled students with a strong interest in professional development and internships. No prior experience is required. To apply, candidates should fill out the online application form and submit a short statement about their interests and goals. For inquiries, please contact corporate_internship_alliance@email.com."
+  },
+  {
+    "club_id": "C091",
+    "club_name": "Career Development Association",
+    "category": "Social Practice",
+    "description": "Career Development Association focuses on organizing workshops, seminars, and networking events aimed at improving members' professional skills and career prospects. Regular activities include monthly thematic workshops on topics such as resume building, interview preparation, and personal branding. Additionally, the association hosts quarterly guest speaker sessions with industry professionals and annual career fairs to connect members with potential employers.",
+    "recruitment_info": "Recruitment takes place during the first two weeks of each semester. Applicants should be proactive learners with an interest in career development and professional growth. No prior experience is required, but commitment to participate in regular activities is expected. To apply, send your name, a brief introduction, and your reasons for joining to career_development_association@email.com."
+  },
+  {
+    "club_id": "C092",
+    "club_name": "E-commerce Innovation Society",
+    "category": "Social Practice",
+    "description": "E-commerce Innovation Society focuses on fostering creativity and practical skills in the realm of online business and digital entrepreneurship. The society organizes workshops on topics such as website development, digital marketing strategies, and data analytics for e-commerce. We also run monthly case study competitions to encourage innovative problem-solving and host guest speaker sessions featuring industry professionals twice a semester.",
+    "recruitment_info": "Recruitment will take place during the first two weeks of the semester. We welcome students from all backgrounds who are passionate about e-commerce and innovation. No prior experience is required, but dedication and enthusiasm are a must. To apply, please submit your application form via email at e-commerce_innovation_society@email.com. Interviews will be scheduled for shortlisted applicants."
+  },
+  {
+    "club_id": "C093",
+    "club_name": "Social Survey Research Group",
+    "category": "Social Practice",
+    "description": "The Social Survey Research Group focuses on conducting surveys to explore various social issues, analyze societal trends, and provide insights into community needs. The group organizes monthly workshops to teach members data collection and analysis skills, along with bi-monthly field survey projects in local communities. Members enjoy interactive discussions on survey methodologies and presentations of findings.",
+    "recruitment_info": "Recruitment takes place annually in September. Applicants are expected to have an interest in social research and collaborative teamwork. Prior experience in survey design or data analysis is welcomed but not mandatory. To apply, please send your application along with a brief introduction of your background and interests to social_survey_research_group@email.com."
+  },
+  {
+    "club_id": "C094",
+    "club_name": "Startup Practice Club",
+    "category": "Social Practice",
+    "description": "Startup Practice Club focuses on empowering members with entrepreneurial skills and real-world social practice. The club organizes weekly workshops, guest lectures by industry professionals, networking events, and brainstorming sessions for innovative project ideas. Members also collaborate on simulated startup projects and participate in social practice initiatives to address community needs through creative solutions.",
+    "recruitment_info": "Recruitment takes place during the first two weeks of each semester. Applicants are required to submit a short application form and participate in an interview to showcase their passion for entrepreneurship and social impact. We welcome individuals from all backgrounds who are eager to learn and contribute. For questions or applications, please contact us at startup_practice_club@email.com."
+  },
+  {
+    "club_id": "C095",
+    "club_name": "Military Culture Research Society",
+    "category": "Social Practice",
+    "description": "The Military Culture Research Society is dedicated to exploring and studying military history, traditions, and the cultural impact of armed forces worldwide. Our key activities include monthly seminars featuring guest speakers, group discussions on significant military strategies and historical events, as well as annual field trips to renowned historical sites or military museums. Additionally, we conduct workshops on research methodologies and provide members with resources for independent projects.",
+    "recruitment_info": "Recruitment takes place at the beginning of each semester. We welcome students from all majors who have an interest in military history, culture, and research. Applicants are encouraged to demonstrate curiosity and commitment to collaborative learning. No prior experience is required. To apply, please send a brief introduction about yourself and your interests to military_culture_research_society@email.com before the deadline specified in the recruitment announcement."
+  },
+  {
+    "club_id": "C096",
+    "club_name": "Legal Practice Association",
+    "category": "Social Practice",
+    "description": "The Legal Practice Association is dedicated to fostering an understanding of real-world legal applications through workshops, mock trials, and guest speaker events with industry professionals. Activities are held bi-weekly, including seminars on legal drafting, networking events, and interactive case study sessions that allow members to gain hands-on experience in the field of law.",
+    "recruitment_info": "Recruitment takes place annually during the start of the semester. Requirements include a genuine interest in legal practice and a commitment to participate in regular activities. No prior experience is necessary, and all academic backgrounds are welcome. To apply, please send an email to legal_practice_association@email.com with your name, contact information, and a short statement about your interest in joining."
+  },
+  {
+    "club_id": "C097",
+    "club_name": "Financial Investment Simulation Club",
+    "category": "Social Practice",
+    "description": "Financial Investment Simulation Club hosts interactive workshops and simulation sessions to equip members with practical knowledge of financial markets, investment strategies, and risk management. Activities include portfolio simulation competitions, guest lectures from industry professionals, and monthly analysis of market trends. The club meets bi-weekly and organizes larger events, such as networking sessions and case competitions, on a quarterly basis.",
+    "recruitment_info": "Recruitment is open from September 1st to September 15th every year. We welcome applications from individuals passionate about finance and eager to learn about investment strategies. No prior experience is required, but a basic understanding of financial concepts is preferred. Interested candidates should submit their applications to financial_investment_simulation_club@email.com. Selected applicants may be invited for a brief interview to assess their motivation and team compatibility."
+  },
+  {
+    "club_id": "C098",
+    "club_name": "Public Policy Debate Society",
+    "category": "Social Practice",
+    "description": "The Public Policy Debate Society is dedicated to fostering critical thinking and engaging in discussions about pressing societal issues. Members participate in weekly debate workshops, where they refine their argumentation skills, learn about various public policy topics, and practice structured debate formats. The society also organizes monthly debate competitions, inviting guest speakers and judges from diverse professional backgrounds. Additionally, members collaborate on research projects and host public forums to encourage community involvement and awareness on policy matters.",
+    "recruitment_info": "Recruitment takes place during the first month of the academic semester. We are looking for individuals who are enthusiastic about debates and public policy, and no prior experience is necessary. Applicants should demonstrate strong communication skills and a willingness to learn. To join, please submit an online application along with a short essay explaining your interest. For inquiries, email us at public_policy_debate_society@email.com."
+  },
+  {
+    "club_id": "C099",
+    "club_name": "Cultural Industry Practice Group",
+    "category": "Social Practice",
+    "description": "The Cultural Industry Practice Group is dedicated to exploring and engaging in activities that enhance understanding of the cultural industry and its practices. We organize workshops, panel discussions, and field visits to cultural institutions such as art galleries, museums, and studios on a monthly basis. Members also participate in collaborative projects to analyze current trends and challenges within the cultural industry, offering hands-on experience and fostering creativity.",
+    "recruitment_info": "Recruitment takes place every September and January. We welcome students passionate about the cultural industry and social practice. Applicants should submit a brief statement of interest and complete a short interview. No prior experience is required, but strong communication and teamwork skills are preferred. For inquiries or to apply, email us at cultural_industry_practice_group@email.com."
+  },
+  {
+    "club_id": "C100",
+    "club_name": "Media Production Practice Group",
+    "category": "Social Practice",
+    "description": "The Media Production Practice Group is dedicated to fostering creativity and skill development in media production. Members engage in hands-on projects such as short film creation, video editing, photography workshops, and audio production sessions. We host monthly skill-building seminars and collaborative group projects every semester, along with an annual showcase event where members present their work to the community.",
+    "recruitment_info": "Recruitment for new members occurs at the beginning of each semester. We welcome individuals with a passion for media creation, regardless of prior experience. Applicants must submit a short personal statement outlining their interest and any relevant skills they possess. For more information or to apply, please contact us via email at media_production_practice_group@email.com."
+  }
+]

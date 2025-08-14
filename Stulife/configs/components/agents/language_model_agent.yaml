@@ -1,0 +1,6 @@
+language_model_agent:
+  module: "src.agents.instance.language_model_agent.LanguageModelAgent"
+  parameters:
+    language_model: "Fill the parameter 'language_model_name' in assignment config."
+    system_prompt: "You are a helpful assistant."
+    inference_config_dict: {}  # "Fill the parameter 'inference_config_dict' in assignment config, if necessary."

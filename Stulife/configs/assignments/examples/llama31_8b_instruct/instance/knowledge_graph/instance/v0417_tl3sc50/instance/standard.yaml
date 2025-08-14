@@ -1,0 +1,13 @@
+import:
+- ../../../../../../../../definition.yaml
+- ../../../../../agent.yaml
+- ../../../task.yaml
+- ../data_file_path.yaml
+assignment_config:
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+  output_dir: outputs/{TIMESTAMP}
+  sample_order: default
+environment_config:
+  use_task_client_flag: false

@@ -1,0 +1,14 @@
+assignment_config:
+  language_model_list:
+  - name: DeepSeek-R1-Distill-Qwen-7B
+  agent:
+    name: language_model_agent
+    custom_parameters:
+      language_model: DeepSeek-R1-Distill-Qwen-7B
+      inference_config_dict:
+        do_sample: false
+        num_beams: 1
+        max_new_tokens: 512
+        temperature: null
+        top_k: null
+        top_p: null

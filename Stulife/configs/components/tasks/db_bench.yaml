@@ -1,0 +1,13 @@
+db_bench:
+  module: "src.tasks.instance.db_bench.DBBench"
+  parameters:
+    task_name:
+      module: "src.typings.TaskName"
+      parameters:
+        value: "db_bench"
+    chat_history_item_factory:
+      module: "src.factories.chat_history_item.ChatHistoryItemFactory"
+      parameters:
+        chat_history_item_dict_path: "./chat_history_items/standard/db_bench.json"
+    data_file_path: "./data/v0303/db_bench/processed/v0317_first500/entry_dict.json"
+    max_round: 3

@@ -1,0 +1,3559 @@
+[
+    {
+      "title": "The Quantum Basis of Consciousness: A Neuroscientific Inquiry",
+      "author": "Dr. Alistair Finch",
+      "call_number": "NEURO-451.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Rethinking Civic Duty: Participation in the Digital Age",
+      "author": "Isabelle Dubois",
+      "call_number": "PSCI-303.D8",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A Framework for Ethical AI in Autonomous Systems",
+      "author": "Kenji Tanaka",
+      "call_number": "AI-512.T2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Poetics of Space in Post-War English Novels",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "ENGLIT-210.R4",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "Journal of Applied Robotics",
+      "author": "Lifelong Agent University Press",
+      "call_number": "JOU-ROB-Q3",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Principles of International Trade Law",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "LAW-420.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "Harmonic Structures in 19th-Century Symphonies",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-330.O2",
+      "type": "Thesis",
+      "status": "Checked Out",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "Computational Models of Molecular Gastronomy",
+      "author": "Chen Wei",
+      "call_number": "CHEM-280.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The University Charters: A Special Collection",
+      "author": "University Archives",
+      "call_number": "ARCH-001.U5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "The University Archive - Public Reading Room (101)"
+    },
+    {
+      "title": "An Analysis of Fluid Dynamics in Aeronautical Engineering",
+      "author": "Priya Sharma",
+      "call_number": "ENG-455.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Philosophy of Language: From Wittgenstein to Modern Semantics",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "PHIL-311.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Economic Cycles and Their Discontents: A Study of the 20th Century",
+      "author": "Eleanor Vance",
+      "call_number": "ECON-301.V3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Advanced Particle Physics",
+      "author": "Dr. Hans Gruber",
+      "call_number": "PHYS-501.G7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Journal of Educational Psychology",
+      "author": "Academic Publishing Group",
+      "call_number": "JOU-EDU-M1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Principles of Object-Oriented Programming in C++",
+      "author": "Samuel Croft",
+      "call_number": "CS-210.C7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "A History of the Silk Road: Commerce and Culture",
+      "author": "Dr. Aisha Khan",
+      "call_number": "HIST-220.K4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Tectonics of Identity: Plate Geosciences and Cultural Formation",
+      "author": "Dr. Omar Badawi",
+      "call_number": "GEO-350.B2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Social Stratification in Megacities",
+      "author": "Javier Morales",
+      "call_number": "SOC-215.M6",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A Novel Method for Protein Folding Simulation",
+      "author": "Yuki Yamamoto",
+      "call_number": "BIO-488.Y2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Grammar of Power: Language and Politics in Renaissance Italy",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "LANG-305.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Dynamics of Machine Learning: From Neural Networks to Deep Reinforcement Learning",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "AI-550.R4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "An Analysis of Market Volatility in Emerging Economies",
+      "author": "Fatima al-Sayed",
+      "call_number": "ECON-410.A7",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Art of the Fugue: A Structural Analysis",
+      "author": "Katarina Schmidt",
+      "call_number": "MUS-410.S3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "Foundations of Abstract Algebra",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-320.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Rethinking Plato: Justice and the Ideal State in Modernity",
+      "author": "Dr. Helena Shaw",
+      "call_number": "PHIL-201.S4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Principles of Pharmaceutical Compounding",
+      "author": "Dr. Mei Lin",
+      "call_number": "PHARM-250.L5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Colonial Gaze: A Study of 19th-Century Travel Literature",
+      "author": "Ngozi Adichie",
+      "call_number": "LIT-315.A3",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "International Law and Human Rights",
+      "author": "Dr. Ananya Sharma",
+      "call_number": "LAW-505.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "Journal of General Science",
+      "author": "Lifelong Agent University Press",
+      "call_number": "JOU-GEN-Y1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "Grand Central Library - Periodicals Reading Room (floor_1)"
+    },
+    {
+      "title": "The Anthropology of Ritual: A Cross-Cultural Survey",
+      "author": "Dr. Ben Carter",
+      "call_number": "ANTHRO-202.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Advanced Cryptography",
+      "author": "Samuel Croft",
+      "call_number": "CS-465.C7",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Aesthetics of Dissonance in Modernist Painting",
+      "author": "Chloe Kim",
+      "call_number": "ART-250.K5",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Cognitive Biases in Decision Making",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "PSYCH-333.R4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Ancient Greece: From Minoans to Alexander",
+      "author": "Dr. Alistair Finch",
+      "call_number": "CLASS-201.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Urban Fabric: A Geographical Perspective on City Growth",
+      "author": "Maria Garcia",
+      "call_number": "GEO-210.G3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Geography",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of Network Latency in Distributed Database Systems",
+      "author": "Li Wei",
+      "call_number": "CS-521.L5",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Governor's Correspondence: 1880-1895",
+      "author": "State Archive Collection",
+      "call_number": "ARCH-SP-07",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "Grand Central Library - Archives & Special Collections (basement)"
+    },
+    {
+      "title": "Journal of Stem Cell Research",
+      "author": "Scientific Publishing Co.",
+      "call_number": "JOU-BIO-Q4",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Modernity and its Discontents: A Study of Post-War European Thought",
+      "author": "Dr. Klaus Richter",
+      "call_number": "SOC-350.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Advanced Topics in Structural Engineering",
+      "author": "Dr. Olivia Chen",
+      "call_number": "ENG-510.C4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Complete Works of Shakespeare: A Variorum Edition",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-401.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "An Analysis of Judicial Precedent in Environmental Law",
+      "author": "David Chen",
+      "call_number": "LAW-480.C4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "The Quantum Realm: An Introduction for Undergraduates",
+      "author": "Dr. Lena Petrova",
+      "call_number": "PHYS-101.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Pedagogical Strategies for Inclusive Classrooms",
+      "author": "Dr. Samuel Jones",
+      "call_number": "EDU-310.J6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Journal of Financial Economics",
+      "author": "Academic Press",
+      "call_number": "JOU-ECON-M2",
+      "type": "Journal",
+      "status": "Checked Out",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Swarm Intelligence in Robotic Systems",
+      "author": "Kenji Tanaka",
+      "call_number": "ROBO-420.T2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Geopolitics of Natural Resources",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PSCI-410.A4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Cartography",
+      "author": "Eleanor Vance",
+      "call_number": "GEO-250.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Geography",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Analysis of Organic Compounds",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-301.R7",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Nature of Perception: A Psychological Study",
+      "author": "Dr. Ben Carter",
+      "call_number": "PSYCH-280.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A Novel Algorithm for Secure Multi-Party Computation",
+      "author": "Anya Sharma",
+      "call_number": "CS-610.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Roman Republic: A Political History",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "HIST-310.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Journal of Interdisciplinary Studies",
+      "author": "Lifelong Agent University Press",
+      "call_number": "JOU-GEN-Y2",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "STEM Library - Journal Archives (floor_1)"
+    },
+    {
+      "title": "Cultural Anthropology: An Introduction",
+      "author": "Dr. Mei Lin",
+      "call_number": "ANTHRO-101.L5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Structure of Epic Poetry: Homer and Virgil",
+      "author": "Dr. Helena Shaw",
+      "call_number": "CLASS-350.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Neural Correlates of Memory Formation",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-410.B2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Rethinking Postmodernism: Identity and Fragmentation",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "LIT-420.R4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Principles of Microeconomics",
+      "author": "Dr. Javier Morales",
+      "call_number": "ECON-101.M6",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Symbolism in Renaissance Art",
+      "author": "Isabelle Dubois",
+      "call_number": "ART-310.D8",
+      "type": "Book",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Advanced Logic Design for Digital Circuits",
+      "author": "Priya Sharma",
+      "call_number": "ENG-325.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "A Treatise on Constitutional Law",
+      "author": "Chief Justice Roberts (Ret.)",
+      "call_number": "LAW-600.R6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "An Analysis of Stochastic Processes in Finance",
+      "author": "Dr. Kenji Tanaka",
+      "call_number": "MATH-450.T2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Victorian Novel: A Critical Companion",
+      "author": "Dr. Alistair Finch",
+      "call_number": "ENGLIT-305.F5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "Pharmacokinetics and Drug Metabolism",
+      "author": "Dr. Chen Wei",
+      "call_number": "PHARM-310.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Sociology of Globalization",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "SOC-310.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Acoustics and Psychoacoustics in Music Production",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-280.O2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "Natural Language Processing with Deep Learning",
+      "author": "Dr. Anya Sharma",
+      "call_number": "AI-560.S4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Philosophy of Mind: Consciousness and Intentionality",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "PHIL-401.R4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Comparative Linguistics of Romance Languages",
+      "author": "Dr. Javier Morales",
+      "call_number": "LANG-220.M6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Fabric of the Cosmos: Space, Time, and Reality",
+      "author": "Dr. Hans Gruber",
+      "call_number": "PHYS-410.G7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Operating Systems",
+      "author": "Samuel Croft",
+      "call_number": "CS-350.C7",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Electoral Systems and Democratic Outcomes",
+      "author": "Isabelle Dubois",
+      "call_number": "PSCI-320.D8",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Cellular Biology and Genetics",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-201.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Medieval Manuscript Collection",
+      "author": "Special Collections Librarian",
+      "call_number": "ARCH-SP-12",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "Grand Central Library - Archives & Special Collections (basement)"
+    },
+    {
+      "title": "A History of Economic Thought",
+      "author": "Dr. Alistair Finch",
+      "call_number": "ECON-250.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Psychology of Learning and Memory",
+      "author": "Dr. Ben Carter",
+      "call_number": "PSYCH-210.C3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Analysis of Sensor Fusion in Autonomous Vehicles",
+      "author": "Li Wei",
+      "call_number": "ROBO-515.L5",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Principles of Thermodynamics and Statistical Mechanics",
+      "author": "Dr. Lena Petrova",
+      "call_number": "PHYS-301.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Law of Contracts: Cases and Materials",
+      "author": "Dr. David Chen",
+      "call_number": "LAW-201.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "Journal of Historical Geography",
+      "author": "Geographical Society Press",
+      "call_number": "JOU-GEO-Q1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Geography",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Curriculum Design and Assessment",
+      "author": "Dr. Samuel Jones",
+      "call_number": "EDU-405.J6",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of the Byzantine Empire",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "HIST-280.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Thematic Analysis in Qualitative Research",
+      "author": "Dr. Aisha Khan",
+      "call_number": "SOC-410.K4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Computational Fluid Dynamics",
+      "author": "Dr. Olivia Chen",
+      "call_number": "ENG-480.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "An Introduction to Number Theory",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-210.P4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Development of the English Sonnet",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-250.V3",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "A Novel Framework for Cross-Modal Data Retrieval",
+      "author": "Kenji Tanaka",
+      "call_number": "AI-620.T2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Poetics of Resistance in Latin American Literature",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "LIT-380.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Journal of Tectonic Geosciences",
+      "author": "Scientific Press International",
+      "call_number": "JOU-GEO-S1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Logic of Scientific Discovery",
+      "author": "Dr. Helena Shaw",
+      "call_number": "PHIL-350.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A Cultural History of Food",
+      "author": "Dr. Ben Carter",
+      "call_number": "ANTHRO-310.C3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Principles of Database Systems",
+      "author": "Samuel Croft",
+      "call_number": "CS-412.C7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Baroque Counterpoint and Composition",
+      "author": "Katarina Schmidt",
+      "call_number": "MUS-350.S3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "Synaptic Plasticity and Learning",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-501.B2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Journal of Classical Philology",
+      "author": "University Press",
+      "call_number": "JOU-CLASS-A1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Politics of Identity in Post-Colonial Africa",
+      "author": "Ngozi Adichie",
+      "call_number": "PSCI-380.A3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of Material Stress in Aerospace Composites",
+      "author": "Priya Sharma",
+      "call_number": "ENG-520.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "An Introduction to Inorganic Chemistry",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-101.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Art of Cinematography: Light and Shadow",
+      "author": "Chloe Kim",
+      "call_number": "ART-405.K5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Global Finance",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ECON-330.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Ecology and Evolutionary Biology",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-250.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Torts: Cases and Commentaries",
+      "author": "Dr. David Chen",
+      "call_number": "LAW-210.C4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "An Analysis of Genetic Algorithms for Optimization Problems",
+      "author": "Anya Sharma",
+      "call_number": "AI-480.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The French Revolution: A People's History",
+      "author": "Dr. Isabelle Dubois",
+      "call_number": "HIST-330.D8",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Urban Sociology: The Study of City Life",
+      "author": "Dr. Javier Morales",
+      "call_number": "SOC-250.M6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Psychology of Personality",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "PSYCH-310.R4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Poetics of Milton: Paradise Lost",
+      "author": "Dr. Alistair Finch",
+      "call_number": "ENGLIT-350.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "Complex Variables and Applications",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-360.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Path Planning Algorithms for Mobile Robots",
+      "author": "Li Wei",
+      "call_number": "ROBO-450.L5",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Principles of Geophysics",
+      "author": "Dr. Omar Badawi",
+      "call_number": "GEO-310.B2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Semiotics",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "LANG-400.R5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Pharmaceutical Ethics and Regulation",
+      "author": "Dr. Mei Lin",
+      "call_number": "PHARM-450.L5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Philosophy of Science: A Contemporary Introduction",
+      "author": "Dr. Helena Shaw",
+      "call_number": "PHIL-260.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Classical Latin",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "CLASS-101.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Journal of Artificial Intelligence Research",
+      "author": "AI Research Press",
+      "call_number": "JOU-AI-Q1",
+      "type": "Journal",
+      "status": "Checked Out",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Theories of International Relations",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PSCI-210.A4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Principles of Compiler Design",
+      "author": "Samuel Croft",
+      "call_number": "CS-415.C7",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Aesthetics of Minimalism",
+      "author": "Chloe Kim",
+      "call_number": "ART-220.K5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Industrial Revolution and its Consequences",
+      "author": "Dr. Aisha Khan",
+      "call_number": "HIST-240.K4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Social Psychology: Theories and Applications",
+      "author": "Dr. Ben Carter",
+      "call_number": "PSYCH-240.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Analysis of Post-Colonial Identity in Caribbean Literature",
+      "author": "Ngozi Adichie",
+      "call_number": "LIT-450.A3",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Educational Technology",
+      "author": "Dr. Samuel Jones",
+      "call_number": "EDU-201.J6",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Economics of Climate Change",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ECON-380.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Journal of Neurochemistry",
+      "author": "Wiley-Blackwell",
+      "call_number": "JOU-NEURO-M3",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Race, Class, and Gender in Modern Society",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "SOC-280.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Fundamentals of Chemical Engineering",
+      "author": "Dr. Olivia Chen",
+      "call_number": "ENG-210.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Kinship and Social Organization",
+      "author": "Dr. Mei Lin",
+      "call_number": "ANTHRO-260.L5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of the I-Ching Manuscripts",
+      "author": "University Archives",
+      "call_number": "ARCH-SP-21",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "The University Archive - Public Reading Room (101)"
+    },
+    {
+      "title": "The Physics of Superconductors",
+      "author": "Dr. Hans Gruber",
+      "call_number": "PHYS-450.G7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Criminal Law and Procedure",
+      "author": "Dr. David Chen",
+      "call_number": "LAW-301.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "Orchestration and Instrumentation in the 20th Century",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-420.O2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "Modernist Poetry and the City",
+      "author": "Dr. Alistair Finch",
+      "call_number": "ENGLIT-410.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "Journal of General Physics",
+      "author": "Physics Society Publishing",
+      "call_number": "JOU-GEN-P1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "STEM Library - Journal Archives (floor_1)"
+    },
+    {
+      "title": "The Structure of DNA and Gene Expression",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-310.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the Americas",
+      "author": "Dr. Javier Morales",
+      "call_number": "HIST-101.M6",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A Novel Approach to Reinforcement Learning in Robotics",
+      "author": "Kenji Tanaka",
+      "call_number": "ROBO-600.T2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Geopolitics of Cyberspace",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PSCI-450.A4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Rethinking Kant's Categorical Imperative",
+      "author": "Dr. Helena Shaw",
+      "call_number": "PHIL-420.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Pharmacology",
+      "author": "Dr. Chen Wei",
+      "call_number": "PHARM-201.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Advanced Topics in Algorithm Design",
+      "author": "Samuel Croft",
+      "call_number": "CS-510.C7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Physical Chemistry: A Molecular Approach",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-350.R7",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Language of Film: A Critical Introduction",
+      "author": "Chloe Kim",
+      "call_number": "ART-280.K5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Topology",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-410.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Plato's Republic: A Critical Reading",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "CLASS-401.T4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Theories of Second Language Acquisition",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "LANG-350.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Urban Planning and Sustainability",
+      "author": "Maria Garcia",
+      "call_number": "GEO-410.G3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Geography",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Modern Art: from Impressionism to Pop Art",
+      "author": "Isabelle Dubois",
+      "call_number": "ART-101.D8",
+      "type": "Book",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Cognitive Neuroscience: The Biology of the Mind",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-301.B2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of Machine Vision for Quality Control",
+      "author": "Anya Sharma",
+      "call_number": "AI-530.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Journal of Economic History",
+      "author": "Cambridge University Press",
+      "call_number": "JOU-ECON-C1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Psychology of Emotion",
+      "author": "Dr. Ben Carter",
+      "call_number": "PSYCH-360.C3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Post-structuralism and Literary Theory",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "LIT-510.R4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Fundamentals of Electrical Engineering",
+      "author": "Priya Sharma",
+      "call_number": "ENG-220.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Journal of Social Anthropology",
+      "author": "AnthroPress",
+      "call_number": "JOU-ANTHRO-A1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Global South: A Political and Economic Introduction",
+      "author": "Dr. Aisha Khan",
+      "call_number": "PSCI-315.K4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the Ottoman Empire",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "HIST-340.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A Comparative Study of Legal Systems",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "LAW-320.R7",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "A Midsummer Night's Dream: A Critical Edition",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-215.V3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "Foundations of Quantum Mechanics",
+      "author": "Dr. Lena Petrova",
+      "call_number": "PHYS-401.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Special Education and Differentiated Instruction",
+      "author": "Dr. Samuel Jones",
+      "call_number": "EDU-350.J6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Sociology of Deviance",
+      "author": "Dr. Javier Morales",
+      "call_number": "SOC-320.M6",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Ethnomusicology: An Introduction",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-210.O2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "An Introduction to Human-Computer Interaction",
+      "author": "Li Wei",
+      "call_number": "CS-370.L5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Journal of Volcanology and Geothermal Research",
+      "author": "Elsevier",
+      "call_number": "JOU-GEO-E1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Genetic Basis of Disease",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-420.Y2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Early Correspondence of Alan Turing",
+      "author": "University Archives",
+      "call_number": "ARCH-SP-33",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "Grand Central Library - Archives & Special Collections (basement)"
+    },
+    {
+      "title": "Rethinking Marx: Alienation and Commodity Fetishism",
+      "author": "Dr. Klaus Richter",
+      "call_number": "PHIL-450.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Analysis of Fiscal Policy Effects on GDP Growth",
+      "author": "Fatima al-Sayed",
+      "call_number": "ECON-510.A7",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Chinese Philosophy",
+      "author": "Dr. Mei Lin",
+      "call_number": "PHIL-220.L5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Control Systems Engineering",
+      "author": "Dr. Olivia Chen",
+      "call_number": "ENG-410.C4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Computational Linguistics",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "LANG-450.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Greek Tragedians: Aeschylus, Sophocles, Euripides",
+      "author": "Dr. Helena Shaw",
+      "call_number": "CLASS-310.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Chemistry of Natural Products",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-410.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Partial Differential Equations",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-460.P4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Clinical Pharmacy",
+      "author": "Dr. Chen Wei",
+      "call_number": "PHARM-350.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Principles of International Law",
+      "author": "Dr. Ananya Sharma",
+      "call_number": "LAW-401.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "Data Structures and Algorithms in Java",
+      "author": "Samuel Croft",
+      "call_number": "CS-211.C7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Neurobiology of Addiction",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-480.B2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Social Construction of Reality",
+      "author": "Dr. Klaus Richter",
+      "call_number": "SOC-450.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the Cold War",
+      "author": "Dr. Isabelle Dubois",
+      "call_number": "HIST-410.D8",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A Novel Architecture for Neural Machine Translation",
+      "author": "Li Wei",
+      "call_number": "AI-650.L5",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Journal of Political Economy",
+      "author": "University of Chicago Press",
+      "call_number": "JOU-POLI-U1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Anthropology of Globalization",
+      "author": "Dr. Ben Carter",
+      "call_number": "ANTHRO-350.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Complete Sonatas of Beethoven",
+      "author": "Katarina Schmidt",
+      "call_number": "MUS-501.S3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "Journal of General Engineering",
+      "author": "Engineering Society Press",
+      "call_number": "JOU-GEN-E2",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "STEM Library - Journal Archives (floor_1)"
+    },
+    {
+      "title": "The Rise of the Novel",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-310.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "Motion Planning for Robotic Manipulators",
+      "author": "Kenji Tanaka",
+      "call_number": "ROBO-550.T2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Physics of Black Holes",
+      "author": "Dr. Hans Gruber",
+      "call_number": "PHYS-520.G7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Developmental Psychology: Childhood and Adolescence",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "PSYCH-220.R4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Russian Literature",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "LIT-210.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Geography of Wine",
+      "author": "Maria Garcia",
+      "call_number": "GEO-280.G3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Geography",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Journal of Art History",
+      "author": "College Art Association",
+      "call_number": "JOU-ART-C1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Economic Development in East Asia",
+      "author": "Dr. Mei Lin",
+      "call_number": "ECON-420.L5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Educational Thought",
+      "author": "Dr. Samuel Jones",
+      "call_number": "EDU-420.J6",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Ethics of War and Peace",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PHIL-380.A4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Analysis of Cryptographic Hash Functions",
+      "author": "Anya Sharma",
+      "call_number": "CS-560.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Corporate Law and Governance",
+      "author": "Dr. Ananya Sharma",
+      "call_number": "LAW-450.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "The First Folio of Shakespeare (Replica)",
+      "author": "Special Collections",
+      "call_number": "ARCH-SP-01",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "Grand Central Library - Archives & Special Collections (basement)"
+    },
+    {
+      "title": "An Introduction to Marine Biology",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-280.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Signal Processing",
+      "author": "Priya Sharma",
+      "call_number": "ENG-350.S4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Journal of General Chemistry",
+      "author": "Royal Society of Chemistry",
+      "call_number": "JOU-GEN-C2",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "Grand Central Library - Periodicals Reading Room (floor_1)"
+    },
+    {
+      "title": "A History of the Roman Empire",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "HIST-225.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Social Movements and Political Change",
+      "author": "Ngozi Adichie",
+      "call_number": "SOC-380.A3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the English Language",
+      "author": "Dr. Alistair Finch",
+      "call_number": "LANG-201.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Metaphysics of Aristotle",
+      "author": "Dr. Helena Shaw",
+      "call_number": "CLASS-450.S4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Geochemistry",
+      "author": "Dr. Omar Badawi",
+      "call_number": "GEO-220.B2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Science of Toxicology",
+      "author": "Dr. Chen Wei",
+      "call_number": "PHARM-410.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of Glacial Melt and Sea Level Rise",
+      "author": "Maria Garcia",
+      "call_number": "GEO-510.G3",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Mechanics of Materials",
+      "author": "Dr. Olivia Chen",
+      "call_number": "ENG-310.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Journal of Experimental Psychology",
+      "author": "American Psychological Association",
+      "call_number": "JOU-PSYCH-A1",
+      "type": "Journal",
+      "status": "Checked Out",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Economics of Labor Markets",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ECON-350.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Western Political Thought",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PSCI-101.A4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Poetics of T.S. Eliot",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-420.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "The Philosophy of Existentialism",
+      "author": "Dr. Klaus Richter",
+      "call_number": "PHIL-330.R5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Real Analysis",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-310.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A Novel Method for Generative Adversarial Networks",
+      "author": "Li Wei",
+      "call_number": "AI-680.L5",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The History and Theory of Music",
+      "author": "Katarina Schmidt",
+      "call_number": "MUS-101.S3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "The Physics of Condensed Matter",
+      "author": "Dr. Hans Gruber",
+      "call_number": "PHYS-480.G7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Journal of Legal Studies",
+      "author": "Oxford University Press",
+      "call_number": "JOU-LAW-O1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "Literary Theory: An Anthology",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "LIT-400.R4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Computer Networks",
+      "author": "Samuel Croft",
+      "call_number": "CS-450.C7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Social Psychology of Intergroup Relations",
+      "author": "Dr. Ben Carter",
+      "call_number": "SOC-420.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Sensory Systems Neuroscience",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-420.B2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Art of Sculpture Through the Ages",
+      "author": "Chloe Kim",
+      "call_number": "ART-350.K5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Ancient Philosophy",
+      "author": "Dr. Helena Shaw",
+      "call_number": "PHIL-210.S4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Ethnography of Southeast Asia",
+      "author": "Dr. Mei Lin",
+      "call_number": "ANTHRO-380.L5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of Pathfinding on a Sphere for Robotics",
+      "author": "Kenji Tanaka",
+      "call_number": "ROBO-580.T2",
+      "type": "Thesis",
+      "status": "Available",
+  
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Journal of Educational Leadership",
+      "author": "Sage Publications",
+      "call_number": "JOU-EDU-S1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Medieval Europe",
+      "author": "Dr. Isabelle Dubois",
+      "call_number": "HIST-260.D8",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Japanese Art",
+      "author": "Yuki Yamamoto",
+      "call_number": "ART-260.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Complete Works of Homer",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "CLASS-250.T4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Journal of General Biology",
+      "author": "BioOne Publishing",
+      "call_number": "JOU-GEN-B1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "Grand Central Library - Periodicals Reading Room (floor_1)"
+    },
+    {
+      "title": "Introduction to Virology",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-350.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Physics of Stellar Evolution",
+      "author": "Dr. Lena Petrova",
+      "call_number": "PHYS-350.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of International Monetary Policy",
+      "author": "Fatima al-Sayed",
+      "call_number": "ECON-550.A7",
+      "type": "Thesis",
+      "status": "Checked Out",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of English Romanticism",
+      "author": "Dr. Alistair Finch",
+      "call_number": "ENGLIT-320.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "The Sociolinguistics of Code-Switching",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "LANG-420.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Fluid Mechanics for Engineers",
+      "author": "Priya Sharma",
+      "call_number": "ENG-330.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Intellectual Property Law",
+      "author": "Dr. David Chen",
+      "call_number": "LAW-420.C4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "Journal of Materials Chemistry",
+      "author": "Royal Society of Chemistry",
+      "call_number": "JOU-CHEM-R1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Historical Atlas of the World (1st Ed.)",
+      "author": "University Archives",
+      "call_number": "ARCH-MAP-01",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "The University Archive - Public Reading Room (101)"
+    },
+    {
+      "title": "An Introduction to Modern Political Theory",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PSCI-202.A4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Advanced Topics in Inorganic Chemistry",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-510.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Life and Works of Mozart",
+      "author": "Katarina Schmidt",
+      "call_number": "MUS-250.S3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "An Analysis of Algorithmic Bias in Facial Recognition",
+      "author": "Ngozi Adichie",
+      "call_number": "AI-610.A3",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "An Introduction to Differential Geometry",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-420.P4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Philosophy of Law",
+      "author": "Dr. Ananya Sharma",
+      "call_number": "PHIL-410.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Sociology of Health and Illness",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "SOC-340.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Colonial America",
+      "author": "Dr. Aisha Khan",
+      "call_number": "HIST-305.K4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Modern Drama",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "LIT-250.R4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Advanced Computer Architecture",
+      "author": "Samuel Croft",
+      "call_number": "CS-520.C7",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Psychology of Human Motivation",
+      "author": "Dr. Ben Carter",
+      "call_number": "PSYCH-410.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Politics of the European Union",
+      "author": "Isabelle Dubois",
+      "call_number": "PSCI-340.D8",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Principles of Pharmacology II",
+      "author": "Dr. Chen Wei",
+      "call_number": "PHARM-301.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Psychological Thought",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "PSYCH-101.R4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Poetics of Aristotle",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "CLASS-301.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Global Economy since 1945",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ECON-210.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Introduction to Robotics and Automation",
+      "author": "Kenji Tanaka",
+      "call_number": "ROBO-101.T2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "A History of Modern China",
+      "author": "Dr. Mei Lin",
+      "call_number": "HIST-370.L5",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of Glacial Core Samples from Antarctica",
+      "author": "Maria Garcia",
+      "call_number": "GEO-610.G3",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Philosophy of Technology",
+      "author": "Dr. Klaus Richter",
+      "call_number": "PHIL-360.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Literary Modernism and the Avant-Garde",
+      "author": "Dr. Alistair Finch",
+      "call_number": "LIT-360.F5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Development of Musical Form",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-310.O2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "Journal of Educational Assessment",
+      "author": "Taylor & Francis",
+      "call_number": "JOU-EDU-T1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Advanced Electromagnetism",
+      "author": "Dr. Lena Petrova",
+      "call_number": "PHYS-420.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the Novel",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-201.V3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "The Sociology of Education",
+      "author": "Dr. Samuel Jones",
+      "call_number": "SOC-360.J6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Foundations of Computation",
+      "author": "Anya Sharma",
+      "call_number": "CS-101.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "A Novel Framework for Ethical AI Governance",
+      "author": "Ngozi Adichie",
+      "call_number": "AI-710.A3",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "An Introduction to Medical Anthropology",
+      "author": "Dr. Ben Carter",
+      "call_number": "ANTHRO-320.C3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Law of Evidence",
+      "author": "Dr. Ananya Sharma",
+      "call_number": "LAW-350.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "The Chemistry of Polymers",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-420.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Motor System: From Neural Circuits to Behavior",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-350.B2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Art of the Italian Renaissance",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "ART-320.R5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Journal of Mathematical Physics",
+      "author": "AIP Publishing",
+      "call_number": "JOU-MATH-A1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of World Religions",
+      "author": "Dr. Helena Shaw",
+      "call_number": "HIST-150.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Thermodynamics and its Applications",
+      "author": "Dr. Olivia Chen",
+      "call_number": "ENG-360.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Complete Microbiologist's Notebooks",
+      "author": "University Archives",
+      "call_number": "ARCH-SCI-04",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "The University Archive - Public Reading Room (101)"
+    },
+    {
+      "title": "The Politics of Developing Nations",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PSCI-360.A4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Biology of Cancer",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-450.Y2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the French Language",
+      "author": "Isabelle Dubois",
+      "call_number": "LANG-250.D8",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Global Financial Crisis: Causes and Consequences",
+      "author": "Fatima al-Sayed",
+      "call_number": "ECON-450.A7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Poetics of Identity in African-American Literature",
+      "author": "Ngozi Adichie",
+      "call_number": "LIT-480.A3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Journal of General Psychology",
+      "author": "SAGE Publications",
+      "call_number": "JOU-GEN-S2",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "Grand Central Library - Periodicals Reading Room (floor_1)"
+    },
+    {
+      "title": "Introduction to Computer Graphics",
+      "author": "Li Wei",
+      "call_number": "CS-470.L5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Philosophy of History",
+      "author": "Dr. Klaus Richter",
+      "call_number": "PHIL-370.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Musical Instruments",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-220.O2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "The Sociology of Religion",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "SOC-370.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Physics of the Early Universe",
+      "author": "Dr. Hans Gruber",
+      "call_number": "PHYS-550.G7",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Complete Poetry of John Keats",
+      "author": "Dr. Alistair Finch",
+      "call_number": "ENGLIT-330.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "A History of Roman Law",
+      "author": "Dr. David Chen",
+      "call_number": "LAW-510.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "An Introduction to Virgil's Aeneid",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "CLASS-220.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A Novel Approach to Swarm Robotics Control",
+      "author": "Kenji Tanaka",
+      "call_number": "ROBO-650.T2",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Science of Climate Modeling",
+      "author": "Maria Garcia",
+      "call_number": "GEO-450.G3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Principles of Toxicology",
+      "author": "Dr. Chen Wei",
+      "call_number": "PHARM-420.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Linear Algebra and Its Applications",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-220.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of African-American Vernacular English",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "LANG-380.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Psychology of Attachment",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "PSYCH-430.R4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of World War I",
+      "author": "Dr. Aisha Khan",
+      "call_number": "HIST-380.K4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of Recurrent Neural Networks for Time Series Forecasting",
+      "author": "Li Wei",
+      "call_number": "AI-630.L5",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Journal of Computer Science",
+      "author": "IEEE",
+      "call_number": "JOU-CS-I1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Economics of Healthcare",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ECON-480.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Art of Architecture: Form and Function",
+      "author": "Chloe Kim",
+      "call_number": "ART-410.K5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Political Economy of the Middle East",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PSCI-430.A4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Neurobiology of Sleep",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-460.B2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Philosophy of Religion",
+      "author": "Dr. Helena Shaw",
+      "call_number": "PHIL-280.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Materials Science",
+      "author": "Dr. Olivia Chen",
+      "call_number": "ENG-250.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "Literacy and Language Development",
+      "author": "Dr. Samuel Jones",
+      "call_number": "EDU-250.J6",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Ethnography of Hunter-Gatherer Societies",
+      "author": "Dr. Ben Carter",
+      "call_number": "ANTHRO-410.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Molecular Biology of the Cell",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-401.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Organic Spectroscopy",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-320.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The History of Jazz Music",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-340.O2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "A History of the American West",
+      "author": "Dr. Javier Morales",
+      "call_number": "HIST-320.M6",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Complete Works of Virginia Woolf",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "ENGLIT-450.R4",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "Journal of Law and Economics",
+      "author": "University of Chicago",
+      "call_number": "JOU-LAW-U1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "An Analysis of Network Security Protocols",
+      "author": "Anya Sharma",
+      "call_number": "CS-620.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Sociology of Race and Ethnicity",
+      "author": "Ngozi Adichie",
+      "call_number": "SOC-220.A3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Philosophy of Friedrich Nietzsche",
+      "author": "Dr. Klaus Richter",
+      "call_number": "PHIL-430.R5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Indian Philosophy",
+      "author": "Dr. Ananya Sharma",
+      "call_number": "PHIL-230.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Poetics of Modernism",
+      "author": "Dr. Alistair Finch",
+      "call_number": "LIT-390.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "Journal of General Literature",
+      "author": "MLA",
+      "call_number": "JOU-GEN-M3",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "Grand Central Library - Periodicals Reading Room (floor_1)"
+    },
+    {
+      "title": "A History of Greek Art and Archaeology",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "CLASS-320.T4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Politics of Environmental Regulation",
+      "author": "Isabelle Dubois",
+      "call_number": "PSCI-390.D8",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Early Botanical Sketches of Linnaeus",
+      "author": "University Archives",
+      "call_number": "ARCH-SCI-11",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "The University Archive - Public Reading Room (101)"
+    },
+    {
+      "title": "An Introduction to Seismology",
+      "author": "Dr. Omar Badawi",
+      "call_number": "GEO-330.B2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Probability Theory",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-250.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Physics of Elementary Particles",
+      "author": "Dr. Hans Gruber",
+      "call_number": "PHYS-580.G7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the German Language",
+      "author": "Dr. Klaus Richter",
+      "call_number": "LANG-280.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Robotics Kinematics",
+      "author": "Kenji Tanaka",
+      "call_number": "ROBO-201.T2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Psychology of Aging",
+      "author": "Dr. Ben Carter",
+      "call_number": "PSYCH-450.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Law of Property",
+      "author": "Dr. David Chen",
+      "call_number": "LAW-250.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "An Introduction to Immunology",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-380.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Art of Photography: A Critical History",
+      "author": "Chloe Kim",
+      "call_number": "ART-210.K5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Economic Crises",
+      "author": "Fatima al-Sayed",
+      "call_number": "ECON-490.A7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Analysis of Reinforcement Learning for Game Playing",
+      "author": "Li Wei",
+      "call_number": "AI-690.L5",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Sociology of the Family",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "SOC-230.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the Renaissance",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "HIST-290.R5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Software Engineering",
+      "author": "Priya Sharma",
+      "call_number": "CS-310.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "An Introduction to American Politics",
+      "author": "Dr. Javier Morales",
+      "call_number": "PSCI-102.M6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Clinical Psychology",
+      "author": "Dr. Evelyn Reed",
+      "call_number": "PSYCH-320.R4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Poetics of Geoffrey Chaucer",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-360.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "A History of Early Childhood Education",
+      "author": "Dr. Samuel Jones",
+      "call_number": "EDU-320.J6",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Scientific Instruments",
+      "author": "Dr. Olivia Chen",
+      "call_number": "HIST-450.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Neurochemistry of Mood Disorders",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-510.B2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Philosophy of Ludwig Wittgenstein",
+      "author": "Dr. Klaus Richter",
+      "call_number": "PHIL-510.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Symphonies of Mahler: A Conductor's Guide",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-450.O2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "The Chemistry of the Environment",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-250.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Latin American Independence Movements",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "HIST-360.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to American Literature",
+      "author": "Dr. Alistair Finch",
+      "call_number": "LIT-220.F5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Political Parties",
+      "author": "Isabelle Dubois",
+      "call_number": "PSCI-240.D8",
+      "type": "Book",
+      "status": "Available",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Linguistics",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "LANG-101.R5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Physics of Galaxies and Cosmology",
+      "author": "Dr. Lena Petrova",
+      "call_number": "PHYS-460.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Law of Torts and Personal Injury",
+      "author": "Dr. Ananya Sharma",
+      "call_number": "LAW-220.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "An Introduction to Urban Geography",
+      "author": "Maria Garcia",
+      "call_number": "GEO-101.G3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Geography",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Roman Britain",
+      "author": "Dr. Marcus Thorne",
+      "call_number": "CLASS-330.T4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Ethnography of the Pacific Islands",
+      "author": "Dr. Mei Lin",
+      "call_number": "ANTHRO-420.L5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Economics of Poverty and Inequality",
+      "author": "Fatima al-Sayed",
+      "call_number": "ECON-520.A7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Journal of Robotic Systems",
+      "author": "Wiley",
+      "call_number": "JOU-ROBO-W1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "Robotics",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "An Introduction to Calculus",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-101.P4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Pharmacy Law and Ethics",
+      "author": "Dr. Chen Wei",
+      "call_number": "PHARM-101.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Pharmacy",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of the Internet",
+      "author": "Samuel Croft",
+      "call_number": "CS-201.C7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Complete Works of Jane Austen",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-301.V3",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "The Sociology of Work and Organizations",
+      "author": "Dr. Javier Morales",
+      "call_number": "SOC-390.M6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "A History of Modern Japan",
+      "author": "Yuki Yamamoto",
+      "call_number": "HIST-390.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Psychology of Prejudice and Discrimination",
+      "author": "Ngozi Adichie",
+      "call_number": "PSYCH-380.A3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Psychology",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Electrical Circuits",
+      "author": "Priya Sharma",
+      "call_number": "ENG-230.S4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Philosophy of Science and Pseudoscience",
+      "author": "Dr. Helena Shaw",
+      "call_number": "PHIL-290.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of World Music",
+      "author": "Liam O'Connell",
+      "call_number": "MUS-230.O2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Music",
+      "location": "Harmony School of Music - Music Library (105)"
+    },
+    {
+      "title": "The Science of Plant Biology",
+      "author": "Dr. Yuki Yamamoto",
+      "call_number": "BIO-220.Y2",
+      "type": "Book",
+      "status": "Available",
+      "category": "Biology",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "Journal of General History",
+      "author": "Historical Association",
+      "call_number": "JOU-GEN-H1",
+      "type": "Journal",
+      "status": "Available",
+      "category": "General Journals",
+      "location": "Grand Central Library - Periodicals Reading Room (floor_1)"
+    },
+    {
+      "title": "An Analysis of Deep Learning for Image Recognition",
+      "author": "Anya Sharma",
+      "call_number": "AI-640.S4",
+      "type": "Thesis",
+      "status": "Available",
+      "category": "AI",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Politics of International Trade",
+      "author": "Dr. Ahmed Al-Farsi",
+      "call_number": "PSCI-440.A4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Art of the Northern Renaissance",
+      "author": "Dr. Klaus Richter",
+      "call_number": "ART-330.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Arts",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Quantum Computing",
+      "author": "Samuel Croft",
+      "call_number": "CS-550.C7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Computer Science",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Letters of Albert Einstein",
+      "author": "University Archives",
+      "call_number": "ARCH-SCI-15",
+      "type": "Book",
+      "status": "Available",
+      "category": "Archives & Special",
+      "location": "The University Archive - Public Reading Room (101)"
+    },
+    {
+      "title": "A History of Post-Colonial Literature",
+      "author": "Ngozi Adichie",
+      "call_number": "LIT-410.A3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Literature",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Physical Chemistry",
+      "author": "Dr. Isabella Rossi",
+      "call_number": "CHEM-210.R7",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Chemistry",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Philosophy of Aesthetics",
+      "author": "Chloe Kim",
+      "call_number": "PHIL-340.K5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Philosophy",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Higher Education",
+      "author": "Dr. Samuel Jones",
+      "call_number": "EDU-430.J6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Education",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Physics of Fluids",
+      "author": "Dr. Hans Gruber",
+      "call_number": "PHYS-320.G7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Physics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Neurobiology of Decision Making",
+      "author": "Dr. Omar Badawi",
+      "call_number": "NEURO-470.B2",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Neuroscience",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The History of Economic Development",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ECON-320.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Economics",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Law of Criminal Procedure",
+      "author": "Dr. Ananya Sharma",
+      "call_number": "LAW-310.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Law",
+      "location": "Blackstone School of Law - Law Library (2nd Floor)"
+    },
+    {
+      "title": "A History of the Spanish Language",
+      "author": "Dr. Javier Morales",
+      "call_number": "LANG-260.M6",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "An Introduction to Greek Mythology",
+      "author": "Dr. Helena Shaw",
+      "call_number": "CLASS-102.S4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Classics",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "A History of Political Philosophy",
+      "author": "Dr. Klaus Richter",
+      "call_number": "PSCI-305.R5",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "Political Science",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Abstract Algebra",
+      "author": "Dr. Ivan Petrov",
+      "call_number": "MATH-301.P4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Mathematics",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Historical Linguistics",
+      "author": "Dr. Lorenzo Ricci",
+      "call_number": "LANG-310.R5",
+      "type": "Book",
+      "status": "Available",
+      "category": "Languages",
+      "location": "Grand Central Library - Humanities Collection (floor_3)"
+    },
+    {
+      "title": "The Sociology of Media and Communication",
+      "author": "Dr. Sofia Rossi",
+      "call_number": "SOC-430.R7",
+      "type": "Book",
+      "status": "Available",
+      "category": "Sociology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The History of the British Empire",
+      "author": "Dr. Aisha Khan",
+      "call_number": "HIST-420.K4",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "An Introduction to Structural Mechanics",
+      "author": "Dr. Olivia Chen",
+      "call_number": "ENG-301.C4",
+      "type": "Book",
+      "status": "Available",
+      "category": "Engineering",
+      "location": "STEM Library - Applied Sciences & Engineering Collection (floor_1)"
+    },
+    {
+      "title": "The Ethnography of Indigenous Peoples in the Americas",
+      "author": "Dr. Ben Carter",
+      "call_number": "ANTHRO-430.C3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Anthropology",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Poetics of Shakespeare's Comedies",
+      "author": "Dr. Eleanor Vance",
+      "call_number": "ENGLIT-370.V3",
+      "type": "Book",
+      "status": "Available",
+      "category": "English Literature",
+      "location": "Orwell Hall - Department Library (101)"
+    },
+    {
+      "title": "A History of the Scientific Revolution",
+      "author": "Dr. Isabelle Dubois",
+      "call_number": "HIST-315.D8",
+      "type": "Book",
+      "status": "Checked Out",
+      "category": "History",
+      "location": "Grand Central Library - Social Sciences Collection (floor_2)"
+    },
+    {
+      "title": "The Science of Oceanography",
+      "author": "Maria Garcia",
+      "call_number": "GEO-260.G3",
+      "type": "Book",
+      "status": "Available",
+      "category": "Geosciences",
+      "location": "STEM Library - Pure & Life Sciences Collection (floor_2)"
+    }
+  ]
+  

@@ -1,0 +1,2 @@
+current_session_saving_callback:
+  module: "src.callbacks.instance.current_session_saving_callback.CurrentSessionSavingCallback"

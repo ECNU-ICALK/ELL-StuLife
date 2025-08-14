@@ -1,0 +1,212 @@
+{
+  "description": "Example configurations showing different system combinations for CampusLifeBench tasks",
+  "configurations": {
+    "email_only_task": {
+      "task_id": "email_001",
+      "task_type": "email_sending",
+      "is_trigger": false,
+      "instruction": "Send an email to your advisor asking about office hours.",
+      "available_systems": ["email"],
+      "expected_actions": [
+        "Action: email.send_email(to=\"advisor@university.edu\", subject=\"Office Hours Inquiry\", body=\"Dear Advisor, could you please let me know your office hours for this week?\")"
+      ],
+      "description": "Task that only requires email functionality"
+    },
+    
+    "navigation_only_task": {
+      "task_id": "nav_001", 
+      "task_type": "navigation",
+      "is_trigger": false,
+      "instruction": "Navigate from your current location to the Grand Central Library.",
+      "available_systems": ["map", "geography"],
+      "expected_actions": [
+        "Action: geography.get_current_location()",
+        "Action: map.find_building_id(building_name=\"Grand Central Library\")",
+        "Action: map.find_optimal_path(source_building_id=\"B083\", target_building_id=\"B001\")",
+        "Action: geography.walk_to(path_info={\"path\": [\"B083\", \"B014\", \"B001\"], \"time\": 15})"
+      ],
+      "description": "Task that only requires map and geography functionality"
+    },
+    
+    "calendar_only_task": {
+      "task_id": "cal_001",
+      "task_type": "calendar_management", 
+      "is_trigger": false,
+      "instruction": "Add a study session to your calendar for tomorrow from 2-4 PM in the library.",
+      "available_systems": ["calendar"],
+      "expected_actions": [
+        "Action: calendar.add_event(calendar_id=\"self\", event_title=\"Study Session\", location=\"Library\", time=\"Week 1, Tuesday, 14:00-16:00\")"
+      ],
+      "description": "Task that only requires calendar functionality"
+    },
+    
+    "course_selection_only_task": {
+      "task_id": "course_001",
+      "task_type": "course_selection",
+      "is_trigger": false,
+      "instruction": "Browse Computer Science courses, add CS101 to your draft, assign an A-Pass, and submit.",
+      "available_systems": ["course_selection", "draft", "registration"],
+      "expected_actions": [
+        "Action: course_selection.browse_courses(filters={\"department\": \"Computer Science\"})",
+        "Action: draft.add_course(section_id=\"CS101_001\")",
+        "Action: draft.assign_pass(section_id=\"CS101_001\", pass_type=\"A-Pass\")",
+        "Action: registration.submit_draft()"
+      ],
+      "description": "Task that only requires course selection functionality"
+    },
+    
+    "information_only_task": {
+      "task_id": "info_001",
+      "task_type": "information_query",
+      "is_trigger": false,
+      "instruction": "Find information about artificial intelligence in the computer science textbook.",
+      "available_systems": ["bibliography", "data_system"],
+      "expected_actions": [
+        "Action: bibliography.list_chapters(book_title=\"Introduction to Computer Science\")",
+        "Action: bibliography.list_sections(book_title=\"Introduction to Computer Science\", chapter_title=\"Artificial Intelligence\")",
+        "Action: bibliography.view_article(identifier=\"AI Fundamentals\", search_type=\"title\")"
+      ],
+      "description": "Task that only requires information retrieval functionality"
+    },
+    
+    "email_and_calendar_task": {
+      "task_id": "multi_001",
+      "task_type": "multi_system",
+      "is_trigger": false,
+      "instruction": "Send an email to your professor requesting a meeting, then add the meeting to your calendar.",
+      "available_systems": ["email", "calendar"],
+      "expected_actions": [
+        "Action: email.send_email(to=\"professor@university.edu\", subject=\"Meeting Request\", body=\"Dear Professor, I would like to schedule a meeting to discuss my project.\")",
+        "Action: calendar.add_event(calendar_id=\"self\", event_title=\"Meeting with Professor\", location=\"Professor's Office\", time=\"Week 1, Friday, 15:00-16:00\")"
+      ],
+      "description": "Task requiring both email and calendar systems"
+    },
+    
+    "navigation_and_reservation_task": {
+      "task_id": "multi_002",
+      "task_type": "multi_system",
+      "is_trigger": false,
+      "instruction": "Navigate to the library, check availability of study rooms, and book one for this afternoon.",
+      "available_systems": ["map", "geography", "reservation"],
+      "expected_actions": [
+        "Action: map.find_building_id(building_name=\"Grand Central Library\")",
+        "Action: map.find_optimal_path(source_building_id=\"B083\", target_building_id=\"B001\")",
+        "Action: geography.walk_to(path_info={\"path\": [\"B083\", \"B014\", \"B001\"]})",
+        "Action: reservation.query_availability(location_id=\"B001\", date=\"Week 1, Monday\")",
+        "Action: reservation.make_booking(location_id=\"B001\", item_name=\"Study Room A\", date=\"Week 1, Monday\", time_slot=\"14:00-16:00\")"
+      ],
+      "description": "Task requiring navigation and reservation systems"
+    },
+    
+    "comprehensive_task": {
+      "task_id": "multi_003",
+      "task_type": "multi_system",
+      "is_trigger": false,
+      "instruction": "Complete a full workflow: browse courses, add one to draft, email advisor about it, schedule a meeting, navigate to meeting location.",
+      "available_systems": ["course_selection", "draft", "email", "calendar", "map", "geography"],
+      "expected_actions": [
+        "Action: course_selection.browse_courses()",
+        "Action: draft.add_course(section_id=\"CS101_001\")",
+        "Action: email.send_email(to=\"advisor@university.edu\", subject=\"Course Selection\", body=\"I've added CS101 to my draft schedule.\")",
+        "Action: calendar.add_event(calendar_id=\"self\", event_title=\"Advisor Meeting\", location=\"Advisor Office\", time=\"Week 1, Wednesday, 10:00-11:00\")",
+        "Action: map.find_building_id(building_name=\"Faculty Building\")",
+        "Action: geography.walk_to(path_info={\"path\": [\"B083\", \"B020\"]})"
+      ],
+      "description": "Complex task requiring multiple systems working together"
+    },
+    
+    "restricted_email_task": {
+      "task_id": "restricted_001",
+      "task_type": "email_sending",
+      "is_trigger": false,
+      "instruction": "Send an email and then navigate to the library.",
+      "available_systems": ["email"],
+      "expected_behavior": "Should complete email task but fail on navigation due to system restrictions",
+      "expected_actions": [
+        "Action: email.send_email(to=\"recipient@university.edu\", subject=\"Test\", body=\"Hello\")",
+        "Action: map.find_building_id(building_name=\"Library\")"
+      ],
+      "expected_error": "System 'map' is not available for this task",
+      "description": "Task demonstrating system availability enforcement"
+    }
+  },
+  
+  "system_combinations": {
+    "email_only": {
+      "systems": ["email"],
+      "use_cases": ["Simple email sending", "Email management", "Communication tasks"],
+      "tools_available": [
+        "email.send_email",
+        "email.view_inbox", 
+        "email.reply_email",
+        "email.delete_email"
+      ]
+    },
+    
+    "navigation_only": {
+      "systems": ["map", "geography"],
+      "use_cases": ["Simple navigation", "Location finding", "Path planning"],
+      "tools_available": [
+        "map.find_building_id",
+        "map.get_building_details",
+        "map.find_room_location",
+        "map.find_optimal_path",
+        "map.query_buildings_by_property",
+        "geography.get_current_location",
+        "geography.walk_to"
+      ]
+    },
+    
+    "academic_workflow": {
+      "systems": ["course_selection", "draft", "registration", "email", "calendar"],
+      "use_cases": ["Course registration", "Academic planning", "Advisor communication"],
+      "tools_available": [
+        "course_selection.browse_courses",
+        "draft.add_course",
+        "draft.remove_course", 
+        "draft.assign_pass",
+        "draft.view",
+        "registration.submit_draft",
+        "email.send_email",
+        "calendar.add_event"
+      ]
+    },
+    
+    "campus_life_full": {
+      "systems": ["email", "calendar", "map", "geography", "reservation", "bibliography", "data_system", "course_selection", "draft", "registration"],
+      "use_cases": ["Complete campus life simulation", "Complex multi-step tasks", "Full system integration"],
+      "tools_available": "All available tools"
+    }
+  },
+  
+  "validation_rules": {
+    "system_availability": {
+      "description": "Only tools from available systems can be used",
+      "enforcement": "ActionExecutor validates system availability before execution",
+      "error_message_format": "System '{system_name}' is not available for this task. Available systems: {available_systems}"
+    },
+    
+    "action_format": {
+      "description": "Actions must follow the Action: tool_name(params) format",
+      "valid_examples": [
+        "Action: email.send_email(to=\"test@test.com\", subject=\"Test\", body=\"Hello\")",
+        "Action: geography.get_current_location()",
+        "Action: finish()"
+      ],
+      "invalid_examples": [
+        "```python\\nenv.send_email()\\n```",
+        "send_email(to=\"test@test.com\")",
+        "Action: invalid_format"
+      ]
+    },
+    
+    "parameter_validation": {
+      "description": "Parameters must match expected types and formats",
+      "examples": {
+        "string_parameters": "to=\"email@domain.com\"",
+        "boolean_parameters": "filter_unread=True",
+        "dict_parameters": "new_details={\"location\": \"New Room\"}"
+      }
+    }
+  }
+}

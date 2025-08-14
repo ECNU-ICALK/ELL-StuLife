@@ -1,0 +1,41 @@
+{
+  "test_suite_metadata": {
+    "name": "CampusLifeBench Detailed Test Suite",
+    "version": "1.0",
+    "timestamp": "2025-08-01T22:17:31.871412",
+    "execution_start_time": "2025-08-01T22:17:31.871413",
+    "purpose": "Detailed execution tracing and validation analysis"
+  },
+  "detailed_test_results": {
+    "Single System Tests": {
+      "test_email_system": {
+        "status": "FAIL",
+        "error": "'SingleSystemTests' object has no attribute 'data_loader'",
+        "error_type": "AttributeError"
+      },
+      "test_calendar_system": {
+        "status": "FAIL",
+        "error": "'SingleSystemTests' object has no attribute 'data_loader'",
+        "error_type": "AttributeError"
+      }
+    },
+    "Multi-System Tests": {
+      "test_email_calendar_integration": {
+        "status": "FAIL",
+        "error": "'MultiSystemTests' object has no attribute 'data_loader'",
+        "error_type": "AttributeError"
+      }
+    }
+  },
+  "execution_traces": {
+    "Single System Tests": {},
+    "Multi-System Tests": {}
+  },
+  "summary": {
+    "total_tests": 3,
+    "passed_tests": 0,
+    "failed_tests": 3,
+    "success_rate": 0.0,
+    "execution_time_seconds": 0.002437591552734375
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "clubs": [
+    {
+      "club_id": "C001",
+      "club_name": "Computer Science Club",
+      "category": "Academic",
+      "description": "A club for computer science enthusiasts to share knowledge, work on projects, and network with industry professionals.",
+      "recruitment_info": "Open to all students interested in computer science. No prior experience required."
+    },
+    {
+      "club_id": "C002",
+      "club_name": "Mathematics Society",
+      "category": "Academic", 
+      "description": "Dedicated to promoting mathematical thinking and problem-solving skills among students.",
+      "recruitment_info": "Welcoming students from all majors who enjoy mathematical challenges."
+    },
+    {
+      "club_id": "C003",
+      "club_name": "Drama Club",
+      "category": "Arts & Culture",
+      "description": "Produces theatrical performances and provides opportunities for students to explore acting, directing, and stage production.",
+      "recruitment_info": "Auditions held at the beginning of each semester. All skill levels welcome."
+    },
+    {
+      "club_id": "C004",
+      "club_name": "Environmental Action Group",
+      "category": "Service & Advocacy",
+      "description": "Works on campus sustainability initiatives and environmental awareness campaigns.",
+      "recruitment_info": "Open to environmentally conscious students. Regular meetings every Tuesday."
+    },
+    {
+      "club_id": "C005",
+      "club_name": "Basketball Club",
+      "category": "Sports & Recreation",
+      "description": "Competitive and recreational basketball for students of all skill levels.",
+      "recruitment_info": "Tryouts for competitive team in September. Recreational play open to all."
+    },
+    {
+      "club_id": "C006",
+      "club_name": "International Students Association",
+      "category": "Cultural",
+      "description": "Supports international students and promotes cultural exchange on campus.",
+      "recruitment_info": "Open to all students, both international and domestic."
+    },
+    {
+      "club_id": "C007",
+      "club_name": "Debate Society",
+      "category": "Academic",
+      "description": "Develops public speaking and argumentation skills through competitive debate.",
+      "recruitment_info": "No experience necessary. Training provided for new members."
+    },
+    {
+      "club_id": "C008",
+      "club_name": "Photography Club",
+      "category": "Arts & Culture",
+      "description": "Explores photography techniques and organizes photo walks and exhibitions.",
+      "recruitment_info": "Open to photographers of all levels. Equipment sharing available."
+    }
+  ],
+  "advisors": [
+    {
+      "advisor_id": "T001",
+      "name": "Dr. John Smith",
+      "gender": "Male",
+      "age": 45,
+      "email": "john.smith@university.edu",
+      "research_area": {
+        "level_1": "Computer Science",
+        "level_2": "Artificial Intelligence",
+        "tags": ["Machine Learning", "Natural Language Processing", "Computer Vision"]
+      },
+      "representative_work": [
+        "Deep Learning Applications in Healthcare",
+        "Natural Language Understanding Systems",
+        "Computer Vision for Autonomous Vehicles"
+      ],
+      "preferences": {
+        "meeting_time": "afternoon",
+        "communication": "email",
+        "office_hours": "Tuesday and Thursday 2-4 PM"
+      }
+    },
+    {
+      "advisor_id": "T002",
+      "name": "Dr. Sarah Johnson",
+      "gender": "Female", 
+      "age": 38,
+      "email": "sarah.johnson@university.edu",
+      "research_area": {
+        "level_1": "Mathematics",
+        "level_2": "Applied Mathematics",
+        "tags": ["Optimization", "Numerical Analysis", "Mathematical Modeling"]
+      },
+      "representative_work": [
+        "Optimization Algorithms for Large-Scale Problems",
+        "Mathematical Models in Biology",
+        "Computational Methods in Finance"
+      ],
+      "preferences": {
+        "meeting_time": "morning",
+        "communication": "in-person",
+        "office_hours": "Monday, Wednesday, Friday 10-12 PM"
+      }
+    },
+    {
+      "advisor_id": "T003",
+      "name": "Dr. Michael Chen",
+      "gender": "Male",
+      "age": 52,
+      "email": "michael.chen@university.edu",
+      "research_area": {
+        "level_1": "Engineering",
+        "level_2": "Software Engineering",
+        "tags": ["Software Architecture", "Agile Development", "Quality Assurance"]
+      },
+      "representative_work": [
+        "Scalable Software Architecture Patterns",
+        "Agile Methodologies in Large Teams",
+        "Automated Testing Frameworks"
+      ],
+      "preferences": {
+        "meeting_time": "flexible",
+        "communication": "email",
+        "office_hours": "By appointment"
+      }
+    },
+    {
+      "advisor_id": "T004",
+      "name": "Dr. Emily Rodriguez",
+      "gender": "Female",
+      "age": 41,
+      "email": "emily.rodriguez@university.edu",
+      "research_area": {
+        "level_1": "Psychology",
+        "level_2": "Cognitive Psychology",
+        "tags": ["Memory", "Learning", "Decision Making"]
+      },
+      "representative_work": [
+        "Memory Formation in Digital Environments",
+        "Cognitive Load in User Interface Design",
+        "Decision Making Under Uncertainty"
+      ],
+      "preferences": {
+        "meeting_time": "afternoon",
+        "communication": "in-person",
+        "office_hours": "Tuesday and Thursday 1-3 PM"
+      }
+    },
+    {
+      "advisor_id": "T005",
+      "name": "Dr. David Wilson",
+      "gender": "Male",
+      "age": 48,
+      "email": "david.wilson@university.edu",
+      "research_area": {
+        "level_1": "Physics",
+        "level_2": "Theoretical Physics",
+        "tags": ["Quantum Mechanics", "Statistical Mechanics", "Condensed Matter"]
+      },
+      "representative_work": [
+        "Quantum Computing Algorithms",
+        "Phase Transitions in Complex Systems",
+        "Many-Body Quantum Systems"
+      ],
+      "preferences": {
+        "meeting_time": "morning",
+        "communication": "email",
+        "office_hours": "Monday and Wednesday 9-11 AM"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+task_dict:
+  import:
+    - ./components/tasks/db_bench.yaml
+    - ./components/tasks/os_interaction.yaml
+    - ./components/tasks/knowledge_graph.yaml
+    - ./components/tasks/campus_life_bench.yaml
+language_model_dict:
+  import:
+    - ./components/language_models/openai_language_model.yaml
+    - ./components/language_models/huggingface_language_model.yaml
+agent_dict:
+  import:
+    - ./components/agents/fixed_response_agent.yaml
+    - ./components/agents/language_model_agent.yaml
+    - ./components/agents/oracle_agent.yaml
+callback_dict:
+  import:
+    - ./components/callbacks/previous_sample_utilization_callback.yaml
+    - ./components/callbacks/current_session_saving_callback.yaml
+    - ./components/callbacks/group_self_consistency_callback.yaml
+    - ./components/callbacks/consecutive_abnormal_agent_inference_process_handling_callback.yaml
+
+import:
+  - ./components/logger.yaml
+  - ./components/environment.yaml

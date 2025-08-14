@@ -1,0 +1,15 @@
+# https://stackoverflow.com/questions/59499061/how-to-run-custom-shell-script-file-before-pre-commit-hook
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.10.0
+    hooks:
+      - id: black
+        verbose: true
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        entry: /dev_data/cxd/nlp/continual_agent_bench/scripts/shell/run_mypy.sh
+        language: script
+        require_serial: true
+        verbose: true

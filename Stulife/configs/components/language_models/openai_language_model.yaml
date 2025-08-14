@@ -1,0 +1,16 @@
+default:
+  module: "src.language_models.instance.openai_language_model.OpenaiLanguageModel"
+  parameters:
+    role_dict:
+      # https://platform.openai.com/docs/guides/text-generation#messages-and-roles
+      user: "user"
+      agent: "assistant"
+    api_key: ~  # Enter your API key here or set in as an environment variable (OPENAI_API_KEY). Do not commit your API key!!!
+    base_url: "https://api.gptsapi.net/v1"  # Will overwrite the environment variable OPENAI_BASE_URL
+
+gpt-4o-mini:
+  parameters:
+    model_name: "gpt-4o-mini"
+
+#completion_config_dict:
+#  max_completion_tokens: 512

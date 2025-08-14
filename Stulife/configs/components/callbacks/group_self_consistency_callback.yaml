@@ -1,0 +1,11 @@
+group_self_consistency_callback:
+  module: "src.callbacks.instance.group_self_consistency_callback.GroupSelfConsistencyCallback"
+  parameters:
+    group_count: 8
+    sample_count_per_group: 1
+    batch_size_dict:
+      relevance_judgement: 4
+      experience_utilization: 4
+    language_model: ~
+    task_name: ~
+    inference_config_dict: ~

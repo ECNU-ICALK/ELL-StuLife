@@ -1,0 +1,38 @@
+{
+  "test_suite_metadata": {
+    "name": "CampusLifeBench Detailed Test Suite",
+    "version": "1.0",
+    "timestamp": "2025-08-01T22:17:56.283086",
+    "execution_start_time": "2025-08-01T22:17:56.283087",
+    "purpose": "Detailed execution tracing and validation analysis"
+  },
+  "detailed_test_results": {
+    "Single System Tests": {
+      "email_system": {
+        "status": "PASS",
+        "test_data": {
+          "task_id": "test_email_001",
+          "task_type": "email_sending",
+          "is_trigger": false,
+          "instruction": "Send an email to your advisor Dr. Johnson asking about office hours for next week.",
+          "require_time": null,
+          "require_place": null,
+          "source_building_id": null,
+          "world_state_change": [],
+          "available_systems": [
+            "email"
+          ],
+          "details": {
+            "recipient": "dr.johnson@university.edu",
+            "subject": "Office Hours Inquiry",
+            "body": "Dear Dr. Johnson, I would like to know your office hours for next week. Thank you."
+          },
+          "ground_truth": {
+            "recipient": "dr.johnson@university.edu",
+            "subject": "Office Hours Inquiry",
+            "body": "Dear Dr. Johnson, I would like to know your office hours for next week. Thank you."
+          }
+        },
+        "execution_result": {
+          "success": true,
+          "parsed_action": 

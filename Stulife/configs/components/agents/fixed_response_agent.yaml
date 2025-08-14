@@ -1,0 +1,4 @@
+fixed_response_agent:
+  module: "src.agents.instance.fixed_response_agent.FixedResponseAgent"
+  parameters:
+    session_history_file_path: "/dev_data/zjh/continual_agent_bench/outputs/2025-01-25-00-14-15/runs.json"

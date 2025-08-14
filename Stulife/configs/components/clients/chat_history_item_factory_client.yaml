@@ -1,0 +1,5 @@
+chat_history_item_factory_client:
+  module: "src.factories.chat_history_item.online.client.ChatHistoryItemFactoryClient"
+  parameters:
+    request_timeout: 120  # or 86400 (24 hours for debugging)
+    server_address: "http://127.0.0.1:8001/api" # http://192.168.100.1:8001/api

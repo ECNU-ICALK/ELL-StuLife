@@ -1,0 +1,101 @@
+{
+  "test_metadata": {
+    "test_id": "demo_001",
+    "timestamp": "2025-08-01T22:20:29.204349",
+    "test_description": "Demo of detailed execution tracing"
+  },
+  "input": {
+    "task_instruction": "Send an email to your advisor asking about research opportunities.",
+    "available_systems": [
+      "email"
+    ],
+    "generated_action": "Action: email.send_email(to=\"advisor@university.edu\", subject=\"Research Opportunities\", body=\"Dear Advisor, I am interested in research opportunities in AI. Could we discuss this?\")"
+  },
+  "execution_steps": [
+    {
+      "step": 1,
+      "name": "environment_setup",
+      "description": "Initialize test environment and executor",
+      "result": "success",
+      "details": {
+        "available_actions": 4,
+        "systems": [
+          "email"
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "name": "system_prompt_generation",
+      "description": "Generate dynamic system prompt",
+      "result": "success",
+      "details": {
+        "prompt_length": 2054,
+        "contains_email_tools": true,
+        "excludes_map_tools": true
+      }
+    },
+    {
+      "step": 3,
+      "name": "action_parsing",
+      "description": "Parse agent response into structured action",
+      "result": "success",
+      "details": {
+        "action_type": "execute",
+        "content": "email.send_email(to=\"advisor@university.edu\", subject=\"Research Opportunities\", body=\"Dear Advisor, I am interested in research opportunities in AI. Could we discuss this?\")",
+        "valid_format": true
+      }
+    },
+    {
+      "step": 4,
+      "name": "system_availability_check",
+      "description": "Verify action is available in current configuration",
+      "result": "success",
+      "details": {
+        "action_name": "email.send_email",
+        "is_available": true,
+        "available_systems": [
+          "email"
+        ]
+      }
+    },
+    {
+      "step": 5,
+      "name": "action_execution",
+      "description": "Execute action using environment",
+      "result": "success",
+      "details": {
+        "status": "success",
+        "message": "Email has been successfully sent to advisor@university.edu.",
+        "data": {
+          "recipient": "advisor@university.edu",
+          "subject": "Research Opportunities",
+          "email_count": 1
+        },
+        "execution_successful": true
+      }
+    },
+    {
+      "step": 6,
+      "name": "result_validation",
+      "description": "Validate result against ground truth",
+      "result": "success",
+      "details": {
+        "english_only": true,
+        "recipient_match": true,
+        "subject_match": true,
+        "overall_success": true
+      }
+    }
+  ],
+  "final_judgment": {
+    "test_passed": true,
+    "success_rate": 1.0,
+    "reason": "All validation checks passed",
+    "validation_details": {
+      "execution_successful": true,
+      "english_only_message": true,
+      "ground_truth_match": true
+    }
+  }
+}

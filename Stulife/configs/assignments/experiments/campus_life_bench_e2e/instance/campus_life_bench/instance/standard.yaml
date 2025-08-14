@@ -1,0 +1,67 @@
+# Complete self-contained configuration for CampusLifeBench E2E testing
+
+# Language model definitions
+language_model_dict:
+  openai_language_model:
+    _target_: src.language_models.openai_api.OpenAIAPILanguageModel
+    model_name_or_path: "gpt-3.5-turbo"
+    api_key: "your-api-key"
+    api_base: "https://api.openai.com"
+
+# Agent definitions
+agent_dict:
+  language_model_agent:
+    _target_: src.agents.language_model_agent.LanguageModelAgent
+    language_model: null
+    inference_config_dict:
+      do_sample: false
+      num_beams: 1
+      max_new_tokens: 512
+      temperature: null
+      top_k: null
+      top_p: null
+
+# Task definitions
+task_dict:
+  campus_life_bench:
+    _target_: src.tasks.instance.campus_life_bench.task.CampusTask
+    max_round: 15
+    chat_history_item_factory:
+      _target_: src.factories.chat_history_item.ChatHistoryItemFactory
+
+# Assignment configuration
+assignment_config:
+  language_model_list:
+  - name: openai_language_model
+    custom_parameters:
+      model_name_or_path: "deepseek-chat"
+      api_key: "sk-d4226415d55d492fb913479f1a8b6b9c"
+      api_base: "https://api.deepseek.com"
+
+  agent:
+    name: language_model_agent
+    custom_parameters:
+      language_model: openai_language_model
+      inference_config_dict:
+        do_sample: true
+        temperature: 0.1
+        max_new_tokens: 1000
+        top_p: 0.95
+
+  task_list:
+  - name: campus_life_bench
+    custom_parameters:
+      # Set max_round to 10 as requested for task retry count
+      max_round: 10
+
+# Environment configuration
+environment_config:
+  enable_logging: true
+
+# Logger configuration
+logger_config:
+  log_level: "INFO"
+
+# Path configuration
+path_config:
+  output_dir: "./output"

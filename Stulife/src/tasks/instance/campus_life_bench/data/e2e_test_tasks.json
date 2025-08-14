@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "description": "CampusLifeBench End-to-End Test Tasks - All 6 Categories",
+    "version": "1.0",
+    "created_date": "2025-08-02",
+    "total_tasks": 6,
+    "categories": [
+      "导师任务",
+      "社团任务", 
+      "上课数据",
+      "图书馆学习任务",
+      "校园探路任务",
+      "选课任务"
+    ]
+  },
+
+  "quiz_test": {
+    "task_id": "quiz_test",
+    "task_type": "quiz_question",
+    "is_trigger": false,
+    "instruction": "You are in Computer Science class. Answer the following question:\n\nWhat is the time complexity of binary search in a sorted array?\nA. O(n)\nB. O(log n)\nC. O(n log n)\nD. O(n²)\nE. O(1)",
+    "require_time": "Week 1, Tuesday,8:00",
+    "require_place": "B005",
+    "source_building_id": null,
+    "world_state_change": [],
+    "available_systems": ["map", "geography"],
+    "question_type": "multiple_choice",
+    "answer_format": "Answer: [LETTER]",
+    "details": {
+      "subject": "Computer Science",
+      "topic": "Algorithm Complexity",
+      "difficulty": "medium"
+    },
+    "ground_truth": "B"
+  },
+
+  "advisor_meeting_test": {
+    "task_id": "advisor_meeting_test",
+    "task_type": "multi_system",
+    "is_trigger": false,
+    "instruction": "Send an email to your advisor Dr. Smith at dr.smith@university.edu requesting a meeting, then reserve Conference Room A for tomorrow 2-3 PM.",
+    "require_time": null,
+    "require_place": null,
+    "source_building_id": "B083",
+    "world_state_change": [
+      {
+        "change_type": "room_availability",
+        "location_id": "B002",
+        "date": "Week 1, Tuesday",
+        "time_slot": "14:00-15:00",
+        "available_items": [
+          {
+            "item_name": "Conference Room A",
+            "properties": ["projector", "whiteboard", "good_wifi"]
+          }
+        ]
+      }
+    ],
+    "available_systems": ["email", "reservation", "map", "geography"],
+    "details": {
+      "advisor_email": "dr.smith@university.edu",
+      "meeting_topic": "research discussion",
+      "target_date": "Week 1, Tuesday",
+      "target_time": "14:00-15:00",
+      "target_location": "B002"
+    },
+    "ground_truth": {
+      "email_sent": {
+        "recipient": "dr.smith@university.edu",
+        "subject_contains": "meeting",
+        "body_contains": "research"
+      },
+      "reservation_made": {
+        "item_name": "Conference Room A",
+        "time": "Week 1, Tuesday, 14:00-15:00"
+      }
+    }
+  },
+  
+  "club_meeting_test": {
+    "task_id": "club_meeting_test", 
+    "task_type": "multi_system",
+    "is_trigger": false,
+    "instruction": "Organize a club meeting by sending an email to all members and reserving the Student Activity Center meeting room for Wednesday afternoon.",
+    "require_time": null,
+    "require_place": null,
+    "source_building_id": null,
+    "world_state_change": [
+      {
+        "change_type": "room_availability",
+        "location_id": "B004",
+        "date": "Week 1, Wednesday", 
+        "time_slot": "15:00-17:00",
+        "available_items": [
+          {
+            "item_name": "Meeting Room B",
+            "properties": ["projector", "whiteboard"]
+          }
+        ]
+      }
+    ],
+    "available_systems": ["email", "reservation", "calendar"],
+    "details": {
+      "club_name": "Computer Science Club",
+      "meeting_date": "Week 1, Wednesday",
+      "meeting_time": "15:00-17:00",
+      "location": "Student Activity Center"
+    },
+    "ground_truth": {
+      "email_sent": {
+        "recipient_contains": "members",
+        "subject_contains": "meeting",
+        "body_contains": "club"
+      },
+      "reservation_made": {
+        "location_id": "B004",
+        "date": "Week 1, Wednesday"
+      }
+    }
+  },
+  
+
+  
+  "library_reservation_test": {
+    "task_id": "library_reservation_test",
+    "task_type": "reservation",
+    "is_trigger": false,
+    "instruction": "Reserve a study room in the Grand Central Library for tomorrow afternoon, then make sure to be there at the reserved time.",
+    "require_time": "Week 1, Tuesday, 14:00",
+    "require_place": "B001",
+    "source_building_id": "B083",
+    "world_state_change": [
+      {
+        "change_type": "room_availability",
+        "location_id": "B001",
+        "date": "Week 1, Tuesday",
+        "time_slot": "14:00-16:00",
+        "available_items": [
+          {
+            "item_name": "Study Room A",
+            "properties": ["quiet", "good_wifi"]
+          }
+        ]
+      }
+    ],
+    "available_systems": ["reservation", "map", "geography"],
+    "details": {
+      "target_library": "Grand Central Library",
+      "task_time": "14:00",
+      "reservation_duration_hours": 2
+    },
+    "ground_truth": {
+      "expected_reservation_outcome": [
+        {
+          "item_name": "Study Room A",
+          "time": "Week 1, Tuesday, 14:00-16:00"
+        }
+      ]
+    }
+  },
+  
+  "navigation_test": {
+    "task_id": "navigation_test",
+    "task_type": "walking_simple",
+    "is_trigger": false,
+    "instruction": "Navigate from the Grand Central Library to the Student Cafeteria, making sure to pass by the Student Activity Center on your way.",
+    "require_time": null,
+    "require_place": "B011",
+    "source_building_id": "B001",
+    "world_state_change": [],
+    "available_systems": ["map", "geography"],
+    "details": {
+      "start_location": "Grand Central Library",
+      "end_location": "Student Cafeteria", 
+      "waypoints": ["Student Activity Center"],
+      "start_building_id": "B001",
+      "waypoint_building_ids": ["B004"],
+      "end_building_id": "B011"
+    },
+    "ground_truth": {
+      "expected_outcome": {
+        "target_location_id": "B011",
+        "passing_points": ["B004"]
+      }
+    }
+  },
+  
+  "course_selection_test": {
+    "task_id": "course_selection_test",
+    "task_type": "course_selection",
+    "is_trigger": false,
+    "instruction": "Browse available Computer Science courses, add CS101 to your course draft, assign an A-Pass to it, and submit your registration.",
+    "require_time": null,
+    "require_place": null,
+    "source_building_id": null,
+    "world_state_change": [
+      {
+        "change_type": "popularity_update",
+        "course_code": "CS101",
+        "new_value": 75
+      }
+    ],
+    "available_systems": ["course_selection", "draft", "registration"],
+    "details": {
+      "department": "Computer Science",
+      "course_code": "CS101",
+      "course_name": "Introduction to Programming",
+      "pass_type": "A-Pass",
+      "action_sequence": ["browse", "add", "assign_pass", "submit"]
+    },
+    "ground_truth": {
+      "expected_schedule_outcome": {
+        "selected_sections": [
+          {
+            "course_code": "CS101",
+            "assigned_pass": "A-Pass"
+          }
+        ]
+      }
+    }
+  }
+}

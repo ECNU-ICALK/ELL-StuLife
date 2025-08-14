@@ -1,0 +1,175 @@
+# CampusLifeBench Test Experiment Configuration
+# All natural language communications/returns MUST use English only
+
+# Experiment metadata
+experiment_name: "campus_life_bench_test"
+description: "Test experiment for CampusLifeBench evaluation"
+version: "1.0"
+
+# Task configuration
+task:
+  _target_: src.tasks.instance.campus_life_bench.task.CampusTask
+  max_round: 15
+  chat_history_item_factory:
+    _target_: src.factories.chat_history_item.ChatHistoryItemFactory
+
+# Agent configuration (example with GPT-4)
+agent:
+  _target_: src.agents.openai_agent.OpenAIAgent
+  model_name: "gpt-4"
+  temperature: 0.1
+  max_tokens: 2048
+  timeout: 60
+
+# Language model configuration
+language_model:
+  _target_: src.language_models.openai_language_model.OpenAILanguageModel
+  model_name: "gpt-4"
+  temperature: 0.1
+  max_tokens: 2048
+  api_key_env_var: "OPENAI_API_KEY"
+
+# Evaluation settings
+evaluation:
+  # Sample selection
+  sample_indices: ["sample_001", "sample_002", "sample_003", "sample_004", "sample_005"]
+  
+  # Evaluation criteria
+  strict_mode: true
+  english_only_enforcement: true
+  
+  # Metrics to calculate
+  calculate_skill_metrics: true
+  calculate_difficulty_metrics: true
+  calculate_task_type_metrics: true
+
+# Experiment execution settings
+execution:
+  # Parallel execution (set to 1 for sequential)
+  max_workers: 1
+  
+  # Timeout settings
+  task_timeout: 300  # 5 minutes per task
+  total_timeout: 1800  # 30 minutes total
+  
+  # Retry settings
+  max_retries: 0
+  retry_on_failure: false
+  
+  # Logging
+  verbose: true
+  save_intermediate_results: true
+
+# Output settings
+output:
+  # Results directory
+  results_dir: "results/campus_life_bench"
+  
+  # File formats
+  save_json: true
+  save_csv: true
+  save_detailed_logs: true
+  
+  # What to save
+  save_chat_histories: true
+  save_tool_calls: true
+  save_evaluation_details: true
+  save_metrics: true
+
+# Environment settings
+environment:
+  # Docker settings (if using containerized execution)
+  use_docker: false
+  docker_image: "campus_life_bench:latest"
+  
+  # Resource limits
+  memory_limit: "2GB"
+  cpu_limit: "2"
+  
+  # Networking
+  network_access: false  # CampusLifeBench doesn't need external network
+
+# Debugging and development
+debug:
+  # Enable debug mode
+  debug_mode: false
+  
+  # Debug specific components
+  debug_task_execution: false
+  debug_tool_calls: false
+  debug_evaluation: false
+  
+  # Save debug information
+  save_debug_logs: false
+  
+  # Interactive mode (for development)
+  interactive_mode: false
+
+# Quality assurance
+quality_assurance:
+  # Validate all requirements are met
+  validate_english_only: true
+  validate_tool_results: true
+  validate_state_consistency: true
+  
+  # Check for common issues
+  check_infinite_loops: true
+  check_resource_usage: true
+  check_error_handling: true
+
+# Reporting
+reporting:
+  # Generate reports
+  generate_summary_report: true
+  generate_detailed_report: true
+  generate_error_report: true
+  
+  # Report formats
+  report_formats: ["html", "pdf", "json"]
+  
+  # Include in reports
+  include_chat_histories: true
+  include_tool_usage_stats: true
+  include_performance_metrics: true
+  include_error_analysis: true
+
+# Callbacks (for custom processing)
+callbacks:
+  # Pre-experiment callbacks
+  pre_experiment: []
+  
+  # Post-task callbacks
+  post_task: []
+  
+  # Post-experiment callbacks
+  post_experiment: []
+
+# Custom settings for CampusLifeBench
+campus_life_bench:
+  # Simulation settings
+  simulation_days: ["Week 1, Monday", "Week 1, Tuesday", "Week 1, Wednesday"]
+  
+  # System-specific settings
+  email_system:
+    validate_email_format: true
+    require_all_fields: true
+  
+  calendar_system:
+    validate_time_format: true
+    check_conflicts: false
+  
+  geography_system:
+    validate_paths: true
+    require_optimal_paths: false
+  
+  reservation_system:
+    enable_intelligent_generation: true
+    validate_constraints: true
+  
+  course_selection_system:
+    validate_prerequisites: false
+    check_time_conflicts: false
+  
+  information_system:
+    case_sensitive_search: false
+    partial_match_allowed: true

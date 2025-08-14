@@ -1,0 +1,8 @@
+oracle_agent:
+  module: "src.agents.instance.oracle_agent.OracleAgent"
+  parameters:
+    task_name:
+      module: "src.typings.TaskName"
+      parameters:
+        value: "db_bench"
+    data_file_path: "./data/db_bench/db_bench.json"

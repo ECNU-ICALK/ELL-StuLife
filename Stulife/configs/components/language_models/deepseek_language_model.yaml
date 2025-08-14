@@ -1,0 +1,17 @@
+default:
+  module: "src.language_models.instance.openai_language_model.OpenaiLanguageModel"
+  parameters:
+    role_dict:
+      user: "user"
+      agent: "assistant"
+    api_key: "sk-d4226415d55d492fb913479f1a8b6b9c"
+    base_url: "https://api.deepseek.com"
+
+deepseek-chat:
+  parameters:
+    model_name: "deepseek-chat"
+
+# Inference configuration for DeepSeek
+completion_config_dict:
+  temperature: 0.1
+  max_tokens: 1000

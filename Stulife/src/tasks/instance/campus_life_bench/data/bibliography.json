@@ -1,0 +1,109 @@
+{
+  "books": [
+    {
+      "book_title": "Introduction to Computer Science",
+      "chapters": [
+        {
+          "chapter_title": "Chapter 1: Fundamentals",
+          "sections": [
+            {
+              "section_title": "Section 1.1: Basic Concepts",
+              "articles": [
+                {
+                  "article_id": "cs_intro_001",
+                  "title": "What is Computer Science?",
+                  "body": "Computer science is the study of computational systems and the design of computer systems and their applications. It encompasses both theoretical and practical aspects of computing, including algorithms, data structures, programming languages, software engineering, computer architecture, and artificial intelligence."
+                },
+                {
+                  "article_id": "cs_intro_002", 
+                  "title": "History of Computing",
+                  "body": "The history of computing spans thousands of years, from ancient calculating devices like the abacus to modern digital computers. Key milestones include Charles Babbage's Analytical Engine, Alan Turing's theoretical work, and the development of the first electronic computers in the 1940s."
+                }
+              ]
+            },
+            {
+              "section_title": "Section 1.2: Programming Fundamentals",
+              "articles": [
+                {
+                  "article_id": "cs_intro_003",
+                  "title": "Introduction to Programming",
+                  "body": "Programming is the process of creating instructions for computers to execute. It involves breaking down complex problems into smaller, manageable tasks and expressing the solution in a programming language that the computer can understand."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Chapter 2: Algorithms and Data Structures",
+          "sections": [
+            {
+              "section_title": "Section 2.1: Algorithm Design",
+              "articles": [
+                {
+                  "article_id": "cs_intro_004",
+                  "title": "What is an Algorithm?",
+                  "body": "An algorithm is a step-by-step procedure for solving a problem or completing a task. Good algorithms are efficient, correct, and clearly defined. They form the foundation of all computer programs."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "book_title": "Mathematics for Computer Science",
+      "chapters": [
+        {
+          "chapter_title": "Chapter 1: Logic and Proofs",
+          "sections": [
+            {
+              "section_title": "Section 1.1: Propositional Logic",
+              "articles": [
+                {
+                  "article_id": "math_cs_001",
+                  "title": "Introduction to Logic",
+                  "body": "Logic is the foundation of mathematical reasoning and computer science. Propositional logic deals with statements that are either true or false, and the logical operations that can be performed on them."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "book_title": "University Student Handbook",
+      "chapters": [
+        {
+          "chapter_title": "Chapter 1: Academic Policies",
+          "sections": [
+            {
+              "section_title": "Section 1.1: Course Registration",
+              "articles": [
+                {
+                  "article_id": "handbook_001",
+                  "title": "How to Register for Courses",
+                  "body": "Course registration is conducted online through the student portal. Students must meet prerequisites and have advisor approval for certain courses. Registration periods are announced each semester."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Chapter 2: Campus Life",
+          "sections": [
+            {
+              "section_title": "Section 2.1: Student Organizations",
+              "articles": [
+                {
+                  "article_id": "handbook_002",
+                  "title": "Joining Student Clubs",
+                  "body": "The university offers over 100 student organizations covering academic, cultural, recreational, and service interests. Students can join existing clubs or start new ones with proper approval."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

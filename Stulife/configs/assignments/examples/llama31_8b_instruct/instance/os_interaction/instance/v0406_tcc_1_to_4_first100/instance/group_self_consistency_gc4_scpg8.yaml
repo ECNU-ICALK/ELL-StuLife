@@ -1,0 +1,30 @@
+import:
+- ../../../../../../../../definition.yaml
+- ../../../../../agent.yaml
+- ../../../task.yaml
+- ../data_file_path.yaml
+assignment_config:
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: group_self_consistency_callback
+      custom_parameters:
+        language_model: Llama-3.1-8B-Instruct
+        task_name:
+          module: src.typings.TaskName
+          parameters:
+            value: os_interaction
+        inference_config_dict:
+          do_sample: false
+          num_beams: 1
+          max_new_tokens: 512
+          temperature: null
+          top_k: null
+          top_p: null
+        group_count: 4
+        sample_count_per_group: 8
+  output_dir: outputs/{TIMESTAMP}
+  sample_order: default
+environment_config:
+  use_task_client_flag: false

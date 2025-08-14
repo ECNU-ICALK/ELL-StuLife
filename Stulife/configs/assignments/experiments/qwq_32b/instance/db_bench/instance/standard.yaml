@@ -1,0 +1,14 @@
+import:
+- ../task.yaml
+- ../../../agent.yaml
+- ../../../../../../definition.yaml
+assignment_config:
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: consecutive_abnormal_agent_inference_process_handling_callback
+  output_dir: outputs/{TIMESTAMP}
+  sample_order: default
+environment_config:
+  use_task_client_flag: true

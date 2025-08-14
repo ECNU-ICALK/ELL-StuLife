@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "description": "Test tasks for trigger functionality",
+    "version": "1.0",
+    "total_tasks": 4
+  },
+
+  "regular_task_001": {
+    "task_id": "regular_task_001",
+    "task_type": "email_sending",
+    "is_trigger": false,
+    "instruction": "Send an email to your advisor asking about office hours.",
+    "require_time": null,
+    "require_place": null,
+    "source_building_id": "B083",
+    "world_state_change": [],
+    "available_systems": ["email"],
+    "details": {
+      "recipient": "advisor@university.edu",
+      "subject": "Office Hours Inquiry"
+    },
+    "ground_truth": {
+      "recipient": "advisor@university.edu",
+      "subject_contains": "office hours"
+    }
+  },
+
+  "trigger_task_001": {
+    "task_id": "trigger_task_001",
+    "task_type": "multi_system",
+    "is_trigger": true,
+    "instruction": "",
+    "require_time": null,
+    "require_place": null,
+    "source_building_id": null,
+    "world_state_change": [
+      {
+        "change_type": "email_received",
+        "from": "advisor@university.edu",
+        "subject": "Meeting Confirmation",
+        "content": "Your meeting is confirmed for tomorrow at 2 PM in my office."
+      }
+    ],
+    "available_systems": ["email", "calendar"],
+    "details": {
+      "purpose": "World state change only - should not be evaluated"
+    },
+    "ground_truth": {}
+  },
+
+  "empty_instruction_task": {
+    "task_id": "empty_instruction_task",
+    "task_type": "multi_system",
+    "is_trigger": false,
+    "instruction": "",
+    "require_time": "Week 1, Tuesday, 14:00",
+    "require_place": null,
+    "source_building_id": "B083",
+    "world_state_change": [],
+    "available_systems": ["email", "calendar", "map", "geography"],
+    "details": {
+      "purpose": "Test empty instruction handling with time requirement"
+    },
+    "ground_truth": {
+      "should_take_action": true,
+      "time_aware": true
+    }
+  },
+
+  "empty_instruction_no_time": {
+    "task_id": "empty_instruction_no_time",
+    "task_type": "multi_system",
+    "is_trigger": false,
+    "instruction": "",
+    "require_time": null,
+    "require_place": null,
+    "source_building_id": null,
+    "world_state_change": [],
+    "available_systems": ["email", "calendar"],
+    "details": {
+      "purpose": "Test empty instruction handling without time requirement"
+    },
+    "ground_truth": {
+      "should_take_action": true
+    }
+  }
+}

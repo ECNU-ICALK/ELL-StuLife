@@ -1,0 +1,12 @@
+campus_life_bench:
+  module: "src.tasks.instance.campus_life_bench.task.CampusTask"
+  parameters:
+    task_name:
+      module: "src.typings.TaskName"
+      parameters:
+        value: "campus_life_bench"
+    chat_history_item_factory:
+      module: "src.factories.chat_history_item.ChatHistoryItemFactory"
+      parameters:
+        chat_history_item_dict_path: "./chat_history_items/standard/campus_life_bench.json"
+    max_round: 15

@@ -1,0 +1,109 @@
+{
+  "demo_metadata": {
+    "timestamp": "2025-08-01T22:57:02.492740",
+    "total_quizzes": 2,
+    "total_tests": 10
+  },
+  "quiz_results": [
+    {
+      "quiz_id": "demo_quiz_cs",
+      "question": "What is the time complexity of binary search in a sorted array?\nA. O(n)\nB. O(log n)\nC. O(n log n)\nD. O(n²)\nE. O(1)",
+      "correct_answer": "B",
+      "explanation": "Binary search divides the search space in half with each comparison, resulting in O(log n) time complexity.",
+      "test_results": [
+        {
+          "test_answer": "Answer: B",
+          "parsed_correctly": true,
+          "answer_letter": "B",
+          "is_correct": true,
+          "is_valid_letter": true
+        },
+        {
+          "test_answer": "Answer: Z",
+          "parsed_correctly": false,
+          "answer_letter": null,
+          "is_correct": false,
+          "is_valid_letter": false
+        },
+        {
+          "test_answer": "Answer: C",
+          "parsed_correctly": true,
+          "answer_letter": "C",
+          "is_correct": false,
+          "is_valid_letter": true
+        },
+        {
+          "test_answer": "I think the answer is B",
+          "parsed_correctly": false,
+          "answer_letter": null,
+          "is_correct": false,
+          "is_valid_letter": false
+        },
+        {
+          "test_answer": "The correct answer is B",
+          "parsed_correctly": false,
+          "answer_letter": null,
+          "is_correct": false,
+          "is_valid_letter": false
+        }
+      ],
+      "summary": {
+        "correct_format_count": 2,
+        "correct_answer_count": 1,
+        "total_tests": 5
+      }
+    },
+    {
+      "quiz_id": "demo_quiz_math",
+      "question": "What is the derivative of f(x) = x³ + 2x² - 5x + 3?\nA. 3x² + 4x - 5\nB. x⁴ + 2x³ - 5x² + 3x\nC. 3x² + 2x - 5\nD. 3x² + 4x + 5\nE. x² + 4x - 5",
+      "correct_answer": "A",
+      "explanation": "The derivative of x³ is 3x², the derivative of 2x² is 4x, the derivative of -5x is -5, and the derivative of a constant is 0.",
+      "test_results": [
+        {
+          "test_answer": "Answer: A",
+          "parsed_correctly": true,
+          "answer_letter": "A",
+          "is_correct": true,
+          "is_valid_letter": true
+        },
+        {
+          "test_answer": "Answer: Z",
+          "parsed_correctly": false,
+          "answer_letter": null,
+          "is_correct": false,
+          "is_valid_letter": false
+        },
+        {
+          "test_answer": "Answer: B",
+          "parsed_correctly": true,
+          "answer_letter": "B",
+          "is_correct": false,
+          "is_valid_letter": true
+        },
+        {
+          "test_answer": "I think the answer is B",
+          "parsed_correctly": false,
+          "answer_letter": null,
+          "is_correct": false,
+          "is_valid_letter": false
+        },
+        {
+          "test_answer": "The correct answer is A",
+          "parsed_correctly": false,
+          "answer_letter": null,
+          "is_correct": false,
+          "is_valid_letter": false
+        }
+      ],
+      "summary": {
+        "correct_format_count": 2,
+        "correct_answer_count": 1,
+        "total_tests": 5
+      }
+    }
+  ],
+  "overall_summary": {
+    "correct_format_rate": 0.4,
+    "correct_answer_rate": 0.2
+  }
+}

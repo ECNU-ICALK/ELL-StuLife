@@ -1,0 +1,560 @@
+{
+  "all_courses": [
+    {
+      "course_code": "SHK003111017",
+      "course_name": "Outline of Modern and Contemporary History of the Pan-Intelligence Federation",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Dr. Sarah Chen",
+        "id": "T0501"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Monday"
+        ],
+        "time": "14:00-16:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B003",
+          "building_name": "Alumni Hall",
+          "room_number": "Lecture Room 201"
+        }
+      },
+      "description": "This course provides a comprehensive overview of the modern and contemporary history of the Pan-Intelligence Federation, exploring key political, social, and technological developments.",
+      "prerequisites": [
+        "Ideology, Morality, and Legal Foundations"
+      ],
+      "enrollment_capacity": 100,
+      "popularity_index": 75,
+      "seats_left": 45,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "SHK003111017(2)",
+      "course_name": "Outline of Modern and Contemporary History of the Pan-Intelligence Federation",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Prof. Michael Wang",
+        "id": "T0502"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Monday"
+        ],
+        "time": "14:00-16:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B003",
+          "building_name": "Alumni Hall",
+          "room_number": "Lecture Room 301"
+        }
+      },
+      "description": "This course provides a comprehensive overview of the modern and contemporary history of the Pan-Intelligence Federation, exploring key political, social, and technological developments.",
+      "prerequisites": [
+        "Ideology, Morality, and Legal Foundations"
+      ],
+      "enrollment_capacity": 100,
+      "popularity_index": 78,
+      "seats_left": 38,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "WXK003111107",
+      "course_name": "Situation and Policy for University Students",
+      "credits": 2,
+      "total_class_hours": 36,
+      "instructor": {
+        "name": "Dr. Lisa Zhang",
+        "id": "T0503"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Tuesday"
+        ],
+        "time": "10:00-11:50",
+        "class_hours_per_week": 2,
+        "location": {
+          "building_id": "B014",
+          "building_name": "Orwell Hall",
+          "room_number": "Seminar Room 101"
+        }
+      },
+      "description": "This course analyzes current domestic and international situations and policies, helping students understand contemporary political and social issues.",
+      "prerequisites": [
+        "Military Theory (Including Military Training)"
+      ],
+      "enrollment_capacity": 80,
+      "popularity_index": 65,
+      "seats_left": 32,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "WXK003111107(2)",
+      "course_name": "Situation and Policy for University Students",
+      "credits": 2,
+      "total_class_hours": 36,
+      "instructor": {
+        "name": "Prof. David Liu",
+        "id": "T0504"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Tuesday"
+        ],
+        "time": "10:00-11:50",
+        "class_hours_per_week": 2,
+        "location": {
+          "building_id": "B014",
+          "building_name": "Orwell Hall",
+          "room_number": "Seminar Room 201"
+        }
+      },
+      "description": "This course analyzes current domestic and international situations and policies, helping students understand contemporary political and social issues.",
+      "prerequisites": [
+        "Military Theory (Including Military Training)"
+      ],
+      "enrollment_capacity": 80,
+      "popularity_index": 68,
+      "seats_left": 28,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "POL003116100",
+      "course_name": "Public Safety Education",
+      "credits": 1,
+      "total_class_hours": 18,
+      "instructor": {
+        "name": "Dr. Emily Johnson",
+        "id": "T0505"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Wednesday"
+        ],
+        "time": "16:00-16:50",
+        "class_hours_per_week": 1,
+        "location": {
+          "building_id": "B031",
+          "building_name": "Horizon Hall",
+          "room_number": "Lecture Hall 201"
+        }
+      },
+      "description": "This course covers essential public safety knowledge, emergency response procedures, and risk management strategies for university students.",
+      "prerequisites": [
+        "Military Theory (Including Military Training)"
+      ],
+      "enrollment_capacity": 120,
+      "popularity_index": 55,
+      "seats_left": 65,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "POL003116100(2)",
+      "course_name": "Public Safety Education",
+      "credits": 1,
+      "total_class_hours": 18,
+      "instructor": {
+        "name": "Prof. Robert Chen",
+        "id": "T0506"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Wednesday"
+        ],
+        "time": "16:00-16:50",
+        "class_hours_per_week": 1,
+        "location": {
+          "building_id": "B031",
+          "building_name": "Horizon Hall",
+          "room_number": "Lecture Hall 301"
+        }
+      },
+      "description": "This course covers essential public safety knowledge, emergency response procedures, and risk management strategies for university students.",
+      "prerequisites": [
+        "Military Theory (Including Military Training)"
+      ],
+      "enrollment_capacity": 120,
+      "popularity_index": 58,
+      "seats_left": 58,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311213",
+      "course_name": "Deep Learning",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Dr. Alex Zhang",
+        "id": "T0507"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Thursday"
+        ],
+        "time": "14:00-16:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "Computer Lab A301"
+        }
+      },
+      "description": "This course introduces the fundamentals of deep learning, including neural networks, backpropagation, and modern architectures like CNNs and RNNs.",
+      "prerequisites": [
+        "Mathematical Analysis I",
+        "Linear Algebra",
+        "Programming"
+      ],
+      "enrollment_capacity": 60,
+      "popularity_index": 92,
+      "seats_left": 15,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311213(2)",
+      "course_name": "Deep Learning",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Prof. Maria Rodriguez",
+        "id": "T0508"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Thursday"
+        ],
+        "time": "14:00-16:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "Computer Lab B301"
+        }
+      },
+      "description": "This course introduces the fundamentals of deep learning, including neural networks, backpropagation, and modern architectures like CNNs and RNNs.",
+      "prerequisites": [
+        "Mathematical Analysis I",
+        "Linear Algebra",
+        "Programming"
+      ],
+      "enrollment_capacity": 60,
+      "popularity_index": 89,
+      "seats_left": 18,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311223",
+      "course_name": "3D Computer Vision and Embodied Intelligence",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Dr. Kevin Wu",
+        "id": "T0509"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Friday"
+        ],
+        "time": "10:00-12:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "VR Lab (201)"
+        }
+      },
+      "description": "This course covers 3D computer vision techniques and embodied intelligence systems, including 3D reconstruction, SLAM, and robotics applications.",
+      "prerequisites": [
+        "Mathematical Analysis I",
+        "Linear Algebra",
+        "Programming"
+      ],
+      "enrollment_capacity": 50,
+      "popularity_index": 85,
+      "seats_left": 22,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311223(2)",
+      "course_name": "3D Computer Vision and Embodied Intelligence",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Prof. Jennifer Lee",
+        "id": "T0510"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Friday"
+        ],
+        "time": "10:00-12:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "VR Lab (301)"
+        }
+      },
+      "description": "This course covers 3D computer vision techniques and embodied intelligence systems, including 3D reconstruction, SLAM, and robotics applications.",
+      "prerequisites": [
+        "Mathematical Analysis I",
+        "Linear Algebra",
+        "Programming"
+      ],
+      "enrollment_capacity": 50,
+      "popularity_index": 88,
+      "seats_left": 19,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311214",
+      "course_name": "Application and Practice of Large Language Model",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Dr. Thomas Anderson",
+        "id": "T0511"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Tuesday"
+        ],
+        "time": "14:00-16:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "Computer Lab A401"
+        }
+      },
+      "description": "This course focuses on the practical applications of large language models, including fine-tuning, prompt engineering, and deployment strategies.",
+      "prerequisites": [
+        "Programming",
+        "Introduction to Computer Science"
+      ],
+      "enrollment_capacity": 70,
+      "popularity_index": 95,
+      "seats_left": 12,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311214(2)",
+      "course_name": "Application and Practice of Large Language Model",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Prof. Rachel Kim",
+        "id": "T0512"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Tuesday"
+        ],
+        "time": "14:00-16:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "Computer Lab B401"
+        }
+      },
+      "description": "This course focuses on the practical applications of large language models, including fine-tuning, prompt engineering, and deployment strategies.",
+      "prerequisites": [
+        "Programming",
+        "Introduction to Computer Science"
+      ],
+      "enrollment_capacity": 70,
+      "popularity_index": 93,
+      "seats_left": 14,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311224",
+      "course_name": "Data Mining and Action",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Dr. Steven Park",
+        "id": "T0513"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Wednesday"
+        ],
+        "time": "10:00-12:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "Data Science Lab (101)"
+        }
+      },
+      "description": "This course covers data mining techniques and their practical applications, including clustering, classification, and association rule mining.",
+      "prerequisites": [
+        "Programming",
+        "Linear Algebra"
+      ],
+      "enrollment_capacity": 65,
+      "popularity_index": 82,
+      "seats_left": 25,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311224(2)",
+      "course_name": "Data Mining and Action",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Prof. Nancy Chen",
+        "id": "T0514"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Wednesday"
+        ],
+        "time": "10:00-12:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "Data Science Lab (201)"
+        }
+      },
+      "description": "This course covers data mining techniques and their practical applications, including clustering, classification, and association rule mining.",
+      "prerequisites": [
+        "Programming",
+        "Linear Algebra"
+      ],
+      "enrollment_capacity": 65,
+      "popularity_index": 79,
+      "seats_left": 28,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311299",
+      "course_name": "Game Project",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Dr. Mark Johnson",
+        "id": "T0515"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Friday"
+        ],
+        "time": "14:00-16:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "Game Dev Studio (101)"
+        }
+      },
+      "description": "This hands-on course involves developing a complete game project, covering game design, programming, graphics, and user experience.",
+      "prerequisites": [
+        "Programming"
+      ],
+      "enrollment_capacity": 40,
+      "popularity_index": 88,
+      "seats_left": 16,
+      "type": "Compulsory"
+    },
+    {
+      "course_code": "COMS00311299(2)",
+      "course_name": "Game Project",
+      "credits": 3,
+      "total_class_hours": 54,
+      "instructor": {
+        "name": "Prof. Lisa Wang",
+        "id": "T0516"
+      },
+      "schedule": {
+        "weeks": {
+          "start": 1,
+          "end": 18
+        },
+        "days": [
+          "Friday"
+        ],
+        "time": "14:00-16:50",
+        "class_hours_per_week": 3,
+        "location": {
+          "building_id": "B036",
+          "building_name": "Innovate Hall",
+          "room_number": "Game Dev Studio (201)"
+        }
+      },
+      "description": "This hands-on course involves developing a complete game project, covering game design, programming, graphics, and user experience.",
+      "prerequisites": [
+        "Programming"
+      ],
+      "enrollment_capacity": 40,
+      "popularity_index": 85,
+      "seats_left": 19,
+      "type": "Compulsory"
+    }
+  ]
+}

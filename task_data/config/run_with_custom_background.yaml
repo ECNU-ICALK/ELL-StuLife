@@ -1,0 +1,89 @@
+# ======================================================================================
+# Campus Life Bench - Custom Background and Task Configuration
+# ======================================================================================
+#
+# This configuration file is designed to run the Campus Life Bench task
+# with a specific task file and custom background information.
+#
+# Task File Source: 任务数据/tasks.json
+# Background Data Source: 任务数据/background/
+#
+# To accommodate the framework's data loading mechanism, this configuration
+# points to a combined data directory where both the task file and background
+# data have been pre-staged.
+#
+# ======================================================================================
+
+language_model_dict:
+  deepseek-chat:
+    module: "src.language_models.instance.openai_language_model.OpenaiLanguageModel"
+    parameters:
+      model_name: "deepseek-chat"
+      api_key: "YOUR_API_KEY"  # IMPORTANT: Replace with your actual DeepSeek API key
+      base_url: "https://api.deepseek.com"
+      role_dict:
+        user: "user"
+        agent: "assistant"
+
+agent_dict:
+  language_model_agent:
+    module: "src.agents.instance.language_model_agent.LanguageModelAgent"
+    parameters:
+      language_model: "Fill the parameter 'language_model_name' in assignment config."
+      system_prompt: "You are a helpful assistant, an expert in navigating campus life."
+      inference_config_dict: {}
+
+task_dict:
+  campus_life_bench:
+    module: "src.tasks.instance.campus_life_bench.task.CampusTask"
+    parameters:
+      task_name:
+        module: "src.typings.TaskName"
+        parameters:
+          value: "campus_life_bench"
+      chat_history_item_factory:
+        module: "src.factories.chat_history_item.ChatHistoryItemFactory"
+        parameters:
+          chat_history_item_dict_path: "./chat_history_items/standard/campus_life_bench.json"
+      max_round: 25 # Increased max_round for potentially more complex tasks
+      data_dir: "任务数据/combined_data" # KEY CHANGE: Points to the directory with your tasks.json and background data
+
+callback_dict:
+  current_session_saving_callback:
+    module: "src.callbacks.instance.current_session_saving_callback.CurrentSessionSavingCallback"
+    parameters: {}
+  consecutive_abnormal_agent_inference_process_handling_callback:
+    module: "src.callbacks.instance.consecutive_abnormal_agent_inference_process_handling_callback.ConsecutiveAbnormalAgentInferenceProcessHandlingCallback"
+    parameters:
+      tolerance_count: 8
+
+assignment_config:
+  language_model_list:
+  - name: deepseek-chat
+    custom_parameters:
+      model_name: "deepseek-chat"
+      api_key: "YOUR_API_KEY" # IMPORTANT: Replace with your actual DeepSeek API key
+      base_url: "https://api.deepseek.com"
+      role_dict:
+        user: "user"
+        agent: "assistant"
+  agent:
+    name: language_model_agent
+    custom_parameters:
+      language_model: deepseek-chat
+  task: campus_life_bench
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: consecutive_abnormal_agent_inference_process_handling_callback
+  output_dir: outputs/custom_run_{TIMESTAMP}
+  sample_order: default
+
+environment_config:
+  use_task_client_flag: false
+
+logger_config:
+  log_file_path: default
+  level: INFO
+  logger_name: lifelong_agent_bench

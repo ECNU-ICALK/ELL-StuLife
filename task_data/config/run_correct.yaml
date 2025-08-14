@@ -1,0 +1,88 @@
+# ======================================================================================
+# Campus Life Bench - Corrected Configuration
+# ======================================================================================
+#
+# This configuration file correctly points to the data directory, allowing the
+# framework to naturally find both the tasks.json file and the background data
+# subdirectory as intended by the code's design.
+#
+# Task File Source: 任务数据/tasks.json
+# Background Data Source: 任务数据/background/
+#
+# ======================================================================================
+
+language_model_dict:
+  deepseek-chat:
+    module: "src.language_models.instance.openai_language_model.OpenaiLanguageModel"
+    parameters:
+      model_name: "Pro/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+      api_key: "sk-mkdfidkimblktwcilrehnfayxltqwbxunrltuuwvzftqudwl"  # IMPORTANT: Replace with your actual SiliconFlow API key
+      base_url: "https://api.siliconflow.cn/v1"
+      role_dict:
+        user: "user"
+        agent: "assistant"
+
+agent_dict:
+  language_model_agent:
+    module: "src.agents.instance.language_model_agent.LanguageModelAgent"
+    parameters:
+      language_model: "Pro/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+      system_prompt: "You are a helpful assistant."
+      inference_config_dict:
+        max_tokens: 1024
+        temperature: 0.0
+
+task_dict:
+  campus_life_bench:
+    module: "src.tasks.instance.campus_life_bench.task.CampusTask"
+    parameters:
+      task_name:
+        module: "src.typings.TaskName"
+        parameters:
+          value: "campus_life_bench"
+      chat_history_item_factory:
+        module: "src.factories.chat_history_item.ChatHistoryItemFactory"
+        parameters:
+          chat_history_item_dict_path: "./chat_history_items/standard/campus_life_bench.json"
+      max_round: 60
+      data_dir: "C:\\PHD\\ICALK\\exp-dri-agent\\framework\\task_data" # CORRECT: Using absolute path to avoid ambiguity
+
+callback_dict:
+  current_session_saving_callback:
+    module: "src.callbacks.instance.current_session_saving_callback.CurrentSessionSavingCallback"
+    parameters: {}
+  consecutive_abnormal_agent_inference_process_handling_callback:
+    module: "src.callbacks.instance.consecutive_abnormal_agent_inference_process_handling_callback.ConsecutiveAbnormalAgentInferenceProcessHandlingCallback"
+    parameters:
+      tolerance_count: 8
+
+assignment_config:
+  language_model_list:
+  - name: deepseek-chat
+    custom_parameters:
+      model_name: "Pro/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+      api_key: "sk-mkdfidkimblktwcilrehnfayxltqwbxunrltuuwvzftqudwl" # IMPORTANT: Replace with your actual SiliconFlow API key
+      base_url: "https://api.siliconflow.cn/v1"
+      role_dict:
+        user: "user"
+        agent: "assistant"
+  agent:
+    name: language_model_agent
+    custom_parameters:
+      language_model: deepseek-chat
+  task: campus_life_bench
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: consecutive_abnormal_agent_inference_process_handling_callback
+  output_dir: C:\\PHD\\ICALK\\exp-dri-agent\\framework\\outputs\\{TIMESTAMP}_test_task_dpskv3
+  sample_order: default
+
+environment_config:
+  use_task_client_flag: false
+
+logger_config:
+  log_file_path: default
+  level: INFO
+  logger_name: lifelong_agent_bench

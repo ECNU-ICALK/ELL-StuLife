@@ -1,0 +1,5 @@
+task_client:
+  module: "src.tasks.client.TaskClient"
+  parameters:
+    request_timeout: 120  # or 86400 (24 hours for debugging)
+    server_address: "http://127.0.0.1:8000/api" # http://192.168.100.1:8000/api

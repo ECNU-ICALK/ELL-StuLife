@@ -1,0 +1,154 @@
+{
+  "test_suite_metadata": {
+    "name": "CampusLifeBench Action System Comprehensive Test Suite",
+    "version": "1.0",
+    "timestamp": "2025-08-01T22:05:29.379544",
+    "total_categories": 7,
+    "execution_start_time": "2025-08-01T22:05:29.378540"
+  },
+  "test_categories": {
+    "Single System Tests": {
+      "tests_run": 5,
+      "failures": 0,
+      "errors": 5,
+      "success_rate": 0.0,
+      "execution_time_seconds": 0.009095907211303711,
+      "status": "FAIL",
+      "failure_details": [],
+      "error_details": [
+        {
+          "test": "test_calendar_system (comprehensive_action_test_suite.SingleSystemTests.test_calendar_system)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 198, in test_calendar_system\n    \"execution_time\": self.test_execution_time,\n                      ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SingleSystemTests' object has no attribute 'test_execution_time'\n"
+        },
+        {
+          "test": "test_course_selection_system (comprehensive_action_test_suite.SingleSystemTests.test_course_selection_system)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 285, in test_course_selection_system\n    \"execution_time\": self.test_execution_time,\n                      ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SingleSystemTests' object has no attribute 'test_execution_time'\n"
+        },
+        {
+          "test": "test_email_system (comprehensive_action_test_suite.SingleSystemTests.test_email_system)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 174, in test_email_system\n    \"execution_time\": self.test_execution_time,\n                      ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SingleSystemTests' object has no attribute 'test_execution_time'\n"
+        },
+        {
+          "test": "test_navigation_system (comprehensive_action_test_suite.SingleSystemTests.test_navigation_system)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 230, in test_navigation_system\n    \"execution_time\": self.test_execution_time,\n                      ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SingleSystemTests' object has no attribute 'test_execution_time'\n"
+        },
+        {
+          "test": "test_reservation_system (comprehensive_action_test_suite.SingleSystemTests.test_reservation_system)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 252, in test_reservation_system\n    \"execution_time\": self.test_execution_time,\n                      ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SingleSystemTests' object has no attribute 'test_execution_time'\n"
+        }
+      ]
+    },
+    "Multi-System Tests": {
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 1,
+      "success_rate": 0.0,
+      "execution_time_seconds": 0.0040171146392822266,
+      "status": "FAIL",
+      "failure_details": [],
+      "error_details": [
+        {
+          "test": "test_email_calendar_integration (comprehensive_action_test_suite.MultiSystemTests.test_email_calendar_integration)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 379, in test_email_calendar_integration\n    for action in test_data[\"expected_actions\"]:\n                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\nKeyError: 'expected_actions'\n"
+        }
+      ]
+    },
+    "Ultra-Complex Integration": {
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 1,
+      "success_rate": 0.0,
+      "execution_time_seconds": 0.003065824508666992,
+      "status": "FAIL",
+      "failure_details": [],
+      "error_details": [
+        {
+          "test": "test_complete_academic_day (comprehensive_action_test_suite.UltraComplexIntegrationTests.test_complete_academic_day)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 457, in test_complete_academic_day\n    test_data = self.data_loader.get_test_category(\"ultra_complex_integration\")[\"complete_academic_day\"]\n                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'complete_academic_day'\n"
+        }
+      ]
+    },
+    "System Availability Validation": {
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 1,
+      "success_rate": 0.0,
+      "execution_time_seconds": 0.0024433135986328125,
+      "status": "FAIL",
+      "failure_details": [],
+      "error_details": [
+        {
+          "test": "test_email_only_restriction (comprehensive_action_test_suite.SystemAvailabilityValidationTests.test_email_only_restriction)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 551, in test_email_only_restriction\n    for action in test_data[\"expected_actions\"]:\n                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\nKeyError: 'expected_actions'\n"
+        }
+      ]
+    },
+    "Temporal Week 1 Simulation": {
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 1,
+      "success_rate": 0.0,
+      "execution_time_seconds": 0.003008604049682617,
+      "status": "FAIL",
+      "failure_details": [],
+      "error_details": [
+        {
+          "test": "test_monday_activities (comprehensive_action_test_suite.TemporalWeek1SimulationTests.test_monday_activities)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 598, in test_monday_activities\n    for action in test_data[\"expected_actions\"]:\n                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\nKeyError: 'expected_actions'\n"
+        }
+      ]
+    },
+    "Action Format Validation": {
+      "tests_run": 2,
+      "failures": 0,
+      "errors": 2,
+      "success_rate": 0.0,
+      "execution_time_seconds": 0.0031871795654296875,
+      "status": "FAIL",
+      "failure_details": [],
+      "error_details": [
+        {
+          "test": "test_invalid_action_formats (comprehensive_action_test_suite.ActionFormatValidationTests.test_invalid_action_formats)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 427, in test_invalid_action_formats\n    test_data = TestDataLoader(os.path.join(os.path.dirname(__file__), 'test_data')).get_test_category(\"action_format_validation\")[\"invalid_action_formats\"]\n                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'invalid_action_formats'\n"
+        },
+        {
+          "test": "test_valid_action_formats (comprehensive_action_test_suite.ActionFormatValidationTests.test_valid_action_formats)",
+          "error": "Traceback (most recent call last):\n  File \"C:\\PHD\\ICALK\\exp-dri-agent\\框架\\LifelongAgentBench-main\\tests\\campus_life_bench\\comprehensive_action_test_suite.py\", line 410, in test_valid_action_formats\n    test_data = TestDataLoader(os.path.join(os.path.dirname(__file__), 'test_data')).get_test_category(\"action_format_validation\")[\"valid_action_formats\"]\n                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'valid_action_formats'\n"
+        }
+      ]
+    },
+    "End-to-End Integration": {
+      "tests_run": 1,
+      "failures": 0,
+      "errors": 0,
+      "success_rate": 1.0,
+      "execution_time_seconds": 0.0020058155059814453,
+      "status": "PASS",
+      "failure_details": [],
+      "error_details": []
+    }
+  },
+  "summary": {
+    "total_tests": 12,
+    "total_failures": 0,
+    "total_errors": 11,
+    "overall_success_rate": 0.08333333333333333,
+    "total_execution_time_seconds": 0.030840158462524414,
+    "overall_status": "FAIL"
+  },
+  "performance_metrics": {
+    "average_test_time_seconds": 0.0025700132052103677,
+    "tests_per_second": 389.10305907091447,
+    "fastest_category": "End-to-End Integration",
+    "slowest_category": "Single System Tests"
+  },
+  "system_validation": {
+    "action_parsing_validated": false,
+    "single_systems_validated": false,
+    "multi_system_integration_validated": false,
+    "system_availability_enforced": false,
+    "temporal_consistency_validated": false,
+    "end_to_end_integration_validated": true,
+    "ultra_complex_scenarios_validated": false
+  }
+}

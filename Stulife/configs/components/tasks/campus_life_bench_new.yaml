@@ -1,0 +1,59 @@
+# CampusLifeBench Task Configuration with Action-based System
+# All natural language communications/returns MUST use English only
+
+_target_: src.tasks.instance.campus_life_bench.task.CampusTask
+
+# Task parameters
+max_round: 15  # Maximum interaction rounds per task
+
+# Chat history configuration
+chat_history_item_factory:
+  _target_: src.factories.chat_history_item.ChatHistoryItemFactory
+
+# Task-specific settings
+task_settings:
+  # Enable debug mode for development
+  debug_mode: false
+  
+  # Language enforcement
+  enforce_english_only: true
+  
+  # Evaluation settings
+  strict_evaluation: true
+  
+  # Environment settings
+  persistent_state: true
+  daily_reset: true
+  
+  # Tool execution settings
+  safe_execution: true
+  execution_timeout: 30  # seconds
+  
+  # New Action-based execution settings
+  use_action_format: true
+  dynamic_system_prompts: true
+  validate_system_availability: true
+  
+  # Data paths (relative to task directory)
+  data_directory: "data"
+  map_data_file: "map_v1.5.json"
+  tasks_data_file: "tasks.json"
+  bibliography_file: "bibliography.json"
+  campus_data_file: "campus_data.json"
+  courses_file: "courses.json"
+
+# Skill categories for evaluation
+skill_categories:
+  - "planning"
+  - "decision_making"
+  - "navigation"
+  - "spatial_reasoning"
+  - "communication"
+  - "text_composition"
+  - "time_management"
+  - "scheduling"
+  - "resource_management"
+  - "constraint_satisfaction"
+  - "information_retrieval"
+  - "query_formulation"
+  - "general"

@@ -1,0 +1,14 @@
+os_interaction:
+  module: "src.tasks.instance.os_interaction.OSInteraction"
+  parameters:
+    task_name:
+      module: "src.typings.TaskName"
+      parameters:
+        value: "os_interaction"
+    chat_history_item_factory:
+      module: "src.factories.chat_history_item.ChatHistoryItemFactory"
+      parameters:
+        chat_history_item_dict_path: "./chat_history_items/standard/os_interaction.json"
+    data_file_path: "./data/v0303/os_interaction/processed/v0409_tcc_9_to_12_first500/entry_dict.json"
+    max_round: 5
+    command_execution_timeout: 20

@@ -1,0 +1,37 @@
+CampusLifeBench Detailed Test Results Summary
+============================================================
+
+Overall Results:
+  Total Tests: 3
+  Passed: 3
+  Failed: 0
+  Success Rate: 100.0%
+  Execution Time: 0.01 seconds
+
+Single System Tests:
+----------------------------------------
+
+  Test: email_system
+  Description: Test email system functionality with single action
+  Task: Send an email to your advisor Dr. Johnson asking about office hours for next week.
+  Available Systems: ['email']
+  Generated Action: Action: email.send_email(to="dr.johnson@university.edu", subject="Office Hours Inquiry", body="Dear Dr. Johnson, I would like to know your office hours for next week. Thank you.")
+  Execution Steps:
+    - action_parsing: Parse agent response into structured action
+      Success: True
+      Output: {'action_type': 'execute', 'content': 'email.send_email(to="dr.johnson@university.edu", subject="Office Hours Inquiry", body="Dear Dr. Johnson, I would like to know your office hours for next week. Thank you.")', 'finish_reason': None}
+    - system_availability_check: Check if the requested action is available in current system configuration
+      Success: True
+      Output: {'is_available': True, 'available_actions': None}
+    - action_execution: Execute the action using the environment
+      Success: True
+      Output: {'status': 'success', 'message': 'Email has been successfully sent to dr.johnson@university.edu.', 'data': {'recipient': 'dr.johnson@university.edu', 'subject': 'Office Hours Inquiry', 'email_count': 1}, 'is_success': True}
+    - result_validation: Validate execution result against expected ground truth
+      Success: True
+      Output: {'valid': True, 'checks': [{'check': 'english_only', 'passed': True}]}
+  Final Judgment:
+    Passed: True
+    Reason: All validation checks passed
+
+Multi-System Tests:
+----------------------------------------

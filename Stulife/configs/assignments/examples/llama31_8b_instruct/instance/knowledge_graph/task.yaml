@@ -1,0 +1,7 @@
+assignment_config:
+  task: knowledge_graph
+task_dict:
+  knowledge_graph:
+    parameters:
+      sparql_url:
+        "http://127.0.0.1:3001/sparql"
