@@ -40,6 +40,8 @@ StuLife is a new benchmark built upon the `LifelongAgentBench` (LAB) framework, 
 
 Unlike traditional benchmarks that focus on stateless, single-turn tasks, StuLife creates a "virtual world" that evolves over a simulated academic year. An agent's success is not just about solving the immediate problem, but about managing their time, remembering commitments, and navigating a complex web of academic and social responsibilities that persist across hundreds of tasks.
 
+![StuLife2](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig2.png?raw=true)
+
 ## Core Concepts
 
 StuLife is founded on three key principles to challenge the frontiers of agent intelligence:
