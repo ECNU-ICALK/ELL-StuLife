@@ -32,7 +32,7 @@ Beyond evaluating state-of-the-art LLMs on the `StuLife` benchmark, we also **ex
 
 
 
-# StuLife: A Persistent, Stateful Benchmark for Lifelong Language Agents
+# StuLife
 
 ## Introduction
 
