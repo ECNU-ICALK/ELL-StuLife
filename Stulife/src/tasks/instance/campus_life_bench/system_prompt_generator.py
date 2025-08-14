@@ -190,23 +190,23 @@ Below is the list of tools at your disposal."""
     * `to` (required): The recipient's email address.
     * `subject` (required): The subject of the email.
     * `body` (required): The content of the email.
-    * *Example*: `Action: email.send_email(to="advisor.x@lau.edu", subject="Question about my schedule", body="Dear Advisor, I have a question...")`
+    * *Example*: `<action>Action: email.send_email(to="advisor.x@lau.edu", subject="Question about my schedule", body="Dear Advisor, I have a question...")</action>`
 """,
             
             "email.view_inbox": """* **`view_inbox(filter_unread: bool = None)`**: Views messages in your inbox.
     * `filter_unread` (optional): If set to `True`, shows only unread messages.
-    * *Example*: `Action: email.view_inbox(filter_unread=True)`
+    * *Example*: `<action>Action: email.view_inbox(filter_unread=True)</action>`
 """,
             
             "email.reply_email": """* **`reply_email(email_id: str, body: str)`**: Replies to a specific email.
     * `email_id` (required): The ID of the email you are replying to.
     * `body` (required): The content of your reply.
-    * *Example*: `Action: email.reply_email(email_id="email_012", body="Thank you for the information.")`
+    * *Example*: `<action>Action: email.reply_email(email_id="email_012", body="Thank you for the information.")</action>`
 """,
             
             "email.delete_email": """* **`delete_email(email_id: str)`**: Deletes an email from your inbox.
     * `email_id` (required): The ID of the email to delete.
-    * *Example*: `Action: email.delete_email(email_id="email_013")`
+    * *Example*: `<action>Action: email.delete_email(email_id="email_013")</action>`
 """,
             
             # Calendar System Tools
@@ -216,77 +216,77 @@ Below is the list of tools at your disposal."""
     * `location` (required): The location of the event.
     * `time` (required): The time of the event (format: `'Week X, Day, HH:MM-HH:MM'`).
     * `description` (optional): A detailed description for the event.
-    * *Example*: `Action: calendar.add_event(calendar_id="self", event_title="Team Meeting", location="Library Room 201", time="Week 3, Monday, 15:00-16:00", description="Weekly sync-up meeting.")`
+    * *Example*: `<action>Action: calendar.add_event(calendar_id="self", event_title="Team Meeting", location="Library Room 201", time="Week 3, Monday, 15:00-16:00", description="Weekly sync-up meeting.")</action>`
 """,
             
             "calendar.remove_event": """* **`remove_event(calendar_id: str, event_id: str)`**: Removes an event from a calendar.
     * `calendar_id` (required): The ID of the calendar.
     * `event_id` (required): The ID of the event to remove.
-    * *Example*: `Action: calendar.remove_event(calendar_id="self", event_id="event_005")`
+    * *Example*: `<action>Action: calendar.remove_event(calendar_id="self", event_id="event_005")</action>`
 """,
             
             "calendar.update_event": """* **`update_event(calendar_id: str, event_id: str, new_details: dict)`**: Updates an existing event.
     * `calendar_id` (required): The ID of the calendar.
     * `event_id` (required): The ID of the event to update.
     * `new_details` (required): A dictionary with the new details (e.g., `{"location": "New Location"}`).
-    * *Example*: `Action: calendar.update_event(calendar_id="self", event_id="event_006", new_details={"location": "Orwell Hall, Room 101"})`
+    * *Example*: `<action>Action: calendar.update_event(calendar_id="self", event_id="event_006", new_details={"location": "Orwell Hall, Room 101"})</action>`
 """,
             
             "calendar.view_schedule": """* **`view_schedule(calendar_id: str, date: str)`**: Views all events on a specific date for a calendar.
     * `calendar_id` (required): The ID of the calendar to view.
     * `date` (required): The date to view (format: `'Week X, Day'`).
-    * *Example*: `Action: calendar.view_schedule(calendar_id="self", date="Week 3, Monday")`
+    * *Example*: `<action>Action: calendar.view_schedule(calendar_id="self", date="Week 3, Monday")</action>`
 """,
             
             "calendar.query_advisor_availability": """* **`query_advisor_availability(advisor_id: str, date: str)`**: Checks an advisor's free/busy schedule.
     * `advisor_id` (required): The ID of the advisor.
     * `date` (required): The date to query (format: `'Week X, Day'`).
-    * *Example*: `Action: calendar.query_advisor_availability(advisor_id="T0001", date="Week 4, Tuesday")`
+    * *Example*: `<action>Action: calendar.query_advisor_availability(advisor_id="T0001", date="Week 4, Tuesday")</action>`
 """,
             
             # Map & Geography Tools
             "geography.get_current_location": """* **`get_current_location()`**: Gets your current building location.
-    * *Example*: `Action: geography.get_current_location()`
+    * *Example*: `<action>Action: geography.get_current_location()</action>`
 """,
             
             "map.find_optimal_path": """* **`find_optimal_path(source_building_id: str, target_building_id: str, constraints: dict = None)`**: Finds the best path between two buildings.
     * `source_building_id` (required): The ID of the starting building.
     * `target_building_id` (required): The ID of the destination building.
     * `constraints` (optional): A dictionary of constraints (e.g., `{"avoid": "crowds"}`).
-    * *Example*: `Action: map.find_optimal_path(source_building_id="B083", target_building_id="B001")`
+    * *Example*: `<action>Action: map.find_optimal_path(source_building_id="B083", target_building_id="B001")</action>`
 """,
             
             "geography.walk_to": """* **`walk_to(path_info: dict)`**: Moves your agent along a calculated path.
     * `path_info` (required): The full path object returned by `find_optimal_path`.
-    * *Example*: `Action: geography.walk_to(path_info={'path': ['B083', 'B014', 'B001']})`
+    * *Example*: `<action>Action: geography.walk_to(path_info={'path': ['B083', 'B014', 'B001']})</action>`
 """,
             
             "map.find_building_id": """* **`find_building_id(building_name: str)`**: Finds a building's unique ID by its name.
     * `building_name` (required): The name or alias of the building.
-    * *Example*: `Action: map.find_building_id(building_name="Grand Central Library")`
+    * *Example*: `<action>Action: map.find_building_id(building_name="Grand Central Library")</action>`
 """,
             
             "map.get_building_details": """* **`get_building_details(building_id: str)`**: Gets all details for a building.
     * `building_id` (required): The ID of the building.
-    * *Example*: `Action: map.get_building_details(building_id="B001")`
+    * *Example*: `<action>Action: map.get_building_details(building_id="B001")</action>`
 """,
             
             "map.find_room_location": """* **`find_room_location(room_query: str, building_id: str = None, zone: str = None)`**: Finds the location of a specific room.
     * `room_query` (required): The name or number of the room.
     * `building_id` (optional): A specific building ID to search within.
-    * *Example*: `Action: map.find_room_location(room_query="Seminar Room 101", building_id="B014")`
+    * *Example*: `<action>Action: map.find_room_location(room_query="Seminar Room 101", building_id="B014")</action>`
 """,
             
             "map.query_buildings_by_property": """* **`query_buildings_by_property(...)`**: Queries buildings based on properties.
     * You can filter by `zone`, `building_type`, or `amenity`. At least one is required.
-    * *Example*: `Action: map.query_buildings_by_property(amenity="Coffee Shop")`
+    * *Example*: `<action>Action: map.query_buildings_by_property(amenity="Coffee Shop")</action>`
 """,
             
             # Reservation System Tools
             "reservation.query_availability": """* **`query_availability(location_id: str, date: str)`**: Queries the availability of bookable spaces in a location.
     * `location_id` (required): The ID of the building or location.
     * `date` (required): The date to query (format: `'Week X, Day'`).
-    * *Example*: `Action: reservation.query_availability(location_id="B001", date="Week 4, Saturday")`
+    * *Example*: `<action>Action: reservation.query_availability(location_id="B001", date="Week 4, Saturday")</action>`
 """,
             
             "reservation.make_booking": """* **`make_booking(location_id: str, item_name: str, date: str, time_slot: str, seat_id: str = None)`**: Books a specific room or seat.
@@ -295,7 +295,7 @@ Below is the list of tools at your disposal."""
     * `date` (required): The date for the booking (format: `'Week X, Day'`).
     * `time_slot` (required): The time slot to book (e.g., `'14:00-16:00'`).
     * `seat_id` (optional): The specific seat ID if booking a seat.
-    * *Example*: `Action: reservation.make_booking(location_id="B001", item_name="Group Study Room 201", date="Week 4, Saturday", time_slot="14:00-16:00")`
+    * *Example*: `<action>Action: reservation.make_booking(location_id="B001", item_name="Group Study Room 201", date="Week 4, Saturday", time_slot="14:00-16:00")</action>`
 """,
             
             # Information & Course Tools
@@ -303,21 +303,21 @@ Below is the list of tools at your disposal."""
     * **Available Books**:
         - **Handbooks**: "Student Handbook", "Academic Integrity Guidelines", "Academic Programs Guide"
         - **Textbooks**: "A Panorama of Computing: From Bits to Artificial Intelligence", "Linear Algebra and Its Applications", "Mathematical Analysis", "Military Theory and National Defense", "Programming for Everyone", "Innovation and Entrepreneurship", "Mental Health and Wellness", "Advanced Programming Concepts"
-    * *Example*: `Action: bibliography.list_chapters(book_title="Student Handbook")`
+    * *Example*: `<action>Action: bibliography.list_chapters(book_title="Student Handbook")</action>`
 """,
             
             "bibliography.list_sections": """* **`list_sections(book_title: str, chapter_title: str)`**: Lists all sections in a chapter.
-    * *Example*: `Action: bibliography.list_sections(book_title="Introduction to AI", chapter_title="Chapter 1: Search")`
+    * *Example*: `<action>Action: bibliography.list_sections(book_title="Introduction to AI", chapter_title="Chapter 1: Search")</action>`
 """,
             
             "bibliography.list_articles": """* **`list_articles(book_title: str, chapter_title: str, section_title: str)`**: Lists all articles in a section.
-    * *Example*: `Action: bibliography.list_articles(book_title="Intro to AI", chapter_title="Search", section_title="Uninformed Search")`
+    * *Example*: `<action>Action: bibliography.list_articles(book_title="Intro to AI", chapter_title="Search", section_title="Uninformed Search")</action>`
 """,
             
             "bibliography.view_article": """* **`view_article(identifier: str, search_type: str)`**: Views the content of an article.
     * `identifier` (required): The title or ID of the article.
     * `search_type` (required): `'title'` or `'id'`.
-    * *Example*: `Action: bibliography.view_article(identifier="Breadth-First Search", search_type="title")`
+    * *Example*: `<action>Action: bibliography.view_article(identifier="Breadth-First Search", search_type="title")</action>`
 """,
             
             "data_system.list_by_category": """* **`list_by_category(category: str, entity_type: str, level: str = None)`**: Lists clubs or advisors by category.
@@ -325,25 +325,27 @@ Below is the list of tools at your disposal."""
     * **Available Club Categories**: "Academic & Technological", "Sports & Fitness", "Arts & Culture", "Community Service", "Professional Development", "Special Interest"
     * **Available Advisor Research Areas**: "Engineering", "Computer Science", "Mathematics", "Physics", "Biology", "Chemistry", "Medicine", "Social Sciences", "Humanities"
     * **Campus Information Available**: Student Clubs (101 total), Faculty Advisors (1000 total), Library Seats, Library Books (395 total)
-    * *Example*: `Action: data_system.list_by_category(category="Academic & Technological", entity_type="club")`
+    * *Example*: `<action>Action: data_system.list_by_category(category="Academic & Technological", entity_type="club")</action>`
 """,
             
             "data_system.query_by_identifier": """* **`query_by_identifier(identifier: str, search_type: str, entity_type: str)`**: Gets all details for a specific club or advisor.
-    * *Example*: `Action: data_system.query_by_identifier(identifier="C071", search_type="id", entity_type="club")`
+    * *Example 1 (Club by ID)*: `<action>Action: data_system.query_by_identifier(identifier="C071", by="id", entity_type="club")</action>`
+    * *Example 2 (Club by Name)*: `<action>Action: data_system.query_by_identifier(identifier="Computer Science Club", by="name", entity_type="club")</action>`
+    * *Example 3 (Advisor by Name)*: `<action>Action: data_system.query_by_identifier(identifier="Dr. John Smith", by="name", entity_type="advisor")</action>`
 """,
             
             "data_system.list_books_by_category": """* **`list_books_by_category(category: str)`**: Lists all library books in a specific category.
     * `category` (required): The category to filter by (e.g., "Computer Science", "Mathematics", "Physics", "Biology", "Literature").
     * **Library Book Categories Available**: Neuroscience, Political Science, AI, Computer Science, Mathematics, Physics, Biology, Chemistry, Literature, History, Engineering, Medicine, and many more.
-    * *Example*: `Action: data_system.list_books_by_category(category="Computer Science")`
+    * *Example*: `<action>Action: data_system.list_books_by_category(category="Computer Science")</action>`
 """,
             
             "data_system.search_books": """* **`search_books(query: str, search_type: str = "title")`**: Searches library books by title or author.
     * `query` (required): The search query string.
     * `search_type` (optional): `'title'` (default) or `'author'`.
     * Returns books with status information (Available/Checked Out), call numbers, and location details.
-    * *Example*: `Action: data_system.search_books(query="Artificial Intelligence", search_type="title")`
-    * *Example*: `Action: data_system.search_books(query="John Smith", search_type="author")`
+    * *Example*: `<action>Action: data_system.search_books(query="Artificial Intelligence", search_type="title")</action>`
+    * *Example*: `<action>Action: data_system.search_books(query="John Smith", search_type="author")</action>`
 """,
             
             # Course Selection System Tools
@@ -365,28 +367,28 @@ Below is the list of tools at your disposal."""
         - `course_code`: Partial match for the course code.
         - `course_name`: Partial, case-insensitive match for the course name.
         - `credits`: Filter by credits (e.g., `{"credits": "<=3"}`).
-    * *Example*: `Action: course_selection.browse_courses(filters={"course_name": "Introduction", "credits": "<=3"})`
+    * *Example*: `<action>Action: course_selection.browse_courses(filters={"course_name": "Introduction", "credits": "<=3"})</action>`
 """,
             
             "draft.add_course": """* **`add_course(section_id: str)`**: Adds a course to your draft schedule.
-    * *Example*: `Action: draft.add_course(section_id="WXK003111107")`
+    * *Example*: `<action>Action: draft.add_course(section_id="WXK003111107")</action>`
 """,
             
             "draft.remove_course": """* **`remove_course(section_id: str)`**: Removes a course from your draft.
-    * *Example*: `Action: draft.remove_course(section_id="WXK003111107")`
+    * *Example*: `<action>Action: draft.remove_course(section_id="WXK003111107")</action>`
 """,
             
             "draft.assign_pass": """* **`assign_pass(section_id: str, pass_type: str)`**: Assigns a priority pass to a drafted course.
     * `pass_type` (required): `'S-Pass'`, `'A-Pass'`, `'B-Pass'`, etc.
-    * *Example*: `Action: draft.assign_pass(section_id="SHK003111017", pass_type="A-Pass")`
+    * *Example*: `<action>Action: draft.assign_pass(section_id="SHK003111017", pass_type="A-Pass")</action>`
 """,
             
             "draft.view": """* **`view_draft()`**: Views your current draft schedule.
-    * *Example*: `Action: draft.view()`
+    * *Example*: `<action>Action: draft.view()</action>`
 """,
             
             "registration.submit_draft": """* **`submit_draft()`**: Submits your draft schedule for registration.
-    * *Example*: `Action: registration.submit_draft()`
+    * *Example*: `<action>Action: registration.submit_draft()</action>`
 """,
 
             # Student Handbook & Academic Regulations
