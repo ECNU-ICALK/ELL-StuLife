@@ -34,13 +34,13 @@ Beyond evaluating state-of-the-art LLMs on the `StuLife` benchmark, we also **ex
 
 # StuLife: A Persistent, Stateful Benchmark for Lifelong Language Agents
 
-## 🌟 Introduction
+## Introduction
 
 StuLife is a new benchmark built upon the `LifelongAgentBench` (LAB) framework, designed to evaluate the long-term memory, planning, adaptation, and autonomous decision-making capabilities of AI agents. It immerses agents in a persistent, stateful, and dynamic virtual university campus environment where their actions have lasting consequences.
 
 Unlike traditional benchmarks that focus on stateless, single-turn tasks, StuLife creates a "virtual world" that evolves over a simulated academic year. An agent's success is not just about solving the immediate problem, but about managing their time, remembering commitments, and navigating a complex web of academic and social responsibilities that persist across hundreds of tasks.
 
-## ✨ Core Concepts
+## Core Concepts
 
 StuLife is founded on three key principles to challenge the frontiers of agent intelligence:
 
@@ -50,7 +50,7 @@ StuLife is founded on three key principles to challenge the frontiers of agent i
 
 *   **Time-Driven & Self-Directed Tasks**: Agents are not always given explicit instructions. Instead, they operate on a simulated clock and must autonomously consult their internal calendar to understand "what to do next." Whether it's attending a class at 8:00 AM or a club meeting in the evening, the agent must demonstrate a sense of time and initiative, driven by the schedule it builds for itself.
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 The benchmark's architecture is designed for simplicity and robustness, separating the world simulation from task execution.
 
@@ -60,7 +60,7 @@ The benchmark's architecture is designed for simplicity and robustness, separati
 
 *   **`ToolManager` (Conceptual)**: A utility responsible for generating a `tools.json` file by reflecting on the methods exposed by `CampusEnvironment`. This provides the agent with a machine-readable, always-up-to-date manual of available tools and their usage.
 
-## 🛠️ Simulated Subsystems
+## Simulated Subsystems
 
 StuLife's virtual campus is powered by a rich set of interconnected subsystems, each designed to test different facets of an agent's reasoning and planning abilities:
 
@@ -70,7 +70,7 @@ StuLife's virtual campus is powered by a rich set of interconnected subsystems, 
 *   **Reservation System**: A global booking system for rooms and facilities. A successful reservation permanently alters the availability for all future tasks, testing the agent's ability to plan around resource contention.
 *   **Email & Information System**: Allows agents to send formatted emails and query a rich, read-only database of campus information, from academic regulations in the Student Handbook to details about student clubs.
 
-## 🚀 How It Works: The Interaction Flow
+## How It Works: The Interaction Flow
 
 An agent's life in StuLife follows a continuous `perceive -> think -> act` loop, driven by a series of time-based tasks.
 
@@ -82,7 +82,7 @@ An agent's life in StuLife follows a continuous `perceive -> think -> act` loop,
 6.  **State Change & Verification**: The `CampusEnvironment` updates the agent's location. The task might require the agent to be at the library (`require_place` check) before it can be completed.
 7.  **Task Completion**: Once all conditions are met, the agent calls the `finish()` action.
 
-## 📊 Evaluation
+## Evaluation
 
 Evaluation in StuLife goes beyond simple correctness. A task is marked as successful only if the agent achieves the desired final state while respecting all constraints. The `CampusTask` assesses performance by:
 
@@ -90,9 +90,9 @@ Evaluation in StuLife goes beyond simple correctness. A task is marked as succes
 *   **Constraint Satisfaction**: Verifying that all implicit and explicit task constraints were met (e.g., Was the meeting booked in the required building? Did the agent arrive on time?).
 *   **Behavioral Sequence Validation**: For complex tasks, ensuring the agent followed a logical sequence of actions (e.g., checking availability *before* making a reservation).
 
-## 📈 Dataset Overview
+## Dataset Overview
 
-The benchmark includes a comprehensive dataset of **1,167 tasks** spanning a full academic year. These tasks cover a wide range of scenarios, including:
+The benchmark includes a comprehensive dataset of **1284 tasks** spanning a full academic year. These tasks cover a wide range of scenarios, including:
 
 *   Academic integrity and rule learning
 *   Campus exploration and facility location
