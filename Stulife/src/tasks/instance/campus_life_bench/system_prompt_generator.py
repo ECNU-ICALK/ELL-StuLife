@@ -211,12 +211,14 @@ Below is the list of tools at your disposal."""
             
             # Calendar System Tools
             "calendar.add_event": """* **`add_event(calendar_id: str, event_title: str, location: str, time: str, description: str = None)`**: Adds an event to a calendar.
-    * `calendar_id` (required): The ID of the calendar (`self`, `club_*`, `advisor_*`).
+    * `calendar_id` (required): The ID of the calendar. Use `'self'` for your personal calendar. For advisor or club calendars, use their official email address (e.g., `'william.davis@example.com'` or `'art_club@example.com'`).
     * `event_title` (required): The title of the event.
     * `location` (required): The location of the event.
     * `time` (required): The time of the event (format: `'Week X, Day, HH:MM-HH:MM'`).
     * `description` (optional): A detailed description for the event.
-    * *Example*: `<action>Action: calendar.add_event(calendar_id="self", event_title="Team Meeting", location="Library Room 201", time="Week 3, Monday, 15:00-16:00", description="Weekly sync-up meeting.")</action>`
+    * *Example (Personal Calendar)*: `<action>Action: calendar.add_event(calendar_id="self", event_title="Team Meeting", location="Library Room 201", time="Week 3, Monday, 15:00-16:00", description="Weekly sync-up meeting.")</action>`
+    * *Example (Advisor Calendar)*: `<action>Action: calendar.add_event(calendar_id="william.davis@example.com", event_title="Research Sync", location="Davis Lab", time="Week 4, Tuesday, 10:00-11:00", description="Discuss project progress.")</action>`
+    * *Example (Club Calendar)*: `<action>Action: calendar.add_event(calendar_id="art_club@example.com", event_title="Art Exhibition Setup", location="Student Center Hall", time="Week 5, Friday, 09:00-12:00", description="Prepare for the annual art show.")</action>`
 """,
             
             "calendar.remove_event": """* **`remove_event(calendar_id: str, event_id: str)`**: Removes an event from a calendar.
