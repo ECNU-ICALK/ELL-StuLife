@@ -137,7 +137,7 @@ class SessionEvaluationRecord(BaseModel):
     # Should only be used to record the evaluation result.
     # Should only support following three types
     # Do not initialize it with an empty dict.
-    detail_dict: Optional[dict[str, Optional[float | int | bool]]] = None
+    detail_dict: Optional[dict[str, Any]] = None
 
 
 class Session(BaseModel):

@@ -5,7 +5,7 @@ import os
 import logging
 import random
 import time
-from typing import Any, Optional, Sequence, Mapping, TypeGuard
+from typing import Any, Optional, Sequence, Mapping, TypeGuard, List, Union
 import tiktoken
 
 from src.language_models.language_model import LanguageModel
@@ -34,9 +34,10 @@ class OpenaiLanguageModel(LanguageModel):
 
     def __init__(
         self,
-        model_name: str,
         role_dict: Mapping[str, str],
-        api_key: Optional[str] = None,
+        api_configs: Optional[List[Mapping[str, str]]] = None,
+        model_name: Optional[str] = None,
+        api_key: Optional[Union[str, List[str]]] = None,
         base_url: Optional[str] = None,
         maximum_prompt_token_count: Optional[int] = None,
         retry_config: Optional[Mapping[str, Any]] = None,
@@ -53,17 +54,46 @@ class OpenaiLanguageModel(LanguageModel):
             infinite_for_rate_limit (bool): Whether to retry indefinitely on RateLimitError. Default True.
         """
         super().__init__(role_dict)
-        self.model_name = model_name
-        if api_key is None:
-            api_key = os.environ.get("OPENAI_API_KEY")
-        if base_url is None:
-            base_url = os.environ.get("OPENAI_BASE_URL")
-        self.client = OpenAI(api_key=api_key, base_url=base_url)
-        self.maximum_prompt_token_count = maximum_prompt_token_count
-        if self.maximum_prompt_token_count is None:
-            self.maximum_prompt_token_count = (
-                OpenaiLanguageModel._get_max_context_length(model_name)
+
+        if api_configs:
+            self.api_configs = api_configs
+        elif model_name:
+            if isinstance(api_key, str) or api_key is None:
+                api_keys = [api_key]
+            else:
+                api_keys = api_key
+
+            self.api_configs = [
+                {
+                    "model_name": model_name,
+                    "api_key": key or os.environ.get("OPENAI_API_KEY"),
+                    "base_url": base_url or os.environ.get("OPENAI_BASE_URL"),
+                }
+                for key in api_keys
+            ]
+        else:
+            raise ValueError("Either 'api_configs' or 'model_name' must be provided.")
+
+        self.clients = [
+            OpenAI(api_key=config.get("api_key"), base_url=config.get("base_url"))
+            for config in self.api_configs
+        ]
+        self.current_api_index = 0
+
+        self.model_names = [config["model_name"] for config in self.api_configs]
+        self.model_name = self.model_names[0]
+
+        self.maximum_prompt_token_counts = {
+            m_name: OpenaiLanguageModel._get_max_context_length(m_name)
+            for m_name in self.model_names
+        }
+
+        if maximum_prompt_token_count is None:
+            self.maximum_prompt_token_count = min(
+                self.maximum_prompt_token_counts.values()
             )
+        else:
+            self.maximum_prompt_token_count = maximum_prompt_token_count
 
         retry_config = retry_config or {}
         self.max_retries = retry_config.get("max_retries", 3)
@@ -73,14 +103,16 @@ class OpenaiLanguageModel(LanguageModel):
         self.infinite_for_rate_limit = retry_config.get(
             "infinite_for_rate_limit", True
         )
-
-        try:
-            self.encoding = tiktoken.encoding_for_model(self.model_name)
-        except KeyError:
-            logging.warning(
-                f"Model {self.model_name} not found in tiktoken. Using cl100k_base encoding."
-            )
-            self.encoding = tiktoken.get_encoding("cl100k_base")
+        self.encodings = {}
+        for model in self.model_names:
+            try:
+                self.encodings[model] = tiktoken.encoding_for_model(model)
+            except KeyError:
+                logging.warning(
+                    f"Model {model} not found in tiktoken. Using cl100k_base encoding."
+                )
+                self.encodings[model] = tiktoken.get_encoding("cl100k_base")
+        self.encoding = self.encodings[self.model_name]
 
     @staticmethod
     def _get_max_context_length(model_name: str) -> int:
@@ -122,29 +154,54 @@ class OpenaiLanguageModel(LanguageModel):
         """
         retries = 0
         wait_time = float(self.min_wait)
+        rate_limit_failures = 0
 
         while True:
             try:
-                completion = self.client.chat.completions.create(
-                    model=self.model_name,
-                    messages=message_list,
+                client = self.clients[self.current_api_index]
+                model_name = self.model_names[self.current_api_index]
+
+                truncated_message_list = self._truncate_message_list(
+                    message_list, model_name
+                )
+                completion = client.chat.completions.create(
+                    model=model_name,
+                    messages=truncated_message_list,
                     **inference_config_dict,
                 )
                 break  # Success
             except openai.RateLimitError as e:
-                if not self.infinite_for_rate_limit and retries >= self.max_retries:
-                    logging.error(f"Rate limit error and max retries reached. Failing. Error: {e}")
-                    raise e
-                
-                logging.warning(f"Rate limit error encountered. Retrying in {wait_time:.2f} seconds. Error: {e}")
-                time.sleep(wait_time)
-                
-                if not self.infinite_for_rate_limit:
-                    retries += 1
-                
-                wait_time = min(wait_time * self.backoff_multiplier, self.max_wait)
-                wait_time += random.uniform(0, 0.1) * wait_time  # Jitter
-            
+                rate_limit_failures += 1
+                if rate_limit_failures >= len(self.api_configs):
+                    # Full cycle of failures, now wait
+                    if (
+                        not self.infinite_for_rate_limit
+                        and retries >= self.max_retries
+                    ):
+                        logging.error(
+                            f"Rate limit error and max retries reached. Failing. Error: {e}"
+                        )
+                        raise e
+
+                    logging.warning(
+                        f"All APIs hit rate limit. Retrying in {wait_time:.2f} seconds. Error: {e}"
+                    )
+                    time.sleep(wait_time)
+                    rate_limit_failures = 0  # Reset for next cycle
+
+                    if not self.infinite_for_rate_limit:
+                        retries += 1
+
+                    wait_time = min(wait_time * self.backoff_multiplier, self.max_wait)
+                    wait_time += random.uniform(0, 0.1) * wait_time  # Jitter
+                else:
+                    # Switch to next API
+                    logging.warning(
+                        f"Rate limit error with API {self.current_api_index}. Switching to next API. Error: {e}"
+                    )
+                    self.current_api_index = (
+                        self.current_api_index + 1
+                    ) % len(self.api_configs)
             except openai.BadRequestError as e:
                 if "context length" in str(e):
                     # Raise LanguageModelContextLimitException to skip retrying.
@@ -153,11 +210,15 @@ class OpenaiLanguageModel(LanguageModel):
                     ) from e
 
                 if retries >= self.max_retries:
-                    logging.error(f"Bad request error and max retries reached. Failing. Error: {e}")
+                    logging.error(
+                        f"Bad request error and max retries reached. Failing. Error: {e}"
+                    )
                     raise e
 
                 retries += 1
-                logging.warning(f"Bad request error encountered. Retrying in {wait_time:.2f} seconds. Error: {e}")
+                logging.warning(
+                    f"Bad request error encountered. Retrying in {wait_time:.2f} seconds. Error: {e}"
+                )
                 time.sleep(wait_time)
                 wait_time = min(wait_time * self.backoff_multiplier, self.max_wait)
                 wait_time += random.uniform(0, 0.1) * wait_time  # Jitter
@@ -220,7 +281,6 @@ class OpenaiLanguageModel(LanguageModel):
         # region Generate output
         output_str_list: list[str] = []
         for message_list in batch_message_list:
-            message_list = self._truncate_message_list(message_list)
             output_str_list.extend(
                 self._get_completion_content(message_list, inference_config_dict)
             )
@@ -232,46 +292,60 @@ class OpenaiLanguageModel(LanguageModel):
         ]
         # endregion
 
-    def _num_tokens_from_messages(self, messages: Sequence[ChatCompletionMessageParam]) -> int:
+    def _num_tokens_from_messages(
+        self, messages: Sequence[ChatCompletionMessageParam], model: str
+    ) -> int:
         # This implementation is based on the official OpenAI cookbook:
         # https://github.com/openai/openai-cookbook/blob/main/examples/how_to_count_tokens_with_tiktoken.ipynb
+        encoding = self.encodings.get(model)
+        if encoding is None:
+            logging.warning(f"No encoding found for model {model}. Using default.")
+            encoding = self.encoding
+
         num_tokens = 0
         for message in messages:
             num_tokens += 4  # every message follows <im_start>{role/name}\n{content}<im_end>\n
             for key, value in message.items():
                 if value is not None:
-                    num_tokens += len(self.encoding.encode(str(value)))
+                    num_tokens += len(encoding.encode(str(value)))
                 if key == "name":
                     num_tokens -= 1  # role is always required and always 1 token
         num_tokens += 2  # every reply is primed with <im_start>assistant
         return num_tokens
 
-    def _truncate_message_list(self, message_list: Sequence[ChatCompletionMessageParam]) -> Sequence[ChatCompletionMessageParam]:
-        if not self.maximum_prompt_token_count:
+    def _truncate_message_list(
+        self, message_list: Sequence[ChatCompletionMessageParam], model_name: str
+    ) -> Sequence[ChatCompletionMessageParam]:
+        max_tokens = self.maximum_prompt_token_counts.get(
+            model_name, self.maximum_prompt_token_count
+        )
+        if not max_tokens:
             return message_list
 
-        num_tokens = self._num_tokens_from_messages(message_list)
-        if num_tokens <= self.maximum_prompt_token_count:
+        num_tokens = self._num_tokens_from_messages(message_list, model_name)
+        if num_tokens <= max_tokens:
             return message_list
 
         truncated_list = list(message_list)
-        
+
         system_message = []
-        if truncated_list and truncated_list[0]['role'] == 'system':
+        if truncated_list and truncated_list[0]["role"] == "system":
             system_message = [truncated_list.pop(0)]
 
-        while num_tokens > self.maximum_prompt_token_count and truncated_list:
+        while num_tokens > max_tokens and truncated_list:
             truncated_list.pop(0)
-            num_tokens = self._num_tokens_from_messages(system_message + truncated_list)
+            num_tokens = self._num_tokens_from_messages(
+                system_message + truncated_list, model_name
+            )
 
         final_list = system_message + truncated_list
-        
-        final_tokens = self._num_tokens_from_messages(final_list)
+
+        final_tokens = self._num_tokens_from_messages(final_list, model_name)
         logging.warning(
             f"Input has been truncated due to context length limit. "
-            f"Original token count: {self._num_tokens_from_messages(message_list)}, "
+            f"Original token count: {self._num_tokens_from_messages(message_list, model_name)}, "
             f"Truncated token count: {final_tokens}, "
-            f"Max tokens: {self.maximum_prompt_token_count}"
+            f"Max tokens: {max_tokens}"
         )
-        
+
         return final_list

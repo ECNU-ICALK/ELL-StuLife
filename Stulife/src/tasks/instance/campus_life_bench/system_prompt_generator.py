@@ -122,10 +122,7 @@ Below is the list of tools at your disposal."""
         """Get list of tools for a specific system"""
         system_tools = {
             "email": [
-                "email.send_email",
-                "email.view_inbox",
-                "email.reply_email",
-                "email.delete_email"
+                "email.send_email"
             ],
             "calendar": [
                 "calendar.add_event",
@@ -193,21 +190,6 @@ Below is the list of tools at your disposal."""
     * *Example*: `<action>Action: email.send_email(to="advisor.x@lau.edu", subject="Question about my schedule", body="Dear Advisor, I have a question...")</action>`
 """,
             
-            "email.view_inbox": """* **`view_inbox(filter_unread: bool = None)`**: Views messages in your inbox.
-    * `filter_unread` (optional): If set to `True`, shows only unread messages.
-    * *Example*: `<action>Action: email.view_inbox(filter_unread=True)</action>`
-""",
-            
-            "email.reply_email": """* **`reply_email(email_id: str, body: str)`**: Replies to a specific email.
-    * `email_id` (required): The ID of the email you are replying to.
-    * `body` (required): The content of your reply.
-    * *Example*: `<action>Action: email.reply_email(email_id="email_012", body="Thank you for the information.")</action>`
-""",
-            
-            "email.delete_email": """* **`delete_email(email_id: str)`**: Deletes an email from your inbox.
-    * `email_id` (required): The ID of the email to delete.
-    * *Example*: `<action>Action: email.delete_email(email_id="email_013")</action>`
-""",
             
             # Calendar System Tools
             "calendar.add_event": """* **`add_event(calendar_id: str, event_title: str, location: str, time: str, description: str = None)`**: Adds an event to a calendar.

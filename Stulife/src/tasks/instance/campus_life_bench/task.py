@@ -9,6 +9,7 @@ from typing import Dict, Any, Optional, List, Union, Sequence
 from pathlib import Path
 from enum import Enum
 import collections
+import pickle
 
 import sys
 import os
@@ -159,6 +160,9 @@ class CampusTask(Task[CampusDatasetItem]):
         # Failed prerequisite task tracking
         # Key: failed task_id, Value: list of task_ids that are affected by this failure
         self.failed_prerequisite_tasks: Dict[str, List[str]] = {}
+
+        # ADDED: Flag to ensure checkpoint is loaded only once
+        self._checkpoint_loaded = False
 
     def _is_date_match(self, query_date: str, event_time: str) -> bool:
         """
@@ -430,6 +434,11 @@ class CampusTask(Task[CampusDatasetItem]):
         Args:
             session: Current session
         """
+        # ADDED: Load checkpoint state if this is the first task of the session run
+        if not self._checkpoint_loaded and session.output_dir:
+            self._load_checkpoint(session.output_dir)
+            self._checkpoint_loaded = True
+
         # Store current session for evaluation purposes
         self._current_session = session
         current_item = self._get_current_dataset_item()
@@ -681,6 +690,11 @@ class CampusTask(Task[CampusDatasetItem]):
         Args:
             session: Current session
         """
+        # ADDED: Load checkpoint state if this is the first task of the session run
+        if not self._checkpoint_loaded and session.output_dir:
+            self._load_checkpoint(session.output_dir)
+            self._checkpoint_loaded = True
+
         # Store current session for evaluation purposes
         self._current_session = session
         current_item = self._get_current_dataset_item()
@@ -2203,3 +2217,68 @@ class CampusTask(Task[CampusDatasetItem]):
                 if session.evaluation_record.detail_dict is None:
                     session.evaluation_record.detail_dict = {}
                 session.evaluation_record.detail_dict["affects_downstream_tasks"] = affected_task_ids
+
+    # ADDED: Method to save the complete state of the task and environment for checkpointing
+    def save_checkpoint(self, session: Session) -> None:
+        """
+        Save the current state of the CampusTask and CampusEnvironment to disk.
+        This allows for true stateful resume of experiments.
+        """
+        if not session.output_dir:
+            print("Warning: output_dir not found in session, cannot save checkpoint.")
+            return
+
+        checkpoint_dir = Path(session.output_dir) / "checkpoint_state"
+        checkpoint_dir.mkdir(parents=True, exist_ok=True)
+
+        # 1. Save the entire CampusEnvironment using pickle
+        env_path = checkpoint_dir / "campus_environment.pkl"
+        try:
+            with open(env_path, 'wb') as f:
+                pickle.dump(self.campus_environment, f)
+        except Exception as e:
+            print(f"Error saving CampusEnvironment checkpoint: {e}")
+
+        # 2. Save the task-specific state using JSON
+        task_state_path = checkpoint_dir / "campus_task_state.json"
+        task_state = {
+            "failed_prerequisite_tasks": self.failed_prerequisite_tasks,
+            "_current_simulation_day": self._current_simulation_day,
+        }
+        try:
+            with open(task_state_path, 'w', encoding='utf-8') as f:
+                json.dump(task_state, f, indent=2)
+        except Exception as e:
+            print(f"Error saving CampusTask state checkpoint: {e}")
+
+    # ADDED: Method to load the state from a checkpoint
+    def _load_checkpoint(self, output_dir: str) -> None:
+        """
+        Load the task and environment state from a checkpoint if it exists.
+        This is called once before the first task in a resumed session.
+        """
+        checkpoint_dir = Path(output_dir) / "checkpoint_state"
+        if not checkpoint_dir.exists():
+            return  # No checkpoint to load
+
+        # 1. Load CampusEnvironment from pickle
+        env_path = checkpoint_dir / "campus_environment.pkl"
+        if env_path.exists():
+            try:
+                with open(env_path, 'rb') as f:
+                    self.campus_environment = pickle.load(f)
+                print("✅ Successfully loaded CampusEnvironment state from checkpoint.")
+            except Exception as e:
+                print(f"Warning: Failed to load CampusEnvironment checkpoint: {e}. Starting with a fresh environment.")
+
+        # 2. Load CampusTask state from JSON
+        task_state_path = checkpoint_dir / "campus_task_state.json"
+        if task_state_path.exists():
+            try:
+                with open(task_state_path, 'r', encoding='utf-8') as f:
+                    task_state = json.load(f)
+                self.failed_prerequisite_tasks = task_state.get("failed_prerequisite_tasks", {})
+                self._current_simulation_day = task_state.get("_current_simulation_day")
+                print("✅ Successfully loaded CampusTask state from checkpoint.")
+            except Exception as e:
+                print(f"Warning: Failed to load CampusTask state checkpoint: {e}. Starting with fresh task state.")

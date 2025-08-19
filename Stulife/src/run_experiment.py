@@ -414,6 +414,11 @@ def main() -> None:
             open(session_list_output_path, "w"),  # noqa
             indent=2,
         )
+        
+        # ADDED: Save task checkpoint for stateful resume
+        if hasattr(task, 'save_checkpoint'):
+            task.save_checkpoint(session)
+            
         logger.info(
             f"Sample {sample_index} end. Session status: {session.sample_status}. "
             f"Evaluation outcome: {session.evaluation_record.outcome}."
