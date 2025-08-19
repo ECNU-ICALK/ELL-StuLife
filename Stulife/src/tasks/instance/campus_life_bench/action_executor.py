@@ -379,6 +379,13 @@ class ActionExecutor:
                 "body": "body",
                 "cc": "cc"
             },
+            "reservation.make_booking": {
+                "location_id": "location_id",
+                "item_name": "item_name",
+                "date": "date",
+                "time_slot": "time_slot",
+                "seat_id": "seat_id"
+            },
             "email.reply_email": {
                 "email_id": "email_id",
                 "body": "body"

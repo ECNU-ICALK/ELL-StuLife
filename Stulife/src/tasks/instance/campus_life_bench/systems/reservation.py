@@ -9,6 +9,7 @@ from dataclasses import dataclass
 
 from ..tools import ToolResult, ensure_english_message
 from .map_and_geography import MapLookupSystem
+from .information import InformationSystem
 
 
 @dataclass
@@ -29,14 +30,17 @@ class ReservationSystem:
     Supports both facility and seat reservations with global state persistence
     """
     
-    def __init__(self, map_lookup_system: MapLookupSystem):
+    def __init__(self, map_lookup_system: MapLookupSystem, information_system: InformationSystem):
         """
         Initialize reservation system
         
         Args:
             map_lookup_system: Reference to map lookup system for building data
+            information_system: Reference to information system for campus data
         """
         self.map_lookup_system = map_lookup_system
+        self.information_system = information_system
+        self._campus_data = self.information_system.get_campus_data() or {}
         
         # Global persistent reservations
         self._global_reservations: List[ReservationRecord] = []
@@ -90,64 +94,67 @@ class ReservationSystem:
             if not all([location_id, date]):
                 return ToolResult.failure("Both location_id and date are required.")
 
-            # Check for pre-configured availability first
-            for (building_id, item_name), available_times in self._configured_availability.items():
-                if building_id == location_id:
-                    # Filter times by the requested date
-                    relevant_times = [t for t in available_times if date in t]
-                    if relevant_times:
-                        building_result = self.map_lookup_system.get_building_details(location_id)
-                        building_name = building_result.data["name"] if building_result.is_success() else location_id
-                        
-                        message = f"Availability query successful! {building_name} on {date}:"
-                        availability = {}
-                        
-                        # Assuming pre-configured times are for specific items
-                        for time_slot in relevant_times:
-                            message += f"\n- Time slot {time_slot}:\n  - Available facility: {item_name}"
-                            if time_slot not in availability:
-                                availability[time_slot] = []
-                            availability[time_slot].append({"item_name": item_name})
-                        
-                        return ToolResult.success(ensure_english_message(message), {
-                            "location_id": location_id,
-                            "building_name": building_name,
-                            "date": date,
-                            "availability": availability
-                        })
-            
             # Get building details
             building_result = self.map_lookup_system.get_building_details(location_id)
             if not building_result.is_success():
                 return ToolResult.failure(f"Building '{location_id}' not found.")
             
             building_data = building_result.data
+            if not isinstance(building_data, dict):
+                return ToolResult.failure(f"Retrieved data for building '{location_id}' is not in the expected format.")
             
-            # Check if this is the target location for current task
-            is_target_location = self._is_target_location(location_id, date)
-            
-            if is_target_location:
-                # Generate deterministic availability for target location
+            building_name = building_data.get("name", location_id)
+
+            # Decide generation strategy based on ground_truth
+            availability = {}
+            use_deterministic_seats = False
+            if self._current_task_context:
+                ground_truth = self._current_task_context.get("ground_truth", {})
+                if isinstance(ground_truth, dict) and "seat_id" in ground_truth:
+                    use_deterministic_seats = True
+
+            if use_deterministic_seats:
+                # For seat-specific tasks, generate a detailed puzzle
                 availability = self._generate_deterministic_availability(building_data, date)
             else:
-                # Generate random availability for non-target locations
-                availability = self._generate_random_availability(building_data, date)
+                # For all other tasks, generate random hierarchical availability
+                availability = self._generate_random_hierarchical_availability(building_data, date)
             
-            # Format availability message
-            message = f"Availability query successful! {building_data['name']} on {date}:"
+            # Format availability message with hierarchy
+            message = f"Availability query successful! {building_name} on {date}:"
             
-            for time_slot, items in availability.items():
-                if items:
-                    message += f"\n- Time slot {time_slot}:"
-                    for item in items:
-                        if "seat_id" in item:
-                            message += f"\n  - Available seat: {item['seat_id']}"
+            for time_slot, floors in availability.items():
+                if not floors: continue
+                message += f"\n- Time slot {time_slot}:"
+                # Handle both formats: with and without floor keys
+                if any(key.startswith("floor_") for key in floors.keys()):
+                    # Format with floors
+                    for floor, facilities in floors.items():
+                        message += f"\n  - {floor}:"
+                        for facility_name, facility_info in facilities.items():
+                            message += f"\n    - Facility: {facility_name}"
+                            if "seats" in facility_info and facility_info["seats"]:
+                                for seat in facility_info["seats"]:
+                                    if isinstance(seat, dict) and seat.get("status") != "booked":
+                                        features_str = ", ".join(seat.get("features", []))
+                                        message += f"\n      - Available seat: {seat.get('seat_id', 'Unknown ID')} with features: [{features_str}]"
+                            else:
+                                message += " (Available)"
+                else:
+                    # Format without floors (for deterministic results)
+                    for facility_name, facility_info in floors.items():
+                        message += f"\n  - Facility: {facility_name}"
+                        if "seats" in facility_info and facility_info["seats"]:
+                            for seat in facility_info["seats"]:
+                                if isinstance(seat, dict) and seat.get("status") != "booked":
+                                    features_str = ", ".join(seat.get("features", []))
+                                    message += f"\n    - Available seat: {seat.get('seat_id', 'Unknown ID')} with features: [{features_str}]"
                         else:
-                            message += f"\n  - Available facility: {item['item_name']}"
+                            message += " (Available)"
             
             return ToolResult.success(ensure_english_message(message), {
                 "location_id": location_id,
-                "building_name": building_data["name"],
+                "building_name": building_name,
                 "date": date,
                 "availability": availability
             })
@@ -155,18 +162,19 @@ class ReservationSystem:
         except Exception as e:
             return ToolResult.error(f"Failed to query availability: {str(e)}")
     
-    def _is_target_location(self, location_id: str, date: str) -> bool:
+    def _is_target_location(self, location_id: str, date: str, building_data: Optional[Dict[str, Any]]) -> bool:
         """
         Check if this is the target location for current task
         
         Args:
             location_id: Building ID to check
             date: Date to check
+            building_data: Pre-fetched building data dictionary
             
         Returns:
             True if this is the target location and date
         """
-        if not self._current_task_context:
+        if not self._current_task_context or not isinstance(building_data, dict):
             return False
         
         details = self._current_task_context.get("details", {})
@@ -175,159 +183,170 @@ class ReservationSystem:
         
         # Check if location matches target
         if target_library:
-            # Get building name for comparison
-            building_result = self.map_lookup_system.get_building_details(location_id)
-            if building_result.is_success():
-                building_name = building_result.data["name"]
-                if building_name == target_library and date == target_date:
-                    return True
+            building_name = building_data.get("name")
+            if building_name == target_library and date == target_date:
+                return True
         
         return False
     
-    def _generate_deterministic_availability(self, building_data: Dict[str, Any], date: str) -> Dict[str, List[Dict[str, Any]]]:
+    def _generate_deterministic_availability(self, building_data: Dict[str, Any], date: str) -> Dict[str, Dict[str, Any]]:
         """
-        Generate deterministic availability for target location
-        Creates a puzzle where only ground truth satisfies all constraints
+        Generate availability for a seat-specific task using real data from campus_data.json,
+        with intelligent distractor generation.
         
         Args:
-            building_data: Building information
+            building_data: Building information (used to get the building ID)
             date: Date for availability
             
         Returns:
-            Dictionary mapping time slots to available items
+            Hierarchical availability dictionary with real seat data and distractors.
         """
         if not self._current_task_context:
             return {}
-        
+
+        availability = {}
         details = self._current_task_context.get("details", {})
-        ground_truth = self._current_task_context.get("ground_truth", [])
+        ground_truth = self._current_task_context.get("ground_truth", {})
         
-        # Extract task parameters
+        # 1. Get task parameters
+        location_id = building_data.get("id")
+        if not location_id:
+            return {}
+            
+        target_item_name = ground_truth.get("item_name", "Study Area")
+        required_features = set(details.get("implied_requirements", []))
         task_time = details.get("task_time", "16:30")
         duration_hours = details.get("reservation_duration_hours", 1.5)
-        constraints = details.get("implied_requirements", [])
-        
-        # Calculate target time slot
         target_time_slot = self._calculate_time_slot(task_time, duration_hours)
+
+        # 2. Find the correct building and room to extract all real seats
+        all_real_seats_in_room = []
+        detailed_building_data = next((lib for lib in self._campus_data.get("library_seats", {}).get("libraries", []) if lib.get("id") == location_id), None)
         
-        availability = {}
+        if not detailed_building_data:
+            print(f"DEBUG: No library data found for building_id '{location_id}'")
+            return self._generate_fallback_availability(target_time_slot, target_item_name)
+
+        # Find the specific room in the detailed data
+        target_room_data = None
+        for floor, rooms in detailed_building_data.get("internal_amenities", {}).items():
+            for room in rooms:
+                if isinstance(room, dict) and room.get("room_name") == target_item_name:
+                    target_room_data = room
+                    break
+            if target_room_data:
+                break
         
-        # Generate availability for target time slot (deterministic)
-        target_items = []
+        if target_room_data:
+            all_real_seats_in_room.extend(target_room_data.get("seats", []))
+
+        if not all_real_seats_in_room:
+            print(f"DEBUG: No real seats found for {target_item_name} in {location_id}")
+            return self._generate_fallback_availability(target_time_slot, target_item_name)
+
+        # 3. Separate seats into correct and distractor piles
+        correct_seats = []
+        distractor_seats = []
+        for seat in all_real_seats_in_room:
+            seat_features = set(seat.get("features", []))
+            if required_features.issubset(seat_features):
+                correct_seats.append(seat)
+            else:
+                distractor_seats.append(seat)
         
-        # Add ground truth items (these satisfy all constraints)
-        for gt_item in ground_truth:
-            if "seat_id" in gt_item:
-                target_items.append({
-                    "seat_id": gt_item["seat_id"],
-                    "item_name": "Periodicals Reading Room",  # Default room name
-                    "properties": ["good_wifi", "quiet"]  # Assume ground truth has good properties
-                })
-            elif "item_name" in gt_item:
-                target_items.append({
-                    "item_name": gt_item["item_name"],
-                    "properties": ["good_wifi", "projector"]  # Assume good properties
-                })
+        # 4. Build the availability for the target time slot
+        seats_for_target_slot = correct_seats.copy()
+        # Add a number of distractors to meet the desired count, up to a max of 10 total seats
+        num_distractors_to_add = min(len(distractor_seats), 10 - len(seats_for_target_slot))
+        if num_distractors_to_add > 0:
+            seats_for_target_slot.extend(random.sample(distractor_seats, k=num_distractors_to_add))
         
-        # Add some distractor items that don't satisfy all constraints
-        distractor_items = self._generate_distractor_items(building_data, constraints)
-        target_items.extend(distractor_items)
+        random.shuffle(seats_for_target_slot)
+        availability[target_time_slot] = {
+            target_item_name: {"seats": seats_for_target_slot}
+        }
         
-        availability[target_time_slot] = target_items
+        # 5. Generate availability for other time slots using only distractors or a subset of real seats
+        other_slots = ["09:00-10:30", "10:30-12:00", "14:00-15:30"]
+        if target_time_slot in other_slots:
+            other_slots.remove(target_time_slot)
         
-        # Generate random availability for other time slots
-        other_slots = ["09:00-10:30", "10:30-12:00", "14:00-15:30", "15:30-17:00"]
         for slot in other_slots:
-            if slot != target_time_slot:
-                availability[slot] = self._generate_random_items(building_data, 2)
-        
-        return availability
-    
-    def _generate_distractor_items(self, building_data: Dict[str, Any], constraints: List[str]) -> List[Dict[str, Any]]:
-        """
-        Generate distractor items that don't satisfy all constraints
-        
-        Args:
-            building_data: Building information
-            constraints: List of required constraints
+            num_other_seats = min(len(all_real_seats_in_room), 5)
+            other_seats_sample = random.sample(all_real_seats_in_room, k=num_other_seats)
+            availability[slot] = {
+                target_item_name: {"seats": other_seats_sample}
+            }
             
-        Returns:
-            List of distractor items
+        return availability
+
+    def _generate_fallback_availability(self, time_slot: str, item_name: str) -> Dict[str, Any]:
+        """Generates minimal fallback availability when real data isn't found."""
+        return {
+            time_slot: {
+                item_name: {"seats": []}
+            }
+        }
+
+    def _generate_random_hierarchical_availability(self, building_data: Dict[str, Any], date: str) -> Dict[str, Dict[str, Any]]:
         """
-        distractors = []
-        
-        # Generate items that violate some constraints
-        if "good_wifi" in constraints:
-            distractors.append({
-                "seat_id": "B001-STUDY_AREA-S005",
-                "item_name": "Study Area",
-                "properties": ["quiet"]  # Missing good_wifi
-            })
-        
-        # Add items that are already booked (check global reservations)
-        existing_bookings = [r for r in self._global_reservations if r.date == self._current_task_context.get("target_date")]
-        for booking in existing_bookings[:1]:  # Add one existing booking as unavailable
-            distractors.append({
-                "item_name": booking.item_name,
-                "properties": ["good_wifi"],
-                "status": "partially_booked"  # Conflicts with target time
-            })
-        
-        return distractors
-    
-    def _generate_random_availability(self, building_data: Dict[str, Any], date: str) -> Dict[str, List[Dict[str, Any]]]:
-        """
-        Generate random availability for non-target locations
-        
+        Generate hierarchical availability using real data for non-seat-specific tasks.
         Args:
             building_data: Building information
             date: Date for availability
-            
         Returns:
-            Dictionary mapping time slots to available items
+            Hierarchical availability dictionary
         """
         availability = {}
         time_slots = ["09:00-10:30", "10:30-12:00", "14:00-15:30", "15:30-17:00", "16:30-18:00"]
         
+        # 1. Get building amenities from the primary building_data which is from map_v1.5.json
+        amenities_from_map = building_data.get("internal_amenities", {})
+        if not amenities_from_map or not isinstance(amenities_from_map, dict):
+            return {}
+
+        # 2. Find the corresponding detailed building data from campus_data
+        location_id = building_data.get("id")
+        detailed_building_data = next((lib for lib in self._campus_data.get("library_seats", {}).get("libraries", []) if lib.get("id") == location_id), None)
+
+        if not detailed_building_data:
+            return {} # Cannot generate availability without detailed seat info
+
+        # 3. Create a lookup for detailed room info
+        room_details_lookup = {}
+        for floor, rooms in detailed_building_data.get("internal_amenities", {}).items():
+            for room in rooms:
+                if isinstance(room, dict) and "room_name" in room:
+                    room_details_lookup[room["room_name"]] = room
+
+        # 4. Generate availability for each time slot based on map structure
         for slot in time_slots:
-            # Randomly generate 1-3 available items per slot
-            num_items = random.randint(1, 3)
-            availability[slot] = self._generate_random_items(building_data, num_items)
-        
+            availability[slot] = {}
+            # Iterate through floors and rooms from the map data
+            for floor, room_names in amenities_from_map.items():
+                floor_amenities = {}
+                for room_name in room_names:
+                    # Look up detailed info in campus_data
+                    detailed_room = room_details_lookup.get(room_name)
+                    
+                    if detailed_room:
+                        seats = detailed_room.get("seats", [])
+                        # Limit the number of seats shown to 10
+                        seats_to_show = random.sample(seats, k=min(len(seats), 10))
+                        floor_amenities[room_name] = {
+                            "seats": seats_to_show,
+                            "features": detailed_room.get("features", [])
+                        }
+                    else:
+                        # If no detailed info, mark as available without seats
+                        floor_amenities[room_name] = {"seats": []}
+                
+                if floor_amenities:
+                    if floor not in availability[slot]:
+                        availability[slot][floor] = {}
+                    availability[slot][floor].update(floor_amenities)
+                        
         return availability
-    
-    def _generate_random_items(self, building_data: Dict[str, Any], count: int) -> List[Dict[str, Any]]:
-        """
-        Generate random available items for a building
-        
-        Args:
-            building_data: Building information
-            count: Number of items to generate
-            
-        Returns:
-            List of available items
-        """
-        items = []
-        amenities = building_data.get("internal_amenities", {})
-        
-        item_templates = [
-            "Study Room {num}",
-            "Meeting Room {num}",
-            "Conference Room {num}",
-            "Seminar Room {num}"
-        ]
-        
-        for i in range(count):
-            template = random.choice(item_templates)
-            room_num = random.randint(101, 299)
-            item_name = template.format(num=room_num)
-            
-            items.append({
-                "item_name": item_name,
-                "properties": random.sample(["good_wifi", "projector", "whiteboard", "quiet"], 2)
-            })
-        
-        return items
     
     def _calculate_time_slot(self, start_time: str, duration_hours: float) -> str:
         """

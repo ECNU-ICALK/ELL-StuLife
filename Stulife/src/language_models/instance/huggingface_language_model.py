@@ -1,5 +1,6 @@
 import torch
 import os
+import logging
 from typing import Any, Optional, Mapping, Sequence
 from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore[import-untyped]
 import niuload  # type: ignore[import-untyped]
@@ -140,11 +141,15 @@ class HuggingfaceLanguageModel(LanguageModel):
             model_input_dict["batch_attention_mask"],
         )
         del model_input_dict
-        if batch_input_ids.shape[-1] >= self.model.config.max_position_embeddings:
-            raise LanguageModelContextLimitException(
-                f"Input length {batch_input_ids.shape[-1]} exceeds the model's max_position_embeddings "
-                f"{self.model.config.max_position_embeddings}."
+        max_len = self.model.config.max_position_embeddings
+        if batch_input_ids.shape[-1] > max_len:
+            original_len = batch_input_ids.shape[-1]
+            logging.warning(
+                f"Input length {original_len} exceeds the model's max_position_embeddings {max_len}. "
+                f"The input will be truncated to the last {max_len} tokens."
             )
+            batch_input_ids = batch_input_ids[:, -max_len:]
+            batch_attention_mask = batch_attention_mask[:, -max_len:]
         torch.cuda.synchronize()
         try:
             output_tensor: torch.Tensor = self.model.generate(

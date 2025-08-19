@@ -64,13 +64,16 @@ class CampusEnvironment:
         self.map_lookup_system = MapLookupSystem(map_data_path)
         self.geography_system = GeographySystem(self.map_lookup_system)
 
-        # Reservation System
-        self.reservation_system = ReservationSystem(self.map_lookup_system)
-
         # Information System - use background directory
         bibliography_path = self.background_dir / "bibliography.json"
         data_system_path = self.background_dir / "campus_data.json"
         self.information_system = InformationSystem(bibliography_path, data_system_path)
+
+        # Reservation System
+        self.reservation_system = ReservationSystem(
+            map_lookup_system=self.map_lookup_system,
+            information_system=self.information_system
+        )
 
         # Course Selection System
         courses_path = self.background_dir / "courses.json"

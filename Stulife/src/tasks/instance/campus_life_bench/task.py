@@ -8,6 +8,7 @@ import re
 from typing import Dict, Any, Optional, List, Union, Sequence
 from pathlib import Path
 from enum import Enum
+import collections
 
 import sys
 import os
@@ -158,6 +159,54 @@ class CampusTask(Task[CampusDatasetItem]):
         # Failed prerequisite task tracking
         # Key: failed task_id, Value: list of task_ids that are affected by this failure
         self.failed_prerequisite_tasks: Dict[str, List[str]] = {}
+
+    def _is_date_match(self, query_date: str, event_time: str) -> bool:
+        """
+        Check if a query date matches an event's time string, supporting week ranges.
+
+        Args:
+            query_date: Date to check (e.g., "Week 10, Monday")
+            event_time: Event's time string (e.g., "Week 1-18, Monday, 14:00-16:50")
+
+        Returns:
+            True if the date matches, False otherwise.
+        """
+        try:
+            # Parse query_date: "Week X, Day"
+            query_match = re.match(r"Week (\d+), (\w+)", query_date, re.IGNORECASE)
+            if not query_match:
+                # Fallback for simple string containment for other formats
+                return query_date in event_time
+
+            query_week = int(query_match.group(1))
+            query_day = query_match.group(2)
+
+            # Parse event_time: "Week Y-Z, Day, ..." or "Week Y, Day, ..."
+            event_parts = event_time.split(',')
+            if len(event_parts) < 2:
+                return query_date in event_time
+
+            week_part = event_parts[0].strip()
+            day_part = event_parts[1].strip()
+
+            if query_day.lower() != day_part.lower():
+                return False
+
+            week_match = re.match(r"Week (\d+)\s*(?:-|to)\s*(\d+)", week_part, re.IGNORECASE)
+            if week_match:
+                # Week range
+                start_week = int(week_match.group(1))
+                end_week = int(week_match.group(2))
+                return start_week <= query_week <= end_week
+            else:
+                week_match_single = re.match(r"Week (\d+)", week_part, re.IGNORECASE)
+                if week_match_single:
+                    event_week = int(week_match_single.group(1))
+                    return query_week == event_week
+                else:
+                    return query_date in event_time
+        except (ValueError, IndexError):
+            return query_date in event_time
 
     def _get_available_systems(self, dataset_item: CampusDatasetItem) -> Optional[List[str]]:
         """
@@ -384,6 +433,10 @@ class CampusTask(Task[CampusDatasetItem]):
         # Store current session for evaluation purposes
         self._current_session = session
         current_item = self._get_current_dataset_item()
+
+        # Reset precheck state for the new task
+        self.precheck_failed = False
+        self.precheck_failure_details.clear()
 
         # Check if this is a trigger task that should not participate in evaluation
         if current_item.is_trigger:
@@ -795,7 +848,7 @@ class CampusTask(Task[CampusDatasetItem]):
         else:
             # Invalid action - provide as USER feedback
             session.chat_history.inject(
-                {"role": Role.USER, "content": "Invalid action. Please provide a valid Action or call finish()."}
+                {"role": Role.USER, "content": "Invalid action. Please provide a valid Action."}
             )
     
     def _complete(self, session: Session) -> None:
@@ -903,8 +956,22 @@ class CampusTask(Task[CampusDatasetItem]):
             draft_schedule = self.campus_environment.course_selection_system.get_draft_schedule_for_evaluation()
             agent_selection = [s.__dict__ for s in draft_schedule.selected_sections]
 
+            # Get course states for popularity info
+            course_states = self.campus_environment.course_selection_system.get_course_states_for_evaluation()
+
+            # Add popularity to agent selection
+            for section in agent_selection:
+                course_code = section.get("course_code")
+                if course_code and course_code in course_states:
+                    section["popularity"] = course_states[course_code].popularity_index
+
             # Get ground truth
             ground_truth = task_item.ground_truth.get("expected_schedule_outcome", {})
+            if "selected_sections" in ground_truth:
+                for section in ground_truth["selected_sections"]:
+                    course_code = section.get("course_code")
+                    if course_code and course_code in course_states:
+                        section["popularity"] = course_states[course_code].popularity_index
             
             # Prepare data to save
             output_data = {
@@ -1024,9 +1091,10 @@ class CampusTask(Task[CampusDatasetItem]):
             expected_details = task_item.details
             event_found = False
             for event in events:
+                time_match = self._is_date_match(expected_details.get("time"), event.time)
                 if (event.event_title == expected_details.get("event_title") and
                     event.location == expected_details.get("location") and
-                    event.time == expected_details.get("time")):
+                    time_match):
                     event_found = True
                     break
             
@@ -1047,14 +1115,41 @@ class CampusTask(Task[CampusDatasetItem]):
             if not reservations:
                 session.evaluation_record.outcome = SessionEvaluationOutcome.INCORRECT
             else:
-                # Check if any reservation matches expected outcome
-                expected_outcomes = task_item.ground_truth.get("expected_reservation_outcome", [])
-                
+                # Handle both flat and nested ground truth structures
+                expected_outcomes = []
+                if "expected_reservation_outcome" in task_item.ground_truth:
+                    expected_outcomes = task_item.ground_truth["expected_reservation_outcome"]
+                elif isinstance(task_item.ground_truth, dict) and "location_id" in task_item.ground_truth:
+                    # Handle flat structure by wrapping it in a list
+                    expected_outcomes = [task_item.ground_truth]
+
+                if not expected_outcomes:
+                    session.evaluation_record.outcome = SessionEvaluationOutcome.INCORRECT
+                    self._enhance_evaluation_record(session, task_item)
+                    return
+
                 reservation_matched = False
                 for reservation in reservations:
                     for expected in expected_outcomes:
-                        if ("seat_id" in expected and reservation.seat_id == expected["seat_id"]) or \
-                           ("item_name" in expected and reservation.item_name == expected["item_name"]):
+                        # Stricter validation using AND logic with comprehensive field checks
+                        # Using getattr for reservation object and .get for expected dict for safety
+                        seat_id_match = ("seat_id" not in expected or
+                                       getattr(reservation, 'seat_id', None) == expected.get("seat_id"))
+
+                        item_name_match = ("item_name" not in expected or
+                                         getattr(reservation, 'item_name', None) == expected.get("item_name"))
+                        
+                        location_id_match = ("location_id" not in expected or
+                                           getattr(reservation, 'location_id', None) == expected.get("location_id"))
+
+                        time_slot_match = ("time_slot" not in expected or
+                                         getattr(reservation, 'time_slot', None) == expected.get("time_slot"))
+
+                        date_match = ("date" not in expected or
+                                    getattr(reservation, 'date', None) == expected.get("date"))
+
+                        if seat_id_match and item_name_match and location_id_match and time_slot_match and date_match:
+                            # A reservation matches all specified criteria in an expected outcome
                             reservation_matched = True
                             break
                     if reservation_matched:
@@ -1107,36 +1202,66 @@ class CampusTask(Task[CampusDatasetItem]):
                 session.evaluation_record.outcome = SessionEvaluationOutcome.UNKNOWN
                 return
 
+            # Group criteria by system type based on key prefixes
+            grouped_criteria = collections.defaultdict(list)
+            
+            # Map legacy keys and new prefixes to a canonical system type
+            SYSTEM_PREFIX_MAP = {
+                "email_sent": "email",
+                "email": "email",
+                "reservation_made": "reservation",
+                "reservation": "reservation",
+                "calendar_event": "calendar",
+                "calendar": "calendar",
+                "location_reached": "geography",
+                "location": "geography",
+                "course_selected": "course",
+                "course": "course",
+                "walk_to": "walk_to",
+                "walk": "walk_to",
+            }
+
+            for key, criteria in ground_truth.items():
+                prefix = key.split('_')[0]
+                
+                system_type = None
+                if key in SYSTEM_PREFIX_MAP: # Handle legacy full keys first
+                    system_type = SYSTEM_PREFIX_MAP[key]
+                elif prefix in SYSTEM_PREFIX_MAP: # Handle prefixes like "email" or "reservation"
+                    system_type = SYSTEM_PREFIX_MAP[prefix]
+
+                if system_type:
+                    # Criteria for a legacy key could be a single dict or a list of dicts
+                    if isinstance(criteria, list):
+                        grouped_criteria[system_type].extend(criteria)
+                    else:
+                        grouped_criteria[system_type].append(criteria)
+
             all_components_correct = True
 
-            # Check email component if specified
-            if "email_sent" in ground_truth:
-                email_correct = self._evaluate_email_component(ground_truth["email_sent"])
-                if not email_correct:
+            # Evaluate each system component that has criteria
+            if "email" in grouped_criteria:
+                if not self._evaluate_email_component(grouped_criteria["email"]):
                     all_components_correct = False
 
-            # Check reservation component if specified
-            if "reservation_made" in ground_truth:
-                reservation_correct = self._evaluate_reservation_component(ground_truth["reservation_made"], task_item.task_id)
-                if not reservation_correct:
+            if "reservation" in grouped_criteria:
+                if not self._evaluate_reservation_component(grouped_criteria["reservation"], task_item.task_id):
                     all_components_correct = False
 
-            # Check calendar component if specified
-            if "calendar_event" in ground_truth:
-                calendar_correct = self._evaluate_calendar_component(ground_truth["calendar_event"])
-                if not calendar_correct:
+            if "calendar" in grouped_criteria:
+                if not self._evaluate_calendar_component(grouped_criteria["calendar"]):
                     all_components_correct = False
 
-            # Check geography component if specified
-            if "location_reached" in ground_truth:
-                geography_correct = self._evaluate_geography_component(ground_truth["location_reached"])
-                if not geography_correct:
+            if "geography" in grouped_criteria:
+                if not self._evaluate_geography_component(grouped_criteria["geography"]):
                     all_components_correct = False
 
-            # Check course selection component if specified
-            if "course_selected" in ground_truth:
-                course_correct = self._evaluate_course_component(session, task_item, ground_truth["course_selected"])
-                if not course_correct:
+            if "walk_to" in grouped_criteria:
+                if not self._evaluate_walk_to_component(grouped_criteria["walk_to"]):
+                    all_components_correct = False
+
+            if "course" in grouped_criteria:
+                if not self._evaluate_course_component(session, task_item, grouped_criteria["course"]):
                     all_components_correct = False
 
             # Validate execution sequence for multi-system tasks
@@ -1172,166 +1297,253 @@ class CampusTask(Task[CampusDatasetItem]):
         # Enhance evaluation record with debug information
         self._enhance_evaluation_record(session, task_item)
 
-    def _evaluate_email_component(self, email_criteria: dict) -> bool:
-        """Evaluate email component for multi-system tasks"""
+    def _evaluate_email_component(self, email_criteria_list: List[dict]) -> bool:
+        """
+        Evaluate email component for multi-system tasks.
+        Checks if for every criterion in the list, a unique matching sent email is found.
+        """
         try:
-            latest_email = self.campus_environment.email_system.get_latest_email_for_evaluation()
-            if latest_email is None:
+            # ASSUMPTION: The email system provides a method to get all sent emails for evaluation.
+            # The previous `get_latest_email_for_evaluation` is insufficient for multiple email tasks.
+            # We will assume a method like `get_all_emails_for_evaluation` or access to a `sent_emails` list.
+            if not hasattr(self.campus_environment.email_system, 'get_all_emails_for_evaluation'):
+                 print("Warning: Email system does not support fetching all emails. Evaluation may be incorrect.")
+                 # Fallback to legacy behavior for single email check
+                 if len(email_criteria_list) == 1:
+                     latest_email = self.campus_environment.email_system.get_latest_email_for_evaluation()
+                     if latest_email:
+                         return self._email_matches_criteria(latest_email, email_criteria_list[0])
+                 return False
+
+            sent_emails = self.campus_environment.email_system.get_all_emails_for_evaluation()
+            
+            if len(sent_emails) < len(email_criteria_list):
                 return False
 
-            # Handle SentEmail object (use dot notation, not .get())
-            if hasattr(latest_email, 'to'):
-                email_to = latest_email.to
-                email_subject = latest_email.subject
-                email_body = latest_email.body
-            else:
-                # Fallback for dict-like structure
-                email_to = latest_email.get("to", "")
-                email_subject = latest_email.get("subject", "")
-                email_body = latest_email.get("body", "")
+            matched_emails = [False] * len(sent_emails)
 
-            # Check recipient
-            if "recipient" in email_criteria:
-                if email_to != email_criteria["recipient"]:
+            for criteria in email_criteria_list:
+                found_match_for_criteria = False
+                for i, email in enumerate(sent_emails):
+                    if matched_emails[i]:
+                        continue  # This email has already been matched
+
+                    if self._email_matches_criteria(email, criteria):
+                        matched_emails[i] = True
+                        found_match_for_criteria = True
+                        break
+                
+                if not found_match_for_criteria:
+                    return False  # No unique match found for this criterion
+
+            return True  # All criteria were satisfied by unique emails
+
+        except Exception:
+            return False
+
+    def _email_matches_criteria(self, email: Any, criteria: dict) -> bool:
+        """Helper to check if a single email object matches given criteria."""
+        # Handle SentEmail object (use dot notation) and fallback for dict-like structure
+        email_to = getattr(email, 'to', getattr(email, 'recipient', email.get("to", "")))
+        email_subject = getattr(email, 'subject', email.get("subject", ""))
+        email_body = getattr(email, 'body', email.get("body", ""))
+
+        # Check recipient
+        if "recipient" in criteria and email_to != criteria["recipient"]:
+            return False
+        if "recipient_contains" in criteria and criteria["recipient_contains"].lower() not in email_to.lower():
+            return False
+
+        # Check subject
+        if "subject_contains" in criteria and criteria["subject_contains"].lower() not in email_subject.lower():
+            return False
+
+        # Check body
+        if "body_contains" in criteria and criteria["body_contains"].lower() not in email_body.lower():
+            return False
+            
+        return True
+
+    def _evaluate_reservation_component(self, reservation_criteria_list: List[dict], task_id: str) -> bool:
+        """
+        Evaluate reservation component for multi-system tasks.
+        Checks if for every criterion in the list, a unique matching reservation is found.
+        """
+        try:
+            reservations = self.campus_environment.reservation_system.get_reservations_for_evaluation(task_id)
+            if len(reservations) < len(reservation_criteria_list):
+                return False
+
+            matched_reservations = [False] * len(reservations)
+
+            for criteria in reservation_criteria_list:
+                found_match_for_criteria = False
+                for i, reservation in enumerate(reservations):
+                    if matched_reservations[i]:
+                        continue
+
+                    if self._reservation_matches_criteria(reservation, criteria):
+                        matched_reservations[i] = True
+                        found_match_for_criteria = True
+                        break
+
+                if not found_match_for_criteria:
                     return False
-
-            if "recipient_contains" in email_criteria:
-                if email_criteria["recipient_contains"].lower() not in email_to.lower():
-                    return False
-
-            # Check subject
-            if "subject_contains" in email_criteria:
-                if email_criteria["subject_contains"].lower() not in email_subject.lower():
-                    return False
-
-            # Check body
-            if "body_contains" in email_criteria:
-                if email_criteria["body_contains"].lower() not in email_body.lower():
-                    return False
-
+            
             return True
 
         except Exception:
             return False
 
-    def _evaluate_reservation_component(self, reservation_criteria: dict, task_id: str) -> bool:
-        """Evaluate reservation component for multi-system tasks"""
+    def _reservation_matches_criteria(self, reservation: Any, criteria: dict) -> bool:
+        """Helper to check if a single reservation object matches given criteria."""
+        seat_id_match = ("seat_id" not in criteria or
+                           getattr(reservation, 'seat_id', None) == criteria["seat_id"])
+        item_name_match = ("item_name" not in criteria or
+                           getattr(reservation, 'item_name', None) == criteria["item_name"])
+        location_id_match = ("location_id" not in criteria or
+                             getattr(reservation, 'location_id', None) == criteria["location_id"])
+        time_match = ("time" not in criteria or
+                      getattr(reservation, 'time_slot', None) == criteria["time"])
+        date_match = ("date" not in criteria or
+                      getattr(reservation, 'date', None) == criteria["date"])
+
+        return seat_id_match and item_name_match and location_id_match and time_match and date_match
+
+    def _evaluate_calendar_component(self, calendar_criteria_list: List[dict]) -> bool:
+        """
+        Evaluate calendar component for multi-system tasks.
+        Checks if for every criterion in the list, a unique matching calendar event is found.
+        """
         try:
-            reservations = self.campus_environment.reservation_system.get_reservations_for_evaluation(task_id)
-            if not reservations:
+            # Assumption: All criteria are for the same calendar.
+            # Fetch calendar_id from the first criterion if specified.
+            calendar_id = calendar_criteria_list[0].get("calendar_id", "self") if calendar_criteria_list else "self"
+            events = self.campus_environment.calendar_system.get_calendar_events_for_evaluation(calendar_id)
+            
+            if len(events) < len(calendar_criteria_list):
                 return False
 
-            # Check if any reservation matches the criteria
-            for reservation in reservations:
-                matches = True
+            matched_events = [False] * len(events)
 
-                if "item_name" in reservation_criteria:
-                    if reservation.get("item_name") != reservation_criteria["item_name"]:
-                        matches = False
-
-                if "location_id" in reservation_criteria:
-                    if reservation.get("location_id") != reservation_criteria["location_id"]:
-                        matches = False
-
-                if "time" in reservation_criteria:
-                    if reservation.get("time_slot") != reservation_criteria["time"]:
-                        matches = False
-
-                if "date" in reservation_criteria:
-                    if reservation.get("date") != reservation_criteria["date"]:
-                        matches = False
-
-                if matches:
-                    return True
-
-            return False
+            for criteria in calendar_criteria_list:
+                found_match_for_criteria = False
+                for i, event in enumerate(events):
+                    if matched_events[i]:
+                        continue
+                    
+                    if self._calendar_event_matches_criteria(event, criteria):
+                        matched_events[i] = True
+                        found_match_for_criteria = True
+                        break
+                
+                if not found_match_for_criteria:
+                    return False
+            
+            return True
 
         except Exception:
             return False
 
-    def _evaluate_calendar_component(self, calendar_criteria: dict) -> bool:
-        """Evaluate calendar component for multi-system tasks"""
-        try:
-            calendar_id = calendar_criteria.get("calendar_id", "self")
-            events = self.campus_environment.calendar_system.get_calendar_events_for_evaluation(calendar_id)
+    def _calendar_event_matches_criteria(self, event: Any, criteria: dict) -> bool:
+        """Helper to check if a single calendar event matches given criteria."""
+        matches = True
+        # Check event title contains specified text
+        if "event_title_contains" in criteria and criteria["event_title_contains"].lower() not in event.event_title.lower():
+            matches = False
+        # Check exact time match
+        if "time" in criteria and event.time != criteria["time"]:
+            matches = False
+        # Check exact location match
+        if "location" in criteria and event.location != criteria["location"]:
+            matches = False
+        # Legacy support
+        if "title_contains" in criteria and criteria["title_contains"].lower() not in event.event_title.lower():
+            matches = False
+        if "date" in criteria and event.time != criteria["date"]:
+            matches = False
+        return matches
 
-            # Check if any event matches the criteria
-            for event in events:
-                matches = True
-
-                # Check event title contains specified text
-                if "event_title_contains" in calendar_criteria:
-                    if calendar_criteria["event_title_contains"].lower() not in event.event_title.lower():
-                        matches = False
-
-                # Check exact time match
-                if "time" in calendar_criteria:
-                    if event.time != calendar_criteria["time"]:
-                        matches = False
-
-                # Check exact location match
-                if "location" in calendar_criteria:
-                    if event.location != calendar_criteria["location"]:
-                        matches = False
-
-                # Legacy support for old field names
-                if "title_contains" in calendar_criteria:
-                    if calendar_criteria["title_contains"].lower() not in event.event_title.lower():
-                        matches = False
-
-                if "date" in calendar_criteria:
-                    if event.time != calendar_criteria["date"]:
-                        matches = False
-
-                if matches:
-                    return True
-
-            return False
-
-        except Exception:
-            return False
-
-    def _evaluate_geography_component(self, geography_criteria: dict) -> bool:
-        """Evaluate geography component for multi-system tasks"""
+    def _evaluate_geography_component(self, geography_criteria_list: List[dict]) -> bool:
+        """
+        Evaluate geography component for multi-system tasks.
+        Checks if the final geography state satisfies ALL criteria in the list.
+        """
         try:
             geo_state = self.campus_environment.geography_system.get_state_for_evaluation()
 
-            if "current_location" in geography_criteria:
-                if geo_state.get("current_location") != geography_criteria["current_location"]:
-                    return False
-
-            if "visited_locations" in geography_criteria:
-                visited = geo_state.get("visited_locations", [])
-                required = geography_criteria["visited_locations"]
-                if not all(loc in visited for loc in required):
-                    return False
-
+            for criteria in geography_criteria_list:
+                # Check current location if specified
+                if "current_location" in criteria:
+                    current_loc = geo_state.get("current_location") if isinstance(geo_state, dict) else getattr(geo_state, 'current_location_id', None)
+                    if current_loc != criteria["current_location"]:
+                        return False
+                # Check visited locations if specified
+                if "visited_locations" in criteria:
+                    visited = geo_state.get("visited_locations", []) if isinstance(geo_state, dict) else getattr(geo_state, 'visited_locations', [])
+                    required = criteria["visited_locations"]
+                    if not all(loc in visited for loc in required):
+                        return False
+            
             return True
 
         except Exception:
             return False
 
-    def _evaluate_course_component(self, session: Session, task_item: CampusDatasetItem, course_criteria: dict) -> bool:
-        """Evaluate course selection component for multi-system tasks"""
+    def _evaluate_course_component(self, session: Session, task_item: CampusDatasetItem, course_criteria_list: List[dict]) -> bool:
+        """
+        Evaluate course selection component for multi-system tasks.
+        Checks if for every criterion in the list, a unique matching course selection is found.
+        """
         self._save_course_selection_details(session, task_item)
         try:
             draft_schedule = self.campus_environment.course_selection_system.get_draft_schedule_for_evaluation()
+            selected_sections = draft_schedule.selected_sections
 
-            if "course_code" in course_criteria:
-                course_code = course_criteria["course_code"]
-                found = False
-                for section in draft_schedule.selected_sections:
-                    if section.course_code == course_code:
-                        found = True
+            if len(selected_sections) < len(course_criteria_list):
+                return False
+
+            matched_sections = [False] * len(selected_sections)
+
+            for criteria in course_criteria_list:
+                found_match_for_criteria = False
+                for i, section in enumerate(selected_sections):
+                    if matched_sections[i]:
+                        continue
+                    
+                    # Check course code
+                    if "course_code" in criteria and section.course_code == criteria["course_code"]:
                         # Check pass assignment if specified
-                        if "assigned_pass" in course_criteria:
-                            if section.assigned_pass != course_criteria["assigned_pass"]:
-                                return False
+                        if "assigned_pass" in criteria and section.assigned_pass != criteria["assigned_pass"]:
+                            continue # Pass assignment doesn't match, this is not the right section
+                        
+                        # Match found
+                        matched_sections[i] = True
+                        found_match_for_criteria = True
                         break
-
-                if not found:
+                
+                if not found_match_for_criteria:
                     return False
+            
+            return True
 
+        except Exception:
+            return False
+
+    def _evaluate_walk_to_component(self, walk_to_criteria_list: List[dict]) -> bool:
+        """
+        Evaluate walk_to component for multi-system tasks.
+        Checks if the final location matches the target_location_id.
+        """
+        try:
+            geo_state = self.campus_environment.geography_system.get_state_for_evaluation()
+            current_location = geo_state.current_location_id
+
+            for criteria in walk_to_criteria_list:
+                if "target_location_id" in criteria:
+                    if current_location != criteria["target_location_id"]:
+                        return False
+            
             return True
 
         except Exception:
@@ -1425,9 +1637,6 @@ class CampusTask(Task[CampusDatasetItem]):
         if not task_item.require_precheck:
             return
             
-        self.precheck_failed = False
-        self.precheck_failure_details.clear()
-        
         ground_truth = task_item.ground_truth
         if not isinstance(ground_truth, dict):
             return
@@ -1715,16 +1924,24 @@ class CampusTask(Task[CampusDatasetItem]):
         # Extract expected sequence from ground_truth keys order
         expected_sequence = []
         system_mapping = {
-            "email_sent": "email",
-            "reservation_made": "reservation",
-            "calendar_event": "calendar",
-            "location_reached": "geography",
-            "course_selected": "course_selection"
+            "email_sent": "email", "email": "email",
+            "reservation_made": "reservation", "reservation": "reservation",
+            "calendar_event": "calendar", "calendar": "calendar",
+            "location_reached": "geography", "location": "geography",
+            "course_selected": "course", "course": "course"
         }
 
         for key in ground_truth.keys():
             if key in system_mapping:
-                expected_sequence.append(system_mapping[key])
+                system_type = system_mapping[key]
+                if system_type not in expected_sequence:
+                    expected_sequence.append(system_type)
+            else:
+                prefix = key.split('_')[0]
+                if prefix in system_mapping:
+                    system_type = system_mapping[prefix]
+                    if system_type not in expected_sequence:
+                        expected_sequence.append(system_type)
 
         if len(expected_sequence) <= 1:
             # No sequence validation needed for single or no components
@@ -1892,6 +2109,7 @@ class CampusTask(Task[CampusDatasetItem]):
                         reservations = self.campus_environment.reservation_system.get_reservations_for_evaluation(task_item.task_id)
                         multi_output["reservations"] = [
                             {
+                                "seat_id": getattr(r, 'seat_id', r.get('seat_id') if isinstance(r, dict) else None),
                                 "item_name": getattr(r, 'item_name', r.get('item_name') if isinstance(r, dict) else None),
                                 "location_id": getattr(r, 'location_id', r.get('location_id') if isinstance(r, dict) else None),
                                 "time_slot": getattr(r, 'time_slot', r.get('time_slot') if isinstance(r, dict) else None),
@@ -1913,12 +2131,16 @@ class CampusTask(Task[CampusDatasetItem]):
                             for event in events
                         ]
                     
-                    if "location_reached" in ground_truth:
+                    if "location_reached" in ground_truth or "walk_to" in ground_truth:
                         geo_state = self.campus_environment.geography_system.get_state_for_evaluation()
                         if geo_state:
-                            multi_output["geography"] = {
-                                "current_location": getattr(geo_state, 'current_location_id', geo_state.get('current_location') if isinstance(geo_state, dict) else None)
+                            geo_output = {
+                                "current_location_id": getattr(geo_state, 'current_location_id', geo_state.get('current_location_id') if isinstance(geo_state, dict) else None)
                             }
+                            # For walk_to, also include walk_history for more detailed debugging
+                            if "walk_to" in ground_truth:
+                                geo_output["walk_history"] = getattr(geo_state, 'walk_history', geo_state.get('walk_history') if isinstance(geo_state, dict) else None)
+                            multi_output["geography"] = geo_output
                     
                     if "course_selected" in ground_truth:
                         draft_schedule = self.campus_environment.course_selection_system.get_draft_schedule_for_evaluation()

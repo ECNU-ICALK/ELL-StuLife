@@ -13,6 +13,7 @@ colorama~=0.4.6
 sparqlwrapper~=2.0.0
 psutil~=6.0.0
 openai~=1.59.8
+tiktoken~=0.7.0
 sqlglot~=26.7.0
 numpy~=1.26.4
 coredumpy~=0.4.2

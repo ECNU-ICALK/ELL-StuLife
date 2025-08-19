@@ -85,6 +85,17 @@ class EmailSystem:
         """
         return self._sent_emails_log.copy()
     
+    def get_all_emails_for_evaluation(self) -> List[SentEmail]:
+        """
+        Get all sent emails for multi-task evaluation purposes.
+        This provides the complete log of sent emails, allowing the evaluator
+        to check against multiple ground truth criteria.
+        
+        Returns:
+            A copy of the list of all SentEmail objects.
+        """
+        return self._sent_emails_log.copy()
+    
     def get_latest_email_for_evaluation(self) -> SentEmail:
         """
         Get the most recently sent email for evaluation

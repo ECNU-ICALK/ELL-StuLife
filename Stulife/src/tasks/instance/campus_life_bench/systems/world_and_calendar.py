@@ -7,6 +7,7 @@ from typing import Dict, List, Any, Optional
 import uuid
 from dataclasses import dataclass
 import datetime
+import re
 
 from ..tools import ToolResult, ensure_english_message
 
@@ -105,6 +106,57 @@ class CalendarSystem:
         # Advisor availability settings from world_state_change
         # Format: {advisor_id: {date: [available_slots]}}
         self._advisor_availability_settings: Dict[str, Dict[str, List[str]]] = {}
+    
+    def _is_date_match(self, query_date: str, event_time: str) -> bool:
+        """
+        Check if a query date matches an event's time string, supporting week ranges.
+
+        Args:
+            query_date: Date to check (e.g., "Week 10, Monday")
+            event_time: Event's time string (e.g., "Week 1-18, Monday, 14:00-16:50")
+
+        Returns:
+            True if the date matches, False otherwise.
+        """
+        try:
+            # Parse query_date: "Week X, Day"
+            query_match = re.match(r"Week (\d+), (\w+)", query_date, re.IGNORECASE)
+            if not query_match:
+                # Fallback for simple string containment for other formats
+                return query_date in event_time
+
+            query_week = int(query_match.group(1))
+            query_day = query_match.group(2)
+
+            # Parse event_time: "Week Y-Z, Day, ..." or "Week Y, Day, ..."
+            event_parts = event_time.split(',')
+            if len(event_parts) < 2:
+                return query_date in event_time # Not a parsable format
+
+            week_part = event_parts[0].strip()
+            day_part = event_parts[1].strip()
+
+            if query_day.lower() != day_part.lower():
+                return False
+
+            week_match = re.match(r"Week (\d+)\s*(?:-|to)\s*(\d+)", week_part, re.IGNORECASE)
+            if week_match:
+                # Week range
+                start_week = int(week_match.group(1))
+                end_week = int(week_match.group(2))
+                return start_week <= query_week <= end_week
+            else:
+                week_match_single = re.match(r"Week (\d+)", week_part, re.IGNORECASE)
+                if week_match_single:
+                    event_week = int(week_match_single.group(1))
+                    return query_week == event_week
+                else:
+                    # Cannot parse week, fallback to string containment
+                    return query_date in event_time
+
+        except (ValueError, IndexError):
+            # If parsing fails, fall back to simple string containment
+            return query_date in event_time
     
     def _ensure_calendar_exists(self, calendar_id: str) -> None:
         """Ensure calendar exists in global calendars"""
@@ -317,7 +369,7 @@ class CalendarSystem:
             
             # Get events for the date
             calendar = self._global_calendars.get(calendar_id, [])
-            events_on_date = [event for event in calendar if date in event.time]
+            events_on_date = [event for event in calendar if self._is_date_match(date, event.time)]
             
             if not events_on_date:
                 message = f"No events found for {date} in calendar '{calendar_id}'."

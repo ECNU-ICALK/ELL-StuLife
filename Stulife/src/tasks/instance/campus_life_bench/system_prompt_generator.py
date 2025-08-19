@@ -295,32 +295,35 @@ Below is the list of tools at your disposal."""
     * `date` (required): The date for the booking (format: `'Week X, Day'`).
     * `time_slot` (required): The time slot to book (e.g., `'14:00-16:00'`).
     * `seat_id` (optional): The specific seat ID if booking a seat.
-    * *Example*: `<action>Action: reservation.make_booking(location_id="B001", item_name="Group Study Room 201", date="Week 4, Saturday", time_slot="14:00-16:00")</action>`
+    * *Example (booking a room)*: `<action>Action: reservation.make_booking(location_id="B001", item_name="Group Study Room 201", date="Week 4, Saturday", time_slot="14:00-16:00")</action>`
+    * *Example (booking a seat)*: `<action>Action: reservation.make_booking(location_id="B001", item_name="Study Area", date="Week 4, Saturday", time_slot="09:00-10:30", seat_id="B001-F01-S001")</action>`
 """,
             
             # Information & Course Tools
             "bibliography.list_chapters": """* **`list_chapters(book_title: str)`**: Lists all chapters in a book.
+    * **Usage Suggestion**: This tool is for querying assigned **textbooks and handbooks only**. For searching the main library's collection, use the `data_system.search_books` or `data_system.list_books_by_category` tools.
     * **Available Books**:
         - **Handbooks**: "Student Handbook", "Academic Integrity Guidelines", "Academic Programs Guide"
         - **Textbooks**: "A Panorama of Computing: From Bits to Artificial Intelligence", "Linear Algebra and Its Applications", "Mathematical Analysis", "Military Theory and National Defense", "Programming for Everyone", "Innovation and Entrepreneurship", "Mental Health and Wellness", "Advanced Programming Concepts"
     * *Example*: `<action>Action: bibliography.list_chapters(book_title="Student Handbook")</action>`
 """,
             
-            "bibliography.list_sections": """* **`list_sections(book_title: str, chapter_title: str)`**: Lists all sections in a chapter.
+            "bibliography.list_sections": """* **`list_sections(book_title: str, chapter_title: str)`**: Lists all sections in a chapter of a textbook or handbook.
     * *Example*: `<action>Action: bibliography.list_sections(book_title="Introduction to AI", chapter_title="Chapter 1: Search")</action>`
 """,
             
-            "bibliography.list_articles": """* **`list_articles(book_title: str, chapter_title: str, section_title: str)`**: Lists all articles in a section.
+            "bibliography.list_articles": """* **`list_articles(book_title: str, chapter_title: str, section_title: str)`**: Lists all articles in a section of a textbook or handbook.
     * *Example*: `<action>Action: bibliography.list_articles(book_title="Intro to AI", chapter_title="Search", section_title="Uninformed Search")</action>`
 """,
             
-            "bibliography.view_article": """* **`view_article(identifier: str, search_type: str)`**: Views the content of an article.
+            "   .view_article": """* **`view_article(identifier: str, search_type: str)`**: Views the content of an article from a textbook or handbook.
     * `identifier` (required): The title or ID of the article.
     * `search_type` (required): `'title'` or `'id'`.
     * *Example*: `<action>Action: bibliography.view_article(identifier="Breadth-First Search", search_type="title")</action>`
 """,
             
             "data_system.list_by_category": """* **`list_by_category(category: str, entity_type: str, level: str = None)`**: Lists clubs or advisors by category.
+    * **Usage Suggestion**: Use this tool to discover clubs that match your interests or to find advisors in a specific research field.
     * `entity_type` (required): `'club'` or `'advisor'`.
     * **Available Club Categories**: "Academic & Technological", "Sports & Fitness", "Arts & Culture", "Community Service", "Professional Development", "Special Interest"
     * **Available Advisor Research Areas**: "Engineering", "Computer Science", "Mathematics", "Physics", "Biology", "Chemistry", "Medicine", "Social Sciences", "Humanities"
@@ -328,7 +331,8 @@ Below is the list of tools at your disposal."""
     * *Example*: `<action>Action: data_system.list_by_category(category="Academic & Technological", entity_type="club")</action>`
 """,
             
-            "data_system.query_by_identifier": """* **`query_by_identifier(identifier: str, search_type: str, entity_type: str)`**: Gets all details for a specific club or advisor.
+            "data_system.query_by_identifier": """* **`query_by_identifier(identifier: str, by: str, entity_type: str)`**: Gets all details for a specific club or advisor.
+    * **Usage Suggestion**: When you already know the name or ID of a club or advisor, use this tool to get their detailed information.
     * *Example 1 (Club by ID)*: `<action>Action: data_system.query_by_identifier(identifier="C071", by="id", entity_type="club")</action>`
     * *Example 2 (Club by Name)*: `<action>Action: data_system.query_by_identifier(identifier="Computer Science Club", by="name", entity_type="club")</action>`
     * *Example 3 (Advisor by Name)*: `<action>Action: data_system.query_by_identifier(identifier="Dr. John Smith", by="name", entity_type="advisor")</action>`

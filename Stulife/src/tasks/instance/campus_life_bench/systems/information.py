@@ -69,6 +69,10 @@ class InformationSystem:
         try:
             with open(self.data_system_path, 'r', encoding='utf-8') as f:
                 self._data_system_data = json.load(f)
+            # Ensure all library books are marked as "Available"
+            if "library_books" in self._data_system_data:
+                for book in self._data_system_data["library_books"]:
+                    book["status"] = "Available"
         except FileNotFoundError:
             # Create minimal data system data if file doesn't exist
             self._data_system_data = {
@@ -125,7 +129,7 @@ class InformationSystem:
                     else:
                         message = f"Book '{book_title}' has no chapters."
                     
-                    return ToolResult.success(ensure_english_message(message), {
+                    return ToolResult.success(message, {
                         "book_title": book["book_title"],
                         "chapters": chapters
                     })
@@ -162,7 +166,7 @@ class InformationSystem:
                             else:
                                 message = f"Chapter '{chapter_title}' in book '{book_title}' has no sections."
                             
-                            return ToolResult.success(ensure_english_message(message), {
+                            return ToolResult.success(message, {
                                 "book_title": book["book_title"],
                                 "chapter_title": chapter["chapter_title"],
                                 "sections": sections
@@ -205,7 +209,7 @@ class InformationSystem:
                                     else:
                                         message = f"Section '{section_title}' has no articles."
                                     
-                                    return ToolResult.success(ensure_english_message(message), {
+                                    return ToolResult.success(message, {
                                         "book_title": book["book_title"],
                                         "chapter_title": chapter["chapter_title"],
                                         "section_title": section["section_title"],
@@ -246,10 +250,10 @@ class InformationSystem:
                         for article in section["articles"]:
                             if by == "title" and article["title"].lower() == identifier.lower():
                                 message = f"Article: {article['title']}\n\n{article['body']}"
-                                return ToolResult.success(ensure_english_message(message), article)
+                                return ToolResult.success(message, article)
                             elif by == "id" and article["article_id"] == identifier:
                                 message = f"Article: {article['title']}\n\n{article['body']}"
-                                return ToolResult.success(ensure_english_message(message), article)
+                                return ToolResult.success(message, article)
             
             return ToolResult.failure(f"Article with {by} '{identifier}' not found.")
             
@@ -289,7 +293,7 @@ class InformationSystem:
                 else:
                     message = f"No clubs found in category '{category}'."
                 
-                return ToolResult.success(ensure_english_message(message), {"clubs": results})
+                return ToolResult.success(message, {"clubs": results})
             
             elif entity_type == "advisor":
                 for advisor in self._data_system_data["advisors"]:
@@ -321,11 +325,27 @@ class InformationSystem:
                 if results:
                     message = f"Found {len(results)} advisor(s) in category '{category}':"
                     for advisor in results:
-                        message += f"\n- {advisor['name']} (Research: {advisor['research_area'].get('level_2', 'N/A')})"
+                        message += f"\n- Name: {advisor['name']}"
+                        
+                        # Format research area
+                        research_area = advisor.get('research_area', {})
+                        level1 = research_area.get('level_1', 'N/A')
+                        level2 = research_area.get('level_2', 'N/A')
+                        message += f"\n  Research Area: {level1} -> {level2}"
+                        
+                        tags = research_area.get('tags', [])
+                        if tags:
+                            message += f"\n  Tags: {', '.join(tags)}"
+                        
+                        # Format representative work
+                        rep_work = advisor.get('representative_work', [])
+                        if rep_work:
+                            work_items = '\n    - '.join(rep_work)
+                            message += f"\n  Representative Work:\n    - {work_items}"
                 else:
                     message = f"No advisors found in category '{category}'."
                 
-                return ToolResult.success(ensure_english_message(message), {"advisors": results})
+                return ToolResult.success(message, {"advisors": results})
             
         except Exception as e:
             return ToolResult.error(f"Failed to list by category: {str(e)}")
@@ -338,6 +358,16 @@ class InformationSystem:
             identifier: Entity name or ID
             by: Search method - "name" or "id"
             entity_type: "club" or "advisor"
+
+        Examples:
+            >>> # Query a club by its ID
+            >>> query_by_identifier(identifier="C001", by="id", entity_type="club")
+            >>> # Query a club by its name
+            >>> query_by_identifier(identifier="Computer Science Club", by="name", entity_type="club")
+            >>> # Query an advisor by their ID
+            >>> query_by_identifier(identifier="T001", by="id", entity_type="advisor")
+            >>> # Query an advisor by their name
+            >>> query_by_identifier(identifier="Dr. John Smith", by="name", entity_type="advisor")
             
         Returns:
             ToolResult with entity details
@@ -364,7 +394,7 @@ class InformationSystem:
                         message += f"Description: {club['description']}\n"
                         message += f"Recruitment Info: {club['recruitment_info']}"
                         
-                        return ToolResult.success(ensure_english_message(message), club)
+                        return ToolResult.success(message, club)
                 
                 return ToolResult.failure(f"Club with {by} '{identifier}' not found.")
             
@@ -380,7 +410,7 @@ class InformationSystem:
                         message += f"Research Area: {advisor['research_area']['level_2']}\n"
                         message += f"Representative Work: {', '.join(advisor['representative_work'])}"
                         
-                        return ToolResult.success(ensure_english_message(message), advisor)
+                        return ToolResult.success(message, advisor)
                 
                 return ToolResult.failure(f"Advisor with {by} '{identifier}' not found.")
             
@@ -413,7 +443,9 @@ class InformationSystem:
                         "title": book.get("title", ""),
                         "author": book.get("author", ""),
                         "call_number": book.get("call_number", ""),
-                        "status": book.get("status", ""),
+                        "status": book.get("status", "Available"),
+                        "type": book.get("type", ""),
+                        "category": book.get("category", ""),
                         "location": book.get("location", "")
                     })
             
@@ -421,11 +453,11 @@ class InformationSystem:
                 message = f"Found {len(matching_books)} book(s) in category '{category}':"
                 for book in matching_books:
                     status_indicator = "✓" if book["status"] == "Available" else "✗"
-                    message += f"\n- {status_indicator} \"{book['title']}\" by {book['author']} (Call Number: {book['call_number']})"
+                    message += f"\n- {status_indicator} \"{book['title']}\" by {book['author']} (Call Number: {book['call_number']}, Type: {book['type']}, Location: {book['location']})"
             else:
                 message = f"No books found in category '{category}'."
             
-            return ToolResult.success(ensure_english_message(message), {"books": matching_books})
+            return ToolResult.success(message, {"books": matching_books})
             
         except Exception as e:
             return ToolResult.error(f"Failed to list books by category: {str(e)}")
@@ -466,7 +498,8 @@ class InformationSystem:
                         "title": book.get("title", ""),
                         "author": book.get("author", ""),
                         "call_number": book.get("call_number", ""),
-                        "status": book.get("status", ""),
+                        "status": book.get("status", "Available"),
+                        "type": book.get("type", ""),
                         "category": book.get("category", ""),
                         "location": book.get("location", "")
                     })
@@ -475,11 +508,21 @@ class InformationSystem:
                 message = f"Found {len(matching_books)} book(s) matching '{query}' in {search_type}:"
                 for book in matching_books:
                     status_indicator = "✓" if book["status"] == "Available" else "✗"
-                    message += f"\n- {status_indicator} \"{book['title']}\" by {book['author']} ({book['category']}, Call Number: {book['call_number']})"
+                    message += f"\n- {status_indicator} \"{book['title']}\" by {book['author']} ({book['category']}, Call Number: {book['call_number']}, Type: {book['type']}, Location: {book['location']})"
             else:
                 message = f"No books found matching '{query}' in {search_type}."
             
-            return ToolResult.success(ensure_english_message(message), {"books": matching_books})
+            return ToolResult.success(message, {"books": matching_books})
             
         except Exception as e:
             return ToolResult.error(f"Failed to search books: {str(e)}")
+
+    def get_campus_data(self) -> Optional[Dict[str, Any]]:
+        """
+        Get the raw campus data dictionary
+        
+        Returns:
+            A dictionary containing all campus data, or None if not loaded
+        """
+
+        return self._data_system_data
