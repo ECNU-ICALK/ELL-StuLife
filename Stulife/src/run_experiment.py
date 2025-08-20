@@ -346,10 +346,16 @@ def main() -> None:
             Session.model_validate(session_info_dict)
             for session_info_dict in json.load(open(session_list_output_path, "r"))
         ]
+        finished_statuses = {SampleStatus.COMPLETED, SampleStatus.TASK_LIMIT_REACHED}
+        finished_sample_indices = {
+            session.sample_index
+            for session in session_list
+            if session.sample_status in finished_statuses
+        }
         unfinished_sample_order = [
             sample_index
             for sample_index in assignment_config.sample_order
-            if all(session.sample_index != sample_index for session in session_list)
+            if sample_index not in finished_sample_indices
         ]
         # Previous session may change the state of the callback, restore it here.
         CallbackRestorer.restore(callback_dict)
