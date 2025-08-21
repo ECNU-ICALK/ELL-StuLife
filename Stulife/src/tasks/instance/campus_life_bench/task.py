@@ -462,10 +462,12 @@ class CampusTask(Task[CampusDatasetItem]):
 
         # Check if this is a new simulation day
         current_date = self._extract_date_from_task(current_item)
-        if current_date and current_date != self._current_simulation_day:
+        date_for_logic = current_date or self._current_simulation_day
+        
+        if date_for_logic and date_for_logic != self._current_simulation_day:
             # Perform daily reset
-            self.campus_environment.daily_reset(current_date)
-            self._current_simulation_day = current_date
+            self.campus_environment.daily_reset(date_for_logic)
+            self._current_simulation_day = date_for_logic
             self.is_first_task_of_day = True
         else:
             self.is_first_task_of_day = False
@@ -505,8 +507,8 @@ class CampusTask(Task[CampusDatasetItem]):
         # Determine next state and inject ONLY the next required context
         if self.is_first_task_of_day:
             # Inject daily context with automatic agent acknowledgment
-            current_date = self._extract_date_from_task(current_item)
-            daily_message = f"Current date: {current_date}. Your current location: Lakeside Dormitory (B083)."
+            current_date_for_prompt = self._current_simulation_day or "Week 1, Monday" # Fallback for absolute first task
+            daily_message = f"Current date: {current_date_for_prompt}. Your current location: Lakeside Dormitory (B083)."
             session.chat_history.inject(
                 {"role": Role.USER, "content": daily_message}
             )
@@ -645,7 +647,7 @@ class CampusTask(Task[CampusDatasetItem]):
             return task_item.details["target_date"]
         
         # 3. Default to a simulation date
-        return "Week 1, Monday"
+        return None
 
     def _get_full_time_string(self, time_str: str) -> str:
         """
