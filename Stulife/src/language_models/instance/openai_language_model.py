@@ -24,6 +24,7 @@ MODEL_CONTEXT_LENGTHS = {
     "gpt-4": 8192,
     "gpt-3.5-turbo-0125": 16385,
     "gpt-3.5-turbo": 4096,
+    "deepseek-chat": 126000
 }
 
 
@@ -154,13 +155,12 @@ class OpenaiLanguageModel(LanguageModel):
         """
         retries = 0
         wait_time = float(self.min_wait)
-        rate_limit_failures = 0
+        api_failures = 0
 
         while True:
+            client = self.clients[self.current_api_index]
+            model_name = self.model_names[self.current_api_index]
             try:
-                client = self.clients[self.current_api_index]
-                model_name = self.model_names[self.current_api_index]
-
                 truncated_message_list = self._truncate_message_list(
                     message_list, model_name
                 )
@@ -170,59 +170,40 @@ class OpenaiLanguageModel(LanguageModel):
                     **inference_config_dict,
                 )
                 break  # Success
-            except openai.RateLimitError as e:
-                rate_limit_failures += 1
-                if rate_limit_failures >= len(self.api_configs):
-                    # Full cycle of failures, now wait
-                    if (
-                        not self.infinite_for_rate_limit
-                        and retries >= self.max_retries
-                    ):
+            except openai.APIError as e:
+                # Handle non-recoverable context length error first
+                if isinstance(e, openai.BadRequestError) and "context length" in str(e):
+                    raise LanguageModelContextLimitException(
+                        f"Model {model_name} reaches the context limit."
+                    ) from e
+
+                logging.warning(
+                    f"API call failed for API index {self.current_api_index} with error: {e}. Switching to next API."
+                )
+                self.current_api_index = (self.current_api_index + 1) % len(self.api_configs)
+                api_failures += 1
+
+                if api_failures >= len(self.api_configs):
+                    # A full cycle of API failures has occurred. Start retrying with backoff.
+                    retries += 1
+                    # Special handling for rate limit errors with infinite retries
+                    is_rate_limit_error = isinstance(e, openai.RateLimitError)
+                    max_retries_reached = (not (self.infinite_for_rate_limit and is_rate_limit_error)) and (retries > self.max_retries)
+
+                    if max_retries_reached:
                         logging.error(
-                            f"Rate limit error and max retries reached. Failing. Error: {e}"
+                            f"All APIs failed after {retries - 1} full cycles. Failing. Last error: {e}"
                         )
                         raise e
 
                     logging.warning(
-                        f"All APIs hit rate limit. Retrying in {wait_time:.2f} seconds. Error: {e}"
+                        f"All APIs have failed in a cycle. Waiting for {wait_time:.2f} seconds before retrying."
                     )
                     time.sleep(wait_time)
-                    rate_limit_failures = 0  # Reset for next cycle
-
-                    if not self.infinite_for_rate_limit:
-                        retries += 1
+                    api_failures = 0  # Reset failure count for the next cycle
 
                     wait_time = min(wait_time * self.backoff_multiplier, self.max_wait)
-                    wait_time += random.uniform(0, 0.1) * wait_time  # Jitter
-                else:
-                    # Switch to next API
-                    logging.warning(
-                        f"Rate limit error with API {self.current_api_index}. Switching to next API. Error: {e}"
-                    )
-                    self.current_api_index = (
-                        self.current_api_index + 1
-                    ) % len(self.api_configs)
-            except openai.BadRequestError as e:
-                if "context length" in str(e):
-                    # Raise LanguageModelContextLimitException to skip retrying.
-                    raise LanguageModelContextLimitException(
-                        f"Model {self.model_name} reaches the context limit. "
-                    ) from e
-
-                if retries >= self.max_retries:
-                    logging.error(
-                        f"Bad request error and max retries reached. Failing. Error: {e}"
-                    )
-                    raise e
-
-                retries += 1
-                logging.warning(
-                    f"Bad request error encountered. Retrying in {wait_time:.2f} seconds. Error: {e}"
-                )
-                time.sleep(wait_time)
-                wait_time = min(wait_time * self.backoff_multiplier, self.max_wait)
-                wait_time += random.uniform(0, 0.1) * wait_time  # Jitter
-
+                    wait_time += random.uniform(0, 0.1) * wait_time  # Add jitter
         if (
             completion.usage is not None
             and self.maximum_prompt_token_count is not None

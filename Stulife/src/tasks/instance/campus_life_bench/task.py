@@ -627,18 +627,17 @@ class CampusTask(Task[CampusDatasetItem]):
         """
         # Look for date in various places, with new priority order
         
-        # 1. Try to extract from require_time
+        # 1. Try to extract from require_time using a more robust regex
         if task_item.require_time:
             try:
-                # Assuming format "Week X, Day, HH:MM"
-                parts = task_item.require_time.split(',')
-                if len(parts) >= 2:
-                    date_part = f"{parts[0].strip()}, {parts[1].strip()}"
-                    # Simple validation to ensure it looks like a date
-                    if "Week" in date_part and ("Monday" in date_part or "Tuesday" in date_part or "Wednesday" in date_part or "Thursday" in date_part or "Friday" in date_part or "Saturday" in date_part or "Sunday" in date_part):
-                        return date_part
+                # Match "Week X, Day" pattern, ignoring time.
+                # This handles formats like "Week 0, Monday 10:00" and "Week 0, Monday, 10:00".
+                match = re.match(r"(Week \d+,\s*\w+)", task_item.require_time)
+                if match:
+                    date_part = match.group(1)
+                    return date_part
             except Exception:
-                # If parsing fails, fall through to the next method
+                # If regex fails, fall through to the next method
                 pass
 
         # 2. Fallback to target_date in details
@@ -795,12 +794,13 @@ class CampusTask(Task[CampusDatasetItem]):
                         {"role": Role.USER, "content": error_message}
                     )
             elif parsed_result.action == AgentAction.FINISH:
-                # Agent tried to finish without being at correct location
-                time_message = self._get_full_time_string(current_item.require_time)
-                full_time_message = f"Current time: {time_message}"
-                session.chat_history.inject(
-                    {"role": Role.USER, "content": full_time_message}
-                )
+                # Agent tried to finish without being at correct location.
+                # Per user request, allow finish and trigger immediate evaluation.
+                session.task_output = {"result": "Task finished prematurely by agent before reaching location"}
+                session.sample_status = SampleStatus.COMPLETED
+                self.context_state = ContextInjectionState.COMPLETED
+                self._complete(session)
+                return
             elif parsed_result.action == AgentAction.INVALID:
                 # Invalid action - provide location hint and time
                 time_message = self._get_full_time_string(current_item.require_time)
@@ -947,9 +947,13 @@ class CampusTask(Task[CampusDatasetItem]):
             else:
                 # Compare with ground truth
                 gt = task_item.ground_truth
+                
+                # Unescape ground truth body for accurate comparison
+                expected_body = gt.get("body", "").encode('latin1').decode('unicode_escape') if gt.get("body") else ""
+
                 if (latest_email.recipient == gt.get("recipient") and
                     latest_email.subject == gt.get("subject") and
-                    latest_email.body == gt.get("body")):
+                    latest_email.body == expected_body):
                     session.evaluation_record.outcome = SessionEvaluationOutcome.CORRECT
                 else:
                     session.evaluation_record.outcome = SessionEvaluationOutcome.INCORRECT
@@ -1373,8 +1377,11 @@ class CampusTask(Task[CampusDatasetItem]):
             return False
 
         # Check body
-        if "body_contains" in criteria and criteria["body_contains"].lower() not in email_body.lower():
-            return False
+        if "body_contains" in criteria:
+            # Unescape all escape sequences from ground truth string before comparison
+            expected_body = criteria["body_contains"].encode('latin1').decode('unicode_escape')
+            if expected_body.lower() not in email_body.lower():
+                return False
             
         return True
 
@@ -1463,17 +1470,23 @@ class CampusTask(Task[CampusDatasetItem]):
         """Helper to check if a single calendar event matches given criteria."""
         matches = True
         # Check event title contains specified text
-        if "event_title_contains" in criteria and criteria["event_title_contains"].lower() not in event.event_title.lower():
-            matches = False
+        if "event_title_contains" in criteria:
+            expected_title = criteria["event_title_contains"].encode('latin1').decode('unicode_escape')
+            if expected_title.lower() not in event.event_title.lower():
+                matches = False
         # Check exact time match
         if "time" in criteria and event.time != criteria["time"]:
             matches = False
         # Check exact location match
-        if "location" in criteria and event.location != criteria["location"]:
-            matches = False
+        if "location" in criteria:
+            expected_location = criteria["location"].encode('latin1').decode('unicode_escape')
+            if event.location != expected_location:
+                matches = False
         # Legacy support
-        if "title_contains" in criteria and criteria["title_contains"].lower() not in event.event_title.lower():
-            matches = False
+        if "title_contains" in criteria:
+            expected_title_legacy = criteria["title_contains"].encode('latin1').decode('unicode_escape')
+            if expected_title_legacy.lower() not in event.event_title.lower():
+                matches = False
         if "date" in criteria and event.time != criteria["date"]:
             matches = False
         return matches
