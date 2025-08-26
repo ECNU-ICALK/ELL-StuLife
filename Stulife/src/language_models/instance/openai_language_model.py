@@ -22,9 +22,18 @@ MODEL_CONTEXT_LENGTHS = {
     "gpt-4-turbo": 128000,
     "gpt-4o": 128000,
     "gpt-4": 8192,
+    "gpt-5": 272000,
     "gpt-3.5-turbo-0125": 16385,
     "gpt-3.5-turbo": 4096,
-    "deepseek-chat": 126000
+    "deepseek-chat": 126000,
+    "deepseek-ai/DeepSeek-R1": 160000,
+    "deepseek-ai/DeepSeek-V3": 128000,
+    "Qwen/Qwen3-30B-A3B-Thinking-2507": 256000,
+    "Qwen/Qwen3-235B-A22B-Instruct-2507": 256000,
+    "Qwen/Qwen3-32B": 128000,
+    "Qwen/Qwen3-8B": 128000,
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B": 128000,
+    "Qwen/QwQ-32B": 128000,
 }
 
 

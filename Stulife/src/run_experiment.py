@@ -387,53 +387,65 @@ def main() -> None:
             callback_handler.on_task_reset(callback_args)
         logger.info(f"Sample {sample_index} start.")
         # endregion
-        # region Run session
-        while session.sample_status == SampleStatus.RUNNING:
-            if callback_args.session_controller.should_agent_inference:
-                agent.inference(session)
-                callback_handler.on_agent_inference(callback_args)
-            if callback_args.session_controller.should_task_interact:
-                task.interact(session)
-                callback_handler.on_task_interact(callback_args)
-        # endregion
-        # region Complete session
-        if callback_args.session_controller.should_task_complete:
-            task.complete(session)
-            callback_handler.on_task_complete(callback_args)
-        
-        # ADDED: Save self schedule changes
-        if hasattr(task, 'campus_environment'):
-            schedule_changes = task.campus_environment.get_and_clear_self_schedule_changes()
-            if schedule_changes:
-                schedule_dir = os.path.join(assignment_config.output_dir, "self_schedule")
-                os.makedirs(schedule_dir, exist_ok=True)
-                schedule_file_path = os.path.join(schedule_dir, f"{session.sample_index}.json")
-                with open(schedule_file_path, 'w') as f:
-                    json.dump({
-                        "task_id": session.sample_index,
-                        "changes": schedule_changes
-                    }, f, indent=2)
-
-        session_list.append(session)
-        json.dump(
-            [s.model_dump() for s in session_list],
-            open(session_list_output_path, "w"),  # noqa
-            indent=2,
-        )
-        
-        # ADDED: Save task checkpoint for stateful resume
-        if hasattr(task, 'save_checkpoint'):
-            task.save_checkpoint(session)
+        try:
+            # region Run session
+            while session.sample_status == SampleStatus.RUNNING:
+                if callback_args.session_controller.should_agent_inference:
+                    agent.inference(session)
+                    callback_handler.on_agent_inference(callback_args)
+                if callback_args.session_controller.should_task_interact:
+                    task.interact(session)
+                    callback_handler.on_task_interact(callback_args)
+            # endregion
+            # region Complete session
+            if callback_args.session_controller.should_task_complete:
+                task.complete(session)
+                callback_handler.on_task_complete(callback_args)
             
-        logger.info(
-            f"Sample {sample_index} end. Session status: {session.sample_status}. "
-            f"Evaluation outcome: {session.evaluation_record.outcome}."
-        )
-        # endregion
-        # region Save callback state
-        # The state of callback will be used to restore the previous incomplete assignment.
-        callback_handler.on_state_save(callback_args)
-        # endregion
+            # ADDED: Save self schedule changes
+            if hasattr(task, 'campus_environment'):
+                schedule_changes = task.campus_environment.get_and_clear_self_schedule_changes()
+                if schedule_changes:
+                    schedule_dir = os.path.join(assignment_config.output_dir, "self_schedule")
+                    os.makedirs(schedule_dir, exist_ok=True)
+                    schedule_file_path = os.path.join(schedule_dir, f"{session.sample_index}.json")
+                    with open(schedule_file_path, 'w') as f:
+                        json.dump({
+                            "task_id": session.sample_index,
+                            "changes": schedule_changes
+                        }, f, indent=2)
+
+            session_list.append(session)
+            json.dump(
+                [s.model_dump() for s in session_list],
+                open(session_list_output_path, "w"),  # noqa
+                indent=2,
+            )
+            
+            # ADDED: Save task checkpoint for stateful resume
+            if hasattr(task, 'save_checkpoint'):
+                task.save_checkpoint(session)
+                
+            logger.info(
+                f"Sample {sample_index} end. Session status: {session.sample_status}. "
+                f"Evaluation outcome: {session.evaluation_record.outcome}."
+            )
+            # endregion
+            # region Save callback state
+            # The state of callback will be used to restore the previous incomplete assignment.
+            callback_handler.on_state_save(callback_args)
+            # endregion
+        except Exception as e:
+            logger.error(f"An unexpected error occurred during sample {sample_index}: {e}", exc_info=True)
+            session.sample_status = SampleStatus.AGENT_UNKNOWN_ERROR
+            session_list.append(session)
+            json.dump(
+                [s.model_dump() for s in session_list],
+                open(session_list_output_path, "w"),
+                indent=2,
+            )
+            # Do not save checkpoint here to allow resuming from the previous state
+            raise e
     # endregion
     # region Evaluate
     session_metric_calculation_partial_list: Sequence[

@@ -951,11 +951,24 @@ class CampusTask(Task[CampusDatasetItem]):
                 gt = task_item.ground_truth
                 
                 # Unescape ground truth body for accurate comparison
-                expected_body = gt.get("body", "").encode('latin1').decode('unicode_escape') if gt.get("body") else ""
+                expected_body = gt.get("body", "") if gt.get("body") else ""
+                if isinstance(expected_body, str):
+                    try:
+                        # Only attempt unescape if the string contains backslashes (potential escape sequences)
+                        if '\\' in expected_body:
+                            expected_body = expected_body.encode('latin1').decode('unicode_escape')
+                    except (UnicodeDecodeError, UnicodeEncodeError):
+                        # If unescape fails, use the original string
+                        pass
 
+                # Normalize both bodies for a lenient, robust comparison
+                normalized_expected_body = self._normalize_text_for_comparison(expected_body)
+                normalized_actual_body = self._normalize_text_for_comparison(latest_email.body)
+
+                # Use 'in' (contains) for a consistent, lenient check across all email tasks
                 if (latest_email.recipient == gt.get("recipient") and
                     latest_email.subject == gt.get("subject") and
-                    latest_email.body == expected_body):
+                    normalized_expected_body in normalized_actual_body):
                     session.evaluation_record.outcome = SessionEvaluationOutcome.CORRECT
                 else:
                     session.evaluation_record.outcome = SessionEvaluationOutcome.INCORRECT
@@ -1157,7 +1170,7 @@ class CampusTask(Task[CampusDatasetItem]):
                                        getattr(reservation, 'seat_id', None) == expected.get("seat_id"))
 
                         item_name_match = ("item_name" not in expected or
-                                         getattr(reservation, 'item_name', None) == expected.get("item_name"))
+                                         ((expected.get("item_name") or "") in (getattr(reservation, 'item_name', "") or "")))
                         
                         location_id_match = ("location_id" not in expected or
                                            getattr(reservation, 'location_id', None) == expected.get("location_id"))
@@ -1225,8 +1238,8 @@ class CampusTask(Task[CampusDatasetItem]):
             # Group criteria by system type based on key prefixes
             grouped_criteria = collections.defaultdict(list)
             
-            # Map legacy keys and new prefixes to a canonical system type
-            SYSTEM_PREFIX_MAP = {
+            # Map ground truth keys (aliases and prefixes) to a canonical system type
+            PREFIX_MAP = {
                 "email_sent": "email",
                 "email": "email",
                 "reservation_made": "reservation",
@@ -1241,17 +1254,18 @@ class CampusTask(Task[CampusDatasetItem]):
                 "walk": "walk_to",
             }
 
-            for key, criteria in ground_truth.items():
-                prefix = key.split('_')[0]
-                
-                system_type = None
-                if key in SYSTEM_PREFIX_MAP: # Handle legacy full keys first
-                    system_type = SYSTEM_PREFIX_MAP[key]
-                elif prefix in SYSTEM_PREFIX_MAP: # Handle prefixes like "email" or "reservation"
-                    system_type = SYSTEM_PREFIX_MAP[prefix]
+            # Sort prefixes by length (desc) to match the most specific prefix first 
+            # (e.g., "reservation_made" before "reservation")
+            sorted_prefixes = sorted(PREFIX_MAP.keys(), key=len, reverse=True)
 
+            for key, criteria in ground_truth.items():
+                system_type = None
+                for prefix in sorted_prefixes:
+                    if key.startswith(prefix):
+                        system_type = PREFIX_MAP[prefix]
+                        break
+                
                 if system_type:
-                    # Criteria for a legacy key could be a single dict or a list of dicts
                     if isinstance(criteria, list):
                         grouped_criteria[system_type].extend(criteria)
                     else:
@@ -1280,36 +1294,26 @@ class CampusTask(Task[CampusDatasetItem]):
                 if not self._evaluate_walk_to_component(grouped_criteria["walk_to"]):
                     all_components_correct = False
 
-            if "course" in grouped_criteria:
-                if not self._evaluate_course_component(session, task_item, grouped_criteria["course"]):
+            if "course_selection" in grouped_criteria:
+                if not self._evaluate_course_component(session, task_item, grouped_criteria["course_selection"]):
                     all_components_correct = False
 
             # Validate execution sequence for multi-system tasks
             sequence_valid = True
-            sequence_message = "No sequence validation performed"
 
-            if all_components_correct and task_item.require_sequence:
-                # Only validate sequence if all components are correct and sequence validation is required
-                sequence_valid, sequence_message = self._validate_execution_sequence(ground_truth)
+            if task_item.require_sequence:
+                sequence_valid, sequence_message = self._validate_execution_sequence(ground_truth, session)
                 if not sequence_valid:
                     print(f"Sequence validation failed: {sequence_message}")
                 else:
                     print(f"Sequence validation passed: {sequence_message}")
-            elif task_item.require_sequence:
-                # If sequence validation is required but components failed, note this
-                sequence_message = "Sequence validation skipped due to component failures"
 
             # Set final outcome based on AND logic (components + sequence)
             if all_components_correct and sequence_valid:
                 session.evaluation_record.outcome = SessionEvaluationOutcome.CORRECT
             else:
                 session.evaluation_record.outcome = SessionEvaluationOutcome.INCORRECT
-                if not sequence_valid:
-                    # Store sequence validation failure information
-                    if session.evaluation_record.detail_dict is None:
-                        session.evaluation_record.detail_dict = {}
-                    session.evaluation_record.detail_dict['sequence_validation_error'] = sequence_message
-
+                
         except Exception as e:
             print(f"Error in multi-system evaluation: {e}")
             session.evaluation_record.outcome = SessionEvaluationOutcome.UNKNOWN
@@ -1364,9 +1368,9 @@ class CampusTask(Task[CampusDatasetItem]):
     def _email_matches_criteria(self, email: Any, criteria: dict) -> bool:
         """Helper to check if a single email object matches given criteria."""
         # Handle SentEmail object (use dot notation) and fallback for dict-like structure
-        email_to = getattr(email, 'to', getattr(email, 'recipient', email.get("to", "")))
-        email_subject = getattr(email, 'subject', email.get("subject", ""))
-        email_body = getattr(email, 'body', email.get("body", ""))
+        email_to = getattr(email, 'to', getattr(email, 'recipient', email.get("to", "") if hasattr(email, 'get') else ""))
+        email_subject = getattr(email, 'subject', email.get("subject", "") if hasattr(email, 'get') else "")
+        email_body = getattr(email, 'body', email.get("body", "") if hasattr(email, 'get') else "")
 
         # Check recipient
         if "recipient" in criteria and email_to != criteria["recipient"]:
@@ -1380,9 +1384,24 @@ class CampusTask(Task[CampusDatasetItem]):
 
         # Check body
         if "body_contains" in criteria:
-            # Unescape all escape sequences from ground truth string before comparison
-            expected_body = criteria["body_contains"].encode('latin1').decode('unicode_escape')
-            if expected_body.lower() not in email_body.lower():
+            # Ground truth body from JSON
+            expected_body = criteria["body_contains"]
+            
+            # IMPROVED: Safe unescape handling - only process if it contains escape sequences
+            if isinstance(expected_body, str):
+                try:
+                    # Only attempt unescape if the string contains backslashes (potential escape sequences)
+                    if '\\' in expected_body:
+                        expected_body = expected_body.encode('latin1').decode('unicode_escape')
+                except (UnicodeDecodeError, UnicodeEncodeError):
+                    # If unescape fails, use the original string
+                    pass
+            
+            # Use the robust normalization for a lenient 'contains' comparison
+            normalized_expected = self._normalize_text_for_comparison(expected_body)
+            normalized_actual = self._normalize_text_for_comparison(email_body)
+
+            if normalized_expected not in normalized_actual:
                 return False
             
         return True
@@ -1421,17 +1440,17 @@ class CampusTask(Task[CampusDatasetItem]):
     def _reservation_matches_criteria(self, reservation: Any, criteria: dict) -> bool:
         """Helper to check if a single reservation object matches given criteria."""
         seat_id_match = ("seat_id" not in criteria or
-                           getattr(reservation, 'seat_id', None) == criteria["seat_id"])
+                           getattr(reservation, 'seat_id', None) == criteria.get("seat_id"))
         item_name_match = ("item_name" not in criteria or
-                           getattr(reservation, 'item_name', None) == criteria["item_name"])
+                           ((criteria.get("item_name") or "") in (getattr(reservation, 'item_name', "") or "")))
         location_id_match = ("location_id" not in criteria or
-                             getattr(reservation, 'location_id', None) == criteria["location_id"])
-        time_match = ("time" not in criteria or
-                      getattr(reservation, 'time_slot', None) == criteria["time"])
+                             getattr(reservation, 'location_id', None) == criteria.get("location_id"))
+        time_slot_match = ("time_slot" not in criteria or
+                           getattr(reservation, 'time_slot', None) == criteria.get("time_slot"))
         date_match = ("date" not in criteria or
-                      getattr(reservation, 'date', None) == criteria["date"])
+                      getattr(reservation, 'date', None) == criteria.get("date"))
 
-        return seat_id_match and item_name_match and location_id_match and time_match and date_match
+        return seat_id_match and item_name_match and location_id_match and time_slot_match and date_match
 
     def _evaluate_calendar_component(self, calendar_criteria_list: List[dict]) -> bool:
         """
@@ -1473,7 +1492,14 @@ class CampusTask(Task[CampusDatasetItem]):
         matches = True
         # Check event title contains specified text
         if "event_title_contains" in criteria:
-            expected_title = criteria["event_title_contains"].encode('latin1').decode('unicode_escape')
+            expected_title = criteria["event_title_contains"]
+            try:
+                # Only attempt unescape if the string contains backslashes (potential escape sequences)
+                if isinstance(expected_title, str) and '\\' in expected_title:
+                    expected_title = expected_title.encode('latin1').decode('unicode_escape')
+            except (UnicodeDecodeError, UnicodeEncodeError):
+                # If unescape fails, use the original string
+                pass
             if expected_title.lower() not in event.event_title.lower():
                 matches = False
         # Check exact time match
@@ -1481,12 +1507,26 @@ class CampusTask(Task[CampusDatasetItem]):
             matches = False
         # Check exact location match
         if "location" in criteria:
-            expected_location = criteria["location"].encode('latin1').decode('unicode_escape')
+            expected_location = criteria["location"]
+            try:
+                # Only attempt unescape if the string contains backslashes (potential escape sequences)
+                if isinstance(expected_location, str) and '\\' in expected_location:
+                    expected_location = expected_location.encode('latin1').decode('unicode_escape')
+            except (UnicodeDecodeError, UnicodeEncodeError):
+                # If unescape fails, use the original string
+                pass
             if event.location != expected_location:
                 matches = False
         # Legacy support
         if "title_contains" in criteria:
-            expected_title_legacy = criteria["title_contains"].encode('latin1').decode('unicode_escape')
+            expected_title_legacy = criteria["title_contains"]
+            try:
+                # Only attempt unescape if the string contains backslashes (potential escape sequences)
+                if isinstance(expected_title_legacy, str) and '\\' in expected_title_legacy:
+                    expected_title_legacy = expected_title_legacy.encode('latin1').decode('unicode_escape')
+            except (UnicodeDecodeError, UnicodeEncodeError):
+                # If unescape fails, use the original string
+                pass
             if expected_title_legacy.lower() not in event.event_title.lower():
                 matches = False
         if "date" in criteria and event.time != criteria["date"]:
@@ -1940,16 +1980,24 @@ class CampusTask(Task[CampusDatasetItem]):
         else:
             return "unknown"
 
-    def _validate_execution_sequence(self, ground_truth: Dict[str, Any]) -> tuple[bool, str]:
+    def _validate_execution_sequence(self, ground_truth: Dict[str, Any], session: Session) -> tuple[bool, str]:
         """
         Validate that actions were executed in the correct sequence based on ground_truth order
-
+        
         Args:
             ground_truth: Ground truth dictionary with expected components
-
+            session: The current session for debug logging
+        
         Returns:
             Tuple of (is_valid, error_message)
         """
+        # Initialize debug logging within the session record
+        if session.evaluation_record.detail_dict is None:
+            session.evaluation_record.detail_dict = {}
+        if "sequence_validation_debug" not in session.evaluation_record.detail_dict:
+            session.evaluation_record.detail_dict["sequence_validation_debug"] = {}
+        debug_info = session.evaluation_record.detail_dict["sequence_validation_debug"]
+
         # Extract expected sequence from ground_truth keys order
         expected_sequence = []
         system_mapping = {
@@ -1957,42 +2005,61 @@ class CampusTask(Task[CampusDatasetItem]):
             "reservation_made": "reservation", "reservation": "reservation",
             "calendar_event": "calendar", "calendar": "calendar",
             "location_reached": "geography", "location": "geography",
-            "course_selected": "course", "course": "course"
+            "course_selected": "course_selection", "course": "course_selection",
+            "walk_to": "geography", "walk": "geography"
         }
+        
+        # Sort prefixes by length (desc) to match the most specific prefix first
+        sorted_prefixes = sorted(system_mapping.keys(), key=len, reverse=True)
 
         for key in ground_truth.keys():
-            if key in system_mapping:
-                system_type = system_mapping[key]
-                if system_type not in expected_sequence:
-                    expected_sequence.append(system_type)
-            else:
-                prefix = key.split('_')[0]
-                if prefix in system_mapping:
+            system_type = None
+            for prefix in sorted_prefixes:
+                if key.startswith(prefix):
                     system_type = system_mapping[prefix]
-                    if system_type not in expected_sequence:
-                        expected_sequence.append(system_type)
+                    break
+            
+            if system_type:
+                expected_sequence.append(system_type)
+
+        debug_info["expected_sequence"] = expected_sequence
 
         if len(expected_sequence) <= 1:
             # No sequence validation needed for single or no components
             return True, "No sequence validation required"
 
-        # Extract actual execution sequence from action history
-        actual_sequence = []
+        # Define the set of key, state-changing actions to be tracked for sequence validation.
+        # Other actions (e.g., searching, checking) are ignored as per user request.
+        key_actions = {"send_email", "make_booking", "add_event"}
+
+        # Filter the actual sequence to only include these key actions
+        actual_key_actions_sequence = []
         for action in self.action_history:
-            if action["success"] and action["system_type"] in expected_sequence:
-                # Only add if not already in sequence (avoid duplicates)
-                if action["system_type"] not in actual_sequence:
-                    actual_sequence.append(action["system_type"])
+            if action["success"]:
+                action_content = action.get("action_content", "")
+                # Extract action name, e.g., 'send_email' from 'email.send_email(...)'
+                match = re.search(r'\.(\w+)\(', action_content)
+                if match:
+                    action_name = match.group(1)
+                    if action_name in key_actions:
+                        actual_key_actions_sequence.append(action["system_type"])
 
-        # Validate sequence order
-        for i, expected_system in enumerate(expected_sequence):
-            if i >= len(actual_sequence):
-                return False, f"Missing execution of {expected_system} system"
+        debug_info["raw_action_history_systems"] = [a.get("system_type") for a in self.action_history]
+        debug_info["actual_sequence_extracted"] = actual_key_actions_sequence
 
-            if actual_sequence[i] != expected_system:
-                return False, f"Wrong execution order: expected {expected_system} at position {i+1}, but got {actual_sequence[i]}"
+        # Validate sequence order: Must be an exact match
+        if actual_key_actions_sequence != expected_sequence:
+            expected_str = ' → '.join(expected_sequence)
+            actual_str = ' → '.join(actual_key_actions_sequence)
+            error_message = f"Wrong execution sequence. Expected: [{expected_str}], but got: [{actual_str}]"
+            
+            # Provide more detailed error for debugging
+            if len(actual_key_actions_sequence) != len(expected_sequence):
+                error_message += f" (Length mismatch: expected {len(expected_sequence)}, got {len(actual_key_actions_sequence)})"
+            
+            return False, error_message
 
-        return True, f"Execution sequence is correct: {' → '.join(actual_sequence)}"
+        return True, f"Execution sequence is correct: {' → '.join(actual_key_actions_sequence)}"
     
     def _enhance_evaluation_record(self, session: Session, task_item: CampusDatasetItem) -> None:
         """
@@ -2121,68 +2188,88 @@ class CampusTask(Task[CampusDatasetItem]):
             elif task_item.task_type == "multi_system":
                 # For multi-system tasks, collect outputs from multiple systems
                 multi_output = {}
-                
-                # Check each system component
                 ground_truth = task_item.ground_truth
+                
                 if isinstance(ground_truth, dict):
-                    if "email_sent" in ground_truth:
-                        latest_email = self.campus_environment.email_system.get_latest_email_for_evaluation()
-                        if latest_email:
-                            multi_output["email"] = {
-                                "recipient": getattr(latest_email, 'to', getattr(latest_email, 'recipient', None)),
-                                "subject": getattr(latest_email, 'subject', None),
-                                "body": getattr(latest_email, 'body', None)
-                            }
-                    
-                    if "reservation_made" in ground_truth:
-                        reservations = self.campus_environment.reservation_system.get_reservations_for_evaluation(task_item.task_id)
-                        multi_output["reservations"] = [
-                            {
-                                "seat_id": getattr(r, 'seat_id', r.get('seat_id') if isinstance(r, dict) else None),
-                                "item_name": getattr(r, 'item_name', r.get('item_name') if isinstance(r, dict) else None),
-                                "location_id": getattr(r, 'location_id', r.get('location_id') if isinstance(r, dict) else None),
-                                "time_slot": getattr(r, 'time_slot', r.get('time_slot') if isinstance(r, dict) else None),
-                                "date": getattr(r, 'date', r.get('date') if isinstance(r, dict) else None)
-                            }
-                            for r in reservations
+                    # Step 1: Handle email components by filtering based on ground_truth recipients
+                    email_criteria_keys = [k for k in ground_truth.keys() if k.startswith("email")]
+                    if email_criteria_keys:
+                        expected_recipients = set()
+                        for key in email_criteria_keys:
+                            criterion = ground_truth.get(key, {})
+                            if isinstance(criterion, dict) and "recipient" in criterion:
+                                expected_recipients.add(criterion["recipient"])
+                        
+                        all_sent_emails = self.campus_environment.email_system.get_all_emails_for_evaluation()
+                        
+                        relevant_emails = [
+                            email for email in all_sent_emails
+                            if getattr(email, 'recipient', getattr(email, 'to', None)) in expected_recipients
                         ]
-                    
-                    if "calendar_event" in ground_truth:
-                        calendar_id = ground_truth["calendar_event"].get("calendar_id", "self")
-                        events = self.campus_environment.calendar_system.get_calendar_events_for_evaluation(calendar_id)
-                        multi_output["calendar_events"] = [
-                            {
-                                "event_title": getattr(event, 'event_title', None),
-                                "location": getattr(event, 'location', None),
-                                "time": getattr(event, 'time', None),
-                                "description": getattr(event, 'description', None)
-                            }
-                            for event in events
-                        ]
-                    
-                    if "location_reached" in ground_truth or "walk_to" in ground_truth:
-                        geo_state = self.campus_environment.geography_system.get_state_for_evaluation()
-                        if geo_state:
-                            geo_output = {
-                                "current_location_id": getattr(geo_state, 'current_location_id', geo_state.get('current_location_id') if isinstance(geo_state, dict) else None)
-                            }
-                            # For walk_to, also include walk_history for more detailed debugging
-                            if "walk_to" in ground_truth:
-                                geo_output["walk_history"] = getattr(geo_state, 'walk_history', geo_state.get('walk_history') if isinstance(geo_state, dict) else None)
-                            multi_output["geography"] = geo_output
-                    
-                    if "course_selected" in ground_truth:
-                        draft_schedule = self.campus_environment.course_selection_system.get_draft_schedule_for_evaluation()
-                        if draft_schedule and hasattr(draft_schedule, 'selected_sections'):
-                            multi_output["course_selection"] = {
-                                "selected_sections": [
-                                    {
-                                        "course_code": getattr(section, 'course_code', None),
-                                        "assigned_pass": getattr(section, 'assigned_pass', None)
-                                    }
-                                    for section in draft_schedule.selected_sections
-                                ]
-                            }
+                        
+                        if relevant_emails:
+                            multi_output["emails"] = [
+                                {
+                                    "recipient": getattr(email, 'to', getattr(email, 'recipient', None)),
+                                    "subject": getattr(email, 'subject', None),
+                                    "body": getattr(email, 'body', None)
+                                }
+                                for email in relevant_emails
+                            ]
+
+                    # Step 2: Handle other system components
+                    for key in ground_truth.keys():
+                        if key.startswith("email"):
+                            continue  # Already handled
+
+                        elif key.startswith("reservation"):
+                            reservations = self.campus_environment.reservation_system.get_reservations_for_evaluation(task_item.task_id)
+                            multi_output["reservations"] = [
+                                {
+                                    "seat_id": getattr(r, 'seat_id', r.get('seat_id') if isinstance(r, dict) else None),
+                                    "item_name": getattr(r, 'item_name', r.get('item_name') if isinstance(r, dict) else None),
+                                    "location_id": getattr(r, 'location_id', r.get('location_id') if isinstance(r, dict) else None),
+                                    "time_slot": getattr(r, 'time_slot', r.get('time_slot') if isinstance(r, dict) else None),
+                                    "date": getattr(r, 'date', r.get('date') if isinstance(r, dict) else None)
+                                }
+                                for r in reservations
+                            ]
+                        
+                        elif key.startswith("calendar"):
+                            calendar_id = ground_truth[key].get("calendar_id", "self")
+                            events = self.campus_environment.calendar_system.get_calendar_events_for_evaluation(calendar_id)
+                            multi_output["calendar_events"] = [
+                                {
+                                    "event_title": getattr(event, 'event_title', None),
+                                    "location": getattr(event, 'location', None),
+                                    "time": getattr(event, 'time', None),
+                                    "description": getattr(event, 'description', None)
+                                }
+                                for event in events
+                            ]
+                        
+                        elif key.startswith("location") or key.startswith("walk"):
+                            geo_state = self.campus_environment.geography_system.get_state_for_evaluation()
+                            if geo_state:
+                                geo_output = {
+                                    "current_location_id": getattr(geo_state, 'current_location_id', geo_state.get('current_location_id') if isinstance(geo_state, dict) else None)
+                                }
+                                if key.startswith("walk"):
+                                    geo_output["walk_history"] = getattr(geo_state, 'walk_history', geo_state.get('walk_history') if isinstance(geo_state, dict) else None)
+                                multi_output["geography"] = geo_output
+                        
+                        elif key.startswith("course"):
+                            draft_schedule = self.campus_environment.course_selection_system.get_draft_schedule_for_evaluation()
+                            if draft_schedule and hasattr(draft_schedule, 'selected_sections'):
+                                multi_output["course_selection"] = {
+                                    "selected_sections": [
+                                        {
+                                            "course_code": getattr(section, 'course_code', None),
+                                            "assigned_pass": getattr(section, 'assigned_pass', None)
+                                        }
+                                        for section in draft_schedule.selected_sections
+                                    ]
+                                }
                 
                 return multi_output if multi_output else None
                 
@@ -2297,3 +2384,15 @@ class CampusTask(Task[CampusDatasetItem]):
                 print("✅ Successfully loaded CampusTask state from checkpoint.")
             except Exception as e:
                 print(f"Warning: Failed to load CampusTask state checkpoint: {e}. Starting with fresh task state.")
+
+    def _normalize_text_for_comparison(self, text: str) -> str:
+        """
+        Normalizes a string for a very lenient comparison by removing all whitespace and lowercasing.
+        - Replaces all sequences of whitespace (newlines, tabs, spaces) with an empty string.
+        - Converts to lower case.
+        """
+        import re
+        if not text:
+            return ""
+        # Remove all whitespace and convert to lower case
+        return re.sub(r'\s+', '', text).lower()
