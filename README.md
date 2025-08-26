@@ -7,11 +7,14 @@ Building a Self-Evolving Agent via Experience-Driven Lifelong Learning: A Framew
 ### What is ELL 🧐?
 
 We introduce Experience-driven Lifelong Learning (ELL), a framework for building self-evolving agents capable of continuous growth through real-world interaction. Unlike traditional continual learning approaches, ELL emphasizes learning from experience: agents acquire knowledge not from static, labeled datasets, but through dynamic interaction with their environment. 
-The framework is built on three core principles: 
-- (1) **Experience Exploration**: Agents learn through continuous, self-motivated interaction with dynamic environments, navigating complex, long-horizon tasks and generating rich experiential trajectories. This ongoing engagement enables iterative self-correction and behavioral refinement, fostering learning that emerges from doing.
-- (2) **Long-term Memory**: Agents preserve and structure historical knowledge, including personal experiences, domain expertise, and commonsense reasoning, into a persistent, accessible memory system. This supports long-range recall, contextual reasoning, and resistance to catastrophic forgetting, forming a stable foundation for lifelong growth.
-- (3) **Skill Learning**: Agents abstract recurring patterns from experience into reusable skills, such as decision rules or functional modules. These skills are actively managed, refined, and validated through application in new tasks, enabling effective transfer, adaptation, and autonomous improvement.
-Together, these enable agents to accumulate knowledge, adapt over time, and evolve autonomously.
+The framework is built on four core principles: 
+- (1) **Experience Exploration**: The agent must be capable of sequentially decomposing and executing complex, long-horizon tasks that involve **continuous interaction over minutes to hours with unquantifiable rewards**. Through sustained and **self-motivated** engagement, it generates rich experiential data, enabling iterative learning and self-correction. This persistent interaction allows the agent to progressively refine strategies and adapt behavior based on dynamic feedback, mimicking the trial-and-error process of real-world learning.
+
+- (2) **Long-term Memory**: Experiential data is systematically processed and consolidated into persistent and structured memory, including raw observations, key events, learned facts, temporal contexts, and self-reflective insights. Memory is not passive storage but an active resource: it supports retrieval over long time spans, enables context-aware reasoning, and forms the foundation for future decision-making.
+
+- (3) **Skill Learning**: The agent **abstracts recurring patterns from experience into reusable skills**, such as decision rules, functional modules, or problem-solving heuristics. These skills are explicitly constructed through reflection and validated through application in new and evolving tasks. The agent actively manages its skill repertoire, adding, refining, combining, or deprecating skills based on performance, creating a dynamic, self-improving system.
+
+- (4) **Knowledge Internalization**: Beyond storing memories and reusing skills, the agent undergoes a process of **knowledge internalization**, transforming explicit and discrete knowledge into implicit and intuitive understanding. Over time, frequently used rules, patterns, and strategies are distilled into the agent's core reasoning process, reducing reliance on external retrieval or step-by-step reflection. This shift from deliberate application to automatic execution mirrors the cognitive transition from novice to expert, where learned behavior becomes "second nature".
 
 ![StuLife](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig1.png?raw=true)
 
