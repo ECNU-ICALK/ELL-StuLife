@@ -728,12 +728,9 @@ class CampusTask(Task[CampusDatasetItem]):
         # Agent has acknowledged time context, determine next state
         if current_item.require_place:
             self.context_state = ContextInjectionState.LOCATION_VALIDATION_NEEDED
-            # Only repeat time without location hint
-            time_message = self._get_full_time_string(current_item.require_time)
-            full_time_message = f"Current time: {time_message}"
-            session.chat_history.inject(
-                {"role": Role.USER, "content": full_time_message}
-            )
+            # Agent has responded to the time prompt. Instead of re-injecting the time,
+            # we now process the agent's response to see if it's trying to navigate.
+            self._handle_location_validation(session, current_item)
         else:
             self.context_state = ContextInjectionState.TASK_CONTENT_READY
             # Inject task content
