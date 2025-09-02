@@ -133,6 +133,9 @@ class CampusEnvironment:
         Args:
             changes: List of world state change objects
         """
+        # Reset semester to default before applying changes for a new task
+        self.course_selection_system.set_current_semester("Semester 1")
+
         for change in changes:
             change_type = change.get("change_type")
             system = change.get("system")
@@ -142,6 +145,9 @@ class CampusEnvironment:
                 course_code = change.get("course_code")
                 new_value = change.get("new_value")
                 self.course_selection_system.update_course_popularity(course_code, new_value)
+                # If a specific course code for semester 2 is updated, set the semester
+                if course_code == "COMS00311213":
+                    self.course_selection_system.set_current_semester("Semester 2")
 
             elif change_type == "seats_left_update":
                 course_code = change.get("course_code")

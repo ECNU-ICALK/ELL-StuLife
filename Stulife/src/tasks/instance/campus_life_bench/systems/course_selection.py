@@ -56,6 +56,9 @@ class CourseSelectionSystem:
         
         # Agent's draft schedule
         self._draft_schedule = DraftSchedule(selected_sections=[])
+
+        # Current semester for filtering
+        self._current_semester: str = "Semester 1"
     
     def _load_courses_data(self):
         """Load courses data from JSON file"""
@@ -91,7 +94,8 @@ class CourseSelectionSystem:
                         "enrollment_capacity": 50,
                         "popularity_index": 75,
                         "seats_left": 25,
-                        "type": "Compulsory"
+                        "type": "Compulsory",
+                        "semester": "Semester 1"
                     }
                 ]
             }
@@ -127,6 +131,11 @@ class CourseSelectionSystem:
         if course_code in self._course_states:
             self._course_states[course_code].seats_left = new_value
     
+    def set_current_semester(self, semester: str) -> None:
+        """Set the current semester for course browsing"""
+        if semester in ["Semester 1", "Semester 2"]:
+            self._current_semester = semester
+    
     def browse_courses(self, filters: Optional[Dict[str, Any]] = None) -> ToolResult:
         """
         Browse available courses with optional filters
@@ -141,6 +150,15 @@ class CourseSelectionSystem:
             courses = []
             
             for course in self._courses_data.get("courses", []):
+                # Filter by semester
+                course_semester = course.get("semester")
+                if self._current_semester == "Semester 2":
+                    if course_semester != "Semester 2":
+                        continue
+                else:  # Semester 1
+                    if course_semester == "Semester 2":
+                        continue
+
                 course_code = course["course_code"]
                 
                 # Apply filters if provided
@@ -187,6 +205,8 @@ class CourseSelectionSystem:
                 message += f"\n- {course['course_code']}: {course['course_name']}"
                 message += f" (Credits: {course.get('credits', 'N/A')}, Popularity: {course.get('popularity_index', 'N/A')})"
                 message += f"\n  Instructor: {instructor.get('name', 'N/A')}"
+                prerequisites = ", ".join(course.get('prerequisites', [])) or "None"
+                message += f"\n  Prerequisites: {prerequisites}"
                 message += f"\n  Schedule: Weeks {weeks.get('start', '?')}-{weeks.get('end', '?')}, {days}, {schedule_info.get('time', 'N/A')}"
                 message += f"\n  Location: {location.get('building_name', 'N/A')}, {location.get('room', location.get('room_number', 'N/A'))}"
 
