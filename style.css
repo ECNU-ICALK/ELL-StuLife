@@ -737,20 +737,24 @@ code {
 .email-contact {
     margin-top: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .email-link {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px 24px;
+    gap: 8px;
+    padding: 10px 20px;
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 20px;
     font-weight: 600;
     transition: all 0.3s ease;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    max-width: fit-content;
 }
 
 .email-link:hover {
@@ -1240,6 +1244,12 @@ code {
         flex-direction: column;
         text-align: center;
     }
+
+    .email-link {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        gap: 6px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1284,6 +1294,12 @@ code {
     .guidelines-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+
+    .email-link {
+        font-size: 0.85rem;
+        padding: 8px 14px;
+        gap: 5px;
     }
 }
 
