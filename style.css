@@ -69,6 +69,8 @@ code {
     width: auto;
     margin-right: 10px;
     object-fit: contain;
+    display: block;
+    max-width: none;
 }
 
 .nav-menu {
