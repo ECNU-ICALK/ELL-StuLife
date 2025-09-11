@@ -65,10 +65,10 @@
                             </div>
                         </div>
                         <div class="hero-buttons">
-                            <a href="https://arxiv.org/abs/2508.19005" target="_blank" class="btn btn-primary">
+                            <a href="https://arxiv.org/abs/2508.19005" target="_blank" class="btn btn-outline">
                                 <i class="fas fa-file-alt"></i> Read Paper
                             </a>
-                            <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="btn btn-secondary">
+                            <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="btn btn-outline">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                             <a href="#leaderboard" class="btn btn-outline" data-section="leaderboard">
@@ -90,10 +90,10 @@
                             <h3>What is ELL 🧐?</h3>
                         </div>
                         <div class="about-content">
-                            <div class="framework-showcase">
-                                <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
-                            </div>
                             <div class="abstract-content">
+                                <div class="framework-showcase">
+                                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
+                                </div>
                                 <p>As AI advances toward general intelligence, the focus is shifting from systems optimized for static tasks to creating open-ended agents that learn continuously and adapt autonomously. This vision prioritizes long-term memory, skill transfer, and strategic planning, driven by an intrinsic curiosity to learn in dynamic, unpredictable environments.</p>
                                 <p>In this paper, we introduce <strong>Experience-driven Lifelong Learning (ELL)</strong>, a framework for building self-evolving agents capable of continuous growth through real-world interaction. 
                                 The framework is built on four core principles: 
@@ -303,10 +303,10 @@
                         <h3>SOTA LLMs Performance (Default Setting)</h3>
                         <div class="legend">
                             <span class="legend-item">
-                                <i class="fas fa-code-branch"></i> Open-source Model
+                                <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon"> Open-source Model
                             </span>
                             <span class="legend-item">
-                                <i class="fas fa-brain"></i> Thinking Model
+                                <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon"> Thinking Model
                             </span>
                         </div>
                     </div>
@@ -336,35 +336,49 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><span class="model-name">Llama-3.1-8B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
-                                    <td>5.81</td>
-                                    <td>3.30</td>
-                                    <td>0.90</td>
-                                    <td>0.90</td>
-                                    <td>61.34</td>
-                                    <td>0.00</td>
-                                    <td>35.91</td>
-                                    <td>10.63</td>
-                                    <td>28.46</td>
-                                    <td>2.13</td>
-                                    <td>44.62</td>
+                                    <td><i class="fas fa-trophy trophy-gold"></i><span class="model-name">GPT-5</span> <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon" title="Thinking Model"></td>
+                                    <td><strong>17.90</strong></td>
+                                    <td>6.50</td>
+                                    <td><strong>4.68</strong></td>
+                                    <td><strong>7.78</strong></td>
+                                    <td>12.70</td>
+                                    <td>14.16</td>
+                                    <td>14.31</td>
+                                    <td>16.88</td>
+                                    <td>6.24</td>
+                                    <td>12.35</td>
+                                    <td>12.69</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="model-name">Qwen3-8B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
-                                    <td>13.31</td>
-                                    <td>4.33</td>
-                                    <td>0.54</td>
-                                    <td>0.90</td>
-                                    <td>10.12</td>
-                                    <td>8.31</td>
-                                    <td>10.25</td>
-                                    <td>14.38</td>
+                                    <td><i class="fas fa-trophy trophy-silver"></i><span class="model-name">Grok4</span> <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon" title="Thinking Model"></td>
+                                    <td>17.38</td>
+                                    <td><strong>10.65</strong></td>
+                                    <td>4.50</td>
+                                    <td>4.79</td>
                                     <td>6.31</td>
-                                    <td>6.71</td>
-                                    <td>9.71</td>
+                                    <td><strong>21.80</strong></td>
+                                    <td>11.25</td>
+                                    <td><strong>18.75</strong></td>
+                                    <td>5.69</td>
+                                    <td><strong>15.23</strong></td>
+                                    <td>8.68</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="model-name">Qwen3-30B-A3B</span> <i class="fas fa-code-branch" title="Open-source Model"></i> <i class="fas fa-brain" title="Thinking Model"></i></td>
+                                    <td><i class="fas fa-trophy trophy-bronze"></i><span class="model-name">Gemini-2.5-Pro</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"> <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon" title="Thinking Model"></td>
+                                    <td>16.43</td>
+                                    <td>7.04</td>
+                                    <td>3.24</td>
+                                    <td>5.39</td>
+                                    <td>14.94</td>
+                                    <td>18.88</td>
+                                    <td>12.78</td>
+                                    <td>15.63</td>
+                                    <td>9.51</td>
+                                    <td>13.53</td>
+                                    <td>13.19</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-30B-A3B</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"> <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon" title="Thinking Model"></td>
                                     <td>16.30</td>
                                     <td>5.05</td>
                                     <td>0.72</td>
@@ -378,77 +392,21 @@
                                     <td>10.09</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="model-name">Qwen3-32B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
-                                    <td>7.36</td>
-                                    <td>3.97</td>
-                                    <td>0.54</td>
-                                    <td>0.60</td>
-                                    <td>7.80</td>
-                                    <td>2.25</td>
-                                    <td>13.79</td>
-                                    <td>13.13</td>
-                                    <td>4.88</td>
-                                    <td>3.51</td>
-                                    <td>10.41</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="model-name">Qwen3-32B</span> <i class="fas fa-code-branch" title="Open-source Model"></i> <i class="fas fa-brain" title="Thinking Model"></i></td>
-                                    <td>12.67</td>
+                                    <td><span class="model-name">Qwen3-235B-A22B</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"></td>
+                                    <td>16.03</td>
                                     <td>5.42</td>
-                                    <td>1.26</td>
                                     <td>1.80</td>
-                                    <td>8.31</td>
-                                    <td>7.64</td>
-                                    <td>10.74</td>
-                                    <td>17.50</td>
-                                    <td>4.94</td>
-                                    <td>7.24</td>
-                                    <td>9.10</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="model-name">QwQ-32B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
-                                    <td>13.21</td>
-                                    <td>5.78</td>
-                                    <td>3.42</td>
-                                    <td>4.79</td>
-                                    <td>7.72</td>
-                                    <td>6.97</td>
-                                    <td>13.25</td>
+                                    <td>2.10</td>
+                                    <td>18.71</td>
+                                    <td>10.34</td>
+                                    <td>17.17</td>
                                     <td>16.88</td>
-                                    <td>4.52</td>
-                                    <td>7.88</td>
-                                    <td>10.06</td>
+                                    <td>10.75</td>
+                                    <td>8.52</td>
+                                    <td>16.95</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="model-name">DeepSeek-V3</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
-                                    <td>11.22</td>
-                                    <td>6.14</td>
-                                    <td>2.88</td>
-                                    <td>3.59</td>
-                                    <td>5.84</td>
-                                    <td>6.74</td>
-                                    <td>11.87</td>
-                                    <td>16.25</td>
-                                    <td>4.26</td>
-                                    <td>7.24</td>
-                                    <td>8.64</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="model-name">DeepSeek-R1</span> <i class="fas fa-code-branch" title="Open-source Model"></i> <i class="fas fa-brain" title="Thinking Model"></i></td>
-                                    <td>14.25</td>
-                                    <td>8.30</td>
-                                    <td>3.96</td>
-                                    <td>5.09</td>
-                                    <td>8.04</td>
-                                    <td>13.26</td>
-                                    <td>13.02</td>
-                                    <td>18.13</td>
-                                    <td>4.56</td>
-                                    <td>11.18</td>
-                                    <td>10.08</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="model-name">DeepSeek-V3.1</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
+                                    <td><span class="model-name">DeepSeek-V3.1</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"></td>
                                     <td>14.26</td>
                                     <td>4.51</td>
                                     <td>0.54</td>
@@ -462,60 +420,102 @@
                                     <td>12.43</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="model-name">Qwen3-235B-A22B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
-                                    <td>16.03</td>
-                                    <td>5.42</td>
-                                    <td>1.80</td>
-                                    <td>2.10</td>
-                                    <td>18.71</td>
-                                    <td>10.34</td>
-                                    <td>17.17</td>
-                                    <td>16.88</td>
-                                    <td>10.75</td>
-                                    <td>8.52</td>
-                                    <td>16.95</td>
+                                    <td><span class="model-name">DeepSeek-R1</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"> <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon" title="Thinking Model"></td>
+                                    <td>14.25</td>
+                                    <td>8.30</td>
+                                    <td>3.96</td>
+                                    <td>5.09</td>
+                                    <td>8.04</td>
+                                    <td>13.26</td>
+                                    <td>13.02</td>
+                                    <td>18.13</td>
+                                    <td>4.56</td>
+                                    <td>11.18</td>
+                                    <td>10.08</td>
                                 </tr>
-                                <tr class="highlight-row">
-                                    <td><span class="model-name">Gemini-2.5-Pro</span> <i class="fas fa-code-branch" title="Open-source Model"></i> <i class="fas fa-brain" title="Thinking Model"></i></td>
-                                    <td>16.43</td>
-                                    <td>7.04</td>
-                                    <td>3.24</td>
-                                    <td>5.39</td>
-                                    <td>14.94</td>
-                                    <td>18.88</td>
-                                    <td>12.78</td>
-                                    <td>15.63</td>
-                                    <td>9.51</td>
-                                    <td>13.53</td>
-                                    <td>13.19</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><span class="model-name">GPT-5</span> <i class="fas fa-brain" title="Thinking Model"></i></td>
-                                    <td>17.90</td>
-                                    <td>6.50</td>
-                                    <td>4.68</td>
-                                    <td>7.78</td>
-                                    <td>12.70</td>
-                                    <td>14.16</td>
-                                    <td>14.31</td>
-                                    <td>16.88</td>
-                                    <td>6.24</td>
-                                    <td>12.35</td>
-                                    <td>12.69</td>
-                                </tr>
-                                <tr class="best-row">
-                                    <td><span class="model-name">Grok4</span> <i class="fas fa-brain" title="Thinking Model"></i></td>
-                                    <td>17.38</td>
-                                    <td><strong>10.65</strong></td>
-                                    <td>4.50</td>
-                                    <td>4.79</td>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-8B</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"></td>
+                                    <td>13.31</td>
+                                    <td>4.33</td>
+                                    <td>0.54</td>
+                                    <td>0.90</td>
+                                    <td>10.12</td>
+                                    <td>8.31</td>
+                                    <td>10.25</td>
+                                    <td>14.38</td>
                                     <td>6.31</td>
-                                    <td><strong>21.80</strong></td>
-                                    <td>11.25</td>
-                                    <td>18.75</td>
-                                    <td>5.69</td>
-                                    <td><strong>15.23</strong></td>
-                                    <td>8.68</td>
+                                    <td>6.71</td>
+                                    <td>9.71</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">QwQ-32B</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"></td>
+                                    <td>13.21</td>
+                                    <td>5.78</td>
+                                    <td>3.42</td>
+                                    <td>4.79</td>
+                                    <td>7.72</td>
+                                    <td>6.97</td>
+                                    <td>13.25</td>
+                                    <td>16.88</td>
+                                    <td>4.52</td>
+                                    <td>7.88</td>
+                                    <td>10.06</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-32B</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"> <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon" title="Thinking Model"></td>
+                                    <td>12.67</td>
+                                    <td>5.42</td>
+                                    <td>1.26</td>
+                                    <td>1.80</td>
+                                    <td>8.31</td>
+                                    <td>7.64</td>
+                                    <td>10.74</td>
+                                    <td>17.50</td>
+                                    <td>4.94</td>
+                                    <td>7.24</td>
+                                    <td>9.10</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">DeepSeek-V3</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"></td>
+                                    <td>11.22</td>
+                                    <td>6.14</td>
+                                    <td>2.88</td>
+                                    <td>3.59</td>
+                                    <td><strong>5.84</strong></td>
+                                    <td>6.74</td>
+                                    <td>11.87</td>
+                                    <td>16.25</td>
+                                    <td><strong>4.26</strong></td>
+                                    <td>7.24</td>
+                                    <td><strong>8.64</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-32B</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"></td>
+                                    <td>7.36</td>
+                                    <td>3.97</td>
+                                    <td>0.54</td>
+                                    <td>0.60</td>
+                                    <td>7.80</td>
+                                    <td>2.25</td>
+                                    <td>13.79</td>
+                                    <td>13.13</td>
+                                    <td>4.88</td>
+                                    <td>3.51</td>
+                                    <td>10.41</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Llama-3.1-8B</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"></td>
+                                    <td>5.81</td>
+                                    <td>3.30</td>
+                                    <td>0.90</td>
+                                    <td>0.90</td>
+                                    <td>61.34</td>
+                                    <td>0.00</td>
+                                    <td>35.91</td>
+                                    <td>10.63</td>
+                                    <td>28.46</td>
+                                    <td>2.13</td>
+                                    <td>44.62</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -556,7 +556,7 @@
                                     <td colspan="12"><strong>Vanilla</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>Qwen3-235B-A22B <i class="fas fa-code-branch"></i></td>
+                                    <td>Qwen3-235B-A22B <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon"></td>
                                     <td>16.03</td>
                                     <td>5.42</td>
                                     <td>1.80</td>
@@ -573,16 +573,16 @@
                                     <td colspan="12"><strong>Proactive</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>Qwen3-235B-A22B <i class="fas fa-code-branch"></i></td>
+                                    <td>Qwen3-235B-A22B <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon"></td>
                                     <td>16.90</td>
                                     <td>5.96</td>
-                                    <td>3.06</td>
-                                    <td>5.09</td>
-                                    <td>16.70</td>
+                                    <td><strong>3.06</strong></td>
+                                    <td><strong>5.09</strong></td>
+                                    <td><strong>16.70</strong></td>
                                     <td>10.34</td>
                                     <td>16.38</td>
                                     <td>16.88</td>
-                                    <td>7.73</td>
+                                    <td><strong>7.73</strong></td>
                                     <td>9.58</td>
                                     <td>15.42</td>
                                 </tr>
@@ -590,13 +590,13 @@
                                     <td colspan="12"><strong>Skill</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>Qwen3-235B-A22B <i class="fas fa-code-branch"></i></td>
+                                    <td>Qwen3-235B-A22B <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon"></td>
                                     <td>17.28</td>
-                                    <td>6.86</td>
+                                    <td><strong>6.86</strong></td>
                                     <td>0.90</td>
                                     <td>1.50</td>
                                     <td>16.89</td>
-                                    <td>15.28</td>
+                                    <td><strong>15.28</strong></td>
                                     <td>16.51</td>
                                     <td>17.50</td>
                                     <td>9.28</td>
@@ -607,7 +607,7 @@
                                     <td colspan="12"><strong>Memory</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>Qwen3-235B-A22B + Vanilla RAG <i class="fas fa-code-branch"></i></td>
+                                    <td>Qwen3-235B-A22B + Vanilla RAG <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon"></td>
                                     <td>10.98</td>
                                     <td>4.69</td>
                                     <td>0.18</td>
@@ -621,7 +621,7 @@
                                     <td>15.07</td>
                                 </tr>
                                 <tr>
-                                    <td>Qwen3-235B-A22B + Graph RAG <i class="fas fa-code-branch"></i></td>
+                                    <td>Qwen3-235B-A22B + Graph RAG <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon"></td>
                                     <td>15.34</td>
                                     <td>4.87</td>
                                     <td>0.72</td>
@@ -634,19 +634,19 @@
                                     <td>7.88</td>
                                     <td>16.13</td>
                                 </tr>
-                                <tr class="best-context-row">
-                                    <td>Qwen3-235B-A22B + MemGPT <i class="fas fa-code-branch"></i></td>
+                                <tr>
+                                    <td>Qwen3-235B-A22B + MemGPT <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon"></td>
                                     <td><strong>19.99</strong></td>
-                                    <td>6.86</td>
+                                    <td><strong>6.86</strong></td>
                                     <td>1.44</td>
                                     <td>2.40</td>
                                     <td>17.28</td>
                                     <td>13.03</td>
-                                    <td>13.59</td>
+                                    <td><strong>13.59</strong></td>
                                     <td><strong>23.75</strong></td>
                                     <td>9.02</td>
-                                    <td>11.08</td>
-                                    <td>14.42</td>
+                                    <td><strong>11.08</strong></td>
+                                    <td><strong>14.42</strong></td>
                                 </tr>
                             </tbody>
                         </table>

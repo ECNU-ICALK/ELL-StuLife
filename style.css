@@ -687,20 +687,31 @@ code {
 }
 
 .results-table th {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    padding: 15px 10px;
+    background: #f7f8fa; /* Use a solid light grey color */
+    color: #333; /* Dark text for contrast */
+    padding: 18px 12px;
     text-align: center;
+    font-weight: 700;
+    border: 1px solid #e0e0e0; /* Match cell borders */
+    font-size: 0.9rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Style for the second row of the header for better distinction */
+.results-table thead tr:nth-child(2) th {
+    background: #f7f8fa; /* Consistent background */
     font-weight: 600;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    padding: 12px 10px;
 }
 
 .results-table td {
     padding: 12px 10px;
     text-align: center;
     border: 1px solid #e0e0e0;
-    color: #555;
+    color: #000; /* Use black color for text */
 }
 
 .results-table tbody tr:nth-child(even) {
@@ -708,28 +719,35 @@ code {
 }
 
 .results-table tbody tr:hover {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    background: #f1f3f5; /* Simple hover effect */
 }
 
 .model-name {
     font-weight: 600;
-    color: #333;
+    color: #000; /* Use black color for model name */
 }
 
-.highlight-row {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)) !important;
+.model-icon {
+    height: 1.2em; /* Adjust size relative to font size */
+    vertical-align: middle; /* Align with the text */
+    margin-left: 5px; /* Add some space */
 }
 
-.best-row {
-    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(139, 195, 74, 0.1)) !important;
+.trophy-gold {
+    color: #FFD700; /* gold */
+    margin-right: 10px;
 }
-
-.best-context-row {
-    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.1)) !important;
+.trophy-silver {
+    color: #C0C0C0; /* silver */
+    margin-right: 10px;
+}
+.trophy-bronze {
+    color: #CD7F32; /* bronze */
+    margin-right: 10px;
 }
 
 .category-row {
-    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    background: #6c7ae0 !important; /* A solid color that fits the theme */
     color: white !important;
     font-weight: 700;
 }
@@ -740,7 +758,7 @@ code {
 }
 
 .results-table strong {
-    color: #667eea;
+    color: #00008B; /* Dark blue color for best results */
     font-weight: 700;
 }
 
