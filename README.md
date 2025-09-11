@@ -10,8 +10,7 @@
 <a href="https://huggingface.co/datasets/ecnu-icalk/ELL-StuLife">Huggingface</a>
 </p>
 
-
-### What is ELL 🧐?
+# Experience-driven Lifelong Learning (ELL)
 
 We introduce Experience-driven Lifelong Learning (ELL), a framework for building self-evolving agents capable of continuous growth through real-world interaction. Unlike traditional continual learning approaches, ELL emphasizes learning from experience: agents acquire knowledge not from static, labeled datasets, but through dynamic interaction with their environment. 
 The framework is built on four core principles: 
@@ -25,7 +24,18 @@ The framework is built on four core principles:
 
 ![StuLife](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig1.png?raw=true)
 
-### What is StuLife 🧐?
+
+# StuLife
+
+## Introduction
+
+StuLife is a new benchmark built upon the `LifelongAgentBench` (LAB) framework, designed to evaluate the long-term memory, planning, adaptation, and autonomous decision-making capabilities of AI agents. It immerses agents in a persistent, stateful, and dynamic virtual university campus environment where their actions have lasting consequences.
+
+Unlike traditional benchmarks that focus on stateless, single-turn tasks, StuLife creates a "virtual world" that evolves over a simulated academic year. An agent's success is not just about solving the immediate problem, but about managing their time, remembering commitments, and navigating a complex web of academic and social responsibilities that persist across hundreds of tasks.
+
+![StuLife2](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig2.png?raw=true)
+
+## What is StuLife 🧐?
 
 We also introduce `StuLife`, a benchmark dataset for ELL that simulates a student’s holistic college journey—from enrollment to academic and personal development—across three core phases and ten detailed sub-scenarios.
 
@@ -40,17 +50,6 @@ It features a dynamic, interactive environment in which tasks are highly interco
 
 Beyond evaluating state-of-the-art LLMs on the `StuLife` benchmark, we also **explore the role of context engineering in advancing AGI**. Our results suggest that optimizing how we guide models may be as crucial as improving the models themselves, positioning context engineering as a key enabler of progress toward AGI.
 
-
-
-# StuLife
-
-## Introduction
-
-StuLife is a new benchmark built upon the `LifelongAgentBench` (LAB) framework, designed to evaluate the long-term memory, planning, adaptation, and autonomous decision-making capabilities of AI agents. It immerses agents in a persistent, stateful, and dynamic virtual university campus environment where their actions have lasting consequences.
-
-Unlike traditional benchmarks that focus on stateless, single-turn tasks, StuLife creates a "virtual world" that evolves over a simulated academic year. An agent's success is not just about solving the immediate problem, but about managing their time, remembering commitments, and navigating a complex web of academic and social responsibilities that persist across hundreds of tasks.
-
-![StuLife2](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig2.png?raw=true)
 
 ## Core Concepts
 
