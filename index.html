@@ -91,38 +91,38 @@
                             <h3>What is ELL 🧐?</h3>
                         </div>
                         <div class="about-content">
-                            <p>We introduce <strong>Experience-driven Lifelong Learning (ELL)</strong>, a framework for building self-evolving agents capable of continuous growth through real-world interaction. Unlike traditional continual learning approaches, ELL emphasizes learning from experience: agents acquire knowledge not from static, labeled datasets, but through dynamic interaction with their environment.</p>
+                            <p>We introduce Experience-driven Lifelong Learning (ELL), a framework for building self-evolving agents capable of continuous growth through real-world interaction. Unlike traditional continual learning approaches, ELL emphasizes learning from experience: agents acquire knowledge not from static, labeled datasets, but through dynamic interaction with their environment.</p>
                             
                             <div class="principles">
                                 <h4>The framework is built on four core principles:</h4>
-                                <div class="principle-grid">
+                                <div class="principle-grid-2x2">
                                     <div class="principle-card">
                                         <div class="principle-icon">
                                             <i class="fas fa-compass"></i>
                                         </div>
                                         <h5>Experience Exploration</h5>
-                                        <p>The agent must be capable of sequentially decomposing and executing complex, long-horizon tasks that involve <strong>continuous interaction over minutes to hours with unquantifiable rewards</strong>.</p>
+                                        <p>The agent must be capable of sequentially decomposing and executing complex, long-horizon tasks that involve <strong>continuous interaction over minutes to hours with unquantifiable rewards</strong>. Through sustained and <strong>self-motivated</strong> engagement, it generates rich experiential data, enabling iterative learning and self-correction. This persistent interaction allows the agent to progressively refine strategies and adapt behavior based on dynamic feedback, mimicking the trial-and-error process of real-world learning.</p>
                                     </div>
                                     <div class="principle-card">
                                         <div class="principle-icon">
                                             <i class="fas fa-memory"></i>
                                         </div>
                                         <h5>Long-term Memory</h5>
-                                        <p>Experiential data is systematically processed and consolidated into persistent and structured memory, including raw observations, key events, learned facts, temporal contexts, and self-reflective insights.</p>
+                                        <p>Experiential data is systematically processed and consolidated into persistent and structured memory, including raw observations, key events, learned facts, temporal contexts, and self-reflective insights. Memory is not passive storage but an active resource: it supports retrieval over long time spans, enables context-aware reasoning, and forms the foundation for future decision-making.</p>
                                     </div>
                                     <div class="principle-card">
                                         <div class="principle-icon">
                                             <i class="fas fa-tools"></i>
                                         </div>
                                         <h5>Skill Learning</h5>
-                                        <p>The agent <strong>abstracts recurring patterns from experience into reusable skills</strong>, such as decision rules, functional modules, or problem-solving heuristics.</p>
+                                        <p>The agent <strong>abstracts recurring patterns from experience into reusable skills</strong>, such as decision rules, functional modules, or problem-solving heuristics. These skills are explicitly constructed through reflection and validated through application in new and evolving tasks. The agent actively manages its skill repertoire, adding, refining, combining, or deprecating skills based on performance, creating a dynamic, self-improving system.</p>
                                     </div>
                                     <div class="principle-card">
                                         <div class="principle-icon">
                                             <i class="fas fa-lightbulb"></i>
                                         </div>
                                         <h5>Knowledge Internalization</h5>
-                                        <p>The agent undergoes a process of <strong>knowledge internalization</strong>, transforming explicit and discrete knowledge into implicit and intuitive understanding.</p>
+                                        <p>Beyond storing memories and reusing skills, the agent undergoes a process of <strong>knowledge internalization</strong>, transforming explicit and discrete knowledge into implicit and intuitive understanding. Over time, frequently used rules, patterns, and strategies are distilled into the agent's core reasoning process, reducing reliance on external retrieval or step-by-step reflection. This shift from deliberate application to automatic execution mirrors the cognitive transition from novice to expert, where learned behavior becomes "second nature".</p>
                                     </div>
                                 </div>
                             </div>
@@ -137,22 +137,28 @@
                         <div class="about-content">
                             <div class="stulife-intro">
                                 <div class="stulife-text">
-                                    <p>We also introduce <strong>StuLife</strong>, a benchmark dataset for ELL that simulates a student's holistic college journey—from enrollment to academic and personal development—across three core phases and ten detailed sub-scenarios.</p>
+                                    <p>We also introduce <code>StuLife</code>, a benchmark dataset for ELL that simulates a student's holistic college journey—from enrollment to academic and personal development—across three core phases and ten detailed sub-scenarios.</p>
                                     
                                     <div class="paradigm-shifts">
-                                        <h4>StuLife is designed around three key paradigm shifts:</h4>
-                                        <div class="shifts-list">
-                                            <div class="shift-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span><strong>From Passive to Proactive</strong></span>
+                                        <h4><code>StuLife</code> is designed around three key paradigm shifts:</h4>
+                                        <div class="shifts-grid-3x1">
+                                            <div class="shift-card">
+                                                <div class="shift-icon">
+                                                    <i class="fas fa-play"></i>
+                                                </div>
+                                                <h5>From Passive to Proactive</h5>
                                             </div>
-                                            <div class="shift-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span><strong>From Context to Memory</strong></span>
+                                            <div class="shift-card">
+                                                <div class="shift-icon">
+                                                    <i class="fas fa-memory"></i>
+                                                </div>
+                                                <h5>From Context to Memory</h5>
                                             </div>
-                                            <div class="shift-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span><strong>From Imitation to Learning</strong></span>
+                                            <div class="shift-card">
+                                                <div class="shift-icon">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                </div>
+                                                <h5>From Imitation to Learning</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -163,22 +169,11 @@
                             </div>
 
                             <div class="stulife-features">
-                                <p>It features a dynamic, interactive environment in which tasks are highly interconnected, and critical state variables—such as GPA, course availability, advisor relationships, and time—evolve based on the agent's decisions.</p>
+                                <p>It features a dynamic, interactive environment in which tasks are highly interconnected, and critical state variables—such as GPA, course availability, advisor relationships, and time—evolve based on the agent's decisions. Agents must: 1) Autonomously acquire practical skills (e.g., course registration, scheduling, navigation, and communication), 2) Distill experiences into reusable knowledge, and 3) Maintain persistent memory to support future decision-making. Crucially, they are expected to exhibit intrinsic motivation by setting goals, anticipating future needs, and initiating actions without external prompting.</p>
                                 
-                                <div class="feature-highlights">
-                                    <div class="feature">
-                                        <i class="fas fa-graduation-cap"></i>
-                                        <span>Autonomously acquire practical skills (course registration, scheduling, navigation, communication)</span>
-                                    </div>
-                                    <div class="feature">
-                                        <i class="fas fa-brain"></i>
-                                        <span>Distill experiences into reusable knowledge</span>
-                                    </div>
-                                    <div class="feature">
-                                        <i class="fas fa-database"></i>
-                                        <span>Maintain persistent memory to support future decision-making</span>
-                                    </div>
-                                </div>
+                                <p><code>StuLife</code> provides a comprehensive platform for evaluating lifelong learning capabilities, including memory retention, skill transfer, and autonomous, goal-directed behavior.</p>
+                                
+                                <p>Beyond evaluating state-of-the-art LLMs on the <code>StuLife</code> benchmark, we also <strong>explore the role of context engineering in advancing AGI</strong>. Our results suggest that optimizing how we guide models may be as crucial as improving the models themselves, positioning context engineering as a key enabler of progress toward AGI.</p>
 
                                 <div class="dataset-info">
                                     <h4>Dataset Overview</h4>

@@ -17,6 +17,16 @@ body {
     min-height: 100vh;
 }
 
+code {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -291,6 +301,13 @@ body {
     margin-top: 40px;
 }
 
+.principle-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
 .principle-card {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
     border-radius: 15px;
@@ -354,6 +371,49 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.shifts-grid-3x1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.shift-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shift-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.shift-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.shift-card h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 0;
+    text-align: center;
 }
 
 .shift-item {
@@ -735,6 +795,18 @@ body {
 }
 
 /* Responsive design */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .principle-grid-2x2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .shifts-grid-3x1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -783,6 +855,15 @@ body {
 
     .principle-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .principle-grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .shifts-grid-3x1 {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .contact-links {
