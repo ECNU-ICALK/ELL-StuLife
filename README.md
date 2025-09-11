@@ -1,7 +1,10 @@
 # ELL-StuLife
-Building a Self-Evolving Agent via Experience-Driven Lifelong Learning: A Framework and Benchmark
 
-![ELL](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true)
+<div align="center">
+  <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png" alt="Logo" width="400">
+  <h1 align="center">Building a Self-Evolving Agent via Experience-Driven Lifelong Learning: A Framework and Benchmark</h1>
+</div>
+
 
 <p align="center">
 <a href="https://ecnu-icalk.github.io/ELL-StuLife/">Website</a> •
