@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELL-StuLife: Building Self-Evolving Agents via Experience-Driven Lifelong Learning</title>
+    <title>StuLife: Building Self-Evolving Agents via Experience-Driven Lifelong Learning</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,8 +13,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-brain"></i>
-                <span>ELL-StuLife</span>
+                <img src="imgs/Logo.png" alt="StuLife Logo" class="nav-logo-img">
+                <span>StuLife</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -52,31 +52,30 @@
         <section id="home" class="section active">
             <!-- Hero Section -->
             <div class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-title">Building Self-Evolving Agents via Experience-Driven Lifelong Learning</h1>
-                    <p class="hero-subtitle">A Framework and Benchmark</p>
-                    <div class="hero-authors">
-                        <p>Yuxuan Cai¹, Yipeng Hao¹, Jie Zhou¹'², Hang Yan³, Zhikai Lei¹, Rui Zheng⁴, Zhenhua Han,</p>
-                        <p><strong>Yutao Yang¹, Junsong Li¹, Qianjun Pan¹, Tianyu Huai¹, Qin Chen¹, Xin Li², Kai Chen², Bo Zhang², Xipeng Qiu⁴, Liang He¹</strong></p>
-                        <div class="affiliations">
-                            <p>¹ School of Computer Science and Technology, East China Normal University, Shanghai</p>
-                            <p>² Shanghai AI Laboratory, ³ The Chinese University of HongKong, ⁴ Fudan University</p>
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Building Self-Evolving Agents via Experience-Driven Lifelong Learning</h1>
+                        <p class="hero-subtitle">A Framework and Benchmark</p>
+                        <div class="hero-authors">
+                            <p>Yuxuan Cai¹, Yipeng Hao¹, Jie Zhou¹'², Hang Yan³, Zhikai Lei¹, Rui Zheng⁴, Zhenhua Han,</p>
+                            <p><strong>Yutao Yang¹, Junsong Li¹, Qianjun Pan¹, Tianyu Huai¹, Qin Chen¹, Xin Li², Kai Chen², Bo Zhang², Xipeng Qiu⁴, Liang He¹</strong></p>
+                            <div class="affiliations">
+                                <p>¹ School of Computer Science and Technology, East China Normal University, Shanghai</p>
+                                <p>² Shanghai AI Laboratory, ³ The Chinese University of HongKong, ⁴ Fudan University</p>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="https://arxiv.org/abs/2508.19005" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i> Read Paper
+                            </a>
+                            <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#leaderboard" class="btn btn-outline" data-section="leaderboard">
+                                <i class="fas fa-trophy"></i> View Results
+                            </a>
                         </div>
                     </div>
-                    <div class="hero-buttons">
-                        <a href="https://arxiv.org/abs/2508.19005" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-file-alt"></i> Read Paper
-                        </a>
-                        <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                        <a href="#leaderboard" class="btn btn-outline" data-section="leaderboard">
-                            <i class="fas fa-trophy"></i> View Results
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
                 </div>
             </div>
 
@@ -91,6 +90,9 @@
                             <h3>What is ELL 🧐?</h3>
                         </div>
                         <div class="about-content">
+                            <div class="framework-showcase">
+                                <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
+                            </div>
                             <p>We introduce Experience-driven Lifelong Learning (ELL), a framework for building self-evolving agents capable of continuous growth through real-world interaction. Unlike traditional continual learning approaches, ELL emphasizes learning from experience: agents acquire knowledge not from static, labeled datasets, but through dynamic interaction with their environment.</p>
                             
                             <div class="principles">
@@ -615,7 +617,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <p>&copy; 2025 ELL-StuLife. All rights reserved.</p>
+                    <p>&copy; 2025 StuLife. All rights reserved.</p>
                 </div>
                 <div class="footer-right">
                     <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="footer-link">
