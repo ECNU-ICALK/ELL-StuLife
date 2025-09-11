@@ -830,6 +830,11 @@ code {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
+
+    .dataset-info ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -901,6 +906,11 @@ code {
         grid-template-columns: 1fr;
     }
 
+    .dataset-info ul {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
     .contact-links {
         flex-direction: column;
         align-items: center;
@@ -925,14 +935,6 @@ code {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
-    }
-
-    .about-card {
-        padding: 40px 30px;
-    }
-
-    .dataset-info ul {
-        grid-template-columns: 1fr;
     }
 }
 
@@ -1018,7 +1020,7 @@ code {
     padding-left: 0;
     margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     text-align: left;
 }
@@ -1052,7 +1054,7 @@ code {
 
 .core-concepts-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
