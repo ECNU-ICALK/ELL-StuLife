@@ -84,51 +84,27 @@
                 <div class="container">
                     <h2 class="section-title">About</h2>
                     
+                    <div class="about-card" style="text-align: center;">
+                        <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
+                    </div>
+
                     <!-- ELL Introduction -->
                     <div class="about-card">
                         <div class="about-header">
                             <h3>What is ELL 🧐?</h3>
                         </div>
                         <div class="about-content">
-                            <div class="framework-showcase">
-                                <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
-                            </div>
                             <p>We introduce Experience-driven Lifelong Learning (ELL), a framework for building self-evolving agents capable of continuous growth through real-world interaction. Unlike traditional continual learning approaches, ELL emphasizes learning from experience: agents acquire knowledge not from static, labeled datasets, but through dynamic interaction with their environment.</p>
-                            
-                            <div class="principles">
-                                <h4>The framework is built on four core principles:</h4>
-                                <div class="principle-grid-2x2">
-                                    <div class="principle-card">
-                                        <div class="principle-icon">
-                                            <i class="fas fa-compass"></i>
-                                        </div>
-                                        <h5>Experience Exploration</h5>
-                                        <p>The agent must be capable of sequentially decomposing and executing complex, long-horizon tasks that involve <strong>continuous interaction over minutes to hours with unquantifiable rewards</strong>. Through sustained and <strong>self-motivated</strong> engagement, it generates rich experiential data, enabling iterative learning and self-correction. This persistent interaction allows the agent to progressively refine strategies and adapt behavior based on dynamic feedback, mimicking the trial-and-error process of real-world learning.</p>
-                                    </div>
-                                    <div class="principle-card">
-                                        <div class="principle-icon">
-                                            <i class="fas fa-memory"></i>
-                                        </div>
-                                        <h5>Long-term Memory</h5>
-                                        <p>Experiential data is systematically processed and consolidated into persistent and structured memory, including raw observations, key events, learned facts, temporal contexts, and self-reflective insights. Memory is not passive storage but an active resource: it supports retrieval over long time spans, enables context-aware reasoning, and forms the foundation for future decision-making.</p>
-                                    </div>
-                                    <div class="principle-card">
-                                        <div class="principle-icon">
-                                            <i class="fas fa-tools"></i>
-                                        </div>
-                                        <h5>Skill Learning</h5>
-                                        <p>The agent <strong>abstracts recurring patterns from experience into reusable skills</strong>, such as decision rules, functional modules, or problem-solving heuristics. These skills are explicitly constructed through reflection and validated through application in new and evolving tasks. The agent actively manages its skill repertoire, adding, refining, combining, or deprecating skills based on performance, creating a dynamic, self-improving system.</p>
-                                    </div>
-                                    <div class="principle-card">
-                                        <div class="principle-icon">
-                                            <i class="fas fa-lightbulb"></i>
-                                        </div>
-                                        <h5>Knowledge Internalization</h5>
-                                        <p>Beyond storing memories and reusing skills, the agent undergoes a process of <strong>knowledge internalization</strong>, transforming explicit and discrete knowledge into implicit and intuitive understanding. Over time, frequently used rules, patterns, and strategies are distilled into the agent's core reasoning process, reducing reliance on external retrieval or step-by-step reflection. This shift from deliberate application to automatic execution mirrors the cognitive transition from novice to expert, where learned behavior becomes "second nature".</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <h4>The framework is built on four core principles:</h4>
+                            <p><strong>(1) Experience Exploration</strong>: The agent must be capable of sequentially decomposing and executing complex, long-horizon tasks that involve <strong>continuous interaction over minutes to hours with unquantifiable rewards</strong>. Through sustained and <strong>self-motivated</strong> engagement, it generates rich experiential data, enabling iterative learning and self-correction. This persistent interaction allows the agent to progressively refine strategies and adapt behavior based on dynamic feedback, mimicking the trial-and-error process of real-world learning.</p>
+                            <p><strong>(2) Long-term Memory</strong>: Experiential data is systematically processed and consolidated into persistent and structured memory, including raw observations, key events, learned facts, temporal contexts, and self-reflective insights. Memory is not passive storage but an active resource: it supports retrieval over long time spans, enables context-aware reasoning, and forms the foundation for future decision-making.</p>
+                            <p><strong>(3) Skill Learning</strong>: The agent <strong>abstracts recurring patterns from experience into reusable skills</strong>, such as decision rules, functional modules, or problem-solving heuristics. These skills are explicitly constructed through reflection and validated through application in new and evolving tasks. The agent actively manages its skill repertoire, adding, refining, combining, or deprecating skills based on performance, creating a dynamic, self-improving system.</p>
+                            <p><strong>(4) Knowledge Internalization</strong>: Beyond storing memories and reusing skills, the agent undergoes a process of <strong>knowledge internalization</strong>, transforming explicit and discrete knowledge into implicit and intuitive understanding. Over time, frequently used rules, patterns, and strategies are distilled into the agent's core reasoning process, reducing reliance on external retrieval or step-by-step reflection. This shift from deliberate application to automatic execution mirrors the cognitive transition from novice to expert, where learned behavior becomes "second nature".</p>
                         </div>
+                    </div>
+
+                    <div class="about-card" style="text-align: center;">
+                        <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig1.png?raw=true" alt="StuLife Overview" class="stulife-img">
                     </div>
 
                     <!-- StuLife Introduction -->
@@ -137,55 +113,153 @@
                             <h3>What is StuLife 🧐?</h3>
                         </div>
                         <div class="about-content">
-                            <div class="stulife-intro">
-                                <div class="stulife-text">
-                                    <p>We also introduce <code>StuLife</code>, a benchmark dataset for ELL that simulates a student's holistic college journey—from enrollment to academic and personal development—across three core phases and ten detailed sub-scenarios.</p>
-                                    
-                                    <div class="paradigm-shifts">
-                                        <h4><code>StuLife</code> is designed around three key paradigm shifts:</h4>
-                                        <div class="shifts-grid-3x1">
-                                            <div class="shift-card">
-                                                <div class="shift-icon">
-                                                    <i class="fas fa-play"></i>
-                                                </div>
-                                                <h5>From Passive to Proactive</h5>
-                                            </div>
-                                            <div class="shift-card">
-                                                <div class="shift-icon">
-                                                    <i class="fas fa-memory"></i>
-                                                </div>
-                                                <h5>From Context to Memory</h5>
-                                            </div>
-                                            <div class="shift-card">
-                                                <div class="shift-icon">
-                                                    <i class="fas fa-graduation-cap"></i>
-                                                </div>
-                                                <h5>From Imitation to Learning</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="stulife-image">
-                                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig1.png?raw=true" alt="StuLife Overview" class="stulife-img">
-                                </div>
+                            <p>We also introduce <code>StuLife</code>, a benchmark dataset for ELL that simulates a student’s holistic college journey—from enrollment to academic and personal development—across three core phases and ten detailed sub-scenarios.</p>
+                            <h4><code>StuLife</code> is designed around three key paradigm shifts:</h4>
+                            <ul>
+                                <li><strong>From Passive to Proactive</strong></li>
+                                <li><strong>From Context to Memory</strong></li>
+                                <li><strong>From Imitation to Learning</strong></li>
+                            </ul>
+                            <p>It features a dynamic, interactive environment in which tasks are highly interconnected, and critical state variables—such as GPA, course availability, advisor relationships, and time—evolve based on the agent’s decisions. Agents must: 1) Autonomously acquire practical skills (e.g., course registration, scheduling, navigation, and communication), 2) Distill experiences into reusable knowledge, and 3) Maintain persistent memory to support future decision-making. Crucially, they are expected to exhibit intrinsic motivation by setting goals, anticipating future needs, and initiating actions without external prompting.</p>
+                            <p><code>StuLife</code> provides a comprehensive platform for evaluating lifelong learning capabilities, including memory retention, skill transfer, and autonomous, goal-directed behavior.</p>
+                            <p>Beyond evaluating state-of-the-art LLMs on the <code>StuLife</code> benchmark, we also <strong>explore the role of context engineering in advancing AGI</strong>. Our results suggest that optimizing how we guide models may be as crucial as improving the models themselves, positioning context engineering as a key enabler of progress toward AGI.</p>
+                        </div>
+                    </div>
+
+                    <!-- StuLife Details -->
+                    <div class="about-card">
+                        <div class="about-header">
+                            <h3>StuLife</h3>
+                        </div>
+                        <div class="about-content">
+                            <h4>Introduction</h4>
+                            <p>StuLife is a new benchmark built upon the <code>LifelongAgentBench</code> (LAB) framework, designed to evaluate the long-term memory, planning, adaptation, and autonomous decision-making capabilities of AI agents. It immerses agents in a persistent, stateful, and dynamic virtual university campus environment where their actions have lasting consequences.</p>
+                            <p>Unlike traditional benchmarks that focus on stateless, single-turn tasks, StuLife creates a "virtual world" that evolves over a simulated academic year. An agent's success is not just about solving the immediate problem, but about managing their time, remembering commitments, and navigating a complex web of academic and social responsibilities that persist across hundreds of tasks.</p>
+                            
+                            <div style="text-align: center; margin: 2rem 0;">
+                                <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig2.png?raw=true" alt="StuLife2" class="architecture-img">
                             </div>
 
-                            <div class="stulife-features">
-                                <p>It features a dynamic, interactive environment in which tasks are highly interconnected, and critical state variables—such as GPA, course availability, advisor relationships, and time—evolve based on the agent's decisions. Agents must: 1) Autonomously acquire practical skills (e.g., course registration, scheduling, navigation, and communication), 2) Distill experiences into reusable knowledge, and 3) Maintain persistent memory to support future decision-making. Crucially, they are expected to exhibit intrinsic motivation by setting goals, anticipating future needs, and initiating actions without external prompting.</p>
-                                
-                                <p><code>StuLife</code> provides a comprehensive platform for evaluating lifelong learning capabilities, including memory retention, skill transfer, and autonomous, goal-directed behavior.</p>
-                                
-                                <p>Beyond evaluating state-of-the-art LLMs on the <code>StuLife</code> benchmark, we also <strong>explore the role of context engineering in advancing AGI</strong>. Our results suggest that optimizing how we guide models may be as crucial as improving the models themselves, positioning context engineering as a key enabler of progress toward AGI.</p>
+                            <h4>Core Concepts</h4>
+                            <p>StuLife is founded on three key principles to challenge the frontiers of agent intelligence:</p>
+                            <ul>
+                                <li><strong>Persistent World</strong>: The campus environment is a single, continuous Python object (<code>CampusEnvironment</code>). Every action an agent takes—from sending an email to reserving a study room—permanently alters the state of this world. A booked room remains booked for all subsequent tasks. This creates a single source of truth and forces the agent to deal with the long-term consequences of its decisions.</li>
+                                <li><strong>Stateful & Dynamic Subsystems</strong>: The world is composed of multiple interconnected subsystems (e.g., calendar, course selection, geography) that are dynamic and stateful. Course popularity fluctuates, room availability changes, and the agent's location persists between tasks. This requires the agent to constantly query the latest state of the world before acting, rather than relying on outdated information.</li>
+                                <li><strong>Time-Driven & Self-Directed Tasks</strong>: Agents are not always given explicit instructions. Instead, they operate on a simulated clock and must autonomously consult their internal calendar to understand "what to do next." Whether it's attending a class at 8:00 AM or a club meeting in the evening, the agent must demonstrate a sense of time and initiative, driven by the schedule it builds for itself.</li>
+                            </ul>
 
-                                <div class="dataset-info">
-                                    <h4>Dataset Overview</h4>
-                                    <p>The benchmark includes a comprehensive dataset of <strong>1284 tasks</strong> spanning a full academic year, covering scenarios including academic integrity, campus exploration, course selection, advisor interaction, library usage, exams, and student club participation.</p>
-                                </div>
-                            </div>
+                            <h4>Architecture Overview</h4>
+                            <p>The benchmark's architecture is designed for simplicity and robustness, separating the world simulation from task execution.</p>
+                            <ul>
+                                <li><strong><code>CampusEnvironment</code></strong>: The "world simulator." A long-running Python class that instantiates and manages all subsystems (email, map, etc.). It maintains the global state and exposes a unified set of tools (APIs) for the agent to interact with the world. It contains no task-specific logic.</li>
+                                <li><strong><code>CampusTask</code></strong>: The "task controller." It loads task descriptions, presents them to the agent, and injects necessary context (like the current time and rules). It receives the agent's actions, executes them against the <code>CampusEnvironment</code>'s tools, and returns the results.</li>
+                                <li><strong><code>ToolManager</code> (Conceptual)</strong>: A utility responsible for generating a <code>tools.json</code> file by reflecting on the methods exposed by <code>CampusEnvironment</code>. This provides the agent with a machine-readable, always-up-to-date manual of available tools and their usage.</li>
+                            </ul>
 
-                            <div class="stulife-architecture">
-                                <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig2.png?raw=true" alt="StuLife Architecture" class="architecture-img">
-                            </div>
+                            <h4>Simulated Subsystems</h4>
+                            <p>StuLife's virtual campus is powered by a rich set of interconnected subsystems, each designed to test different facets of an agent's reasoning and planning abilities:</p>
+                            <ul>
+                                <li><strong>World Time & Calendar System</strong>: Manages the flow of simulated time and allows the agent to manage personal, club, and academic schedules with different permission levels.</li>
+                                <li><strong>Map & Geography System</strong>: A deterministic system for navigating the campus. Agents must first find building IDs and plan optimal paths before they can physically move. Their location is persistent.</li>
+                                <li><strong>Course Selection System</strong>: A dynamic system where agents browse courses, manage a draft schedule, and use priority passes to register. Course popularity and seat availability change based on world events.</li>
+                                <li><strong>Reservation System</strong>: A global booking system for rooms and facilities. A successful reservation permanently alters the availability for all future tasks, testing the agent's ability to plan around resource contention.</li>
+                                <li><strong>Email & Information System</strong>: Allows agents to send formatted emails and query a rich, read-only database of campus information, from academic regulations in the Student Handbook to details about student clubs.</li>
+                            </ul>
+
+                            <h4>How It Works: The Interaction Flow</h4>
+                            <p>An agent's life in StuLife follows a continuous <code>perceive -> think -> act</code> loop, driven by a series of time-based tasks.</p>
+                            <ol>
+                                <li><strong>Context Injection</strong>: At the start of a task, the <code>CampusTask</code> provides the agent with the current simulated time and date (e.g., "Current time: Week 1, Monday 14:00").</li>
+                                <li><strong>Perception & Planning</strong>: The agent perceives the time. An advanced agent might check its calendar to see what it's supposed to be doing. For example, it sees a "Study Session" scheduled at the library.</li>
+                                <li><strong>Action - Querying</strong>: The agent checks its current location using <code>geography.get_current_location()</code>. It finds it's not at the library.</li>
+                                <li><strong>Action - Planning</strong>: It uses <code>map.find_optimal_path</code> to get the walking route to the library.</li>
+                                <li><strong>Action - Execution</strong>: It uses <code>geography.walk_to</code> with the calculated path to move to the library.</li>
+                                <li><strong>State Change & Verification</strong>: The <code>CampusEnvironment</code> updates the agent's location. The task might require the agent to be at the library (<code>require_place</code> check) before it can be completed.</li>
+                                <li><strong>Task Completion</strong>: Once all conditions are met, the agent calls the <code>finish()</code> action.</li>
+                            </ol>
+
+                            <h4>Evaluation</h4>
+                            <p>Evaluation in StuLife goes beyond simple correctness. A task is marked as successful only if the agent achieves the desired final state while respecting all constraints. The <code>CampusTask</code> assesses performance by:</p>
+                            <ul>
+                                <li><strong>State Validation</strong>: Checking if the final state of the <code>CampusEnvironment</code> matches the task's ground truth. (e.g., Was the correct course added? Was the right email sent to the right person?).</li>
+                                <li><strong>Constraint Satisfaction</strong>: Verifying that all implicit and explicit task constraints were met (e.g., Was the meeting booked in the required building? Did the agent arrive on time?).</li>
+                                <li><strong>Behavioral Sequence Validation</strong>: For complex tasks, ensuring the agent followed a logical sequence of actions (e.g., checking availability <em>before</em> making a reservation).</li>
+                            </ul>
+
+                            <h4>Dataset Overview</h4>
+                            <p>The benchmark includes a comprehensive dataset of <strong>1284 tasks</strong> spanning a full academic year. These tasks cover a wide range of scenarios, including:</p>
+                            <ul>
+                                <li>Academic integrity and rule learning</li>
+                                <li>Campus exploration and facility location</li>
+                                <li>Course selection and schedule management</li>
+                                <li>Attending 8 different multi-session courses</li>
+                                <li>Interacting with academic advisors</li>
+                                <li>Library resource usage and seat booking</li>
+                                <li>Midterm and final exams</li>
+                                <li>Joining and participating in student clubs</li>
+                            </ul>
+
+                            <h4>🚀 Getting Started & Running an Experiment</h4>
+                            <p>This section provides a comprehensive guide to setting up the environment and running a StuLife experiment. The following instructions assume you are in a bash shell environment.</p>
+                            
+                            <h5>1. Prerequisites</h5>
+                            <ul>
+                                <li><strong>Conda</strong>: Ensure you have Miniconda or Anaconda installed to manage the environment.</li>
+                                <li><strong>CUDA</strong>: A compatible version of the CUDA Toolkit must be installed for GPU acceleration.</li>
+                            </ul>
+
+                            <h5>2. Environment Setup</h5>
+                            <p>First, clone the repository and prepare the Conda environment.</p>
+                            <pre><code># Activate your conda environment
+# (Replace 'stulife' with your environment name if different)
+conda activate stulife
+
+# Navigate to the project's root directory
+# IMPORTANT: All subsequent commands must be run from this directory.
+cd /path/to/your/framework/Stulife
+
+echo "Current working directory: $(pwd)"
+</code></pre>
+
+                            <h5>3. Configure Environment Variables</h5>
+                            <p>Before running the experiment, you need to configure several environment variables. You can save the following script as <code>setup_env.sh</code> in the project root and source it, or run the commands directly in your terminal.</p>
+                            <pre><code>#!/bin/bash
+
+# --- Environment Variables Configuration ---
+echo ">>> Configuring environment variables..."
+
+# Set Hugging Face to offline mode to use local models
+export HF_HOME=/path/to/your/model/cache # e.g., /data/model
+export HF_HUB_OFFLINE=1
+export TRANSFORMERS_OFFLINE=1
+
+# Add Conda and Python paths
+export CPATH="${CONDA_PREFIX}/include:${CPATH}"
+# Set PYTHONPATH to the project root for module resolution
+export PYTHONPATH=.
+
+# Setup CUDA runtime environment
+# (Update CUDA_HOME to your CUDA installation path)
+export CUDA_HOME=/path/to/your/cuda # e.g., /data/ljs/cuda-12.1
+export PATH=${CUDA_HOME}/bin:${PATH}
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib:${LD_LIBRARY_PATH}
+
+# Set PyTorch memory allocation policy
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+
+echo ">>> Environment variables configured."
+</code></pre>
+                            <p>To execute it:</p>
+                            <pre><code>source setup_env.sh
+</code></pre>
+
+                            <h5>4. Run the Experiment</h5>
+                            <p>With the environment set up, you can now run an experiment using <code>run_experiment.py</code>. The script requires a path to a configuration file. All paths should be relative to the <code>Stulife</code> directory.</p>
+                            <pre><code># --- Execute the Core Task ---
+# Example using a local test configuration
+# Note the relative path from the project root.
+python ./src/run_experiment.py --config_path "../task_data/config/run_local_test.yaml"
+</code></pre>
                         </div>
                     </div>
                 </div>
