@@ -146,7 +146,7 @@ function setupAnimations() {
     }, observerOptions);
     
     // Observe elements that need animation
-    const animateElements = document.querySelectorAll('.about-card, .table-card, .citation-card, .principle-card');
+    const animateElements = document.querySelectorAll('.about-card, .table-card, .citation-card, .principle-card, .method-card, .process-card');
     animateElements.forEach(el => {
         observer.observe(el);
     });
@@ -154,7 +154,7 @@ function setupAnimations() {
 
 // Trigger section animations
 function triggerSectionAnimations(section) {
-    const animatedElements = section.querySelectorAll('.about-card, .table-card, .citation-card');
+    const animatedElements = section.querySelectorAll('.about-card, .table-card, .citation-card, .method-card, .process-card');
     animatedElements.forEach((element, index) => {
         setTimeout(() => {
             element.style.animation = `fadeInUp 0.6s ease-out ${index * 0.1}s both`;

@@ -37,6 +37,11 @@
                         <i class="fas fa-trophy"></i> Leaderboard
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="#submit" class="nav-link" data-section="submit">
+                        <i class="fas fa-upload"></i> Submit
+                    </a>
+                </li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -73,6 +78,9 @@
                             </a>
                             <a href="#leaderboard" class="btn btn-outline" data-section="leaderboard">
                                 <i class="fas fa-trophy"></i> View Leaderboard
+                            </a>
+                            <a href="#submit" class="btn btn-outline" data-section="submit">
+                                <i class="fas fa-upload"></i> Submit Results
                             </a>
                         </div>
                     </div>
@@ -660,6 +668,135 @@
 
                 <div class="leaderboard-note">
                     <p><strong>Note:</strong> All results are presented as percentages. StuGPA represents Student GPA, LTRR represents Long-Term Task Completion Rate, PIS represents Proactive Interaction Score. Success represents success rate, AvgTurn represents average completion turns.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Section -->
+        <section id="submit" class="section">
+            <div class="container">
+                <h2 class="section-title">Submit Your Results</h2>
+                <p class="submit-description">
+                    We welcome submissions from researchers and practitioners working on the StuLife benchmark. Your contributions help advance the field of Experience-driven Lifelong Learning!
+                </p>
+
+                <!-- Submission Methods -->
+                <div class="submission-methods">
+                    <h3>How to Submit</h3>
+                    <p>There are two ways to submit your results to the StuLife leaderboard:</p>
+
+                    <!-- Method 1: Email Submission -->
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Method 1: Email Submission</h4>
+                        </div>
+                        <div class="method-content">
+                            <p>Send your results directly to our team via email:</p>
+                            <div class="submission-steps">
+                                <div class="step">
+                                    <span class="step-number">1</span>
+                                    <p>Run your model on the StuLife benchmark and generate the <code>runs.json</code> file</p>
+                                </div>
+                                <div class="step">
+                                    <span class="step-number">2</span>
+                                    <p>Prepare any additional information about your method (model description, hyperparameters, etc.)</p>
+                                </div>
+                                <div class="step">
+                                    <span class="step-number">3</span>
+                                    <p>Send both files to:</p>
+                                    <div class="email-contact">
+                                        <a href="mailto:caiyuxuanuestc@outlook.com" class="email-link">
+                                            <i class="fas fa-envelope"></i> caiyuxuanuestc@outlook.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Method 2: Pull Request -->
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h4>Method 2: GitHub Pull Request</h4>
+                        </div>
+                        <div class="method-content">
+                            <p>Contribute directly to our repository:</p>
+                            <div class="submission-steps">
+                                <div class="step">
+                                    <span class="step-number">1</span>
+                                    <p>Fork our <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="inline-link">ELL-StuLife repository</a></p>
+                                </div>
+                                <div class="step">
+                                    <span class="step-number">2</span>
+                                    <p>Run your model and output results to the <code>./result</code> folder</p>
+                                </div>
+                                <div class="step">
+                                    <span class="step-number">3</span>
+                                    <p>Create a pull request with your submission</p>
+                                </div>
+                            </div>
+                            <div class="github-action">
+                                <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i> Go to Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Process -->
+                <div class="review-process">
+                    <h3>Review Process</h3>
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <i class="fas fa-calendar-week"></i>
+                        </div>
+                        <div class="process-content">
+                            <h4>Weekly Updates</h4>
+                            <p>We conduct manual reviews of all submissions <strong>every Monday</strong> to update the leaderboard with the latest results. Please allow up to one week for your submission to appear on the leaderboard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submission Guidelines -->
+                <div class="submission-guidelines">
+                    <h3>Submission Guidelines</h3>
+                    <div class="guidelines-grid">
+                        <div class="guideline-item">
+                            <i class="fas fa-file-code"></i>
+                            <div>
+                                <h5>Required Files</h5>
+                                <p>Include the <code>runs.json</code> output file from your benchmark run</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <h5>Method Description</h5>
+                                <p>Provide a brief description of your method, including model architecture and key innovations</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <i class="fas fa-cogs"></i>
+                            <div>
+                                <h5>Reproducibility</h5>
+                                <p>Include hyperparameters and implementation details for reproducibility</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h5>Validation</h5>
+                                <p>Ensure your results are generated using the official StuLife evaluation framework</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

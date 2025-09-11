@@ -617,6 +617,267 @@ code {
     color: #764ba2;
 }
 
+/* Submit section styles */
+.submit-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submission-methods {
+    margin-bottom: 60px;
+}
+
+.submission-methods h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submission-methods > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.method-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.method-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.method-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.method-header h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin: 0;
+}
+
+.method-content p {
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.submission-steps {
+    margin: 30px 0;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    border-radius: 15px;
+    border-left: 4px solid #667eea;
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.step p {
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.6;
+}
+
+.email-contact {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.email-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.inline-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.github-action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.review-process {
+    margin-bottom: 60px;
+}
+
+.review-process h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.process-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.process-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.process-content h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.process-content p {
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.submission-guidelines h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.guideline-item {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    transition: all 0.3s ease;
+}
+
+.guideline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.guideline-item i {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.guideline-item h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.guideline-item p {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* Leaderboard styles */
 .leaderboard-description {
     text-align: center;
@@ -936,6 +1197,37 @@ code {
         gap: 20px;
         align-items: flex-start;
     }
+
+    .method-card {
+        padding: 25px 20px;
+    }
+
+    .method-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .step {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .process-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guideline-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -992,7 +1284,9 @@ code {
 
 .about-card,
 .table-card,
-.citation-card {
+.citation-card,
+.method-card,
+.process-card {
     animation: fadeInUp 0.6s ease-out;
 }
 
