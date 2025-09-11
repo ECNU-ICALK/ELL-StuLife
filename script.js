@@ -121,13 +121,7 @@ function setupScrollEffects() {
         
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         
-        // Parallax effect when scrolling
-        const scrolled = window.pageYOffset;
-        const parallaxElements = document.querySelectorAll('.framework-img, .stulife-img, .architecture-img');
-        parallaxElements.forEach(element => {
-            const speed = 0.5;
-            element.style.transform = `translateY(${scrolled * speed}px)`;
-        });
+        // Removed parallax effect to keep images in fixed position
     });
 }
 
