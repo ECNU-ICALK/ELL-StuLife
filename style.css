@@ -762,6 +762,17 @@ code {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+.step-action {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.step-action .email-contact {
+    margin-top: 0;
+}
+
 .inline-link {
     color: #667eea;
     text-decoration: none;
@@ -1235,6 +1246,11 @@ code {
     .step {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
+    }
+
+    .step-action {
+        flex-direction: column;
         gap: 15px;
     }
 
