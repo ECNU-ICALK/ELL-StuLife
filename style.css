@@ -639,7 +639,7 @@ code {
 .submission-methods h3 {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #000;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -687,7 +687,7 @@ code {
 .method-header h4 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #000;
     margin: 0;
 }
 
@@ -787,7 +787,7 @@ code {
 .review-process h3 {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #000;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -818,7 +818,7 @@ code {
 .process-content h4 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #000;
     margin-bottom: 15px;
 }
 
@@ -845,9 +845,15 @@ code {
 
 .guidelines-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     margin-top: 30px;
+}
+
+@media (min-width: 1200px) {
+    .guidelines-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .guideline-item {
@@ -877,7 +883,7 @@ code {
 .guideline-item h5 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #1e3a8a;
+    color: #000;
     margin-bottom: 10px;
 }
 
@@ -1102,14 +1108,17 @@ code {
         gap: 25px;
     }
 
-    .guidelines-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
 
     .dataset-info ul {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+    .guidelines-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
@@ -1233,11 +1242,6 @@ code {
         flex-direction: column;
         text-align: center;
         gap: 20px;
-    }
-
-    .guidelines-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
     }
 
     .guideline-item {
