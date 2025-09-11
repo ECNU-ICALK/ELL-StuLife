@@ -825,6 +825,11 @@ code {
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
+
+    .core-concepts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -920,6 +925,14 @@ code {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
+    }
+
+    .about-card {
+        padding: 40px 30px;
+    }
+
+    .dataset-info ul {
+        grid-template-columns: 1fr;
     }
 }
 
