@@ -125,74 +125,61 @@ code {
 
 /* Hero section styles */
 .hero {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 100px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: calc(100vh - 70px);
+    text-align: center;
+    color: white;
 }
 
 .hero-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
-    text-align: center;
 }
 
 .hero-content {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .hero-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 20px;
-    color: #1e3a8a;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
-    color: #000;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
     font-weight: 400;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    border-radius: 10px;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 .hero-authors {
-    margin-bottom: 40px;
-    color: #000;
-    line-height: 1.8;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
+    max-width: 800px;
+    margin-bottom: 20px;
 }
 
 .hero-authors p {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 1.7;
 }
 
 .affiliations {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 0.9rem;
-    color: #000;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 8px;
+    opacity: 0.8;
+}
+
+.affiliations p {
+    margin: 0;
 }
 
 .hero-buttons {
@@ -221,14 +208,15 @@ code {
 }
 
 .btn-secondary {
-    background: #333;
+    background: rgba(255, 255, 255, 0.2);
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .btn-outline {
     background: transparent;
-    color: #667eea;
-    border: 2px solid #667eea;
+    color: white;
+    border: 2px solid white;
 }
 
 .btn:hover {
