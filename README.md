@@ -1,6 +1,12 @@
 # ELL-StuLife
 Building a Self-Evolving Agent via Experience-Driven Lifelong Learning: A Framework and Benchmark
 
+<p align="center">
+<a href="https://ecnu-icalk.github.io/ELL-StuLife/">Website</a> •
+<a href="https://arxiv.org/pdf/2508.19005">Paper</a> •
+<a href="https://huggingface.co/datasets/ecnu-icalk/ELL-StuLife">Huggingface</a>
+</p>
+
 
 ![ELL](https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true)
 
