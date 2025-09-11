@@ -72,7 +72,7 @@
                                 <i class="fab fa-github"></i> View Code
                             </a>
                             <a href="#leaderboard" class="btn btn-outline" data-section="leaderboard">
-                                <i class="fas fa-trophy"></i> View Results
+                                <i class="fas fa-trophy"></i> View Leaderboard
                             </a>
                         </div>
                     </div>
@@ -83,17 +83,8 @@
             <div class="about-section">
                 <div class="container">
                     <h2 class="section-title">About</h2>
-                    
-                    <!-- ELL Introduction -->
                     <div class="about-card">
-                        <div class="about-header">
-                            <h3>What is ELL 🧐?</h3>
-                        </div>
                         <div class="about-content">
-                            <div class="abstract-content">
-                                <div class="framework-showcase">
-                                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
-                                </div>
                                 <p>As AI advances toward general intelligence, the focus is shifting from systems optimized for static tasks to creating open-ended agents that learn continuously and adapt autonomously. This vision prioritizes long-term memory, skill transfer, and strategic planning, driven by an intrinsic curiosity to learn in dynamic, unpredictable environments.</p>
                                 <p>In this paper, we introduce <strong>Experience-driven Lifelong Learning (ELL)</strong>, a framework for building self-evolving agents capable of continuous growth through real-world interaction. 
                                 The framework is built on four core principles: 
@@ -107,6 +98,20 @@
                                 To this end, <code>StuLife</code> provides a comprehensive evaluation platform featuring our novel metrics (e.g., StuGPA) to specifically assess these critical capabilities.</p>
                                 <p>Our evaluation reveals that even the best model, GPT-5, scores only 17.9/100, revealing a vast gap toward AGI, demonstrating fundamental deficiencies in retaining long-term memory and acting with proactive, self-motivated initiative. Beyond evaluating state-of-the-art LLMs on the <code>StuLife</code>, we also explore the role of context engineering in advancing AGI. 
                                 Our results suggest that optimizing how we guide models may be as crucial as improving the models themselves, positioning context engineering as a key enabler of progress toward AGI.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- ELL Introduction -->
+                    <div class="about-card">
+                        <div class="about-header">
+                            <h3>What is ELL 🧐?</h3>
+                        </div>
+                        <div class="about-content">
+                            <div class="abstract-content">
+                                <div class="framework-showcase">
+                                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
+                                </div>
+                                <p>We introduce Experience-driven Lifelong Learning (ELL), a framework for building self-evolving agents capable of continuous growth through real-world interaction. Unlike traditional continual learning approaches, ELL emphasizes learning from experience: agents acquire knowledge not from static, labeled datasets, but through dynamic interaction with their environment.</p>
                             </div>
                             
                             <div class="principles">
@@ -152,6 +157,9 @@
                         </div>
                         <div class="about-content">
                             <div class="stulife-intro">
+                                <div class="stulife-image">
+                                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig1.png?raw=true" alt="StuLife Overview" class="stulife-img">
+                                </div>
                                 <div class="stulife-text">
                                     <p>We also introduce <code>StuLife</code>, a benchmark dataset for ELL that simulates a student's holistic college journey—from enrollment to academic and personal development—across three core phases and ten detailed sub-scenarios.</p>
                                     
@@ -178,9 +186,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="stulife-image">
-                                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig1.png?raw=true" alt="StuLife Overview" class="stulife-img">
                                 </div>
                             </div>
 
@@ -364,7 +369,7 @@
                                     <td>8.68</td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fas fa-trophy trophy-bronze"></i><span class="model-name">Gemini-2.5-Pro</span> <img src="imgs/hug2.png" alt="Open-source Model" class="model-icon" title="Open-source Model"> <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon" title="Thinking Model"></td>
+                                    <td><i class="fas fa-trophy trophy-bronze"></i><span class="model-name">Gemini-2.5-Pro</span> <img src="imgs/brain2.png" alt="Thinking Model" class="model-icon" title="Thinking Model"></td>
                                     <td>16.43</td>
                                     <td>7.04</td>
                                     <td>3.24</td>

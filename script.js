@@ -24,14 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Setup navigation link event listeners
 function setupNavigationListeners() {
-    navLinks.forEach(link => {
+    document.querySelectorAll('[data-section]').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             
             const targetSection = this.getAttribute('data-section');
             if (targetSection) {
                 showSection(targetSection);
-                updateActiveNavLink(this);
+                
+                const navLinkToActivate = document.querySelector(`.nav-link[data-section="${targetSection}"]`);
+                if (navLinkToActivate) {
+                    updateActiveNavLink(navLinkToActivate);
+                }
                 
                 // Close menu on mobile
                 if (navMenu.classList.contains('active')) {

@@ -354,7 +354,7 @@ code {
 
 .stulife-intro {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
     align-items: center;
     margin-bottom: 40px;
@@ -747,14 +747,12 @@ code {
 }
 
 .category-row {
-    background: #6c7ae0 !important; /* A solid color that fits the theme */
-    color: white !important;
     font-weight: 700;
 }
 
 .category-row td {
-    color: white !important;
-    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #000 !important;
+    border-color: #e0e0e0 !important;
 }
 
 .results-table strong {
@@ -763,7 +761,7 @@ code {
 }
 
 .leaderboard-note {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    background: white;
     border-radius: 15px;
     padding: 25px;
     margin-top: 30px;
