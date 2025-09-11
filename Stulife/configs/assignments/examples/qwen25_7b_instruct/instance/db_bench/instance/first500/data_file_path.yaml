@@ -1,4 +1,0 @@
-task_dict:
-  db_bench:
-    parameters:
-      data_file_path: ./data/v0303/db_bench/processed/v0317_first500/entry_dict.json

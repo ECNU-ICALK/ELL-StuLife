@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELL-StuLife: Building Self-Evolving Agents via Experience-Driven Lifelong Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>ELL-StuLife</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://arxiv.org/abs/2508.19005" target="_blank" class="nav-link">
+                        <i class="fas fa-file-alt"></i> Paper
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="nav-link">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#leaderboard" class="nav-link" data-section="leaderboard">
+                        <i class="fas fa-trophy"></i> Leaderboard
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Building Self-Evolving Agents via Experience-Driven Lifelong Learning</h1>
+                    <p class="hero-subtitle">A Framework and Benchmark</p>
+                    <div class="hero-authors">
+                        <p>Yuxuan Cai¹, Yipeng Hao¹, Jie Zhou¹'², Hang Yan³, Zhikai Lei¹, Rui Zheng⁴, Zhenhua Han,</p>
+                        <p><strong>Yutao Yang¹, Junsong Li¹, Qianjun Pan¹, Tianyu Huai¹, Qin Chen¹, Xin Li², Kai Chen², Bo Zhang², Xipeng Qiu⁴, Liang He¹</strong></p>
+                        <div class="affiliations">
+                            <p>¹ School of Computer Science and Technology, East China Normal University, Shanghai</p>
+                            <p>² Shanghai AI Laboratory, ³ The Chinese University of HongKong, ⁴ Fudan University</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="https://arxiv.org/abs/2508.19005" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-file-alt"></i> Read Paper
+                        </a>
+                        <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#leaderboard" class="btn btn-outline" data-section="leaderboard">
+                            <i class="fas fa-trophy"></i> View Results
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/Framework.png?raw=true" alt="ELL Framework" class="framework-img">
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="about-section">
+                <div class="container">
+                    <h2 class="section-title">About</h2>
+                    
+                    <!-- ELL Introduction -->
+                    <div class="about-card">
+                        <div class="about-header">
+                            <h3>What is ELL 🧐?</h3>
+                        </div>
+                        <div class="about-content">
+                            <p>We introduce <strong>Experience-driven Lifelong Learning (ELL)</strong>, a framework for building self-evolving agents capable of continuous growth through real-world interaction. Unlike traditional continual learning approaches, ELL emphasizes learning from experience: agents acquire knowledge not from static, labeled datasets, but through dynamic interaction with their environment.</p>
+                            
+                            <div class="principles">
+                                <h4>The framework is built on four core principles:</h4>
+                                <div class="principle-grid">
+                                    <div class="principle-card">
+                                        <div class="principle-icon">
+                                            <i class="fas fa-compass"></i>
+                                        </div>
+                                        <h5>Experience Exploration</h5>
+                                        <p>The agent must be capable of sequentially decomposing and executing complex, long-horizon tasks that involve <strong>continuous interaction over minutes to hours with unquantifiable rewards</strong>.</p>
+                                    </div>
+                                    <div class="principle-card">
+                                        <div class="principle-icon">
+                                            <i class="fas fa-memory"></i>
+                                        </div>
+                                        <h5>Long-term Memory</h5>
+                                        <p>Experiential data is systematically processed and consolidated into persistent and structured memory, including raw observations, key events, learned facts, temporal contexts, and self-reflective insights.</p>
+                                    </div>
+                                    <div class="principle-card">
+                                        <div class="principle-icon">
+                                            <i class="fas fa-tools"></i>
+                                        </div>
+                                        <h5>Skill Learning</h5>
+                                        <p>The agent <strong>abstracts recurring patterns from experience into reusable skills</strong>, such as decision rules, functional modules, or problem-solving heuristics.</p>
+                                    </div>
+                                    <div class="principle-card">
+                                        <div class="principle-icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <h5>Knowledge Internalization</h5>
+                                        <p>The agent undergoes a process of <strong>knowledge internalization</strong>, transforming explicit and discrete knowledge into implicit and intuitive understanding.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- StuLife Introduction -->
+                    <div class="about-card">
+                        <div class="about-header">
+                            <h3>What is StuLife 🧐?</h3>
+                        </div>
+                        <div class="about-content">
+                            <div class="stulife-intro">
+                                <div class="stulife-text">
+                                    <p>We also introduce <strong>StuLife</strong>, a benchmark dataset for ELL that simulates a student's holistic college journey—from enrollment to academic and personal development—across three core phases and ten detailed sub-scenarios.</p>
+                                    
+                                    <div class="paradigm-shifts">
+                                        <h4>StuLife is designed around three key paradigm shifts:</h4>
+                                        <div class="shifts-list">
+                                            <div class="shift-item">
+                                                <i class="fas fa-arrow-right"></i>
+                                                <span><strong>From Passive to Proactive</strong></span>
+                                            </div>
+                                            <div class="shift-item">
+                                                <i class="fas fa-arrow-right"></i>
+                                                <span><strong>From Context to Memory</strong></span>
+                                            </div>
+                                            <div class="shift-item">
+                                                <i class="fas fa-arrow-right"></i>
+                                                <span><strong>From Imitation to Learning</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stulife-image">
+                                    <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig1.png?raw=true" alt="StuLife Overview" class="stulife-img">
+                                </div>
+                            </div>
+
+                            <div class="stulife-features">
+                                <p>It features a dynamic, interactive environment in which tasks are highly interconnected, and critical state variables—such as GPA, course availability, advisor relationships, and time—evolve based on the agent's decisions.</p>
+                                
+                                <div class="feature-highlights">
+                                    <div class="feature">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>Autonomously acquire practical skills (course registration, scheduling, navigation, communication)</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-brain"></i>
+                                        <span>Distill experiences into reusable knowledge</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-database"></i>
+                                        <span>Maintain persistent memory to support future decision-making</span>
+                                    </div>
+                                </div>
+
+                                <div class="dataset-info">
+                                    <h4>Dataset Overview</h4>
+                                    <p>The benchmark includes a comprehensive dataset of <strong>1284 tasks</strong> spanning a full academic year, covering scenarios including academic integrity, campus exploration, course selection, advisor interaction, library usage, exams, and student club participation.</p>
+                                </div>
+                            </div>
+
+                            <div class="stulife-architecture">
+                                <img src="https://github.com/ECNU-ICALK/ELL-StuLife/blob/main/imgs/stulife_fig2.png?raw=true" alt="StuLife Architecture" class="architecture-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Citation Section -->
+            <div class="citation-section">
+                <div class="container">
+                    <h2 class="section-title">Citation</h2>
+                    <div class="citation-card">
+                        <div class="citation-header">
+                            <h3>If this work is helpful to you, please cite our paper:</h3>
+                            <button class="copy-btn" onclick="copyCitation()">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <div class="citation-content">
+                            <pre id="citation-text">@article{cai2025building,
+  title={Building Self-Evolving Agents via Experience-Driven Lifelong Learning: A Framework and Benchmark},
+  author={Cai, Yuxuan and Hao, Yipeng and Zhou, Jie and Yan, Hang and Lei, Zhikai and Zhen, Rui and Han, Zhenhua and Yang, Yutao and Li, Junsong and Pan, Qianjun and others},
+  journal={arXiv preprint arXiv:2508.19005},
+  year={2025}
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <div class="container">
+                    <h2 class="section-title">Contact</h2>
+                    <div class="contact-info">
+                        <p>For questions, please contact us through the following channels:</p>
+                        <div class="contact-links">
+                            <a href="mailto:jzhou@cs.ecnu.edu.cn" class="contact-link">
+                                <i class="fas fa-envelope"></i> jzhou@cs.ecnu.edu.cn
+                            </a>
+                            <a href="mailto:qchen@cs.ecnu.edu.cn" class="contact-link">
+                                <i class="fas fa-envelope"></i> qchen@cs.ecnu.edu.cn
+                            </a>
+                            <a href="mailto:lhe@cs.ecnu.edu.cn" class="contact-link">
+                                <i class="fas fa-envelope"></i> lhe@cs.ecnu.edu.cn
+                            </a>
+                        </div>
+                        <p class="github-info">
+                            Or visit our <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> GitHub Repository
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Section -->
+        <section id="leaderboard" class="section">
+            <div class="container">
+                <h2 class="section-title">Leaderboard</h2>
+                <p class="leaderboard-description">
+                    The following are the latest results on the StuLife benchmark. Metrics include StuGPA, Long-Term Task Success Rate (LTRR), Proactive Interaction Score (PIS), and success rates and average turns for each task category.
+                </p>
+
+                <!-- Main Results Table -->
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3>SOTA LLMs Performance (Default Setting)</h3>
+                        <div class="legend">
+                            <span class="legend-item">
+                                <i class="fas fa-code-branch"></i> Open-source Model
+                            </span>
+                            <span class="legend-item">
+                                <i class="fas fa-brain"></i> Thinking Model
+                            </span>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Model</th>
+                                    <th rowspan="2">StuGPA</th>
+                                    <th rowspan="2">LTRR</th>
+                                    <th rowspan="2">PIS</th>
+                                    <th colspan="2">In-Class</th>
+                                    <th colspan="2">Daily Campus</th>
+                                    <th colspan="2">Exam</th>
+                                    <th colspan="2">Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Success</th>
+                                    <th>AvgTurn</th>
+                                    <th>Success</th>
+                                    <th>AvgTurn</th>
+                                    <th>Success</th>
+                                    <th>AvgTurn</th>
+                                    <th>Success</th>
+                                    <th>AvgTurn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="model-name">Llama-3.1-8B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
+                                    <td>5.81</td>
+                                    <td>3.30</td>
+                                    <td>0.90</td>
+                                    <td>0.90</td>
+                                    <td>61.34</td>
+                                    <td>0.00</td>
+                                    <td>35.91</td>
+                                    <td>10.63</td>
+                                    <td>28.46</td>
+                                    <td>2.13</td>
+                                    <td>44.62</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-8B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
+                                    <td>13.31</td>
+                                    <td>4.33</td>
+                                    <td>0.54</td>
+                                    <td>0.90</td>
+                                    <td>10.12</td>
+                                    <td>8.31</td>
+                                    <td>10.25</td>
+                                    <td>14.38</td>
+                                    <td>6.31</td>
+                                    <td>6.71</td>
+                                    <td>9.71</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-30B-A3B</span> <i class="fas fa-code-branch" title="Open-source Model"></i> <i class="fas fa-brain" title="Thinking Model"></i></td>
+                                    <td>16.30</td>
+                                    <td>5.05</td>
+                                    <td>0.72</td>
+                                    <td>0.60</td>
+                                    <td>9.45</td>
+                                    <td>10.79</td>
+                                    <td>11.75</td>
+                                    <td>17.50</td>
+                                    <td>5.46</td>
+                                    <td>8.31</td>
+                                    <td>10.09</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-32B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
+                                    <td>7.36</td>
+                                    <td>3.97</td>
+                                    <td>0.54</td>
+                                    <td>0.60</td>
+                                    <td>7.80</td>
+                                    <td>2.25</td>
+                                    <td>13.79</td>
+                                    <td>13.13</td>
+                                    <td>4.88</td>
+                                    <td>3.51</td>
+                                    <td>10.41</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-32B</span> <i class="fas fa-code-branch" title="Open-source Model"></i> <i class="fas fa-brain" title="Thinking Model"></i></td>
+                                    <td>12.67</td>
+                                    <td>5.42</td>
+                                    <td>1.26</td>
+                                    <td>1.80</td>
+                                    <td>8.31</td>
+                                    <td>7.64</td>
+                                    <td>10.74</td>
+                                    <td>17.50</td>
+                                    <td>4.94</td>
+                                    <td>7.24</td>
+                                    <td>9.10</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">QwQ-32B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
+                                    <td>13.21</td>
+                                    <td>5.78</td>
+                                    <td>3.42</td>
+                                    <td>4.79</td>
+                                    <td>7.72</td>
+                                    <td>6.97</td>
+                                    <td>13.25</td>
+                                    <td>16.88</td>
+                                    <td>4.52</td>
+                                    <td>7.88</td>
+                                    <td>10.06</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">DeepSeek-V3</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
+                                    <td>11.22</td>
+                                    <td>6.14</td>
+                                    <td>2.88</td>
+                                    <td>3.59</td>
+                                    <td>5.84</td>
+                                    <td>6.74</td>
+                                    <td>11.87</td>
+                                    <td>16.25</td>
+                                    <td>4.26</td>
+                                    <td>7.24</td>
+                                    <td>8.64</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">DeepSeek-R1</span> <i class="fas fa-code-branch" title="Open-source Model"></i> <i class="fas fa-brain" title="Thinking Model"></i></td>
+                                    <td>14.25</td>
+                                    <td>8.30</td>
+                                    <td>3.96</td>
+                                    <td>5.09</td>
+                                    <td>8.04</td>
+                                    <td>13.26</td>
+                                    <td>13.02</td>
+                                    <td>18.13</td>
+                                    <td>4.56</td>
+                                    <td>11.18</td>
+                                    <td>10.08</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">DeepSeek-V3.1</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
+                                    <td>14.26</td>
+                                    <td>4.51</td>
+                                    <td>0.54</td>
+                                    <td>0.90</td>
+                                    <td>14.03</td>
+                                    <td>12.81</td>
+                                    <td>12.62</td>
+                                    <td>15.00</td>
+                                    <td>6.78</td>
+                                    <td>8.95</td>
+                                    <td>12.43</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="model-name">Qwen3-235B-A22B</span> <i class="fas fa-code-branch" title="Open-source Model"></i></td>
+                                    <td>16.03</td>
+                                    <td>5.42</td>
+                                    <td>1.80</td>
+                                    <td>2.10</td>
+                                    <td>18.71</td>
+                                    <td>10.34</td>
+                                    <td>17.17</td>
+                                    <td>16.88</td>
+                                    <td>10.75</td>
+                                    <td>8.52</td>
+                                    <td>16.95</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><span class="model-name">Gemini-2.5-Pro</span> <i class="fas fa-code-branch" title="Open-source Model"></i> <i class="fas fa-brain" title="Thinking Model"></i></td>
+                                    <td>16.43</td>
+                                    <td>7.04</td>
+                                    <td>3.24</td>
+                                    <td>5.39</td>
+                                    <td>14.94</td>
+                                    <td>18.88</td>
+                                    <td>12.78</td>
+                                    <td>15.63</td>
+                                    <td>9.51</td>
+                                    <td>13.53</td>
+                                    <td>13.19</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><span class="model-name">GPT-5</span> <i class="fas fa-brain" title="Thinking Model"></i></td>
+                                    <td>17.90</td>
+                                    <td>6.50</td>
+                                    <td>4.68</td>
+                                    <td>7.78</td>
+                                    <td>12.70</td>
+                                    <td>14.16</td>
+                                    <td>14.31</td>
+                                    <td>16.88</td>
+                                    <td>6.24</td>
+                                    <td>12.35</td>
+                                    <td>12.69</td>
+                                </tr>
+                                <tr class="best-row">
+                                    <td><span class="model-name">Grok4</span> <i class="fas fa-brain" title="Thinking Model"></i></td>
+                                    <td>17.38</td>
+                                    <td><strong>10.65</strong></td>
+                                    <td>4.50</td>
+                                    <td>4.79</td>
+                                    <td>6.31</td>
+                                    <td><strong>21.80</strong></td>
+                                    <td>11.25</td>
+                                    <td>18.75</td>
+                                    <td>5.69</td>
+                                    <td><strong>15.23</strong></td>
+                                    <td>8.68</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Context Engineering Results Table -->
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3>Context Engineering Methods Performance</h3>
+                    </div>
+                    <div class="table-container">
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Method</th>
+                                    <th rowspan="2">StuGPA</th>
+                                    <th rowspan="2">LTRR</th>
+                                    <th rowspan="2">PIS</th>
+                                    <th colspan="2">In-Class</th>
+                                    <th colspan="2">Daily Campus</th>
+                                    <th colspan="2">Exam</th>
+                                    <th colspan="2">Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Success</th>
+                                    <th>AvgTurn</th>
+                                    <th>Success</th>
+                                    <th>AvgTurn</th>
+                                    <th>Success</th>
+                                    <th>AvgTurn</th>
+                                    <th>Success</th>
+                                    <th>AvgTurn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="category-row">
+                                    <td colspan="12"><strong>Vanilla</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Qwen3-235B-A22B <i class="fas fa-code-branch"></i></td>
+                                    <td>16.03</td>
+                                    <td>5.42</td>
+                                    <td>1.80</td>
+                                    <td>2.10</td>
+                                    <td>18.71</td>
+                                    <td>10.34</td>
+                                    <td>17.17</td>
+                                    <td>16.88</td>
+                                    <td>10.75</td>
+                                    <td>8.52</td>
+                                    <td>16.95</td>
+                                </tr>
+                                <tr class="category-row">
+                                    <td colspan="12"><strong>Proactive</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Qwen3-235B-A22B <i class="fas fa-code-branch"></i></td>
+                                    <td>16.90</td>
+                                    <td>5.96</td>
+                                    <td>3.06</td>
+                                    <td>5.09</td>
+                                    <td>16.70</td>
+                                    <td>10.34</td>
+                                    <td>16.38</td>
+                                    <td>16.88</td>
+                                    <td>7.73</td>
+                                    <td>9.58</td>
+                                    <td>15.42</td>
+                                </tr>
+                                <tr class="category-row">
+                                    <td colspan="12"><strong>Skill</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Qwen3-235B-A22B <i class="fas fa-code-branch"></i></td>
+                                    <td>17.28</td>
+                                    <td>6.86</td>
+                                    <td>0.90</td>
+                                    <td>1.50</td>
+                                    <td>16.89</td>
+                                    <td>15.28</td>
+                                    <td>16.51</td>
+                                    <td>17.50</td>
+                                    <td>9.28</td>
+                                    <td>10.76</td>
+                                    <td>15.75</td>
+                                </tr>
+                                <tr class="category-row">
+                                    <td colspan="12"><strong>Memory</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Qwen3-235B-A22B + Vanilla RAG <i class="fas fa-code-branch"></i></td>
+                                    <td>10.98</td>
+                                    <td>4.69</td>
+                                    <td>0.18</td>
+                                    <td>0.00</td>
+                                    <td>17.87</td>
+                                    <td>5.84</td>
+                                    <td>14.20</td>
+                                    <td>16.25</td>
+                                    <td>10.04</td>
+                                    <td>5.54</td>
+                                    <td>15.07</td>
+                                </tr>
+                                <tr>
+                                    <td>Qwen3-235B-A22B + Graph RAG <i class="fas fa-code-branch"></i></td>
+                                    <td>15.34</td>
+                                    <td>4.87</td>
+                                    <td>0.72</td>
+                                    <td>0.90</td>
+                                    <td>20.68</td>
+                                    <td>10.11</td>
+                                    <td>14.03</td>
+                                    <td>16.25</td>
+                                    <td>10.61</td>
+                                    <td>7.88</td>
+                                    <td>16.13</td>
+                                </tr>
+                                <tr class="best-context-row">
+                                    <td>Qwen3-235B-A22B + MemGPT <i class="fas fa-code-branch"></i></td>
+                                    <td><strong>19.99</strong></td>
+                                    <td>6.86</td>
+                                    <td>1.44</td>
+                                    <td>2.40</td>
+                                    <td>17.28</td>
+                                    <td>13.03</td>
+                                    <td>13.59</td>
+                                    <td><strong>23.75</strong></td>
+                                    <td>9.02</td>
+                                    <td>11.08</td>
+                                    <td>14.42</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="leaderboard-note">
+                    <p><strong>Note:</strong> All results are presented as percentages. StuGPA represents Student GPA, LTRR represents Long-Term Task Completion Rate, PIS represents Proactive Interaction Score. Success represents success rate, AvgTurn represents average completion turns.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 ELL-StuLife. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/ECNU-ICALK/ELL-StuLife" target="_blank" class="footer-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://arxiv.org/abs/2508.19005" target="_blank" class="footer-link">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

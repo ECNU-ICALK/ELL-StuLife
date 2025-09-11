@@ -1,4 +1,0 @@
-task_dict:
-  os_interaction:
-    parameters:
-      data_file_path: ./data/v0303/os_interaction/processed/v0409_tcc_9_to_12_first100/entry_dict.json
