@@ -1,0 +1,16 @@
+{
+  "task_id": "158_campus_exploration_032_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-30T19:09:11.138019",
+      "event": {
+        "event_id": "23885b8d-fd7b-4d73-a395-02f272c20b32",
+        "event_title": "Campus Challenge Walk",
+        "location": "From Graduate Commons to Mercator Hall via Cedar Hall, Grand Central Library, Momentum Hall, University Plaza, Rosetta Hall",
+        "time": "Week 0, Saturday, 08:00-09:00",
+        "description": "Walk visiting specified buildings in sequence, avoiding puddles."
+      }
+    }
+  ]
+}

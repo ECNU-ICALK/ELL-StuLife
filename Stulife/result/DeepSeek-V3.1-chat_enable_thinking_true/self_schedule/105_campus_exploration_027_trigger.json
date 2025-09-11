@@ -1,0 +1,16 @@
+{
+  "task_id": "105_campus_exploration_027_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-29T15:52:40.284402",
+      "event": {
+        "event_id": "916a4347-7c09-40b1-9c31-b5b9b354284e",
+        "event_title": "Campus Challenge Walk",
+        "location": "Keystone Hall",
+        "time": "Week 0, Thursday, 18:00-19:00",
+        "description": "Walk from Keystone Hall to North Community Market via South Laundry Facility, Cedar Hall, Victory Stadium, Valley View Suites, Global Commons."
+      }
+    }
+  ]
+}

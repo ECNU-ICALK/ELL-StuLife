@@ -1,0 +1,16 @@
+{
+  "task_id": "1092_task_advisor_assigned_040",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-10T08:07:18.065332",
+      "event": {
+        "event_id": "c54b9534-1acc-40b3-ac43-1c3074ff23a1",
+        "event_title": "Study Military Theory",
+        "location": "Grand Central Library, Periodicals Reading Room, Seat S047",
+        "time": "Week 18, Friday, 09:00-10:30",
+        "description": "Reading Chapter 1 materials for Military Theory class preparation"
+      }
+    }
+  ]
+}

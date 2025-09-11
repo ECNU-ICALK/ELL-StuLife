@@ -1,0 +1,16 @@
+{
+  "task_id": "383_task_advisor_assigned_030_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-03T21:32:54.502283",
+      "event": {
+        "event_id": "308f845d-e7db-44fd-a9f7-3c58dcf44f5e",
+        "event_title": "Send Arrival Email to Professor Payne",
+        "location": "Arts Faculty Offices, Faculty Lounge",
+        "time": "Week 3, Thursday, 09:00-09:05",
+        "description": "Send email to javier_payne_0343@lau.edu with subject 'I have arrived' and body 'I have arrived'."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "525_libstudy_task_006",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-05T03:39:12.076778",
+      "event": {
+        "event_id": "5e0b7cb0-f824-4f06-8d61-9751c3436c34",
+        "event_title": "Study Session",
+        "location": "Periodicals Reading Room, Seat S089",
+        "time": "Week 6, Saturday, 14:00-15:30",
+        "description": "Reserved study time at the library."
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "task_id": "259_course_selection_100",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:43:30.830923",
+      "event": {
+        "event_id": "f680ca15-bae8-4915-8611-503197c3a004",
+        "event_title": "PSYC003116100 Class",
+        "location": "Counseling & Psych Services, Workshop Space 102",
+        "time": "Week 1, Monday, 08:00-09:50",
+        "description": "Mental Health & Development of College Students"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:44:55.700383",
+      "event": {
+        "event_id": "2cee94ef-ed5e-4c4c-a923-dace2146be8c",
+        "event_title": "GFJ003111100(2) Class",
+        "location": "Chancellor's Hall, Lecture Hall B202",
+        "time": "Week 1-18, Friday, 14:00-15:50",
+        "description": "Military Theory (Including Military Training)"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:47:40.696041",
+      "event": {
+        "event_id": "7df38288-e988-4cbf-8fc8-bb3f68f50700",
+        "event_title": "PSYC003116100 Class",
+        "location": "Counseling & Psych Services, Workshop Space 102",
+        "time": "Weeks 1-16, Monday, 08:00-09:50",
+        "description": "Mental Health & Development of College Students"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:49:53.727661",
+      "event": {
+        "event_id": "c77ef713-dcec-4e33-9a3d-3cc683eb5662",
+        "event_title": "COMS0031121013 Class - Monday",
+        "location": "Euler Mathematics Institute, Lecture Hall 101",
+        "time": "Weeks 1-18, Monday, 10:00-11:50",
+        "description": "Mathematical Analysis I"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:51:33.941583",
+      "event": {
+        "event_id": "17e84889-115f-4c20-a381-3b1111c9750a",
+        "event_title": "COMS0031131032(2) Class - Tuesday",
+        "location": "Euler Mathematics Institute, Lecture Hall 101",
+        "time": "Weeks 1-18, Tuesday, 08:00-09:50",
+        "description": "Linear Algebra"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:52:38.925842",
+      "event": {
+        "event_id": "dc5031a3-2dad-42e9-8243-0272db3b67ce",
+        "event_title": "COMS0031121013 Class - Wednesday",
+        "location": "Euler Mathematics Institute, Lecture Hall 101",
+        "time": "Weeks 1-18, Wednesday, 10:00-11:50",
+        "description": "Mathematical Analysis I"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:53:43.802690",
+      "event": {
+        "event_id": "34a9b069-b416-4fb3-a9da-7fce35889402",
+        "event_title": "COMS0031121013 Class - Friday",
+        "location": "Euler Mathematics Institute, Lecture Hall 101",
+        "time": "Weeks 1-18, Friday, 10:00-11:50",
+        "description": "Mathematical Analysis I"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:55:28.399047",
+      "event": {
+        "event_id": "5efd137e-009d-4067-9733-2f5a6cdc4f89",
+        "event_title": "COMS0031131032(2) Class - Tuesday",
+        "location": "Euler Mathematics Institute, Lecture Hall 101",
+        "time": "Weeks 1-18, Tuesday, 08:00-09:50",
+        "description": "Linear Algebra"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:57:12.392479",
+      "event": {
+        "event_id": "48895087-eab3-4d60-9546-678cc3dad9d5",
+        "event_title": "COMS0031131032(2) Class - Thursday",
+        "location": "Euler Mathematics Institute, Lecture Hall 101",
+        "time": "Weeks 1-18, Thursday, 08:00-09:50",
+        "description": "Linear Algebra"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T18:58:48.928494",
+      "event": {
+        "event_id": "d2496200-89af-4a68-962a-ca0238270949",
+        "event_title": "COMS0031121018 Class - Tuesday",
+        "location": "Innovate Hall, Computer Lab A201",
+        "time": "Weeks 1-18, Tuesday, 14:00-16:25",
+        "description": "Programming"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T19:01:05.208427",
+      "event": {
+        "event_id": "6b13e203-0794-4c62-8821-25cce054496c",
+        "event_title": "COMS0031121018 Class - Thursday",
+        "location": "Innovate Hall, Computer Lab A201",
+        "time": "Weeks 1-18, Thursday, 14:00-16:25",
+        "description": "Programming"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T19:02:30.456911",
+      "event": {
+        "event_id": "00746f9b-edf4-420a-a057-aa67f0c85f15",
+        "event_title": "COMS0031131026(2) Class",
+        "location": "Horizon Hall, Lecture Hall 102",
+        "time": "Weeks 1-18, Wednesday, 14:00-15:50",
+        "description": "Introduction to Computer Science"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T19:04:44.949705",
+      "event": {
+        "event_id": "6a441fec-cbe8-4513-a1ae-e5a58459be3f",
+        "event_title": "GE-PTI-102(1) Class",
+        "location": "Innovate Hall, Computer Lab A201",
+        "time": "Weeks 1-18, Monday, 14:00-15:50",
+        "description": "Programming for Everyone"
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2025-09-02T19:06:23.405287",
+      "event": {
+        "event_id": "f001bf99-b621-4eac-8dad-6ba03b86e9bf",
+        "event_title": "GE-PTI-112 Class",
+        "location": "The Forge Business Incubator, Pitch Room (101)",
+        "time": "Weeks 1-18, Wednesday, 19:00-20:50",
+        "description": "Innovation and Entrepreneurship"
+      }
+    }
+  ]
+}

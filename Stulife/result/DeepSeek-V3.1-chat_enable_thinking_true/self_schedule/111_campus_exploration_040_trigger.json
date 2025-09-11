@@ -1,0 +1,16 @@
+{
+  "task_id": "111_campus_exploration_040_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-29T19:57:50.211903",
+      "event": {
+        "event_id": "561de391-05d6-4599-aaae-24ab7e8446ed",
+        "event_title": "Campus Challenge Walk",
+        "location": "Horizon Suites",
+        "time": "Week 0, Thursday, 15:00-16:00",
+        "description": "Walk to The Globe Playhouse via Adam Smith School of Business and Graduate Commons in sequence. Indoor route planned to avoid exposed areas. Path segments: From Horizon Suites (B111) to Adam Smith School of Business (B012) via University Welcome Center, Grand Central Library, Chancellor's Hall, The Forge Business Incubator. Then to Graduate Commons (B103) via The Forge Business Incubator, Chancellor's Hall, Grand Central Library, University Welcome Center, Graduate Tower B. Finally to The Globe Playhouse (B058) via Graduate Tower A, Central Dining Commons, Pioneer Hall - Tower A, Harmony School of Music."
+      }
+    }
+  ]
+}

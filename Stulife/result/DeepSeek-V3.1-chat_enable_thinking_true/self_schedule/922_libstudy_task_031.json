@@ -1,0 +1,16 @@
+{
+  "task_id": "922_libstudy_task_031",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-08T20:43:14.192616",
+      "event": {
+        "event_id": "561c9f7d-24ee-4293-9f00-12acb45c4aa0",
+        "event_title": "Reading Computational Fluid Dynamics",
+        "location": "STEM Library Quiet Study Area Seats S021 and S012",
+        "time": "Week 14, Friday, 09:00-12:00",
+        "description": "Reading Dr. Olivia Chen's book on computational fluid dynamics from the Applied Sciences & Engineering Collection."
+      }
+    }
+  ]
+}

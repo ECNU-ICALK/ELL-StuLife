@@ -1,0 +1,16 @@
+{
+  "task_id": "987_class_LinearAlgebra_task40_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-09T09:44:07.123536",
+      "event": {
+        "event_id": "d065f546-2a82-444f-82c9-3074c9394f99",
+        "event_title": "Study Session",
+        "location": "Periodicals Reading Room, Seat S140",
+        "time": "Week 16, Tuesday, 09:00-10:30",
+        "description": "Reserved study time at the library."
+      }
+    }
+  ]
+}

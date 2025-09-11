@@ -1,0 +1,16 @@
+{
+  "task_id": "651_class_MilitaryTheory_task14_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-06T08:39:13.219003",
+      "event": {
+        "event_id": "53507731-5d9a-4f9f-b77a-bf81d49c421b",
+        "event_title": "Review Military Theory Protocols",
+        "location": "Grand Central Library",
+        "time": "Week 9, Friday, 16:00-17:00",
+        "description": "Study the supplemental rules on diplomatic, alliance, and military protocols from today's class."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "1080_class_IntroductionCS_task23",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-10T04:24:22.405096",
+      "event": {
+        "event_id": "de541775-cd88-4245-beda-71f385722d69",
+        "event_title": "Study Session",
+        "location": "Periodicals Reading Room, Seat B001-PERIODICALS_READING_ROOM-S084",
+        "time": "Week 18, Wednesday, 14:00-15:30",
+        "description": "Reading Journal of Artificial Intelligence Research"
+      }
+    }
+  ]
+}

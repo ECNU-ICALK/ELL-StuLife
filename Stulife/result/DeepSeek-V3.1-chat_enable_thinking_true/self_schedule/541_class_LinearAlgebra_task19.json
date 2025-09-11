@@ -1,0 +1,16 @@
+{
+  "task_id": "541_class_LinearAlgebra_task19",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-05T06:02:53.946690",
+      "event": {
+        "event_id": "485363ce-9652-473e-9736-225847ca02f8",
+        "event_title": "Study Session",
+        "location": "Periodicals Reading Room, Seat S149",
+        "time": "Week 7, Tuesday, 09:00-10:30",
+        "description": "Reserved seat for studying psychology books."
+      }
+    }
+  ]
+}

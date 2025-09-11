@@ -1,0 +1,16 @@
+{
+  "task_id": "107_campus_exploration_048_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-29T17:07:52.492499",
+      "event": {
+        "event_id": "ebf63f81-0a5b-4241-8107-0ed0cdbbd420",
+        "event_title": "Campus Challenge Walk",
+        "location": "University Post Office",
+        "time": "Week 0, Saturday, 18:15-18:45",
+        "description": "Walk to Rosetta Hall via The Fashion Institute and Terra Hall with constraints: avoid crowds, indoor routes, covered from rain, well-lit. Full path: B149 -> B001 -> B098 -> B099 -> B056 -> B072 -> B073 -> B071 -> B073 -> B072 -> B074 -> B086 -> B002 -> B001 -> B013 -> B014 -> B049 -> B014 -> B013 -> B001 -> B003 -> B009"
+      }
+    }
+  ]
+}

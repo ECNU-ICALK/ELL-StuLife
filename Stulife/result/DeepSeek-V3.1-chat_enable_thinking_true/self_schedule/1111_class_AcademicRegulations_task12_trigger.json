@@ -1,0 +1,16 @@
+{
+  "task_id": "1111_class_AcademicRegulations_task12_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-10T13:31:01.555718",
+      "event": {
+        "event_id": "df41e047-f5c2-4e93-9d78-5b648ce9e031",
+        "event_title": "Study Session",
+        "location": "Periodicals Reading Room, Seat S076",
+        "time": "Week 19, Tuesday, 09:00-10:30",
+        "description": "Reserved seat for studying."
+      }
+    }
+  ]
+}

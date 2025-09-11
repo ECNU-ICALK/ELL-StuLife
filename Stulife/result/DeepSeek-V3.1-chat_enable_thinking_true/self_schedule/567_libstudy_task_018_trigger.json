@@ -1,0 +1,16 @@
+{
+  "task_id": "567_libstudy_task_018_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-05T11:51:02.031858",
+      "event": {
+        "event_id": "8dfd694d-bbe6-4f83-8eab-4274c670688d",
+        "event_title": "Study Group Session",
+        "location": "Grand Central Library, Periodicals Room S088",
+        "time": "Week 14, Sunday, 09:00-10:30",
+        "description": "Study session on historical archives. Booked seat B001-PERIODICALS_READING_ROOM-S088 for 09:00-10:30. Reminder to arrive on time."
+      }
+    }
+  ]
+}

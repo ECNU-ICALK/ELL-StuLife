@@ -1,0 +1,16 @@
+{
+  "task_id": "188_campus_exploration_043_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-31T16:36:27.816556",
+      "event": {
+        "event_id": "ddab836f-5184-4205-959a-038ac0e3a234",
+        "event_title": "Senior Guide Challenge Walk",
+        "location": "Rosetta Hall (B009)",
+        "time": "Week 0, Sunday, 18:00-19:00",
+        "description": "Walk route for senior guide challenge. Stops: Rosetta Hall, The University Archive, Champions Arena, Quantum Research Institute, Cedar Hall, The Wardrobe Costume Shop. Path: From Rosetta Hall to The University Archive via Chancellor's Hall, then to Champions Arena via Chancellor's Hall, Grand Central Library, The Student Union, Campus Transit Hub, Victory Stadium, then to Quantum Research Institute via Victory Stadium, Campus Transit Hub, The Student Union, Grand Central Library, Innovate Hall, Nexus Center for AI & Robotics, Horizon Hall, then to Cedar Hall via Horizon Hall, Nexus Center for AI & Robotics, Innovate Hall, Grand Central Library, University Welcome Center, then to The Wardrobe Costume Shop via University Welcome Center, Pioneer Hall - Tower B, Pioneer Hall - Tower A, Harmony School of Music, Ailey Dance Pavilion, The Black Box Experimental Theater."
+      }
+    }
+  ]
+}

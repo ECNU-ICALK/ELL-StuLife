@@ -1,0 +1,16 @@
+{
+  "task_id": "41_campus_exploration_036_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-28T06:17:29.128891",
+      "event": {
+        "event_id": "39e3360a-d8bd-4edb-a6a9-6214b7b0a718",
+        "event_title": "Campus Challenge Walk",
+        "location": "Quantum Research Institute",
+        "time": "Week 0, Sunday, 15:00-16:00",
+        "description": "Planned walk for campus challenge. Route: Start at B032 (Quantum Research Institute), to B111 (Horizon Suites) via Horizon Hall, Nexus Center for AI & Robotics, Innovate Hall, Grand Central Library, University Welcome Center; B111 to B120 (Eastview Apartments) via University Welcome Center; B120 to B124 (Bridgeway Apartments) via University Welcome Center; B124 to B085 (Meadowbrook Hall) via University Welcome Center; B085 to B081 (Summit House) via University Welcome Center; B081 to B007 (Blackstone School of Law) via University Welcome Center, Grand Central Library, Chancellor's Hall, The Capitol Forum. Avoiding congested areas."
+      }
+    }
+  ]
+}

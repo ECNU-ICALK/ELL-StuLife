@@ -1,0 +1,69 @@
+{
+  "task_id": "course_selection_s2_039",
+  "ground_truth": {
+    "selected_sections": [
+      {
+        "course_code": "SHK003111017",
+        "assigned_pass": "B-Pass",
+        "popularity": 15
+      },
+      {
+        "course_code": "SHK003111017(2)",
+        "assigned_pass": "B-Pass",
+        "popularity": 61
+      },
+      {
+        "course_code": "COMS00311213",
+        "assigned_pass": "B-Pass",
+        "popularity": 8
+      },
+      {
+        "course_code": "COMS00311213(2)",
+        "assigned_pass": "S-Pass",
+        "popularity": 98
+      },
+      {
+        "course_code": "COMS00311223",
+        "assigned_pass": "A-Pass",
+        "popularity": 86
+      }
+    ]
+  },
+  "agent_selection": [
+    {
+      "course_code": "COMS0031131032(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 69
+    },
+    {
+      "course_code": "GFJ003111100(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 18
+    },
+    {
+      "course_code": "COMS0031131026(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 1
+    },
+    {
+      "course_code": "COMS0031121018",
+      "assigned_pass": "B-Pass",
+      "popularity": 68
+    },
+    {
+      "course_code": "COMS00311223",
+      "assigned_pass": "A-Pass",
+      "popularity": 86
+    },
+    {
+      "course_code": "COMS00311213",
+      "assigned_pass": "S-Pass",
+      "popularity": 8
+    },
+    {
+      "course_code": "SHK003111017",
+      "assigned_pass": "B-Pass",
+      "popularity": 15
+    }
+  ]
+}

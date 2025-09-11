@@ -1,0 +1,16 @@
+{
+  "task_id": "597_libstudy_task_029",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-05T19:45:13.814157",
+      "event": {
+        "event_id": "40d840ae-f40f-40cc-a3dd-6f0248b5d5ee",
+        "event_title": "AI Side Project Meeting",
+        "location": "Grand Central Library, Periodicals Reading Room, Seat S004",
+        "time": "Week 8, Thursday, 14:00-15:30",
+        "description": "Working on AI project with a friend."
+      }
+    }
+  ]
+}

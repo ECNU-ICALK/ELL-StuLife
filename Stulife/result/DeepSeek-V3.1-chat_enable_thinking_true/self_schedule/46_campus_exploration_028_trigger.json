@@ -1,0 +1,16 @@
+{
+  "task_id": "46_campus_exploration_028_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-28T07:51:52.192500",
+      "event": {
+        "event_id": "a992c738-ebfa-46c5-ad69-d88b89785e5a",
+        "event_title": "Campus Challenge Walk",
+        "location": "The Fashion Institute",
+        "time": "Week 0, Saturday, 18:00-19:00",
+        "description": "Walk the route from B071 to B092 to B019 to B092 to B098 to B065 with stairs-only, low-congestion, well-lit, outdoor, and exposed to slippery conditions when wet constraints."
+      }
+    }
+  ]
+}

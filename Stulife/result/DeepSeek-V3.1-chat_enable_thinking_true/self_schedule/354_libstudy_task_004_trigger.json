@@ -1,0 +1,16 @@
+{
+  "task_id": "354_libstudy_task_004_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-03T16:43:34.417026",
+      "event": {
+        "event_id": "fddc32bb-29b9-4647-9cc2-6f53995fd497",
+        "event_title": "Sociology Research for Club Event",
+        "location": "Grand Central Library, Periodicals Reading Room, Seat S002",
+        "time": "Week 4, Saturday, 16:30-18:00",
+        "description": "Researching sociology materials and testing presentation slides for the club event on social dynamics."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "795_libstudy_task_040",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-07T18:06:22.134494",
+      "event": {
+        "event_id": "3f23f9df-ad14-415a-a286-991c233c8298",
+        "event_title": "Study Session for Military Theory",
+        "location": "Grand Central Library, Seat B001-PERIODICALS_READING_ROOM-S029",
+        "time": "Week 11, Friday, 10:30-12:00",
+        "description": "Preparing for Military Theory class at 14:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "376_class_IntroductionCS_task3_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-03T20:43:25.836139",
+      "event": {
+        "event_id": "4e0f4280-c6b9-46bf-baad-7b9c9128c793",
+        "event_title": "Study Session",
+        "location": "Grand Central Library, Periodicals Reading Room S134",
+        "time": "Week 3, Wednesday, 14:00-15:30",
+        "description": "Studying Artificial Intelligence from 'A Panorama of Computing: From Bits to Artificial Intelligence'."
+      }
+    }
+  ]
+}

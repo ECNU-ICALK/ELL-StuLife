@@ -1,0 +1,16 @@
+{
+  "task_id": "327_class_Programming_task4",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-03T11:55:12.577865",
+      "event": {
+        "event_id": "7ea3d48c-9e94-4f36-a32a-d23df49b69f8",
+        "event_title": "Study Session - AI Research",
+        "location": "STEM Library, Seat B042-QUIET_STUDY_AREA-S020",
+        "time": "Week 2, Tuesday, 14:00-15:30",
+        "description": "Studying AI materials and preparing for research."
+      }
+    }
+  ]
+}

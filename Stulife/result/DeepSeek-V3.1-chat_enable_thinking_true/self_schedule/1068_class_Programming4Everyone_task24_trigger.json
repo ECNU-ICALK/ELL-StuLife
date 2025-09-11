@@ -1,0 +1,16 @@
+{
+  "task_id": "1068_class_Programming4Everyone_task24_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-10T02:14:56.450665",
+      "event": {
+        "event_id": "0dd6d268-a2d7-4790-ba41-0179f8295f5d",
+        "event_title": "Study Session",
+        "location": "Periodicals Reading Room, Seat S017",
+        "time": "Week 18, Monday, 14:00-15:30",
+        "description": "Studying using the reserved seat."
+      }
+    }
+  ]
+}

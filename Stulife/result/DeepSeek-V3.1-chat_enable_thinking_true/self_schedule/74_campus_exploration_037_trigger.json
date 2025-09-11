@@ -1,0 +1,16 @@
+{
+  "task_id": "74_campus_exploration_037_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-28T20:18:43.506243",
+      "event": {
+        "event_id": "e2e4cc8f-d44c-439c-8487-e395174063ff",
+        "event_title": "Campus Challenge Start",
+        "location": "The Fashion Institute",
+        "time": "Week 0, Wednesday, 14:30-14:35",
+        "description": "Start walking the challenge route from The Fashion Institute to Academic Success Center via Horizon Suites, Pioneer Hall - Tower C, and Student Services Tower."
+      }
+    }
+  ]
+}

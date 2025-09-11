@@ -1,0 +1,16 @@
+{
+  "task_id": "1_campus_exploration_033_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-27T18:48:11.236062",
+      "event": {
+        "event_id": "d5a8d3af-e0ae-459c-b479-04e3cd05d842",
+        "event_title": "Campus Challenge Walk",
+        "location": "B002",
+        "time": "Week 0, Friday, 08:15-09:00",
+        "description": "Walk route: Start at Chancellor's Hall (B002), proceed to Grand Central Library, then University Welcome Center, to North Residential Maintenance (B099). From there, go to University Welcome Center, then Graduate Tower B, Graduate Commons, to Student Recreation Center (B129). Then to Graduate Commons, Graduate Tower B, University Welcome Center, to Stone Creek House (B109). Then to University Welcome Center, to North Quad Field (B090). Finally, to University Welcome Center, to University IT Help Desk (B152). Path is indoors, covered from rain, with good lighting, but may have uneven surfaces and could get crowded during class changes."
+      }
+    }
+  ]
+}

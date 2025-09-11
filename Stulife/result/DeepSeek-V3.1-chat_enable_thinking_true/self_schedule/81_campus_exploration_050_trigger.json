@@ -1,0 +1,16 @@
+{
+  "task_id": "81_campus_exploration_050_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-28T23:37:47.332239",
+      "event": {
+        "event_id": "2c42ff13-7df9-4b87-a9b0-d5ae8091599b",
+        "event_title": "Campus Challenge Walk",
+        "location": "Route from Horizon Hall to Soccer & Lacrosse Field via The South Community Market and Ampere Hall",
+        "time": "Week 0, Sunday, 08:45-09:45",
+        "description": "Path: Horizon Hall (B031) -> Nexus Center for AI & Robotics (B037) -> Innovate Hall (B036) -> Grand Central Library (B001) -> University Welcome Center (B000) -> The South Community Market (B114) -> University Welcome Center (B000) -> Grand Central Library (B001) -> Innovate Hall (B036) -> Nexus Center for AI & Robotics (B037) -> Ampere Hall (B039) -> Nexus Center for AI & Robotics (B037) -> Innovate Hall (B036) -> Grand Central Library (B001) -> The Student Union -> Campus Transit Hub -> Victory Stadium -> Soccer & Lacrosse Field (B132). This path is primarily outdoor, exposed to rain, likely congested during class changes, and may have uneven surfaces in some areas. Dimly lit at night, but at 08:45, it should be acceptable."
+      }
+    }
+  ]
+}

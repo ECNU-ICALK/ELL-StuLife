@@ -1,0 +1,16 @@
+{
+  "task_id": "508_libstudy_task_090",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-04T23:32:17.246657",
+      "event": {
+        "event_id": "38d63092-cb06-4571-bc5a-d6255514a3fb",
+        "event_title": "Study Session",
+        "location": "STEM Library Quiet Study Area, Seat S013",
+        "time": "Week 6, Wednesday, 14:00-15:30",
+        "description": "Studying AI research using Journal of Artificial Intelligence Research."
+      }
+    }
+  ]
+}

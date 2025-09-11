@@ -1,0 +1,16 @@
+{
+  "task_id": "99_campus_exploration_047_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-08-29T13:12:32.637488",
+      "event": {
+        "event_id": "a1a95c72-461b-48be-a009-50d700fe6641",
+        "event_title": "Campus Challenge Walk",
+        "location": "Engineering Fab Lab",
+        "time": "Week 0, Thursday, 08:15-09:15",
+        "description": "Walk from Engineering Fab Lab to Vesalius Hall via The Student Union, Pioneer Hall - Tower B, Aperture School of Design & Media, North Laundry Facility, Varsity Training Facility. Path is optimized to avoid uneven surfaces and should be well-lit based on campus lighting."
+      }
+    }
+  ]
+}

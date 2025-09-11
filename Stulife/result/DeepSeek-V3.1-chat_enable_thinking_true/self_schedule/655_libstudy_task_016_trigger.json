@@ -1,0 +1,16 @@
+{
+  "task_id": "655_libstudy_task_016_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-06T09:10:11.906792",
+      "event": {
+        "event_id": "dba69c5f-a579-4b39-a82e-5523545127a3",
+        "event_title": "AI Study Session",
+        "location": "STEM Library, Quiet Study Area, Seat B042-QUIET_STUDY_AREA-S006",
+        "time": "Week 15, Sunday, 09:00-10:30",
+        "description": "Booked for AI study session with sofa, projector, whiteboard, WiFi, computer access, and power outlet."
+      }
+    }
+  ]
+}

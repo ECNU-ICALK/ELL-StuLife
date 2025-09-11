@@ -1,0 +1,16 @@
+{
+  "task_id": "569_task_advisor_assigned_022_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2025-09-05T12:16:18.113628",
+      "event": {
+        "event_id": "eb445722-e632-4aa2-8eef-c5b3bcd6dff0",
+        "event_title": "Meeting with Professor Payne",
+        "location": "Throwing Fields, Outdoor Track & Field",
+        "time": "Week 7, Sunday, 09:00-10:30",
+        "description": "Quick 5-minute sync-up on literature review."
+      }
+    }
+  ]
+}
