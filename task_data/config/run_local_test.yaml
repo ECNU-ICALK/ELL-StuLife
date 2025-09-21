@@ -45,7 +45,7 @@ task_dict:
         parameters:
           chat_history_item_dict_path: "./chat_history_items/standard/campus_life_bench.json"
       max_round: 60
-      data_dir: "C:\\PHD\\ICALK\\exp-dri-agent\\framework\\task_data"
+      data_dir: ""
 
 callback_dict:
   current_session_saving_callback:
@@ -70,7 +70,7 @@ assignment_config:
       name: current_session_saving_callback
     callback_1:
       name: consecutive_abnormal_agent_inference_process_handling_callback
-  output_dir: C:\\PHD\\ICALK\\exp-dri-agent\\framework\\outputs\\{TIMESTAMP}_local_campus_test
+  output_dir: 
   sample_order: default
 
 environment_config:

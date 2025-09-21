@@ -1,22 +1,9 @@
-# ======================================================================================
-# Campus Life Bench - Corrected Configuration
-# ======================================================================================
-#
-# This configuration file correctly points to the data directory, allowing the
-# framework to naturally find both the tasks.json file and the background data
-# subdirectory as intended by the code's design.
-#
-# Task File Source: 任务数据/tasks.json
-# Background Data Source: 任务数据/background/
-#
-# ======================================================================================
-
 language_model_dict:
   deepseek-chat:
     module: "src.language_models.instance.openai_language_model.OpenaiLanguageModel"
     parameters:
       model_name: "Pro/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-      api_key: "sk-mkdfidkimblktwcilrehnfayxltqwbxunrltuuwvzftqudwl"  # IMPORTANT: Replace with your actual SiliconFlow API key
+      api_key: ""  # IMPORTANT: Replace with your actual SiliconFlow API key
       base_url: "https://api.siliconflow.cn/v1"
       role_dict:
         user: "user"
@@ -45,7 +32,7 @@ task_dict:
         parameters:
           chat_history_item_dict_path: "./chat_history_items/standard/campus_life_bench.json"
       max_round: 60
-      data_dir: "C:\\PHD\\ICALK\\exp-dri-agent\\framework\\task_data" # CORRECT: Using absolute path to avoid ambiguity
+      data_dir: "" # CORRECT: Using absolute path to avoid ambiguity
 
 callback_dict:
   current_session_saving_callback:
@@ -61,7 +48,7 @@ assignment_config:
   - name: deepseek-chat
     custom_parameters:
       model_name: "Pro/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-      api_key: "sk-mkdfidkimblktwcilrehnfayxltqwbxunrltuuwvzftqudwl" # IMPORTANT: Replace with your actual SiliconFlow API key
+      api_key: "" # IMPORTANT: Replace with your actual SiliconFlow API key
       base_url: "https://api.siliconflow.cn/v1"
       role_dict:
         user: "user"
@@ -76,7 +63,7 @@ assignment_config:
       name: current_session_saving_callback
     callback_1:
       name: consecutive_abnormal_agent_inference_process_handling_callback
-  output_dir: C:\\PHD\\ICALK\\exp-dri-agent\\framework\\outputs\\{TIMESTAMP}_test_task_dpskv3
+  output_dir: 
   sample_order: default
 
 environment_config:

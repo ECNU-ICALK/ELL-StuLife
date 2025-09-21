@@ -9,7 +9,7 @@ repos:
     hooks:
       - id: mypy
         name: mypy
-        entry: /dev_data/cxd/nlp/continual_agent_bench/scripts/shell/run_mypy.sh
+        entry: 
         language: script
         require_serial: true
         verbose: true
