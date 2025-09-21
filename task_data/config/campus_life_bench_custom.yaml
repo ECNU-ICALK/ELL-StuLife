@@ -3,7 +3,7 @@ language_model_dict:
     module: "src.language_models.instance.openai_language_model.OpenaiLanguageModel"
     parameters:
       model_name: "deepseek-chat"
-      api_key: "YOUR_API_KEY"  # 请替换为您的API密钥
+      api_key: "YOUR_API_KEY"  
       base_url: "https://api.deepseek.com"
       role_dict:
         user: "user"
@@ -30,7 +30,7 @@ task_dict:
         parameters:
           chat_history_item_dict_path: "./chat_history_items/standard/campus_life_bench.json"
       max_round: 5
-      data_dir: "任务数据/custom_task_data" # 指定包含 task_complete.json (已重命名为 tasks.json) 的目录
+      data_dir: "./custom_task_data" # 
 
 callback_dict:
   current_session_saving_callback:
@@ -46,7 +46,7 @@ assignment_config:
   - name: deepseek-chat
     custom_parameters:
       model_name: "deepseek-chat"
-      api_key: "YOUR_API_KEY" # 请替换为您的API密钥
+      api_key: "YOUR_API_KEY" 
       base_url: "https://api.deepseek.com"
       role_dict:
         user: "user"

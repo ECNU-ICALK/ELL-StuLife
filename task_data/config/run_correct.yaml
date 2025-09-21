@@ -3,7 +3,7 @@ language_model_dict:
     module: "src.language_models.instance.openai_language_model.OpenaiLanguageModel"
     parameters:
       model_name: "Pro/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-      api_key: ""  # IMPORTANT: Replace with your actual SiliconFlow API key
+      api_key: ""  # IMPORTANT: Replace with your actual API key
       base_url: "https://api.siliconflow.cn/v1"
       role_dict:
         user: "user"
@@ -48,7 +48,7 @@ assignment_config:
   - name: deepseek-chat
     custom_parameters:
       model_name: "Pro/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-      api_key: "" # IMPORTANT: Replace with your actual SiliconFlow API key
+      api_key: "" # IMPORTANT: Replace with your actual API key
       base_url: "https://api.siliconflow.cn/v1"
       role_dict:
         user: "user"
