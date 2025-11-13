@@ -7,7 +7,7 @@
         "type": "Academic",
         "zone": "Academic Quad",
         "internal_amenities": {
-          "floor_1": ["Main Lobby & Circulation Desk", "Periodicals Reading Room", "Computer Lab (101-120)", "The Scholar's Cafe"],
+          "floor_1": ["Main Lobby & Circulation Desk", "Periodicals Reading Room", "Lecture Hall (101-120)", "The Scholar's Cafe"],
           "floor_2": ["Quiet Study Zone (West Wing)", "Group Study Rooms (201-215)", "Social Sciences Collection (History, Sociology, Economics, Political Science, Anthropology, Geography)"],
           "floor_3": ["Quiet Study Zone (East Wing)", "Humanities Collection (Philosophy, Literature, Languages, Classics, Arts, Education, Psychology)", "Faculty Reading Room (301)"],
           "basement": ["Archives & Special Collections (B01)", "University Archives"]
@@ -154,7 +154,7 @@
         "type": "Academic",
         "zone": "Academic Quad",
         "internal_amenities": {
-          "floor_1": ["Department Library (101)", "Student Lounge"],
+          "floor_1": ["Lecture Hall (101)", "Student Lounge"],
           "floor_2": ["Faculty Offices (201-225)", "Writing Center Annex (200)"]
         }
       },
@@ -228,7 +228,7 @@
         "type": "Academic",
         "zone": "Academic Quad",
         "internal_amenities": {
-          "floor_1": ["Public Reading Room (101)", "Exhibition Space"],
+          "floor_1": ["Lecture Hall (101)", "Exhibition Space"],
           "basement": ["Secure Storage Vaults (B01-B10)", "Digitization Lab (B11)"]
         }
       },
@@ -462,7 +462,7 @@
         "type": "Academic",
         "zone": "Science & Engineering Hill",
         "internal_amenities": {
-          "floor_1": ["Circulation Desk", "Journal Archives", "3D Printing Lab (101)", "Applied Sciences & Engineering Collection (All Engineering Disciplines, Computer Science, AI, Robotics)"],
+          "floor_1": ["Circulation Desk", "Journal Archives", "Lecture Hall (101)", "Applied Sciences & Engineering Collection (All Engineering Disciplines, Computer Science, AI, Robotics)"],
           "floor_2": ["Group Study Rooms (201-210)", "Quiet Study Area", "Pure & Life Sciences Collection (Mathematics, Physics, Chemistry, Biology, Geosciences, Pharmacy, Neuroscience)"]
         }
       },
