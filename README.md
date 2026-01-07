@@ -188,3 +188,6 @@ With the environment set up, you can now run an experiment using `run_experiment
 python ./src/run_experiment.py --config_path "../task_data/config/run_local_test.yaml"
 
 ```
+
+### 4. Contcat
+If you have any questions, please feel free to contact the authors (e.g., jzhou@cs.ecnu.edu.cn) as we may not see the issue in time.
