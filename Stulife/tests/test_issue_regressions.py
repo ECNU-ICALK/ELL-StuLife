@@ -10,6 +10,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 TASKS_PATH = REPO_ROOT / "task_data" / "tasks.json"
 COURSES_PATH = REPO_ROOT / "task_data" / "background" / "courses.json"
 LIB_MAP_PATH = REPO_ROOT / "task_data" / "background" / "info" / "lib_map_with_seats.json"
+SYSTEM_PROMPT_PATH = REPO_ROOT / "Stulife" / "src" / "tasks" / "instance" / "campus_life_bench" / "system_prompt_generator.py"
 
 COURSE_DELTA_INTROS = [
     "To make the target draft update explicit, carry out exactly these changes: ",
@@ -399,3 +400,60 @@ def test_issue_7_library_room_names_match_seat_ids():
     ]:
         reservation = tasks[key]["ground_truth"]["reservation_made"]
         assert reservation["item_name"] == seat_to_room[reservation["seat_id"]], key
+
+
+def test_club_activity_calendar_ground_truth_matches_details_calendar_id():
+    tasks = load_tasks()
+
+    for task in tasks.values():
+        if not isinstance(task, dict):
+            continue
+        if task.get("task_category") != "ClubActivities" or task.get("task_source") != "activity":
+            continue
+
+        details = task.get("details")
+        ground_truth = task.get("ground_truth")
+        if not isinstance(details, dict) or not isinstance(ground_truth, dict):
+            continue
+
+        details_calendar_id = details.get("calendar_id")
+        calendar_event = ground_truth.get("calendar_event")
+        if not details_calendar_id or not isinstance(calendar_event, dict):
+            continue
+
+        gt_calendar_id = calendar_event.get("calendar_id")
+        assert gt_calendar_id == details_calendar_id, task["task_id"]
+        assert gt_calendar_id.startswith("club_"), task["task_id"]
+
+
+def test_club_activity_email_details_match_ground_truth_email():
+    tasks = load_tasks()
+
+    for task in tasks.values():
+        if not isinstance(task, dict):
+            continue
+        if task.get("task_category") != "ClubActivities" or task.get("task_source") != "activity":
+            continue
+
+        details = task.get("details")
+        ground_truth = task.get("ground_truth")
+        if not isinstance(details, dict) or not isinstance(ground_truth, dict):
+            continue
+
+        email_sent = ground_truth.get("email_sent")
+        if not isinstance(email_sent, dict):
+            continue
+
+        if "email_subject" in details and "subject_contains" in email_sent:
+            assert details["email_subject"] == email_sent["subject_contains"], task["task_id"]
+        if "email_body" in details and "body_contains" in email_sent:
+            assert normalize_email_body(details["email_body"]) == normalize_email_body(email_sent["body_contains"]), task["task_id"]
+
+
+def test_calendar_add_event_prompt_uses_club_calendar_ids():
+    prompt_source = SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
+
+    assert "official email address" not in prompt_source
+    assert "Advisor calendars are read-only for scheduling" in prompt_source
+    assert 'calendar_id="club_c045"' in prompt_source
+    assert 'calendar_id="club_c045_internal"' in prompt_source
