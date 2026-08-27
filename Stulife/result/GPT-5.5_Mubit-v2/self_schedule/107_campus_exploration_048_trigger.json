@@ -1,0 +1,16 @@
+{
+  "task_id": "107_campus_exploration_048_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T22:01:02.291484",
+      "event": {
+        "event_id": "c5f77289-0166-4d7f-b1eb-9a6363948f31",
+        "event_title": "Campus Challenge: Route to Rosetta Hall",
+        "location": "University Post Office",
+        "time": "Week 0, Saturday, 18:15-19:15",
+        "description": "Plan and walk a route from the University Post Office to Rosetta Hall via The Fashion Institute, then Terra Hall, avoiding crowded areas, staying covered from rain, using indoor routes, and well-lit paths."
+      }
+    }
+  ]
+}

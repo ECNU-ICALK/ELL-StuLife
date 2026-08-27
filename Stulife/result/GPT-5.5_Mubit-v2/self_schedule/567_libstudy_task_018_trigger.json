@@ -1,0 +1,16 @@
+{
+  "task_id": "567_libstudy_task_018_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T02:04:49.938803",
+      "event": {
+        "event_id": "3fa3ffe6-7415-4883-af4c-01b9eee18658",
+        "event_title": "Reminder: Grand Central Library historical archives study booking",
+        "location": "Grand Central Library, Quiet Study Zone (West Wing)",
+        "time": "Week 14, Sunday, 08:30-08:35",
+        "description": "Reserved Quiet Study Zone (West Wing) from 09:00-10:30 for historical archives study group."
+      }
+    }
+  ]
+}

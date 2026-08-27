@@ -1,0 +1,99 @@
+{
+  "task_id": "course_selection_s2_013",
+  "ground_truth": {
+    "selected_sections": [
+      {
+        "course_code": "COMS00311224(2)",
+        "assigned_pass": "A-Pass",
+        "popularity": 87
+      },
+      {
+        "course_code": "WXK003111107",
+        "assigned_pass": "B-Pass",
+        "popularity": 73
+      },
+      {
+        "course_code": "COMS00311213",
+        "assigned_pass": "B-Pass",
+        "popularity": 70
+      },
+      {
+        "course_code": "COMS00311214",
+        "assigned_pass": "B-Pass",
+        "popularity": 76
+      },
+      {
+        "course_code": "COMS00311223",
+        "assigned_pass": "S-Pass",
+        "popularity": 98
+      }
+    ]
+  },
+  "agent_selection": [
+    {
+      "course_code": "COMS0031121013",
+      "assigned_pass": "B-Pass",
+      "popularity": 2
+    },
+    {
+      "course_code": "PSYC003116100",
+      "assigned_pass": "B-Pass",
+      "popularity": 37
+    },
+    {
+      "course_code": "GE-PTI-112",
+      "assigned_pass": "B-Pass",
+      "popularity": 41
+    },
+    {
+      "course_code": "COMS0031131032(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 69
+    },
+    {
+      "course_code": "COMS0031131026(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 1
+    },
+    {
+      "course_code": "GE-PTI-102(1)",
+      "assigned_pass": "B-Pass",
+      "popularity": 14
+    },
+    {
+      "course_code": "GFJ003111100(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 18
+    },
+    {
+      "course_code": "COMS0031121018",
+      "assigned_pass": "B-Pass",
+      "popularity": 68
+    },
+    {
+      "course_code": "COMS00311223",
+      "assigned_pass": "S-Pass",
+      "popularity": 98
+    },
+    {
+      "course_code": "COMS00311213",
+      "assigned_pass": "B-Pass",
+      "popularity": 70
+    },
+    {
+      "course_code": "COMS00311214",
+      "assigned_pass": "B-Pass",
+      "popularity": 76
+    },
+    {
+      "course_code": "COMS00311224(2)",
+      "assigned_pass": "A-Pass",
+      "popularity": 87
+    },
+    {
+      "course_code": "WXK003111107",
+      "assigned_pass": "B-Pass",
+      "popularity": 73
+    }
+  ]
+}

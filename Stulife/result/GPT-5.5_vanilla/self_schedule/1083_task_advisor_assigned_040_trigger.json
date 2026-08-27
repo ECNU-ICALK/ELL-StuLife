@@ -1,0 +1,16 @@
+{
+  "task_id": "1083_task_advisor_assigned_040_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T23:31:15.425095",
+      "event": {
+        "event_id": "d53c0191-bf84-4f65-af17-17a04a6eaae3",
+        "event_title": "Literature Review Discussion with Professor Javier Payne",
+        "location": "Volleyball Courts (North), Sand Courts",
+        "time": "Week 18, Friday, 08:00-09:00",
+        "description": "Brief five-minute sync followed by reserved follow-up work time. Send arrival email to Professor Payne upon arrival."
+      }
+    }
+  ]
+}

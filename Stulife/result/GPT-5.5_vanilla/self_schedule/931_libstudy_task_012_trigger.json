@@ -1,0 +1,16 @@
+{
+  "task_id": "931_libstudy_task_012_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T23:09:15.263604",
+      "event": {
+        "event_id": "817a26a4-d1a7-4b46-a330-4e1634d5be38",
+        "event_title": "AI learning session at University Archives",
+        "location": "Grand Central Library, University Archives",
+        "time": "Week 15, Sunday, 15:00-18:30",
+        "description": "Reserved University Archives for collaborative AI algorithms learning session."
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "task_id": "0_first_task",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T14:57:46.610816",
+      "event": {
+        "event_id": "ec43c88f-0773-4624-8c7d-b8306b20a551",
+        "event_title": "Student Handbook Study",
+        "location": "Chancellor's Hall",
+        "time": "Week 0, Monday, 10:00-11:00",
+        "description": "New student required course."
+      }
+    },
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T14:57:48.540200",
+      "event": {
+        "event_id": "42123e65-524a-44e8-ac7e-766864ad53e3",
+        "event_title": "Academic Norms Study",
+        "location": "Chancellor's Hall",
+        "time": "Week 0, Monday, 19:00-20:00",
+        "description": "New student required course."
+      }
+    }
+  ]
+}

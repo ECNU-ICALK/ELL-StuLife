@@ -1,0 +1,16 @@
+{
+  "task_id": "864_task_advisor_assigned_020_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T22:59:06.332398",
+      "event": {
+        "event_id": "9ad13cd5-1a3c-4f17-b1d0-276b31e1169e",
+        "event_title": "Literature Review Meeting with Professor Javier Payne",
+        "location": "Bridgeway Apartments, Apartments",
+        "time": "Week 13, Saturday, 09:00-09:30",
+        "description": "Brief five-minute sync followed by room use for follow-up work."
+      }
+    }
+  ]
+}

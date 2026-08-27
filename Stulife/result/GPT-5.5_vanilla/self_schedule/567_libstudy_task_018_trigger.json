@@ -1,0 +1,16 @@
+{
+  "task_id": "567_libstudy_task_018_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T22:25:46.236275",
+      "event": {
+        "event_id": "af4cfd2b-65a5-4987-9dd8-ca4d77d60d57",
+        "event_title": "Library Seat Booking Reminder",
+        "location": "Grand Central Library, Periodicals Reading Room, Seat B001-PERIODICALS_READING_ROOM-S137",
+        "time": "Week 14, Sunday, 10:30-12:00",
+        "description": "Reserved quiet-zone seat with natural lighting and comfortable seating for historical archives study group."
+      }
+    }
+  ]
+}

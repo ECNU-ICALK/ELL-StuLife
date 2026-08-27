@@ -1,0 +1,16 @@
+{
+  "task_id": "1070_task_advisor_assigned_028_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T04:20:59.135716",
+      "event": {
+        "event_id": "49bd3a0c-a186-4f09-b238-1c3d2584b2bc",
+        "event_title": "Send arrival email to Professor Javier Payne",
+        "location": "Terra Hall, Lobby",
+        "time": "Week 18, Tuesday, 08:00-08:05",
+        "description": "Upon arrival, email Professor Javier Payne with subject and body: I have arrived."
+      }
+    }
+  ]
+}

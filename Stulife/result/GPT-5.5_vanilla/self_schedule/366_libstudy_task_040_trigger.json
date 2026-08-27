@@ -1,0 +1,16 @@
+{
+  "task_id": "366_libstudy_task_040_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T21:52:17.273118",
+      "event": {
+        "event_id": "211c3882-6fff-437d-aadb-6ae70a4e5046",
+        "event_title": "AI Study Group Seat Reservation",
+        "location": "Grand Central Library, Periodicals Reading Room, Seat B001-PERIODICALS_READING_ROOM-S037",
+        "time": "Week 11, Friday, 09:15-13:15",
+        "description": "Reserved seat for AI study group session."
+      }
+    }
+  ]
+}

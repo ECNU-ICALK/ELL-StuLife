@@ -1,0 +1,16 @@
+{
+  "task_id": "81_campus_exploration_050_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T21:41:18.771603",
+      "event": {
+        "event_id": "3d02e4c5-5043-481f-a998-7c1eb0fd7cf5",
+        "event_title": "Campus Challenge: Route to Soccer & Lacrosse Field",
+        "location": "Horizon Hall",
+        "time": "Week 0, Sunday, 08:45-09:45",
+        "description": "Plan and walk a route from Horizon Hall to the Soccer & Lacrosse Field via The South Community Market, then Ampere Hall, using a route that is dimly lit, exposed to rain, primarily outdoor, likely congested during class changes, and has uneven surfaces."
+      }
+    }
+  ]
+}

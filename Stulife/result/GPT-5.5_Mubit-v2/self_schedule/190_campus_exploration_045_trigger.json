@@ -1,0 +1,16 @@
+{
+  "task_id": "190_campus_exploration_045_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T23:15:32.346283",
+      "event": {
+        "event_id": "b53bf845-c99e-4ab9-8962-fdbc11388106",
+        "event_title": "Campus Challenge: Route to Central Parking Garage",
+        "location": "Pioneer Hall - Tower A",
+        "time": "Week 0, Saturday, 14:45-15:45",
+        "description": "Plan and walk route from Pioneer Hall - Tower A to Central Parking Garage via The University Bookstore, Innovation Plaza, and Graduate Tower A in exact sequence. Route should be less crowded, primarily outdoors, and have low lighting."
+      }
+    }
+  ]
+}

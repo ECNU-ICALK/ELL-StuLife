@@ -1,0 +1,16 @@
+{
+  "task_id": "850_libstudy_task_024_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T03:20:21.235206",
+      "event": {
+        "event_id": "7d5801c4-d283-4214-9083-36eaf92940db",
+        "event_title": "AI Hobby Exploration Study Group",
+        "location": "The University Bookstore, Reading Area seat B147-READING_AREA-S026",
+        "time": "Week 14, Saturday, 16:30-20:30",
+        "description": "Reserved low-traffic discussion-zone seat with projector and comfortable seating."
+      }
+    }
+  ]
+}

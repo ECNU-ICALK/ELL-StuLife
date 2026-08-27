@@ -1,0 +1,16 @@
+{
+  "task_id": "888_libstudy_task_074_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T03:30:31.435293",
+      "event": {
+        "event_id": "06d6a6fd-a672-44d3-9cef-96692091ba68",
+        "event_title": "AI Interest Study Group",
+        "location": "Blackstone School of Law, Sofa Area",
+        "time": "Week 14, Tuesday, 15:15-18:15",
+        "description": "Reserved sofa area with large table, whiteboard, projector, and power outlet for AI applications study group."
+      }
+    }
+  ]
+}

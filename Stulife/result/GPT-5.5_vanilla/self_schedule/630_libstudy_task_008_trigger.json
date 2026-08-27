@@ -1,0 +1,16 @@
+{
+  "task_id": "630_libstudy_task_008_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T22:34:43.341449",
+      "event": {
+        "event_id": "0d8180dc-fda6-4663-89eb-c247dbca50f0",
+        "event_title": "Leisure Reading Session",
+        "location": "Interfaith Chapel & Studies Center, Department Library (201)",
+        "time": "Week 9, Saturday, 18:30-21:30",
+        "description": "Reserved Department Library (201) for leisure reading on military theory. Reminder for booking time."
+      }
+    }
+  ]
+}

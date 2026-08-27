@@ -1,0 +1,1719 @@
+{
+  "completed_task_count": 1284,
+  "course_catalog": {
+    "COMS0031131032(2)": {
+      "name": "Linear Algebra",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "COMS0031121018": {
+      "name": "Programming",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, Thursday, 14:00-16:25",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Computer Lab A201",
+      "loc_src": "browse"
+    },
+    "COMS0031121018(2)": {
+      "name": "Programming",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, Thursday, 14:00-16:25",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Computer Lab A202",
+      "loc_src": "browse"
+    },
+    "COMS0031121018(3)": {
+      "name": "Programming",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, Thursday, 14:00-16:25",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Computer Lab A203",
+      "loc_src": "browse"
+    },
+    "COMS0031121013": {
+      "name": "Mathematical Analysis I",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, Wednesday, Friday,",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "COMS0031121013(2)": {
+      "name": "Mathematical Analysis I",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, Wednesday, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 103",
+      "loc_src": "browse"
+    },
+    "COMS0031121013(3)": {
+      "name": "Mathematical Analysis I",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, Wednesday, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 102",
+      "loc_src": "browse"
+    },
+    "GE-PTI-102(1)": {
+      "name": "Programming for Everyone",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Computer Lab A201",
+      "loc_src": "browse"
+    },
+    "PSYC003116100": {
+      "name": "Mental Health & Development of College Students",
+      "name_src": "browse",
+      "sched": "Weeks 1-16, Monday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Counseling & Psych Services, Workshop Space 102",
+      "loc_src": "browse"
+    },
+    "PSYC003116100(2)": {
+      "name": "Mental Health & Development of College Students",
+      "name_src": "browse",
+      "sched": "Weeks 1-16, Monday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Counseling & Psych Services, Group Therapy Room (101)",
+      "loc_src": "browse"
+    },
+    "PSYC003116100(3)": {
+      "name": "Mental Health & Development of College Students",
+      "name_src": "browse",
+      "sched": "Weeks 1-16, Monday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Model Classroom (101)",
+      "loc_src": "browse"
+    },
+    "COMS0031131026(2)": {
+      "name": "Introduction to Computer Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Horizon Hall, Lecture Hall 102",
+      "loc_src": "browse"
+    },
+    "GE-PTI-112": {
+      "name": "Innovation and Entrepreneurship",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 19:00-20:50",
+      "sched_src": "browse",
+      "loc": "The Forge Business Incubator, Pitch Room (101)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-103(2)": {
+      "name": "Introduction to Political Science",
+      "name_src": "draft",
+      "sched": "Weeks 1-18, Monday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Locke Center, Polling Center (101)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-104(1)": {
+      "name": "Understanding Film",
+      "name_src": "draft",
+      "sched": "Weeks 1-18, Monday, 19:00-20:50",
+      "sched_src": "browse",
+      "loc": "The Student Union, Movie Theater (225)",
+      "loc_src": "browse"
+    },
+    "COMS0031132119(3)": {
+      "name": "Design and Practice of AIoT System",
+      "name_src": "draft",
+      "sched": "Weeks 1-18, Thursday, 18:00-19:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, VR Lab (120)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-103(2)": {
+      "name": "Mind, Knowledge, and Reality",
+      "name_src": "draft",
+      "sched": "Weeks 1-18, Monday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Faculty Office 201",
+      "loc_src": "browse"
+    },
+    "SHK003111016": {
+      "name": "Ideology, Morality, and Legal Foundations",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-16:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Lecture Room 101",
+      "loc_src": "browse"
+    },
+    "SHK003111016(2)": {
+      "name": "Ideology, Morality, and Legal Foundations",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-16:50",
+      "sched_src": "browse",
+      "loc": "Blackstone School of Law, Lecture Hall 301",
+      "loc_src": "browse"
+    },
+    "SHK003111016(3)": {
+      "name": "Ideology, Morality, and Legal Foundations",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-16:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Debate Hall (101)",
+      "loc_src": "browse"
+    },
+    "COMS0031131032": {
+      "name": "Linear Algebra",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 102",
+      "loc_src": "browse"
+    },
+    "COMS0031131032(3)": {
+      "name": "Linear Algebra",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 103",
+      "loc_src": "browse"
+    },
+    "COMS0031131026": {
+      "name": "Introduction to Computer Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "COMS0031131026(3)": {
+      "name": "Introduction to Computer Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Horizon Hall, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "WXK003111107": {
+      "name": "Situation and Policy for University Students",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Lecture Room 101",
+      "loc_src": "browse"
+    },
+    "WXK003111107(2)": {
+      "name": "Situation and Policy for University Students",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "The Capitol Forum, Seminar Room 101",
+      "loc_src": "browse"
+    },
+    "WXK003111107(3)": {
+      "name": "Situation and Policy for University Students",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "The Capitol Forum, Seminar Room 102",
+      "loc_src": "browse"
+    },
+    "COMS003113204": {
+      "name": "Bioinformatics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Computer Lab A205",
+      "loc_src": "browse"
+    },
+    "COMS003113204(2)": {
+      "name": "Bioinformatics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Computer Lab A206",
+      "loc_src": "browse"
+    },
+    "COMS003113204(3)": {
+      "name": "Bioinformatics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Evolve Center, Genetics Lab G201",
+      "loc_src": "browse"
+    },
+    "COMS0031132119": {
+      "name": "Design and Practice of AIoT System",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 18:00-19:50",
+      "sched_src": "browse",
+      "loc": "Nexus Center for AI & Robotics, Machine Learning Lab (110)",
+      "loc_src": "browse"
+    },
+    "COMS0031132119(2)": {
+      "name": "Design and Practice of AIoT System",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 18:00-19:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, AI Lab (310)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-101(1)": {
+      "name": "Fundamentals of Modern Physics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Horizon Hall, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "GE-RSD-101(2)": {
+      "name": "Fundamentals of Modern Physics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Horizon Hall, Lecture Hall 102",
+      "loc_src": "browse"
+    },
+    "GE-RSD-102(1)": {
+      "name": "Chemistry in Everyday Life",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Veridian Hall, Lecture Hall 150",
+      "loc_src": "browse"
+    },
+    "GE-RSD-102(2)": {
+      "name": "Chemistry in Everyday Life",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Veridian Hall, Lecture Hall 150",
+      "loc_src": "browse"
+    },
+    "GE-RSD-103(1)": {
+      "name": "Introduction to Biology: The Science of Life",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Evolve Center, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "GE-RSD-103(2)": {
+      "name": "Introduction to Biology: The Science of Life",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Evolve Center, Lecture Hall 102",
+      "loc_src": "browse"
+    },
+    "GE-RSD-104(1)": {
+      "name": "Energy, Environment, and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Chancellor's Hall, Grand Auditorium (A100)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-104(2)": {
+      "name": "Energy, Environment, and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Chancellor's Hall, Lecture Hall (B201)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-105(1)": {
+      "name": "The History of Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Heritage Hall, Reading Room (105)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-105(2)": {
+      "name": "The History of Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Heritage Hall, Department Office (101)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-106(1)": {
+      "name": "Planet Earth: An Introduction to Geoscience",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Terra Hall, Rock & Mineral Collection (100)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-106(2)": {
+      "name": "Planet Earth: An Introduction to Geoscience",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Terra Hall, Rock & Mineral Collection (100)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-107(1)": {
+      "name": "The Cosmos: A Tour of the Universe",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 19:00-20:50",
+      "sched_src": "browse",
+      "loc": "Celestial Observatory, Planetarium (100)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-107(2)": {
+      "name": "The Cosmos: A Tour of the Universe",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 19:00-20:50",
+      "sched_src": "browse",
+      "loc": "Celestial Observatory, Planetarium (100)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-108(1)": {
+      "name": "Introduction to Environmental Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Carson Center for Environmental Science, Water Quality Lab (101)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-108(2)": {
+      "name": "Introduction to Environmental Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Carson Center for Environmental Science, Air Quality Lab (102)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-109(1)": {
+      "name": "The Science of Climate Change",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Terra Hall, Seismology Lab (201)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-109(2)": {
+      "name": "The Science of Climate Change",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Terra Hall, Seismology Lab (201)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-110(1)": {
+      "name": "Genetics, Evolution, and Human Diversity",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Evolve Center, Lecture Hall 103",
+      "loc_src": "browse"
+    },
+    "GE-RSD-110(2)": {
+      "name": "Genetics, Evolution, and Human Diversity",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Evolve Center, Lecture Hall 103",
+      "loc_src": "browse"
+    },
+    "GE-RSD-111": {
+      "name": "Sustainable Development Goals",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Seminar Room 201",
+      "loc_src": "browse"
+    },
+    "GE-RSD-112": {
+      "name": "The Science of Food and Nutrition",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Mead Hall, Museum of Anthropology (100)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-113": {
+      "name": "Nuclear Energy in the 21st Century",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Horizon Hall, Lecture Hall 102",
+      "loc_src": "browse"
+    },
+    "GE-RSD-114": {
+      "name": "The Biology of Behavior",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Cognitive Neuroscience Institute, Cognitive Lab 101",
+      "loc_src": "browse"
+    },
+    "GE-RSD-115": {
+      "name": "Oceans and Coasts",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Mercator Hall, Map Room (101)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-116": {
+      "name": "Scientific Revolutions",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 19:00-20:50",
+      "sched_src": "browse",
+      "loc": "Heritage Hall, Reading Room (105)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-117": {
+      "name": "The Physics of Sound and Music",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Harmony School of Music, Recording Studio (101)",
+      "loc_src": "browse"
+    },
+    "GE-RSD-118": {
+      "name": "Plant Biology and Global Food Security",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Botanical Research Center, Growth Chamber 201",
+      "loc_src": "browse"
+    },
+    "GE-RSD-119": {
+      "name": "Microbes and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Evolve Center, Genetics Lab G201",
+      "loc_src": "browse"
+    },
+    "GE-RSD-120": {
+      "name": "Forensic Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Veridian Hall, General Chemistry Lab C101",
+      "loc_src": "browse"
+    },
+    "GE-PTI-101(1)": {
+      "name": "Introduction to Engineering Design",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Momentum Hall, Machine Shop (101)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-101(2)": {
+      "name": "Introduction to Engineering Design",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Engineering Fab Lab, Project Assembly Area (D-Wing)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-102(2)": {
+      "name": "Programming for Everyone",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Computer Lab A202",
+      "loc_src": "browse"
+    },
+    "GE-PTI-103(1)": {
+      "name": "The Digital Age: How Technology Shapes Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Chancellor's Hall, Lecture Hall (B201)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-103(2)": {
+      "name": "The Digital Age: How Technology Shapes Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Chancellor's Hall, Lecture Hall (B202)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-104(1)": {
+      "name": "Robotics and Automation",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Nexus Center for AI & Robotics, Robotics Arena (100)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-104(2)": {
+      "name": "Robotics and Automation",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Nexus Center for AI & Robotics, Machine Learning Lab (110)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-105(1)": {
+      "name": "Materials of the Future",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Materials Science Institute, Polymer Lab (101)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-105(2)": {
+      "name": "Materials of the Future",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Materials Science Institute, Metallurgy Lab (102)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-106(1)": {
+      "name": "Introduction to Artificial Intelligence",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, AI Lab (310)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-106(2)": {
+      "name": "Introduction to Artificial Intelligence",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, AI Lab (310)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-107(1)": {
+      "name": "Cybersecurity for Beginners",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "GE-PTI-107(2)": {
+      "name": "Cybersecurity for Beginners",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "GE-PTI-108(1)": {
+      "name": "3D Printing and Additive Manufacturing",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Engineering Fab Lab, 3D Printing Farm (A-Wing)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-108(2)": {
+      "name": "3D Printing and Additive Manufacturing",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Engineering Fab Lab, 3D Printing Farm (A-Wing)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-109(1)": {
+      "name": "Biomedical Engineering Innovations",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Vesalius Hall, Lecture Room (110)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-109(2)": {
+      "name": "Biomedical Engineering Innovations",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Vesalius Hall, Medical Device Prototyping Lab (201)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-110(1)": {
+      "name": "The Science of Renewable Energy",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Keystone Hall, Hydraulics Lab (H101)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-110(2)": {
+      "name": "The Science of Renewable Energy",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Keystone Hall, Hydraulics Lab (H101)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-111": {
+      "name": "Digital Fabrication",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Engineering Fab Lab, CNC Machining Workshop (C-Wing)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-113": {
+      "name": "Wearable Technology",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Ampere Hall, Microelectronics Lab (E201)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-114": {
+      "name": "Virtual and Augmented Reality",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, VR Lab (120)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-116": {
+      "name": "Data Visualization",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Grand Central Library, Computer Lab (101-120)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-117": {
+      "name": "Space Exploration Technologies",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Aviation & Aerospace Center, Flight Simulator Bay (101)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-118": {
+      "name": "Autonomous Systems",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Nexus Center for AI & Robotics, Drone Lab (201)",
+      "loc_src": "browse"
+    },
+    "GE-PTI-119": {
+      "name": "Game Design Fundamentals",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "The Digital Arts Lab, Animation Station 101",
+      "loc_src": "browse"
+    },
+    "GE-PTI-120": {
+      "name": "Introduction to Clean Technologies",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Carson Center for Environmental Science, Faculty Office 201",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-101(1)": {
+      "name": "Logic and Critical Reasoning",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Debate Hall (101)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-101(2)": {
+      "name": "Logic and Critical Reasoning",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Debate Hall (101)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-102(1)": {
+      "name": "Introduction to Legal Reasoning",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Blackstone School of Law, Moot Courtroom (100)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-102(2)": {
+      "name": "Introduction to Legal Reasoning",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Blackstone School of Law, Moot Courtroom (100)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-103(1)": {
+      "name": "Mind, Knowledge, and Reality",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Department Library (211)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-104(1)": {
+      "name": "Data, Statistics, and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 101",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-104(2)": {
+      "name": "Data, Statistics, and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 102",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-105(1)": {
+      "name": "Debating Public Issues",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Chancellor's Hall, Grand Auditorium (A100)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-105(2)": {
+      "name": "Debating Public Issues",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Chancellor's Hall, Grand Auditorium (A100)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-106(1)": {
+      "name": "Media Literacy and Fake News",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Lecture Room (101)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-106(2)": {
+      "name": "Media Literacy and Fake News",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Lecture Room (101)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-107(1)": {
+      "name": "The Philosophy of Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Seminar Room 202",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-107(2)": {
+      "name": "The Philosophy of Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Seminar Room 203",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-108(1)": {
+      "name": "Puzzles, Paradoxes, and Thought Experiments",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Common Room (220)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-108(2)": {
+      "name": "Puzzles, Paradoxes, and Thought Experiments",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Common Room (220)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-109(1)": {
+      "name": "Cognitive Biases and Decision Making",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Research Lab (216)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-109(2)": {
+      "name": "Cognitive Biases and Decision Making",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Research Lab (216)",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-110(1)": {
+      "name": "The Art of Persuasion",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Seminar Room 204",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-110(2)": {
+      "name": "The Art of Persuasion",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Seminar Room 205",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-111": {
+      "name": "Introduction to Game Theory",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Adam Smith School of Business, Lecture Hall 201",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-112": {
+      "name": "Problem Solving Strategies",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 103",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-113": {
+      "name": "The Nature of Evidence",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Justice Clinic, Client Meeting Room 101",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-114": {
+      "name": "Understanding Social Statistics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Student Common Area",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-115": {
+      "name": "Ethical Dimensions of Scientific Research",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Interfaith Chapel & Studies Center, Faculty Office 202",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-116": {
+      "name": "The Logic of Discovery",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Seminar Room 204",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-117": {
+      "name": "Judgment Under Uncertainty",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Faculty Office 201",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-118": {
+      "name": "Critical Approaches to Popular Culture",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 19:00-20:50",
+      "sched_src": "browse",
+      "loc": "The Globe Playhouse, Lobby",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-119": {
+      "name": "Reasoning with Mathematical Models",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Euler Mathematics Institute, Lecture Hall 103",
+      "loc_src": "browse"
+    },
+    "GE-CTJ-120": {
+      "name": "The Art of the Argument",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "University Writing Center, Workshop Room (115)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-101(1)": {
+      "name": "Masterpieces of World Literature",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Orwell Hall, Department Library (101)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-101(2)": {
+      "name": "Masterpieces of World Literature",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Orwell Hall, Student Lounge",
+      "loc_src": "browse"
+    },
+    "GE-CAI-102(1)": {
+      "name": "Introduction to Art History",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Gombrich Hall, Lecture Hall (101)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-102(2)": {
+      "name": "Introduction to Art History",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "University Art Gallery, Main Exhibition Space (Gallery A)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-103(1)": {
+      "name": "The World of Music",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Opus Recital Hall, Acoustically Tuned Hall (300 seats)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-103(2)": {
+      "name": "The World of Music",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Opus Recital Hall, Acoustically Tuned Hall (300 seats)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-104(2)": {
+      "name": "Understanding Film",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 19:00-20:50",
+      "sched_src": "browse",
+      "loc": "The Student Union, Movie Theater (225)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-105(1)": {
+      "name": "Myths, Legends, and Folklore",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Mead Hall, Museum of Anthropology (100)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-105(2)": {
+      "name": "Myths, Legends, and Folklore",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Mead Hall, Research Lab 201",
+      "loc_src": "browse"
+    },
+    "GE-CAI-106(1)": {
+      "name": "History of Theatre",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "The Globe Playhouse, Lobby",
+      "loc_src": "browse"
+    },
+    "GE-CAI-106(2)": {
+      "name": "History of Theatre",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "The Black Box Experimental Theater, Flexible Seating Theater (150 seats)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-107(1)": {
+      "name": "Architectural Wonders of the World",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Vitruvius School of Architecture, Critique Space 101",
+      "loc_src": "browse"
+    },
+    "GE-CAI-107(2)": {
+      "name": "Architectural Wonders of the World",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Vitruvius School of Architecture, Drafting Studio 200",
+      "loc_src": "browse"
+    },
+    "GE-CAI-108(1)": {
+      "name": "Cultural Crossroads: An Introduction to Anthropology",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Mead Hall, Museum of Anthropology (100)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-108(2)": {
+      "name": "Cultural Crossroads: An Introduction to Anthropology",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Mead Hall, Faculty Office 210",
+      "loc_src": "browse"
+    },
+    "GE-CAI-109(1)": {
+      "name": "Poetry and the Human Experience",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Orwell Hall, Faculty Office 201",
+      "loc_src": "browse"
+    },
+    "GE-CAI-109(2)": {
+      "name": "Poetry and the Human Experience",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Orwell Hall, Faculty Office 202",
+      "loc_src": "browse"
+    },
+    "GE-CAI-110(1)": {
+      "name": "World Religions and Philosophies",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Interfaith Chapel & Studies Center, Department Library (201)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-110(2)": {
+      "name": "World Religions and Philosophies",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Interfaith Chapel & Studies Center, Faculty Office 203",
+      "loc_src": "browse"
+    },
+    "GE-CAI-111": {
+      "name": "The Art of Storytelling",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Orwell Hall, Writing Center Annex (200)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-112": {
+      "name": "Classical Mythology",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Acropolis Pavilion, Artifact Display Hall (100)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-113": {
+      "name": "History of Ideas",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Heritage Hall, Reading Room (105)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-114": {
+      "name": "East Asian Art and Culture",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "University Art Gallery, Permanent Collection (Gallery B)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-115": {
+      "name": "Introduction to Linguistics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Rosetta Hall, Language Lab 101",
+      "loc_src": "browse"
+    },
+    "GE-CAI-116": {
+      "name": "Digital Humanities",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Grand Central Library, Computer Lab (101-120)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-117": {
+      "name": "What is Aesthetics?",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Student Lounge",
+      "loc_src": "browse"
+    },
+    "GE-CAI-118": {
+      "name": "Shakespeare and His World",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Orwell Hall, Department Library (101)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-119": {
+      "name": "The Power of Images",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Lumiere Hall, Sound Stage (105)",
+      "loc_src": "browse"
+    },
+    "GE-CAI-120": {
+      "name": "Introduction to Creative Writing",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "University Writing Center, Workshop Room (115)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-101(1)": {
+      "name": "Foundations of Sociology",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Main Office (100)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-101(2)": {
+      "name": "Foundations of Sociology",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Main Office (100)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-102(1)": {
+      "name": "Principles of Macroeconomics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Adam Smith School of Business, Lecture Hall 202",
+      "loc_src": "browse"
+    },
+    "GE-VSP-102(2)": {
+      "name": "Principles of Macroeconomics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Adam Smith School of Business, Lecture Hall 203",
+      "loc_src": "browse"
+    },
+    "GE-VSP-103(1)": {
+      "name": "Introduction to Political Science",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Locke Center, Reading Room (110)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-104(1)": {
+      "name": "Public Policy and Governance",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "The Capitol Forum, Seminar Room 101",
+      "loc_src": "browse"
+    },
+    "GE-VSP-104(2)": {
+      "name": "Public Policy and Governance",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "The Capitol Forum, Seminar Room 102",
+      "loc_src": "browse"
+    },
+    "GE-VSP-105(1)": {
+      "name": "Global History: The Modern World",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Heritage Hall, Departmental Archives (221)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-105(2)": {
+      "name": "Global History: The Modern World",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Heritage Hall, Faculty Office 201",
+      "loc_src": "browse"
+    },
+    "GE-VSP-106(1)": {
+      "name": "Social Problems and Public Action",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Student Common Area",
+      "loc_src": "browse"
+    },
+    "GE-VSP-106(2)": {
+      "name": "Social Problems and Public Action",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Research Lab (216)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-107(1)": {
+      "name": "Cities and Urban Life",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Mercator Hall, GIS Lab 102",
+      "loc_src": "browse"
+    },
+    "GE-VSP-107(2)": {
+      "name": "Cities and Urban Life",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Mercator Hall, GIS Lab 103",
+      "loc_src": "browse"
+    },
+    "GE-VSP-108(1)": {
+      "name": "International Relations",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Locke Center, Main Office (200)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-108(2)": {
+      "name": "International Relations",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Locke Center, Faculty Office 201",
+      "loc_src": "browse"
+    },
+    "GE-VSP-109(1)": {
+      "name": "Development and Globalization",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Global Commons, Global Lounge & Cafe",
+      "loc_src": "browse"
+    },
+    "GE-VSP-109(2)": {
+      "name": "Development and Globalization",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Global Commons, Resource Center (101)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-110(1)": {
+      "name": "Work, Economy, and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Adam Smith School of Business, Career Center (210)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-110(2)": {
+      "name": "Work, Economy, and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Adam Smith School of Business, Lecture Hall 204",
+      "loc_src": "browse"
+    },
+    "GE-VSP-111": {
+      "name": "The Family in Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Faculty Office 202",
+      "loc_src": "browse"
+    },
+    "GE-VSP-112": {
+      "name": "Social Movements and Change",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "The Capitol Forum, Research Center (201)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-113": {
+      "name": "Race and Ethnicity in the Modern World",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Global Commons, Faculty Office 202",
+      "loc_src": "browse"
+    },
+    "GE-VSP-114": {
+      "name": "Gender, Culture, and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Mead Hall, Faculty Office 211",
+      "loc_src": "browse"
+    },
+    "GE-VSP-115": {
+      "name": "The Economics of Poverty and Inequality",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Adam Smith School of Business, Faculty Office 301",
+      "loc_src": "browse"
+    },
+    "GE-VSP-116": {
+      "name": "Comparative Political Systems",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Locke Center, Faculty Office 203",
+      "loc_src": "browse"
+    },
+    "GE-VSP-117": {
+      "name": "The Politics of Developing Nations",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Global Commons, Faculty Office 203",
+      "loc_src": "browse"
+    },
+    "GE-VSP-118": {
+      "name": "Understanding Social Change",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Westwood Hall, Faculty Office 203",
+      "loc_src": "browse"
+    },
+    "GE-VSP-119": {
+      "name": "Technology and Social Progress",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Innovate Hall, Seminar Room (205)",
+      "loc_src": "browse"
+    },
+    "GE-VSP-120": {
+      "name": "The Future of Work",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Career Services Center, Resume Workshop Room (101)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-101(1)": {
+      "name": "Introduction to Ethics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Debate Hall (101)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-101(2)": {
+      "name": "Introduction to Ethics",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Agora Hall, Faculty Office 203",
+      "loc_src": "browse"
+    },
+    "GE-EEC-102(1)": {
+      "name": "Foundations of Education",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Model Classroom (101)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-102(2)": {
+      "name": "Foundations of Education",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Resource Library (110)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-103(1)": {
+      "name": "Interpersonal Communication",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Seminar Room 202",
+      "loc_src": "browse"
+    },
+    "GE-EEC-103(2)": {
+      "name": "Interpersonal Communication",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Seminar Room 203",
+      "loc_src": "browse"
+    },
+    "GE-EEC-104(1)": {
+      "name": "Psychology of Learning",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Advising Center (200)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-104(2)": {
+      "name": "Psychology of Learning",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Faculty Office 201",
+      "loc_src": "browse"
+    },
+    "GE-EEC-105(1)": {
+      "name": "Global Communication and Culture",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Global Commons, Global Lounge & Cafe",
+      "loc_src": "browse"
+    },
+    "GE-EEC-105(2)": {
+      "name": "Global Communication and Culture",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Global Commons, Main Office (200)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-106(1)": {
+      "name": "Philosophy of Education",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Model Classroom (101)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-106(2)": {
+      "name": "Philosophy of Education",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Resource Library (110)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-107(1)": {
+      "name": "Language and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Rosetta Hall, Global Culture Center (115)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-107(2)": {
+      "name": "Language and Society",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Rosetta Hall, Tutoring Center (200)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-108(1)": {
+      "name": "Public Speaking",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Chancellor's Hall, Grand Auditorium (A100)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-108(2)": {
+      "name": "Public Speaking",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Chancellor's Hall, Lecture Hall (B201)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-109(1)": {
+      "name": "Technology, Ethics, and the Future",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "The Honors College, Seminar Room 201",
+      "loc_src": "browse"
+    },
+    "GE-EEC-109(2)": {
+      "name": "Technology, Ethics, and the Future",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "The Honors College, Seminar Room 202",
+      "loc_src": "browse"
+    },
+    "GE-EEC-110(1)": {
+      "name": "Child Development and Education",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "The University Childcare Center, Playroom A",
+      "loc_src": "browse"
+    },
+    "GE-EEC-110(2)": {
+      "name": "Child Development and Education",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "The University Childcare Center, Playroom B",
+      "loc_src": "browse"
+    },
+    "GE-EEC-111": {
+      "name": "Introduction to Psychology",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Alumni Hall, Lecture Room (101)",
+      "loc_src": "browse"
+    },
+    "GE-EEC-112": {
+      "name": "Media Ethics and Law",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Blackstone School of Law, Lecture Hall 301",
+      "loc_src": "browse"
+    },
+    "GE-EEC-113": {
+      "name": "Leadership and Communication",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Adam Smith School of Business, Lecture Hall 205",
+      "loc_src": "browse"
+    },
+    "GE-EEC-114": {
+      "name": "Cross-Cultural Communication",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 08:00-09:50",
+      "sched_src": "browse",
+      "loc": "Rosetta Hall, Language Lab 102",
+      "loc_src": "browse"
+    },
+    "GE-EEC-115": {
+      "name": "Theories of Human Development",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Faculty Office 202",
+      "loc_src": "browse"
+    },
+    "GE-EEC-116": {
+      "name": "Ethics in Business and Professions",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Tuesday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Adam Smith School of Business, Faculty Office 302",
+      "loc_src": "browse"
+    },
+    "GE-EEC-117": {
+      "name": "Education for Social Justice",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Wednesday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Faculty Office 203",
+      "loc_src": "browse"
+    },
+    "GE-EEC-118": {
+      "name": "Technology in Education",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Thursday, 14:00-15:50",
+      "sched_src": "browse",
+      "loc": "Dewey School of Education, Faculty Office 204",
+      "loc_src": "browse"
+    },
+    "GE-EEC-119": {
+      "name": "Organizational Communication",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Friday, 10:00-11:50",
+      "sched_src": "browse",
+      "loc": "The Forge Business Incubator, Mentorship Office 201",
+      "loc_src": "browse"
+    },
+    "GE-EEC-120": {
+      "name": "The Ethics of Care",
+      "name_src": "browse",
+      "sched": "Weeks 1-18, Monday, 16:00-17:50",
+      "sched_src": "browse",
+      "loc": "Counseling & Psych Services, Group Therapy Room (101)",
+      "loc_src": "browse"
+    },
+    "GFJ003111100(2)": {
+      "sched": "Friday, 14:00-15:50",
+      "sched_src": "instruction",
+      "loc": "Chancellor's Hall, Lecture Hall B202",
+      "loc_src": "instruction"
+    },
+    "COMS00311223": {
+      "name": "3D Computer Vision and Embodied Intelligence",
+      "name_src": "draft"
+    },
+    "COMS00311213": {
+      "name": "Deep Learning",
+      "name_src": "draft"
+    },
+    "COMS00311214": {
+      "name": "Application and Practice of Large Language Model",
+      "name_src": "draft"
+    },
+    "POL003116100": {
+      "name": "Public Safety Education",
+      "name_src": "draft"
+    },
+    "COMS00311299(2)": {
+      "name": "Game Project",
+      "name_src": "draft"
+    },
+    "COMS00311224": {
+      "name": "Data Mining and Action",
+      "name_src": "draft"
+    },
+    "COMS00311224(2)": {
+      "name": "Data Mining and Action",
+      "name_src": "draft"
+    },
+    "COMS00311223(2)": {
+      "name": "3D Computer Vision and Embodied Intelligence",
+      "name_src": "draft"
+    },
+    "POL003116100(2)": {
+      "name": "Public Safety Education",
+      "name_src": "draft"
+    },
+    "COMS00311299": {
+      "name": "Game Project",
+      "name_src": "draft"
+    },
+    "COMS00311214(2)": {
+      "name": "Application and Practice of Large Language Model",
+      "name_src": "draft"
+    }
+  },
+  "registered_codes": [
+    "COMS0031131032(2)",
+    "COMS0031121013",
+    "PSYC003116100",
+    "GE-PTI-112",
+    "GFJ003111100(2)",
+    "COMS0031121018",
+    "COMS0031131026(2)",
+    "GE-PTI-102(1)",
+    "COMS00311213",
+    "COMS00311223",
+    "WXK003111107(2)",
+    "POL003116100(2)",
+    "COMS00311214(2)"
+  ],
+  "last_sched_digest": "[stulife schedule] My registered courses and meeting times (as of task 1204):\n- Linear Algebra [COMS0031131032(2)] -- Weeks 1-18, Tuesday, Thursday, 08:00-09:50 -- Euler Mathematics Institute, Lecture Hall 101\n- Mathematical Analysis I [COMS0031121013] -- Weeks 1-18, Monday, Wednesday, Friday, -- Euler Mathematics Institute, Lecture Hall 101\n- Mental Health & Development of College Students [PSYC003116100] -- Weeks 1-16, Monday, 08:00-09:50 -- Counseling & Psych Services, Workshop Space 102\n- Innovation and Entrepreneurship [GE-PTI-112] -- Weeks 1-18, Wednesday, 19:00-20:50 -- The Forge Business Incubator, Pitch Room (101)\n- GFJ003111100(2) [GFJ003111100(2)] -- Friday, 14:00-15:50 -- Chancellor's Hall, Lecture Hall B202\n- Programming [COMS0031121018] -- Weeks 1-18, Tuesday, Thursday, 14:00-16:25 -- Innovate Hall, Computer Lab A201\n- Introduction to Computer Science [COMS0031131026(2)] -- Weeks 1-18, Wednesday, 14:00-15:50 -- Horizon Hall, Lecture Hall 102\n- Programming for Everyone [GE-PTI-102(1)] -- Weeks 1-18, Monday, 14:00-15:50 -- Innovate Hall, Computer Lab A201\n- Deep Learning [COMS00311213] -- (times/location not yet observed)\n- 3D Computer Vision and Embodied Intelligence [COMS00311223] -- (times/location not yet observed)\n- Situation and Policy for University Students [WXK003111107(2)] -- Weeks 1-18, Wednesday, 08:00-09:50 -- The Capitol Forum, Seminar Room 101\n- Public Safety Education [POL003116100(2)] -- (times/location not yet observed)\n- Application and Practice of Large Language Model [COMS00311214(2)] -- (times/location not yet observed)"
+}

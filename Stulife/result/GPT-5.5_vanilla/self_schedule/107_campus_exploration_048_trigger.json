@@ -1,0 +1,16 @@
+{
+  "task_id": "107_campus_exploration_048_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T16:03:51.269374",
+      "event": {
+        "event_id": "d8881f93-121a-464b-92ec-768c48b77154",
+        "event_title": "Campus Challenge Route Walk",
+        "location": "University Post Office",
+        "time": "Week 0, Saturday, 18:15-19:15",
+        "description": "Walk planned route: University Post Office -> University Welcome Center -> Pioneer Hall - Tower B -> Pioneer Hall - Tower A -> Harmony School of Music -> Ailey Dance Pavilion -> The Black Box Experimental Theater -> The Fashion Institute -> The Black Box Experimental Theater -> Ailey Dance Pavilion -> The Globe Playhouse -> Central Parking Garage -> The Student Union -> Grand Central Library -> Innovate Hall -> Nexus Center for AI & Robotics -> Terra Hall -> Nexus Center for AI & Robotics -> Innovate Hall -> Grand Central Library -> Chancellor's Hall -> Rosetta Hall. Constraints: avoid crowds, covered, indoor, well-lit."
+      }
+    }
+  ]
+}
