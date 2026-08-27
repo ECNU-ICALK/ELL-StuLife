@@ -1,0 +1,16 @@
+{
+  "task_id": "41_campus_exploration_036_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T15:16:45.357413",
+      "event": {
+        "event_id": "e18b3f66-9d88-4d6f-906e-43c6c5d7bcbe",
+        "event_title": "Campus Route Challenge",
+        "location": "Quantum Research Institute",
+        "time": "Week 0, Sunday, 15:00-16:30",
+        "description": "Walk route avoiding congested areas: Quantum Research Institute -> Horizon Suites -> Eastview Apartments -> Bridgeway Apartments -> Meadowbrook Hall -> Summit House -> Blackstone School of Law."
+      }
+    }
+  ]
+}

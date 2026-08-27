@@ -1,0 +1,16 @@
+{
+  "task_id": "355_libstudy_task_022_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T01:03:52.197090",
+      "event": {
+        "event_id": "fe67e4a2-0988-473f-9d15-c611c75aeee7",
+        "event_title": "Music Interest Study Group Project",
+        "location": "Harmony School of Music, Music Library (105)",
+        "time": "Week 2, Sunday, 21:45-22:45",
+        "description": "Reserved seat for collaborative analysis project with scores and recordings."
+      }
+    }
+  ]
+}

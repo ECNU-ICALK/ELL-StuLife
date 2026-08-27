@@ -1,0 +1,16 @@
+{
+  "task_id": "228_campus_exploration_026_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T00:00:55.101389",
+      "event": {
+        "event_id": "0f9e70ce-3a9a-4064-81fa-86a6eda0c8dc",
+        "event_title": "Campus Challenge: Route to Aspen Hall",
+        "location": "The Black Box Experimental Theater",
+        "time": "Week 0, Sunday, 08:00-09:00",
+        "description": "Plan and walk route from The Black Box Experimental Theater to Aspen Hall via Celestial Observatory, University Welcome Center, Victory Stadium, and Asclepius School of Pharmacy, in exact sequence. Find route outdoors and covered from rain."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "383_task_advisor_assigned_030_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T21:55:10.445220",
+      "event": {
+        "event_id": "7a09ba73-dd61-4d84-8195-d3e6a89bc346",
+        "event_title": "Experimental Protocol Consultation",
+        "location": "Arts Faculty Offices, Faculty Lounge",
+        "time": "Week 3, Thursday, 08:15-10:00",
+        "description": "Brief five-minute sync with Professor Javier Payne at the beginning; room reserved for preparation and review afterward."
+      }
+    }
+  ]
+}

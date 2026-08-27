@@ -1,0 +1,16 @@
+{
+  "task_id": "991_task_advisor_assigned_044_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T23:18:05.724063",
+      "event": {
+        "event_id": "55f362ae-102d-4d40-84d0-9b25b5003426",
+        "event_title": "Experimental Protocol Consultation - Physics",
+        "location": "Central Dining Commons, Overflow Seating",
+        "time": "Week 16, Wednesday, 09:00-11:00",
+        "description": "Brief five-minute sync at the beginning with Professor Javier Payne and Quinn Walker; room reserved for full two-hour block. Send Professor Payne an arrival email with subject/body 'I have arrived' upon arrival."
+      }
+    }
+  ]
+}

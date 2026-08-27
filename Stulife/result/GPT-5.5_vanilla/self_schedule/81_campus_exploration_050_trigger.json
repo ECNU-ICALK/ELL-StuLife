@@ -1,0 +1,16 @@
+{
+  "task_id": "81_campus_exploration_050_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T15:34:47.552226",
+      "event": {
+        "event_id": "ddaf8199-63af-4077-bc80-9d09609b9c97",
+        "event_title": "Campus Challenge Route",
+        "location": "Horizon Hall",
+        "time": "Week 0, Sunday, 08:45-10:00",
+        "description": "Walk Horizon Hall -> South Community Market -> Ampere Hall -> Soccer & Lacrosse Field via constrained outdoor route."
+      }
+    }
+  ]
+}

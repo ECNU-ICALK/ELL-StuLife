@@ -1,0 +1,16 @@
+{
+  "task_id": "672_libstudy_task_042_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T02:33:31.824896",
+      "event": {
+        "event_id": "1f23f492-8e19-4af0-baec-6b01d376a0b7",
+        "event_title": "AI Study Group Session",
+        "location": "Gombrich Hall, Lobby",
+        "time": "Week 10, Monday, 19:30-20:30",
+        "description": "Reserved spot for AI study group; review neural network concepts."
+      }
+    }
+  ]
+}

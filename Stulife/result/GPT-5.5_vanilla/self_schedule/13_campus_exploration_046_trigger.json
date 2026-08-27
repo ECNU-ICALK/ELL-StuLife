@@ -1,0 +1,16 @@
+{
+  "task_id": "13_campus_exploration_046_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T15:03:32.275844",
+      "event": {
+        "event_id": "c88d386a-2e42-4967-a47d-0547ebf373f5",
+        "event_title": "Campus Route Challenge",
+        "location": "Celestial Observatory",
+        "time": "Week 0, Tuesday, 21:45-22:45",
+        "description": "Walk route: Celestial Observatory -> Soccer & Lacrosse Field -> Chancellor's Hall -> The University Childcare Center -> Pioneer Commons. Use accessible, well-lit, primarily indoor, low-congestion route; avoid exposed/slippery areas if raining."
+      }
+    }
+  ]
+}

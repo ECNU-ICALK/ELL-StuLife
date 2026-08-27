@@ -1,0 +1,16 @@
+{
+  "task_id": "383_task_advisor_assigned_030_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T01:12:22.127112",
+      "event": {
+        "event_id": "3db08091-0e66-4187-a02d-712be164c6cf",
+        "event_title": "Experimental Protocol Consultation",
+        "location": "Arts Faculty Offices, Faculty Lounge",
+        "time": "Week 3, Thursday, 08:15-10:00",
+        "description": "Consultation for Materials Science and Engineering experimental protocol with Jade Jones."
+      }
+    }
+  ]
+}

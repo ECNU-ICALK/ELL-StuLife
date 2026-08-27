@@ -1,0 +1,16 @@
+{
+  "task_id": "74_campus_exploration_037_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T21:38:54.476136",
+      "event": {
+        "event_id": "a74b8184-e2e4-465a-b639-2dd654a30b62",
+        "event_title": "Campus Challenge: Route to Academic Success Center",
+        "location": "The Fashion Institute",
+        "time": "Week 0, Wednesday, 14:30-15:30",
+        "description": "Plan and walk a route from The Fashion Institute to Academic Success Center via Horizon Suites, Pioneer Hall - Tower C, and Student Services Tower, accounting for uneven surfaces."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "190_campus_exploration_045_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T17:05:04.759051",
+      "event": {
+        "event_id": "a16f5681-8805-4dce-9ce0-0c97ffbbba95",
+        "event_title": "Campus Route Challenge",
+        "location": "Pioneer Hall - Tower A",
+        "time": "Week 0, Saturday, 14:45-16:00",
+        "description": "Walk route: Pioneer Hall - Tower A -> The University Bookstore -> Innovation Plaza -> Graduate Tower A -> Central Parking Garage; less crowded, primarily outdoors, low lighting."
+      }
+    }
+  ]
+}

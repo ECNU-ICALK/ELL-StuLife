@@ -1,0 +1,16 @@
+{
+  "task_id": "44_campus_exploration_038_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T15:18:24.290954",
+      "event": {
+        "event_id": "eefcc4c4-52e0-4d84-a2ab-af02c601d1d1",
+        "event_title": "Campus route challenge",
+        "location": "University Post Office",
+        "time": "Week 0, Wednesday, 17:45-18:45",
+        "description": "Walk route avoiding congested areas: University Post Office -> University Welcome Center -> Grand Central Library -> Innovate Hall -> Nexus Center for AI & Robotics -> Vesalius Hall -> Nexus Center for AI & Robotics -> Innovate Hall -> Grand Central Library -> University Welcome Center -> Graduate Tower B -> Graduate Commons -> Student Recreation Center -> Aquatic Center -> Student Recreation Center -> Graduate Commons -> Graduate Tower B -> University Welcome Center -> North Quad Field -> Community Park -> North Quad Field -> University Welcome Center -> Grand Central Library -> Chancellor's Hall -> Agora Hall."
+      }
+    }
+  ]
+}

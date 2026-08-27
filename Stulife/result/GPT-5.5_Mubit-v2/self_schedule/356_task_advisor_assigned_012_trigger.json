@@ -1,0 +1,16 @@
+{
+  "task_id": "356_task_advisor_assigned_012_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T01:04:44.206941",
+      "event": {
+        "event_id": "8c25e2b4-087d-4f23-acf9-b2c4598b15d9",
+        "event_title": "Data Analysis Discussion with Professor Javier Payne",
+        "location": "Chancellor's Hall, Vending Machines",
+        "time": "Week 13, Sunday, 08:00-11:00",
+        "description": "Brief discussion about the data analysis assignment. Upon arrival, email Professor Javier Payne with subject and body: I have arrived."
+      }
+    }
+  ]
+}

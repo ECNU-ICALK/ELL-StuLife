@@ -1,0 +1,16 @@
+{
+  "task_id": "1_campus_exploration_033_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T20:46:43.836096",
+      "event": {
+        "event_id": "0b0c404b-1d05-4811-af37-749b35c1365e",
+        "event_title": "Campus Challenge Route",
+        "location": "Chancellor's Hall",
+        "time": "Week 0, Friday, 08:15-09:15",
+        "description": "Plan and walk route: Chancellor's Hall -> North Residential Maintenance -> Student Recreation Center -> Stone Creek House -> North Quad Field -> University IT Help Desk. Constraints: indoors, well-lit, covered from rain; may have uneven surfaces/crowds."
+      }
+    }
+  ]
+}

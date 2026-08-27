@@ -1,0 +1,85 @@
+{
+    "StuGPA": {
+        "TotalStuGPA": 48.2685950029765,
+        "ExamPerformance": {
+            "score": 18.4375,
+            "correct": 59,
+            "total_evaluated": 160,
+            "total_identified": 160
+        },
+        "ClassPerformance": {
+            "score": 20.344311377245507,
+            "points": 226.5,
+            "total_evaluated": 334,
+            "total_identified": 334,
+            "breakdown": {
+                "fully_correct": 191,
+                "correct_location_wrong_answer": 71,
+                "did_not_arrive": 72
+            }
+        },
+        "CampusDailyLife": {
+            "score": 9.486783625730993,
+            "AdvisorTask": {
+                "score": 4.088888888888889,
+                "correct": 23,
+                "total_evaluated": 45,
+                "total_identified": 67
+            },
+            "ClubActivity": {
+                "score": 3.1578947368421053,
+                "correct": 50,
+                "total_evaluated": 95,
+                "total_identified": 140
+            },
+            "PersonalResponsibility": {
+                "score": 2.24,
+                "correct": 28,
+                "total_evaluated": 75,
+                "total_identified": 97
+            }
+        }
+    },
+    "SuccessRate": "41.96%",
+    "TurnAndTokenMetrics": {
+        "avg_turns": 8.116043613707165,
+        "max_turns": 62,
+        "min_turns": 2,
+        "median_turns": 6.0,
+        "avg_tokens": 7770.761682242991,
+        "max_tokens": 52568,
+        "min_tokens": 2697,
+        "median_tokens": 7411.0,
+        "total_task_count": 1284
+    },
+    "HPS": 0.4277448071216618,
+    "LTRR": {
+        "rate": 0.21660649819494585,
+        "correct": 120,
+        "total_evaluated": 554,
+        "total_identified": 554
+    },
+    "PIS": {
+        "rate": 0.39748201438848924,
+        "correct": 221,
+        "total_evaluated": 556,
+        "total_identified": 556
+    },
+    "SubMetrics": {
+        "InClass": {
+            "success_rate": 0.5718562874251497,
+            "avg_turns": 6.862422997946612,
+            "task_count": 487
+        },
+        "Exam": {
+            "success_rate": 0.36875,
+            "avg_turns": 2.7375,
+            "task_count": 160
+        },
+        "DailyCampus": {
+            "success_rate": 0.3235955056179775,
+            "avg_turns": 10.425431711145997,
+            "task_count": 637
+        }
+    }
+}
