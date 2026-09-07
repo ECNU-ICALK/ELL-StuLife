@@ -1,0 +1,16 @@
+{
+  "task_id": "44_campus_exploration_038_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T20:58:15.446113",
+      "event": {
+        "event_id": "450e4db4-c36a-4950-ac7a-600d6042d0e0",
+        "event_title": "Campus Challenge: Route to Agora Hall",
+        "location": "University Post Office",
+        "time": "Week 0, Wednesday, 17:45-18:45",
+        "description": "Plan and walk a congestion-avoiding route from University Post Office to Agora Hall via Vesalius Hall, Aquatic Center, and Community Park in that exact sequence."
+      }
+    }
+  ]
+}

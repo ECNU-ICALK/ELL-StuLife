@@ -1,0 +1,16 @@
+{
+  "task_id": "1086_task_advisor_assigned_034_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T23:31:54.531683",
+      "event": {
+        "event_id": "b77588b6-4cfc-4129-9847-4e19e8a7097d",
+        "event_title": "Data Analysis Assignment Follow-up Discussion",
+        "location": "Bridgeway Apartments, Parking",
+        "time": "Week 18, Thursday, 09:00-09:05",
+        "description": "Brief five-minute chat with Professor Richard Scott to go over the data analysis assignment. Room booked 08:15-11:00 for additional work afterward."
+      }
+    }
+  ]
+}

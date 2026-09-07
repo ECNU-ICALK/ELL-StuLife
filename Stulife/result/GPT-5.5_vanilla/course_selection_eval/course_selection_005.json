@@ -1,0 +1,99 @@
+{
+  "task_id": "course_selection_005",
+  "ground_truth": {
+    "selected_sections": [
+      {
+        "course_code": "COMS0031131032(2)",
+        "assigned_pass": "A-Pass",
+        "popularity": 93
+      },
+      {
+        "course_code": "COMS0031121018",
+        "assigned_pass": "S-Pass",
+        "popularity": 97
+      },
+      {
+        "course_code": "COMS0031121013",
+        "assigned_pass": "B-Pass",
+        "popularity": 18
+      },
+      {
+        "course_code": "PSYC003116100",
+        "assigned_pass": "B-Pass",
+        "popularity": 54
+      },
+      {
+        "course_code": "COMS0031131026(2)",
+        "assigned_pass": "B-Pass",
+        "popularity": 53
+      },
+      {
+        "course_code": "GFJ003111100(2)",
+        "assigned_pass": "A-Pass",
+        "popularity": 87
+      },
+      {
+        "course_code": "GE-PTI-102(1)",
+        "assigned_pass": "B-Pass",
+        "popularity": 61
+      },
+      {
+        "course_code": "GE-PTI-112",
+        "assigned_pass": "B-Pass",
+        "popularity": 29
+      },
+      {
+        "course_code": "GE-RSD-103(2)",
+        "assigned_pass": "B-Pass",
+        "popularity": 25
+      }
+    ]
+  },
+  "agent_selection": [
+    {
+      "course_code": "COMS0031131032(2)",
+      "assigned_pass": "A-Pass",
+      "popularity": 93
+    },
+    {
+      "course_code": "COMS0031121018",
+      "assigned_pass": "S-Pass",
+      "popularity": 97
+    },
+    {
+      "course_code": "COMS0031121013",
+      "assigned_pass": "B-Pass",
+      "popularity": 18
+    },
+    {
+      "course_code": "GE-PTI-102(1)",
+      "assigned_pass": "B-Pass",
+      "popularity": 61
+    },
+    {
+      "course_code": "PSYC003116100",
+      "assigned_pass": "B-Pass",
+      "popularity": 54
+    },
+    {
+      "course_code": "COMS0031131026(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 53
+    },
+    {
+      "course_code": "GFJ003111100(2)",
+      "assigned_pass": "A-Pass",
+      "popularity": 87
+    },
+    {
+      "course_code": "GE-PTI-112",
+      "assigned_pass": "B-Pass",
+      "popularity": 29
+    },
+    {
+      "course_code": "GE-RSD-103(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 25
+    }
+  ]
+}

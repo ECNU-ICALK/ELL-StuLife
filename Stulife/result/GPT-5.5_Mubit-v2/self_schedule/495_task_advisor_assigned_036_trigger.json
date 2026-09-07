@@ -1,0 +1,16 @@
+{
+  "task_id": "495_task_advisor_assigned_036_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T01:46:38.464935",
+      "event": {
+        "event_id": "35c2ca1e-4ad0-4c45-b873-2f6b01bacc88",
+        "event_title": "Paper Review Discussion - Pond Room",
+        "location": "Centennial Garden, Pond",
+        "time": "Week 6, Thursday, 08:00-11:00",
+        "description": "Reserved Pond room for paper review discussion and follow-up work. Send Professor Javier Payne an arrival email with subject/body 'I have arrived' when arriving."
+      }
+    }
+  ]
+}

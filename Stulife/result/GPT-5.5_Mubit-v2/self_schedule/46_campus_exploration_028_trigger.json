@@ -1,0 +1,16 @@
+{
+  "task_id": "46_campus_exploration_028_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T20:58:32.304161",
+      "event": {
+        "event_id": "89692a26-27e7-4ccf-ae53-77d198c71b01",
+        "event_title": "Campus Challenge: Route to The Printmaking Workshop",
+        "location": "The Fashion Institute",
+        "time": "Week 0, Saturday, 18:00-19:00",
+        "description": "Plan and walk a stairs-only, low-congestion, well-lit, outdoor route exposed to slippery conditions when wet from The Fashion Institute to The Printmaking Workshop via Basketball Courts (North), Acropolis Pavilion, Basketball Courts (North), and Cedar Hall."
+      }
+    }
+  ]
+}

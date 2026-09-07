@@ -1,0 +1,16 @@
+{
+  "task_id": "135_campus_exploration_034_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T16:28:57.334456",
+      "event": {
+        "event_id": "502c2871-4160-4d15-b8e0-f23e1ef6cf02",
+        "event_title": "Campus Challenge Route Walk",
+        "location": "Botanical Research Center",
+        "time": "Week 0, Friday, 22:00-23:00",
+        "description": "Walk route: Botanical Research Center -> Nexus Center for AI & Robotics -> Terra Hall -> Nexus Center for AI & Robotics -> Vesalius Hall -> Nexus Center for AI & Robotics -> Engineering Fab Lab. Constraints: indoors, avoids crowds, good lighting, exposed to rain; bring umbrella."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "142_campus_exploration_029_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T22:31:25.375379",
+      "event": {
+        "event_id": "98c253af-6d69-4e73-83c5-dbdd83e75855",
+        "event_title": "Campus Challenge: Route to Global Commons",
+        "location": "Pine Ridge Apartments",
+        "time": "Week 0, Friday, 21:00-22:00",
+        "description": "Plan and walk a route from Pine Ridge Apartments to Global Commons via The North Community Market, Alumni Hall, and Horizon Hall in exact sequence. Avoid high congestion during class changes, use stairs-only routes, and minimize exposure to slippery areas in case of rain."
+      }
+    }
+  ]
+}

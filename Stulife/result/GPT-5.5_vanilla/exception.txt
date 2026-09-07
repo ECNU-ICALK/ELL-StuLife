@@ -1,0 +1,31 @@
+Time: 2026-08-21 15:54:28
+Exception: [LanguageModelContextLimitException] Model gpt-5.5 returns empty response. The context limit may be reached.
+NoneType: None
+
+
+Time: 2026-08-21 15:54:28
+Exception: [AgentContextLimitException] [LanguageModelContextLimitException] Model gpt-5.5 returns empty response. The context limit may be reached.
+Traceback (most recent call last):
+  File "./src/agents/instance/language_model_agent.py", line 36, in _inference
+    return self._language_model.inference(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        [chat_history], self._inference_config_dict, self._system_prompt
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+  File "./src/language_models/language_model.py", line 49, in inference
+    raise e
+  File "./src/language_models/language_model.py", line 45, in inference
+    inference_result = self._inference(
+        batch_chat_history, inference_config_dict, system_prompt
+    )
+  File "./src/language_models/instance/openai_language_model.py", line 302, in _inference
+    self._get_completion_content(message_list, inference_config_dict)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./src/language_models/instance/openai_language_model.py", line 235, in _get_completion_content
+    raise LanguageModelContextLimitException(
+        f"Model {self.model_name} returns empty response. The context limit may be reached."
+    )
+src.typings.exception.LanguageModelContextLimitException: [LanguageModelContextLimitException] Model gpt-5.5 returns empty response. The context limit may be reached.
+
+

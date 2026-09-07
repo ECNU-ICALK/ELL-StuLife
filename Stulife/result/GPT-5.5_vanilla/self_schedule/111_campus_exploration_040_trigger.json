@@ -1,0 +1,16 @@
+{
+  "task_id": "111_campus_exploration_040_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T16:05:41.795291",
+      "event": {
+        "event_id": "4fcce3ca-1ebe-4dd7-b5ef-632e7bfa050e",
+        "event_title": "Campus Route Challenge",
+        "location": "Horizon Suites",
+        "time": "Week 0, Thursday, 15:00-16:00",
+        "description": "Walk indoor route: Horizon Suites -> Adam Smith School of Business -> Graduate Commons -> The Globe Playhouse."
+      }
+    }
+  ]
+}

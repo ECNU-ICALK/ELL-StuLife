@@ -1,0 +1,16 @@
+{
+  "task_id": "1102_task_advisor_assigned_002_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T23:34:02.452548",
+      "event": {
+        "event_id": "cf697427-7d8d-413e-8f3f-a6e20cff4180",
+        "event_title": "Brief Data Analysis Assignment Chat with Professor Richard Scott",
+        "location": "Aspen Hall, Dorm Rooms",
+        "time": "Week 18, Sunday, 09:00-09:05",
+        "description": "Quick five-minute chat to go over the Political Science data analysis assignment. Room booked 08:15-10:00."
+      }
+    }
+  ]
+}

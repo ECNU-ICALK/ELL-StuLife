@@ -1,0 +1,34 @@
+{
+  "overall": {
+    "basic": {
+      "session_count": 939.0
+    },
+    "evaluation_outcome": {
+      "unset": 0.0,
+      "correct": 0.41959531416400425,
+      "incorrect": 0.5804046858359957,
+      "unknown": 0.0,
+      "ignored": 0.0
+    },
+    "sample_status": {
+      "initial": 0.0,
+      "running": 0.0,
+      "completed": 0.9936102236421726,
+      "agent_validation_failed": 0.0,
+      "task_limit_reached": 0.002129925452609159,
+      "task_environment_error": 0.0,
+      "task_unknown_error": 0.0,
+      "agent_context_limit": 0.004259850905218318,
+      "agent_out_of_memory": 0.0,
+      "agent_unknown_error": 0.0
+    },
+    "trigger_info": {
+      "total_trigger_tasks": 345.0,
+      "regular_tasks_evaluated": 939.0
+    }
+  },
+  "trigger_info": {
+    "total_trigger_tasks": 345.0,
+    "regular_tasks_evaluated": 939.0
+  }
+}

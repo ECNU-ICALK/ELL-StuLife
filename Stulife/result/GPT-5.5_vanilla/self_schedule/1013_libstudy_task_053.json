@@ -1,0 +1,16 @@
+{
+  "task_id": "1013_libstudy_task_053",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T23:20:30.306421",
+      "event": {
+        "event_id": "6161bf67-bea6-4eda-9057-7e182e1c9e35",
+        "event_title": "Focused Reading: Cryptographic Hash Functions",
+        "location": "STEM Library, Quiet Study Area Seat B042-QUIET_STUDY_AREA-S021",
+        "time": "Week 16, Saturday, 09:00-12:30",
+        "description": "Read An Analysis of Cryptographic Hash Functions by Anya Sharma."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "495_task_advisor_assigned_036_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T22:15:15.603936",
+      "event": {
+        "event_id": "eb8b409c-da43-481a-91bb-d57379e5b1a3",
+        "event_title": "Paper Review Discussion with Professor Javier Payne",
+        "location": "Centennial Garden, Pond",
+        "time": "Week 6, Thursday, 09:00-09:05",
+        "description": "Brief sync-up discussion; Pond reserved 08:00-11:00 for follow-up work. Send Professor Javier Payne an arrival email with subject/body 'I have arrived' upon arrival."
+      }
+    }
+  ]
+}

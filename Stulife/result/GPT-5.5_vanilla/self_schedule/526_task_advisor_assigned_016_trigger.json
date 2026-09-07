@@ -1,0 +1,16 @@
+{
+  "task_id": "526_task_advisor_assigned_016_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T22:20:47.639134",
+      "event": {
+        "event_id": "3847f0fe-3238-447c-8607-ef001c8afc30",
+        "event_title": "Brief Data Analysis Assignment Chat with Professor Javier Payne",
+        "location": "The Forge Business Incubator, Pitch Room (101)",
+        "time": "Week 13, Sunday, 09:00-09:05",
+        "description": "Five-minute discussion to go over the assignment; room booked 08:15-10:00."
+      }
+    }
+  ]
+}

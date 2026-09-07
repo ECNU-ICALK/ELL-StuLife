@@ -1,0 +1,16 @@
+{
+  "task_id": "396_libstudy_task_064_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T01:16:04.949122",
+      "event": {
+        "event_id": "1fdbeab9-8ff2-41a4-90a1-676b8a45eab6",
+        "event_title": "Study Group Discussion: Emerging Economies",
+        "location": "Grand Central Library, Group Study Rooms (201-215)",
+        "time": "Week 3, Sunday, 12:00-16:00",
+        "description": "Reserved space with projection, whiteboard, quiet area, computer access, and power outlets for study group discussion on market volatility in emerging economies."
+      }
+    }
+  ]
+}

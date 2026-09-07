@@ -1,0 +1,16 @@
+{
+  "task_id": "41_campus_exploration_036_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T20:57:41.819642",
+      "event": {
+        "event_id": "8c416a57-a39c-4dcf-a6bd-53694fae2171",
+        "event_title": "Campus Challenge: Congestion-Avoiding Route",
+        "location": "Quantum Research Institute",
+        "time": "Week 0, Sunday, 15:00-16:00",
+        "description": "Plan and walk from Quantum Research Institute to Blackstone School of Law via Horizon Suites, Eastview Apartments, Bridgeway Apartments, Meadowbrook Hall, and Summit House, avoiding overly congested areas."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "105_campus_exploration_027_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T21:59:58.357063",
+      "event": {
+        "event_id": "d2170ba1-b54f-487c-a68e-e09cf1c084ab",
+        "event_title": "Campus Challenge: Route to The North Community Market",
+        "location": "Keystone Hall",
+        "time": "Week 0, Thursday, 18:00-19:00",
+        "description": "Plan and walk a route from Keystone Hall to The North Community Market via South Laundry Facility, Cedar Hall, Victory Stadium, Valley View Suites, and Global Commons, in exact sequence. Route should be primarily indoors and avoid overly congested areas."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "672_libstudy_task_042_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T22:39:20.162997",
+      "event": {
+        "event_id": "8d3554bc-1939-4efa-a835-7eb619d652c1",
+        "event_title": "AI Study Group Session",
+        "location": "Gombrich Hall - Private Sofa Area with Whiteboard",
+        "time": "Week 10, Monday, 19:30-20:30",
+        "description": "Review neural network concepts; reserved low-traffic corner with computer access and power outlets."
+      }
+    }
+  ]
+}

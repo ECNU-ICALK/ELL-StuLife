@@ -1,0 +1,16 @@
+{
+  "task_id": "193_campus_exploration_039_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T23:27:19.549551",
+      "event": {
+        "event_id": "90ef86b5-09bb-454d-8994-34e823671d88",
+        "event_title": "Campus Challenge: Route to Centennial Garden",
+        "location": "Vesalius Hall",
+        "time": "Week 0, Sunday, 17:45-18:45",
+        "description": "Plan and walk route from Vesalius Hall to Centennial Garden via The Catalyst Cafe, then University Welcome Center, in exact sequence. Use well-lit outdoor route avoiding slippery areas when raining and high congestion after classes."
+      }
+    }
+  ]
+}

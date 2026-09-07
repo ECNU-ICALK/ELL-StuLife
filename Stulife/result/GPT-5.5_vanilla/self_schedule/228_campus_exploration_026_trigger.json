@@ -1,0 +1,16 @@
+{
+  "task_id": "228_campus_exploration_026_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T17:27:57.182000",
+      "event": {
+        "event_id": "12d87f97-6343-42f7-b4cc-f4617d2717a6",
+        "event_title": "Campus route challenge",
+        "location": "The Black Box Experimental Theater",
+        "time": "Week 1, Sunday, 08:00-09:00",
+        "description": "Walk covered outdoor route via Celestial Observatory, University Welcome Center, Victory Stadium, Asclepius School of Pharmacy, ending at Aspen Hall."
+      }
+    }
+  ]
+}

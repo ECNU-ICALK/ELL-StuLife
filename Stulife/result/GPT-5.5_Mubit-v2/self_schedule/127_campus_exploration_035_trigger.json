@@ -1,0 +1,16 @@
+{
+  "task_id": "127_campus_exploration_035_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T22:15:53.087409",
+      "event": {
+        "event_id": "15e5811a-3145-4954-b36d-5d63c0fa164c",
+        "event_title": "Campus Challenge: Route to Terra Hall",
+        "location": "Acropolis Pavilion",
+        "time": "Week 0, Saturday, 11:45-12:45",
+        "description": "Plan and walk route from Acropolis Pavilion to Terra Hall via Pioneer Hall - Tower A, Graduate Commons, The Capitol Forum, and Innovation Plaza. Route should be outdoors, well-lit, avoid high congestion after classes; mind steep grades and puddles."
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+agent_dict:
+  language_model_agent:
+    module: src.agents.instance.language_model_agent.LanguageModelAgent
+    parameters:
+      inference_config_dict: {}
+      language_model: Fill the parameter 'language_model_name' in assignment config.
+      system_prompt: You are a helpful assistant.
+assignment_config:
+  agent:
+    custom_parameters:
+      inference_config_dict:
+        max_completion_tokens: 16384
+        reasoning_effort: medium
+      language_model: gpt-5.5
+    name: language_model_agent
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: consecutive_abnormal_agent_inference_process_handling_callback
+    callback_2:
+      name: mubit_experience_callback
+  language_model_list:
+  - name: gpt-5.5
+  output_dir: outputs/mubit_full_v2/prem_mubit
+  sample_order: default
+  task: campus_life_bench
+callback_dict:
+  consecutive_abnormal_agent_inference_process_handling_callback:
+    module: src.callbacks.instance.consecutive_abnormal_agent_inference_process_handling_callback.ConsecutiveAbnormalAgentInferenceProcessHandlingCallback
+    parameters:
+      tolerance_count: 8
+  current_session_saving_callback:
+    module: src.callbacks.instance.current_session_saving_callback.CurrentSessionSavingCallback
+  mubit_experience_callback:
+    module: src.callbacks.instance.mubit_experience_callback.MubitExperienceCallback
+    parameters:
+      agent_id: stulife-agent
+      max_injection_chars: 20000
+      max_note_chunks_per_task: 14
+      min_note_part_chars: 1200
+      note_chunk_chars: 3000
+      note_query_chars: 1500
+      reflect_every: 6
+      top_k_lessons: 6
+      top_k_notes: 6
+      top_k_wins: 3
+environment_config:
+  use_task_client_flag: false
+language_model_dict:
+  gpt-5.5:
+    module: src.language_models.instance.generic_openai_language_model.GenericOpenaiLanguageModel
+    parameters:
+      api_key: null
+      api_key_env: OPENAI_API_KEY
+      base_url: null
+      maximum_prompt_token_count: 262144
+      model_name: gpt-5.5
+      retry_config: null
+      role_dict:
+        agent: assistant
+        user: user
+logger_config:
+  level: INFO
+  log_file_path: default
+  logger_name: lifelong_agent_bench
+task_dict:
+  campus_life_bench:
+    module: src.tasks.instance.campus_life_bench.task.CampusTask
+    parameters:
+      chat_history_item_factory:
+        module: src.factories.chat_history_item.ChatHistoryItemFactory
+        parameters:
+          chat_history_item_dict_path: ./chat_history_items/standard/campus_life_bench.json
+      data_dir: ../task_data
+      max_round: 60
+      task_name:
+        module: src.typings.TaskName
+        parameters:
+          value: campus_life_bench

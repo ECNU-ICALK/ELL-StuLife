@@ -1,0 +1,16 @@
+{
+  "task_id": "1083_task_advisor_assigned_040_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T04:24:28.544594",
+      "event": {
+        "event_id": "4a279a30-1d28-45df-b889-2e05a28e7d41",
+        "event_title": "Literature Review Discussion with Professor Payne",
+        "location": "Volleyball Courts (North), Sand Courts",
+        "time": "Week 18, Friday, 08:00-09:00",
+        "description": "Brief five-minute sync; space reserved for full hour. Upon arrival, email Professor Javier Payne at javier_payne_0343@lau.edu with subject and body: I have arrived."
+      }
+    }
+  ]
+}

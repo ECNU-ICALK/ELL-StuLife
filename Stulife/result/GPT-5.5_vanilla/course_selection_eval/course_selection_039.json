@@ -1,0 +1,89 @@
+{
+  "task_id": "course_selection_039",
+  "ground_truth": {
+    "selected_sections": [
+      {
+        "course_code": "COMS0031131032(2)",
+        "assigned_pass": "S-Pass",
+        "popularity": 97
+      },
+      {
+        "course_code": "COMS0031121018",
+        "assigned_pass": "A-Pass",
+        "popularity": 93
+      },
+      {
+        "course_code": "COMS0031121013",
+        "assigned_pass": "B-Pass",
+        "popularity": 66
+      },
+      {
+        "course_code": "PSYC003116100",
+        "assigned_pass": "B-Pass",
+        "popularity": 25
+      },
+      {
+        "course_code": "GFJ003111100(2)",
+        "assigned_pass": "B-Pass",
+        "popularity": 25
+      },
+      {
+        "course_code": "COMS0031132119(3)",
+        "assigned_pass": "A-Pass",
+        "popularity": 90
+      },
+      {
+        "course_code": "GE-CTJ-103(2)",
+        "assigned_pass": "B-Pass",
+        "popularity": 32
+      },
+      {
+        "course_code": "GE-PTI-112",
+        "assigned_pass": "A-Pass",
+        "popularity": 89
+      }
+    ]
+  },
+  "agent_selection": [
+    {
+      "course_code": "COMS0031131032(2)",
+      "assigned_pass": "S-Pass",
+      "popularity": 97
+    },
+    {
+      "course_code": "COMS0031121018",
+      "assigned_pass": "A-Pass",
+      "popularity": 93
+    },
+    {
+      "course_code": "COMS0031121013",
+      "assigned_pass": "B-Pass",
+      "popularity": 66
+    },
+    {
+      "course_code": "PSYC003116100",
+      "assigned_pass": "B-Pass",
+      "popularity": 25
+    },
+    {
+      "course_code": "GFJ003111100(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 25
+    },
+    {
+      "course_code": "COMS0031132119(3)",
+      "assigned_pass": "A-Pass",
+      "popularity": 90
+    },
+    {
+      "course_code": "GE-CTJ-103(2)",
+      "assigned_pass": "B-Pass",
+      "popularity": 32
+    },
+    {
+      "course_code": "GE-PTI-112",
+      "assigned_pass": "A-Pass",
+      "popularity": 89
+    }
+  ]
+}

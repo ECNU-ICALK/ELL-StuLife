@@ -1,0 +1,16 @@
+{
+  "task_id": "397_task_advisor_assigned_004_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T21:58:00.125021",
+      "event": {
+        "event_id": "fbd4b472-06f1-4cdd-91a5-415b53404d06",
+        "event_title": "Literature Review Sync with Professor Javier Payne",
+        "location": "Pioneer Hall - Tower C, Lobby",
+        "time": "Week 10, Sunday, 08:00-09:00",
+        "description": "Brief five-minute chat to sync up, with room reserved for the full hour so Professor Payne can continue working on review materials afterward."
+      }
+    }
+  ]
+}

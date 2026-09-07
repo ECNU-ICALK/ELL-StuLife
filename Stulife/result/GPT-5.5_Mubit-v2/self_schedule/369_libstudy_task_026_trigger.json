@@ -1,0 +1,16 @@
+{
+  "task_id": "369_libstudy_task_026_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T01:08:38.880509",
+      "event": {
+        "event_id": "e889690f-60b4-45c7-8c42-d3369d7d9c4b",
+        "event_title": "Education Project Study Group",
+        "location": "Dewey School of Education, Resource Library (110)",
+        "time": "Week 15, Sunday, 09:00-10:30",
+        "description": "Booked discussion/collaboration space for brainstorming education project."
+      }
+    }
+  ]
+}
