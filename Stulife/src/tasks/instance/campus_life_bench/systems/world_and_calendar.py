@@ -136,17 +136,19 @@ class CalendarSystem:
             week_part = event_parts[0].strip()
             day_part = event_parts[1].strip()
 
-            if query_day.lower() != day_part.lower():
+            # Accept day lists such as "Monday/Wednesday/Friday" or "Tuesday & Thursday"
+            event_days = [d.strip().lower() for d in re.split(r"[/&]|\band\b", day_part)]
+            if query_day.lower() not in event_days:
                 return False
 
-            week_match = re.match(r"Week (\d+)\s*(?:-|to)\s*(\d+)", week_part, re.IGNORECASE)
+            week_match = re.match(r"Weeks? (\d+)\s*(?:-|to)\s*(\d+)", week_part, re.IGNORECASE)
             if week_match:
                 # Week range
                 start_week = int(week_match.group(1))
                 end_week = int(week_match.group(2))
                 return start_week <= query_week <= end_week
             else:
-                week_match_single = re.match(r"Week (\d+)", week_part, re.IGNORECASE)
+                week_match_single = re.match(r"Weeks? (\d+)", week_part, re.IGNORECASE)
                 if week_match_single:
                     event_week = int(week_match_single.group(1))
                     return query_week == event_week
