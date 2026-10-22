@@ -1,0 +1,16 @@
+{
+  "task_id": "329_libstudy_task_058_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T00:57:22.843290",
+      "event": {
+        "event_id": "bd49a100-afe8-4ce0-b996-9442aa55289d",
+        "event_title": "AI Project Study Session",
+        "location": "Grand Central Library, Periodicals Reading Room, Seat B001-PERIODICALS_READING_ROOM-S143",
+        "time": "Week 6, Sunday, 13:30-14:30",
+        "description": "Reserved quiet-zone study seat for AI project session."
+      }
+    }
+  ]
+}

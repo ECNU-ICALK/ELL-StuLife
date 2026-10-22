@@ -1,0 +1,16 @@
+{
+  "task_id": "614_task_advisor_assigned_018_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T02:18:27.661907",
+      "event": {
+        "event_id": "1d309621-6d4a-414e-9fc1-553626cdad0c",
+        "event_title": "Data Analysis Discussion - Richard Scott",
+        "location": "The Ascent Climbing Center, Bouldering Area",
+        "time": "Week 8, Sunday, 09:00-09:05",
+        "description": "Brief meeting; Bouldering Area booked 08:15-10:00. Upon arrival, email Professor Richard Scott with subject and body: I have arrived."
+      }
+    }
+  ]
+}

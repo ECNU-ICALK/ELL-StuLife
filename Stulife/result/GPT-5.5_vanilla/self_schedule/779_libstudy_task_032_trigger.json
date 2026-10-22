@@ -1,0 +1,16 @@
+{
+  "task_id": "779_libstudy_task_032_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T22:48:15.173774",
+      "event": {
+        "event_id": "0589daf9-d78c-45e1-bfc3-5f5754557a32",
+        "event_title": "AI Study Group Session",
+        "location": "Heritage Hall, Departmental Archives (221)",
+        "time": "Week 16, Thursday, 11:45-14:45",
+        "description": "Reserved one seat/space for collaborative AI study group; remember to go to the library at the scheduled time."
+      }
+    }
+  ]
+}

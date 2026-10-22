@@ -1,0 +1,16 @@
+{
+  "task_id": "105_campus_exploration_027_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T16:02:30.534026",
+      "event": {
+        "event_id": "c53a9a90-b402-401d-8e80-8a395c4d8244",
+        "event_title": "Campus Route Challenge",
+        "location": "Keystone Hall",
+        "time": "Week 0, Thursday, 18:00-19:30",
+        "description": "Walk route: Keystone Hall -> South Laundry Facility -> Cedar Hall -> Victory Stadium -> Valley View Suites -> Global Commons -> The North Community Market, using primarily indoor paths and avoiding congestion."
+      }
+    }
+  ]
+}

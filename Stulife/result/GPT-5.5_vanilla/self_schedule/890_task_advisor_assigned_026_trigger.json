@@ -1,0 +1,16 @@
+{
+  "task_id": "890_task_advisor_assigned_026_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T23:03:08.783222",
+      "event": {
+        "event_id": "da87338f-aa8d-43f7-bd1e-bbbbac8c157d",
+        "event_title": "Paper Review Discussion with Professor Richard Scott",
+        "location": "Opus Recital Hall, Lobby & Box Office",
+        "time": "Week 13, Sunday, 09:05-09:10",
+        "description": "Brief 5-minute sync at the beginning of the room booking; Lobby & Box Office reserved 09:05-10:35."
+      }
+    }
+  ]
+}

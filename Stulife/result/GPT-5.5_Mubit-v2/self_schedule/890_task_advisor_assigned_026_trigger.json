@@ -1,0 +1,16 @@
+{
+  "task_id": "890_task_advisor_assigned_026_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T03:31:30.889585",
+      "event": {
+        "event_id": "8090ab98-c2b3-4c89-99e0-1a660376bd1c",
+        "event_title": "Paper Review Discussion with Professor Richard Scott",
+        "location": "Opus Recital Hall, Lobby & Box Office",
+        "time": "Week 13, Sunday, 09:00-10:30",
+        "description": "Brief 5-minute sync at the beginning. Upon arrival, email Professor Richard Scott with subject and body: I have arrived."
+      }
+    }
+  ]
+}

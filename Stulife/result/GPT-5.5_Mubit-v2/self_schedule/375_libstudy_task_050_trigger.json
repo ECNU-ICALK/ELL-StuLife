@@ -1,0 +1,16 @@
+{
+  "task_id": "375_libstudy_task_050_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T01:10:32.678753",
+      "event": {
+        "event_id": "b35c547d-2f34-4ca5-b559-d474bc8a3ba2",
+        "event_title": "AI project research prep",
+        "location": "Grand Central Library, Periodicals Reading Room seat B001-PERIODICALS_READING_ROOM-S018",
+        "time": "Week 3, Wednesday, 20:45-22:15",
+        "description": "Review AI papers and organize notes before group session."
+      }
+    }
+  ]
+}

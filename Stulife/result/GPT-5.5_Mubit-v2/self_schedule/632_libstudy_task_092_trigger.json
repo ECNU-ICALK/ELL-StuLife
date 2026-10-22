@@ -1,0 +1,16 @@
+{
+  "task_id": "632_libstudy_task_092_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T02:23:12.323398",
+      "event": {
+        "event_id": "f6a13800-7c49-4074-ab8b-8484fa2960c4",
+        "event_title": "AI Ethics Interest Study Group",
+        "location": "Interfaith Chapel & Studies Center, Department Library (201)",
+        "time": "Week 9, Wednesday, 20:30-21:30",
+        "description": "Booked discussion-zone seat/space with large table, whiteboard, power, Wi-Fi, and low-traffic preference."
+      }
+    }
+  ]
+}

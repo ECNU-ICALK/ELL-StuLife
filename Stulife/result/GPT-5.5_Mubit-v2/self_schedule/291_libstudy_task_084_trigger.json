@@ -1,0 +1,16 @@
+{
+  "task_id": "291_libstudy_task_084_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T00:49:34.881226",
+      "event": {
+        "event_id": "00cb161c-4557-4bbe-855c-3e7e647db873",
+        "event_title": "Computer Science self-study session",
+        "location": "STEM Library, Quiet Study Area seat B042-QUIET_STUDY_AREA-S003",
+        "time": "Week 6, Monday, 09:00-10:30",
+        "description": "Reserved quiet private study seat with large table, whiteboard, power outlet, near CS collection."
+      }
+    }
+  ]
+}

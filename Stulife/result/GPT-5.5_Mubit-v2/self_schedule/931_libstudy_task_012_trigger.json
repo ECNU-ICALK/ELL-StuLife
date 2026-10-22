@@ -1,0 +1,16 @@
+{
+  "task_id": "931_libstudy_task_012_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T03:42:32.380169",
+      "event": {
+        "event_id": "13eea408-8e5e-4c16-8293-d1bb04002dc8",
+        "event_title": "AI Algorithms Study Session",
+        "location": "Grand Central Library, University Archives",
+        "time": "Week 14, Sunday, 15:00-18:30",
+        "description": "Reserved University Archives for curiosity-driven AI algorithms study session."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "1020_task_advisor_assigned_038_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T04:05:36.598913",
+      "event": {
+        "event_id": "172d6693-bcac-4900-b644-b39db233e744",
+        "event_title": "Experimental Setup Meeting with Professor Richard Scott",
+        "location": "Victory Stadium, VIP Suites (U2-U5)",
+        "time": "Week 17, Monday, 09:00-09:45",
+        "description": "Brief five-minute sync; room booked for full 45 minutes. Send Professor Richard Scott an arrival email with subject and body: I have arrived."
+      }
+    }
+  ]
+}

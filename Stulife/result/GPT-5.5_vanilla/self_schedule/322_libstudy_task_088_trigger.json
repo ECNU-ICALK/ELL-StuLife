@@ -1,0 +1,16 @@
+{
+  "task_id": "322_libstudy_task_088_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T21:42:08.282271",
+      "event": {
+        "event_id": "6862be64-7c99-4ad6-920f-bd716ad97ad2",
+        "event_title": "Environmental Factors Study Group",
+        "location": "Grand Central Library, Periodicals Reading Room, Seat B001-PERIODICALS_READING_ROOM-S078",
+        "time": "Week 13, Friday, 17:30-21:30",
+        "description": "Reserved seat for sustainable urban planning study group."
+      }
+    }
+  ]
+}

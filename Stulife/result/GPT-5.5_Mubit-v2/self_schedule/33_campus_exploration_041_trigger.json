@@ -1,0 +1,16 @@
+{
+  "task_id": "33_campus_exploration_041_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T20:55:24.294758",
+      "event": {
+        "event_id": "0ffdc828-28ff-49b0-9cbb-c85a157c335b",
+        "event_title": "Indoor Campus Exploration Challenge",
+        "location": "Alumni Relations Center",
+        "time": "Week 0, Tuesday, 21:00-22:00",
+        "description": "Plan and walk an indoor route to Mercator Hall via The Fashion Institute, Lakeside Dormitory, Evolve Center, Mead Hall, and Grand Central Library in exact sequence."
+      }
+    }
+  ]
+}

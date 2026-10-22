@@ -1,0 +1,16 @@
+{
+  "task_id": "1147_libstudy_task_096_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T23:40:11.698049",
+      "event": {
+        "event_id": "797efaac-1ad7-4f52-bf69-fc42245c6d1f",
+        "event_title": "Family Project Work Session",
+        "location": "Agora Hall Student Lounge",
+        "time": "Week 19, Sunday, 17:30-18:30",
+        "description": "Reserved seat B006-STUDENT_LOUNGE-S095 near large table, whiteboard, projector, and power outlet."
+      }
+    }
+  ]
+}

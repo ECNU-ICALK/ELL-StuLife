@@ -1,0 +1,16 @@
+{
+  "task_id": "1136_task_advisor_assigned_010_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T04:38:03.781761",
+      "event": {
+        "event_id": "be558f2e-7537-4607-a593-7d9d5a12c664",
+        "event_title": "Paper Review Discussion with Professor Richard Scott",
+        "location": "Eastview Apartments Parking",
+        "time": "Week 19, Saturday, 09:00-11:45",
+        "description": "Reserved Parking at Eastview Apartments for brief 5-minute sync at start; send arrival email to Professor Richard Scott upon arrival."
+      }
+    }
+  ]
+}

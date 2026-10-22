@@ -1,0 +1,16 @@
+{
+  "task_id": "630_libstudy_task_008_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T02:22:48.625709",
+      "event": {
+        "event_id": "14898336-0aba-4736-bff6-63e5ffd780ce",
+        "event_title": "Leisure Reading Session Booking",
+        "location": "Interfaith Chapel & Studies Center, Department Library (201)",
+        "time": "Week 9, Saturday, 18:30-21:30",
+        "description": "Reserved seat for military theory reading session; quiet zone near window with whiteboard/comfortable seating preferred."
+      }
+    }
+  ]
+}

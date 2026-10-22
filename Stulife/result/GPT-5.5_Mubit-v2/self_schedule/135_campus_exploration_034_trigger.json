@@ -1,0 +1,16 @@
+{
+  "task_id": "135_campus_exploration_034_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T22:23:15.288241",
+      "event": {
+        "event_id": "12ad9727-0da3-4a1b-ae30-d3bb4e92446d",
+        "event_title": "Campus Challenge: Route to Engineering Fab Lab",
+        "location": "Botanical Research Center",
+        "time": "Week 0, Friday, 22:00-23:00",
+        "description": "Plan and walk route from Botanical Research Center to Engineering Fab Lab via Terra Hall, then Vesalius Hall. Route should be indoors, avoid crowds, have good lighting, and be exposed to rain; bring umbrella if needed."
+      }
+    }
+  ]
+}

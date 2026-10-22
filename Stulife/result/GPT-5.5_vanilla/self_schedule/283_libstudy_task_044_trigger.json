@@ -1,0 +1,16 @@
+{
+  "task_id": "283_libstudy_task_044_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T21:37:06.538897",
+      "event": {
+        "event_id": "cd2f124c-ff1f-4737-9c42-45871b15bd60",
+        "event_title": "Focused Engineering Study Session",
+        "location": "STEM Library, Quiet Study Area, Seat B042-QUIET_STUDY_AREA-S014",
+        "time": "Week 1, Wednesday, 15:45-19:15",
+        "description": "Reserved quiet window seat with whiteboard and good Wi-Fi near the Applied Sciences & Engineering Collection."
+      }
+    }
+  ]
+}

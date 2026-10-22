@@ -1,0 +1,16 @@
+{
+  "task_id": "1086_task_advisor_assigned_034_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T04:25:58.283494",
+      "event": {
+        "event_id": "d74c8006-2da1-4cfb-90f0-d866cb69b6bb",
+        "event_title": "Public Management Project Follow-up Discussion",
+        "location": "Bridgeway Apartments, Parking",
+        "time": "Week 18, Thursday, 08:15-11:00",
+        "description": "Booked Parking room for Professor Richard Scott follow-up discussion. Upon arrival, send email to richard_scott_0559@lau.edu with subject and body: I have arrived."
+      }
+    }
+  ]
+}

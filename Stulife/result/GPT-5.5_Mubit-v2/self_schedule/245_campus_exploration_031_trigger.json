@@ -1,0 +1,16 @@
+{
+  "task_id": "245_campus_exploration_031_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T00:30:50.038453",
+      "event": {
+        "event_id": "9a31a84b-faea-49fd-a0a2-c880e96796b6",
+        "event_title": "Campus Challenge: Route to South Housing Office",
+        "location": "Bridgeway Apartments",
+        "time": "Week 0, Sunday, 18:15-19:15",
+        "description": "Plan and walk route from Bridgeway Apartments to South Housing Office via Chancellor's Hall, Centennial Garden, Central Dining Commons, Interfaith Chapel & Studies Center, and Graduate Commons, in exact sequence. Route must be indoors, covered from rain, and use stairs only; poor lighting acceptable; congestion normal."
+      }
+    }
+  ]
+}

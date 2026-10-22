@@ -1,0 +1,16 @@
+{
+  "task_id": "779_libstudy_task_032_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T03:01:48.370587",
+      "event": {
+        "event_id": "546a2cdb-2f19-4f68-a693-21f7dccfaa4a",
+        "event_title": "AI Study Group Seat Reservation",
+        "location": "Heritage Hall, Departmental Archives (221)",
+        "time": "Week 16, Thursday, 11:45-14:45",
+        "description": "Reserved seat for AI study group; quiet/low-traffic discussion zone with WiFi, comfortable seating, projector, and specialized collections."
+      }
+    }
+  ]
+}

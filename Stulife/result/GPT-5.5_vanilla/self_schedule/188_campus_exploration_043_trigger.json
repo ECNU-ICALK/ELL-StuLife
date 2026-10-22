@@ -1,0 +1,16 @@
+{
+  "task_id": "188_campus_exploration_043_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-21T17:04:13.605911",
+      "event": {
+        "event_id": "e158849e-598d-4aad-8356-c966a0819602",
+        "event_title": "Campus Route Challenge",
+        "location": "Rosetta Hall",
+        "time": "Week 0, Sunday, 18:00-19:30",
+        "description": "Walk route: Rosetta Hall -> The University Archive -> Champions Arena -> Quantum Research Institute -> Cedar Hall -> The Wardrobe Costume Shop."
+      }
+    }
+  ]
+}

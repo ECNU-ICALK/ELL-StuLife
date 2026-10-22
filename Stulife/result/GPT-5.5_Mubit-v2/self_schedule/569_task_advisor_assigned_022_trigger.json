@@ -1,0 +1,16 @@
+{
+  "task_id": "569_task_advisor_assigned_022_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-23T02:05:41.731710",
+      "event": {
+        "event_id": "e86de5c5-0bac-4b36-8e0f-e5ee847f5a43",
+        "event_title": "Meeting with Professor Javier Payne - Literature Review Sync",
+        "location": "Outdoor Track & Field, Throwing Fields",
+        "time": "Week 7, Sunday, 08:30-10:00",
+        "description": "Brief five-minute sync followed by reserved follow-up work time. Upon arrival, email Professor Javier Payne with subject and body: I have arrived."
+      }
+    }
+  ]
+}

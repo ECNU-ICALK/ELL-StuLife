@@ -1,0 +1,16 @@
+{
+  "task_id": "111_campus_exploration_040_trigger",
+  "changes": [
+    {
+      "action": "add",
+      "timestamp": "2026-08-22T22:02:43.499856",
+      "event": {
+        "event_id": "3855032c-61fe-426a-ad1f-348f85c18a68",
+        "event_title": "Campus Challenge: Route to The Globe Playhouse",
+        "location": "Horizon Suites",
+        "time": "Week 0, Thursday, 15:00-16:00",
+        "description": "Plan and walk route from Horizon Suites to The Globe Playhouse via Adam Smith School of Business, then Graduate Commons. Use an indoor route; route may have poor lighting, exposed areas to rain, and steep grade; normal congestion."
+      }
+    }
+  ]
+}
